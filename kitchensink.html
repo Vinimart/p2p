@@ -11,22 +11,22 @@
     <title>Picture to People</title>
 </head>
 
-<body>
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
     <!-- begin: Modal Box -->
-    <div class="modal-overlay flex-center hide-element">
+    <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
-        <div class="modal-content rounded-1x">
+        <div id="idModalMsgWindow" class="modal-content rounded-1x">
 
             <div class="flex-between bg-color-1st padded-1x">
-                <span class="font-3x bold">Warning</span>
-                <span><i class="fas fa-times fa-2x"></i></span>
+                <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
+                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x"></i></span>
             </div>
 
-            <p class="padded-1x spaced-v-2x">Something went wrong.</p>
+            <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
 
             <div class="centered spaced-below-1x">
-                <button class="btn padded-h-2x">OK</button>
+                <button class="btn padded-h-2x" onclick="hide(['idOverlayModalMsg']);">OK</button>
             </div>
 
         </div>
@@ -35,13 +35,14 @@
     <!-- end: Modal Box -->
 
     <!-- begin: Side Nav -->
-    <div id="sideNav" class="sidenav-overlay hide-element">
+    <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
+        onclick="hide(['idOverlayMainSideMenuFlow']);">
 
-        <div class="sidenav-content">
+        <div id="idMainSideMenuFlow" class="sidenav-content" onclick="stopProp(event);">
 
             <div class="flex-between padded-1x">
                 <span class="font-3x bold">General</span>
-                <span><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i class="fas fa-times fa-2x"></i></span>
             </div>
 
             <div class="hoverable">
@@ -132,7 +133,7 @@
 
             <p class="color-inv italic">World's biggest source of free online graphic design software</p>
 
-            <button class="flex-between menu-button">
+            <button class="flex-between menu-button" onclick="show(['idOverlayMainSideMenuFlow']);">
                 <i class="fas fa-bars fa-2x">&nbsp;</i>
                 <span>Design Tools</span>
             </button>
@@ -270,177 +271,44 @@
                 </div>
                 <!-- end: Imagem de Exemplo -->
 
-                <!-- begin: Caixa de Efeitos -->
-                <div class="spaced-v-3x centered">
+                <!-- begin: Categoria de Efeitos -->
+                <div class="spaced-v-3x">
 
-                    <div class="title-bar-2 padded-1x centered">
-                        <span class="font-3x">Metallic Text Logo Generators</span>
+                    <div id="idImgList1Bar" class="title-bar padded-1x centered">
+                        <span class="font-3x">Metal Text Logo</span>
+                        <span
+                            onclick="toggleHide(['idImgList1']); toggleCss(['idButtonPlusMinus1'], ['fa-chevron-up', 'fa-chevron-down']); toggleCss(['idImgList1Bar'], ['title-bar-2', 'title-bar']);">
+                            <i id="idButtonPlusMinus1" class="fas fa-chevron-down" title="Show/Hide Effect List"></i>
+                        </span>
                     </div>
 
-                    <div class="comp-show-some padded-1x">
+                    <div id="idImgList1" class="comp-show-all padded-1x hide-element">
 
                         <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/golden001_text_effect.jpg">
+                                <p class="font-3x color-default">Golden</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
                                 <img class="spaced-below-1x" src="ui/comp/img/metallic001_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic002_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic003_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic004_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic005_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic006_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic007_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic008_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic009_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic010_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic011_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic012_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic013_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic014_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic015_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic016_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic017_text_effect.jpg">
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="configpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/metallic018_text_effect.jpg">
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- end: Caixa de Efeitos -->
-
-                <!-- begin: Categoria de Efeitos -->
-                <div class="spaced-v-3x">
-
-                    <div class="title-bar-2 padded-1x centered">
-                        <span class="font-3x">Artistic Text Logo</span>
-                        <i class="fas fa-chevron-up"></i>
-                    </div>
-
-                    <div class="comp-show-all padded-1x">
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/splash001_text_effect.jpg">
-                                <p class="font-3x color-default">Splash</p>
+                                <p class="font-3x color-default">Metallic</p>
                             </a>
                         </div>
 
                         <div class="in-block-display padded-1x">
                             <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/abstract001_text_effect.jpg">
-                                <p class="font-3x color-default">Abstract</p>
+                                <img class="spaced-below-1x" src="ui/comp/img/steel001_text_effect.jpg">
+                                <p class="font-3x color-default">Steel</p>
                             </a>
                         </div>
 
                         <div class="in-block-display padded-1x">
                             <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/geometric001_text_effect.jpg">
-                                <p class="font-3x color-default">Geometric</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/painted001_text_effect.jpg">
-                                <p class="font-3x color-default">Painted</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/decorated001_tlb_text_effect.jpg">
-                                <p class="font-3x color-default">Decorated</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/floral001_text_effect.jpg">
-                                <p class="font-3x color-default">Floral</p>
+                                <img class="spaced-below-1x" src="ui/comp/img/copper002_text_effect.jpg">
+                                <p class="font-3x color-default">Copper</p>
                             </a>
                         </div>
 
@@ -452,69 +320,15 @@
                 <!-- begin: Categoria de Efeitos -->
                 <div class="spaced-v-3x">
 
-                    <div class="title-bar padded-1x centered">
-                        <span class="font-3x">Nature Based Text Logo</span>
-                        <i class="fas fa-chevron-down"></i>
+                    <div id="idImgList2Bar" class="title-bar padded-1x centered">
+                        <span class="font-3x">Abstract Text Logo</span>
+                        <span
+                            onclick="toggleHide(['idImgList2']); toggleCss(['idButtonPlusMinus2'], ['fa-chevron-down', 'fa-chevron-up']); toggleCss(['idImgList2Bar'], ['title-bar', 'title-bar-2']);">
+                            <i id="idButtonPlusMinus2" class="fas fa-chevron-down" title="Show/Hide Effect List"></i>
+                        </span>
                     </div>
 
-                    <div class="comp-show-all padded-1x hide-element">
-
-                        <div class="in-block-display padded-1x spaced-below-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/splash001_text_effect.jpg">
-                                <p class="font-3x color-default">Splash</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/abstract001_text_effect.jpg">
-                                <p class="font-3x color-default">Abstract</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/geometric001_text_effect.jpg">
-                                <p class="font-3x color-default">Geometric</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/painted001_text_effect.jpg">
-                                <p class="font-3x color-default">Painted</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/decorated001_tlb_text_effect.jpg">
-                                <p class="font-3x color-default">Decorated</p>
-                            </a>
-                        </div>
-
-                        <div class="in-block-display padded-1x">
-                            <a href="effectpage.html">
-                                <img class="spaced-below-1x" src="ui/comp/img/floral001_text_effect.jpg">
-                                <p class="font-3x color-default">Floral</p>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- end: Categoria de Efeitos -->
-
-                <!-- begin: Categoria de Efeitos -->
-                <div class="spaced-v-3x">
-
-                    <div class="title-bar padded-1x centered">
-                        <span class="font-3x">Masonry Text Logo</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-
-                    <div class="comp-show-all padded-1x hide-element">
+                    <div id="idImgList2" class="comp-show-all padded-1x hide-element">
 
                         <div class="in-block-display padded-1x spaced-below-1x">
                             <a href="effectpage.html">
@@ -566,24 +380,30 @@
                 <!-- begin: Componente com label -->
                 <div class="spaced-v-3x">
 
-                    <div class="title-bar-2 padded-1x centered">
+                    <div id="idImgList3Bar" class="title-bar-2 padded-1x centered">
                         <span class="font-3x">Text Effects</span>
-                        <i class="fas fa-chevron-up"></i>
+                        <span
+                            onclick="toggleHide(['idImgList3']); toggleCss(['idButtonPlusMinus3'], ['fa-chevron-down', 'fa-chevron-up']); toggleCss(['idImgList3Bar'], ['title-bar', 'title-bar-2']);">
+                            <i id="idButtonPlusMinus3" class="fas fa-chevron-up" title="Show/Hide Effect List"></i>
+                        </span>
                     </div>
 
-                    <div class="comp-show-all padded-1x">
+                    <div id="idImgList3" class="comp-show-all padded-1x">
 
-                        <div class="in-block-display padded-1x hoverable">
+                        <div id="te1.abstract083" onclick="SelLists.change(this.id);"
+                            class="in-block-display padded-1x color-brightest-hoverable">
                             <img class="spaced-below-1x" src="ui/comp/img/abstract083_text_effect.jpg">
                             <p class="color-default">Abstract</p>
                         </div>
 
-                        <div class="in-block-display padded-1x hoverable">
+                        <div id="te1.bamboo003" onclick="SelLists.change(this.id);"
+                            class="in-block-display padded-1x color-brightest-hoverable">
                             <img class="spaced-below-1x" src="ui/comp/img/bamboo003_text_effect.jpg">
                             <p class="color-default">Bamboo</p>
                         </div>
 
-                        <div class="in-block-display padded-1x hoverable">
+                        <div id="te1.brick004" onclick="SelLists.change(this.id);"
+                            class="in-block-display padded-1x color-brightest-hoverable">
                             <img class="spaced-below-1x" src="ui/comp/img/brick004_text_effect.jpg">
                             <p class="color-default">Brick 1</p>
                         </div>
@@ -621,12 +441,15 @@
                 <!-- begin: Componente com label e top-right icon -->
                 <div class="spaced-v-3x">
 
-                    <div class="title-bar-2 padded-1x centered">
+                    <div id="idImgList4Bar" class="title-bar-2 padded-1x centered">
                         <span class="font-3x">Effect List</span>
-                        <i class="fas fa-chevron-up"></i>
+                        <span
+                            onclick="toggleHide(['idImgList4']); toggleCss(['idButtonPlusMinus4'], ['fa-chevron-down', 'fa-chevron-up']); toggleCss(['idImgList4Bar'], ['title-bar', 'title-bar-2']);">
+                            <i id="idButtonPlusMinus4" class="fas fa-chevron-up" title="Show/Hide Effect List"></i>
+                        </span>
                     </div>
 
-                    <div class="comp-show-all padded-1x">
+                    <div id="idImgList4" class="comp-show-all padded-1x">
 
                         <div class="in-block-display padded-1x hoverable">
 
@@ -705,6 +528,7 @@
                 </div>
                 <!-- end: Componente com label e top-right icon -->
 
+
                 <div class="centered spaced-v-3x">
 
                     <button class="btn spaced-h-1x">
@@ -715,6 +539,11 @@
                     <button class="btn spaced-h-1x">
                         <span>Hide All&nbsp;</span>
                         <i class="fas fa-chevron-up"></i>
+                    </button>
+
+                    <button class="btn spaced-h-1x"
+                        onclick="showModalMsg('idOverlayModalMsg', 'idModalMsgText', 'Something went wrong.');">
+                        <span>Modal Test&nbsp;</span>
                     </button>
 
                 </div>
@@ -947,6 +776,39 @@
                         </div>
                         <!-- end: Componente com imagens -->
 
+                        <!-- begin: Componente com imagens -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Choose an 3D model here :</p>
+                            <div class="comp-scroll">
+                                <img src="ui/comp/img/icon_3d_model_01.gif">
+                                <img src="ui/comp/img/icon_3d_model_02.gif">
+                                <img src="ui/comp/img/icon_3d_model_03.gif">
+                                <img src="ui/comp/img/icon_3d_model_04.gif">
+                                <img src="ui/comp/img/icon_3d_model_05.gif">
+                                <img src="ui/comp/img/icon_3d_model_06.gif">
+                                <img src="ui/comp/img/icon_3d_model_07.gif">
+                                <img src="ui/comp/img/icon_3d_model_08.gif">
+                                <img src="ui/comp/img/icon_3d_model_09.gif">
+                                <img src="ui/comp/img/icon_3d_model_10.gif">
+                                <img src="ui/comp/img/icon_3d_model_11.gif">
+                                <img src="ui/comp/img/icon_3d_model_12.gif">
+                                <img src="ui/comp/img/icon_3d_model_13.gif">
+                                <img src="ui/comp/img/icon_3d_model_14.gif">
+                                <img src="ui/comp/img/icon_3d_model_15.gif">
+                                <img src="ui/comp/img/icon_3d_model_16.gif">
+                                <img src="ui/comp/img/icon_3d_model_17.gif">
+                                <img src="ui/comp/img/icon_3d_model_18.gif">
+                                <img src="ui/comp/img/icon_3d_model_19.gif">
+                                <img src="ui/comp/img/icon_3d_model_20.gif">
+                                <img src="ui/comp/img/icon_3d_model_21.gif">
+                                <img src="ui/comp/img/icon_3d_model_22.gif">
+                                <img src="ui/comp/img/icon_3d_model_23.gif">
+                                <img src="ui/comp/img/icon_3d_model_24.gif">
+                                <img src="ui/comp/img/icon_3d_model_25.gif">
+                            </div>
+                        </div>
+                        <!-- end: Componente com imagens -->
+
                         <!-- begin: Componente de lista -->
                         <div class="spaced-v-2x">
                             <p class="spaced-below-1x">Select a rendering style :</p>
@@ -955,6 +817,95 @@
                                 <table style="background-image: url(ui/comp/img/merged_image_render_engine.gif);"
                                     cellpadding="0" cellspacing="0">
                                     <tbody>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end: Componente de lista -->
+
+                        <!-- begin: Componente de lista -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Select a 3D model :</p>
+
+                            <div class="comp-scroll">
+                                <table style="background-image: url(ui/comp/img/merged_image_3d_text_model.gif);"
+                                    cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
                                         <tr>
                                             <td class="table-cell-2x">&nbsp;</td>
                                         </tr>
@@ -1245,6 +1196,7 @@
             </div>
             <!-- end: Coluna Principal -->
 
+
             <!-- begin: Coluna Secundaria -->
             <div class="column-2nd padded-h-1x">
 
@@ -1357,7 +1309,7 @@
                 <!-- end: Recommended Effects -->
 
             </div>
-            <!-- end: Coluna Secundaria. -->
+            <!-- end: Coluna Secundaria -->
 
         </div>
         <!-- end: Container Principal max-width: 1600px -->
@@ -1426,7 +1378,82 @@
 
     </footer>
 
-    <script src="ui/js/script.js"></script>
+    <script src="ui/js/main.js"></script>
+    <script>
+        function defInit() {
+
+            hide(['idOverlayPreloader']);
+
+            SelLists.newList('i1', 'idImageName', ['css-sel-img'], 'idViewImageName',
+                'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
+            SelLists.newList('i2', 'idRenderingStyle', ['css-sel-img'], '', '', '2');
+            SelLists.newList('i3', 'idModel3D', ['css-sel-img'], '', '', '1');
+            SelLists.newList('f1', 'idFontName', ['css-sel-img'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
+                'Brushed');
+            SelLists.newList('s1', 'idImgName1', ['css-sel-img'], '', '', 'abstract_003');
+            SelLists.newList('s2', 'idImgName2', ['css-sel-img'], '', '', 'abstract084_tlb');
+            SelLists.newList('s3', 'idImgName3', ['css-sel-img'], '', '', '3d_text_style6');
+
+            SelLists.newList('te1', 'idSelectedTextEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'abstract083');
+            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'photo_effect_002');
+
+
+            // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
+            /*
+            GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
+            				'<div class="css-block-center pad-small">' +
+            					'<img class="size-full size-max-very-small" src="/www/images/text/splash<<0>>_text_effect.jpg" />' +
+            					'<p>Text Effect <<0>></p>' +
+            				'</div>',
+            				'0', 3, ['idGrowList1ButtonContainer']);
+            */
+
+            // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
+            // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
+            // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
+            var itemsToGrow = randomSlice(
+                [
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
+                ], 5);
+            GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2,
+                '<div class="css-block-center pad-small">' +
+                '<a href="<<0>>">' +
+                '<img class="size-full size-max-very-small" src="<<1>>" />' +
+                '</a>' +
+                '<p><<2>></p>' +
+                '</div>',
+                '0', 3, ['idGrowList1ButtonContainer']);
+
+            DataChecker.setMsgElements('idOverlayModalMsg', 'idModalMsgText', 'idModalMsgTitle');
+            DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
+            DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>=', '15');
+        }
+
+        function defSubmit() {
+            show(['idOverlayPreloader']);
+            var _submit = function () {
+                document.FormMain.submit();
+            }
+            window.setTimeout(_submit, 500);
+        }
+    </script>
 
 </body>
 
