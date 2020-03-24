@@ -1,0 +1,1028 @@
+/* ----- Tags ----- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 16px;
+    /* EQUALS .color-default */
+    color: #202020;
+}
+
+p {
+    line-height: 140%;
+}
+
+a {
+    text-decoration: none;
+    /* EQUALS .color-link */
+    color: #00528C;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 140%;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* ----- Menu ----- */
+
+.menu-main {
+    height: 60px;
+}
+
+.menu-button {
+    /* EQUALS .color-inv */
+    border: solid 1px #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    /* EQUALS .color-1st */
+    color: #FF8000;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    transition: 0.3s;
+}
+
+
+
+
+
+/* ----- Side Nav ----- */
+
+/* Overlay para o side nav, ocupa 100% da pagina */
+.sidenav-overlay {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Conteudo do sidenav em si */
+.sidenav-content {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* EQUALS .color-inv */
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    animation-name: right-to-initial;
+    animation-duration: 0.4s;
+}
+
+/* Botao para fechar sidenav */
+.sidenav-content i:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ----- Modal Box ----- */
+
+/* Overlay para o modal box, ocupa 100% da pagina */
+.modal-overlay {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Conteudo do modal box em si */
+.modal-content {
+    position: relative;
+    width: 40%;
+    max-width: 800px;
+    animation-name: top-to-initial;
+    animation-duration: 0.4s;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    /* EQUALS .color-4th */
+    border: 1px solid #CCCCCC;
+}
+
+/* Botao para fechar janela modal */
+.modal-content i:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ----- Content ----- */
+
+/* Coluna principal */
+.column-main {
+    width: 75%;
+    margin-bottom: 30px;
+}
+
+/* Coluna secundaria com largura fixa */
+.column-2nd {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+/* Container com display flex para espacamento homogeneo entre os elementos */
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Container com display flex para criar espacamento entre os elementos */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container com display flex para elementos centralizados */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container com display inline-block */
+.in-block-display {
+    display: inline-block;
+    /* to delete */
+    padding: 5px;
+}
+
+.hide-element {
+    display: none;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Icone que fica no topo direito de um elemento */
+.position-top-right i:hover {
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
+/* Container para elementos circulares com tamanho de 200px */
+.round-container {
+    width: 200px;
+    height: 200px;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    border-radius: 100%;
+}
+
+/* Container para componentes que necessitam de barra de rolagem e altura fixa */
+.comp-scroll {
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    text-align: center;
+    /* EQUALS .color-4th */
+    border: solid 1px #CCCCCC;
+    border-radius: 5px;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    line-height: 0px;
+}
+
+/* Container para componentes sem barra de rolagem com Lazy Loader / overflow: hidden; */
+.comp-show-some {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    text-align: center;
+    /* EQUALS .color-1st */
+    border: solid 1px #FF8000;
+    border-radius: 0 0 10px 10px;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    line-height: 0px;
+}
+
+/* Container para componentes sem altura fixa */
+.comp-show-all {
+    width: 100%;
+    text-align: center;
+    /* EQUALS .color-1st */
+    border: solid 1px #FF8000;
+    border-radius: 0 0 10px 10px;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    line-height: 0px;
+}
+
+.comp-scroll img {
+    /* EQUALS .color-inv */
+    border: solid 5px #FFFFFF;
+    max-width: 190px;
+}
+
+/* Componentes de listas */
+.comp-scroll table {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-collapse: separate;
+    width: 100%;
+}
+
+/* Tamanho das celulas da tabela dos componentes de listas */
+.table-cell-1x {
+    height: 50px;
+    /* EQUALS .color-inv */
+    border: 2px solid #FFFFFF;
+}
+
+/* Tamanho das celulas da tabela dos componentes de listas */
+.table-cell-2x {
+    height: 125px;
+    /* EQUALS .color-inv */
+    border: 2px solid #FFFFFF;
+}
+
+/* to delete */
+.table-cell-2x:hover {
+    /* EQUALS .color-2nd */
+    border-color: #A62900;
+}
+
+/* to delete */
+.table-cell-1x:hover {
+    /* EQUALS .color-2nd */
+    border-color: #A62900;
+}
+
+/* to delete */
+.comp-scroll img:hover {
+    /* EQUALS .color-2nd */
+    border-color: #A62900;
+}
+
+.color-list-select {
+    color: #FFFFFF;
+    background-color: #0060C0;
+}
+
+.css-table-sel-img .css-sel-img {
+    /* color-list-select (background) */
+    border: 2px solid #0060C0;
+}
+
+/* Barra de titulo para componentes */
+.title-bar {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* Title bar com border-radius bottom = 0 */
+.title-bar-2 {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Icone fa-chevron-up ou down, alinhado a direita */
+.title-bar-2 i,
+.title-bar i {
+    float: right;
+    cursor: pointer;
+}
+
+/* Necessario para elementos que exigem um background-color em estado hover */
+.hoverable:hover {
+    /* EQUALS .color-4th */
+    background-color: #CCCCCC;
+}
+
+/* Limita a largura e centraliza um elemento */
+.limiter {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* Posicionamento inferior para background-image */
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+/* Posicionamento inferior direito para background-image */
+.bg-right-bottom {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Classe para estilizar elemento hr */
+.ruler {
+    /* EQUALS .color-3rd */
+    border: 1px solid #E9C4A9;
+    /* EQUALS .color-3rd */
+    background-color: #E9C4A9;
+}
+
+.box {
+    /* EQUALS .bg-color-1st */
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+/* Largura minima necessaria para nao afetar a largura dos componentes de listas */
+.column-main .box {
+    min-width: 325px;
+}
+
+/* Classe para botoes genericos */
+.btn {
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    border-radius: 5px;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* EQUALS .color-1st */
+    border-color: #FF8000;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    transition: 0.3s;
+}
+
+
+
+
+
+/* ----- Form ---- */
+
+input[type=text],
+select {
+    text-align: left;
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    /* EQUALS .color-4th */
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+    /* EQUALS .color-1st */
+    outline-color: #FF8000;
+}
+
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Marcador de caixa checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+    /* EQUALS .color-4th */
+    border: solid 1px #CCCCCC;
+}
+
+.check-box:hover input~.checkmark {
+    /* EQUALS .color-4th */
+    background-color: #CCCCCC;
+}
+
+.check-box input:checked~.checkmark {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-box input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-box .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    /* EQUALS .color-inv */
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+/* ----- Footer ----- */
+
+/* Hover para destacar os elementos de color-3rd */
+footer .color-3rd:hover {
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* ----- Colors -----*/
+
+/* Cor padrao de texto da pagina */
+.color-default {
+    color: #202020;
+}
+
+/* Cor utilizada principalmente para textos em fundo escuro */
+.color-inv {
+    color: #FFFFFF;
+}
+
+/* Cor principal da pagina, utilizada para compor o tema do layout */
+.color-1st {
+    color: #FF8000;
+}
+
+/* Cor secundaria da pagina, utilizada tanto no tema quanto para chamar
+a atencao do usuario para um elemento importante */
+.color-2nd {
+    color: #A62900;
+}
+
+/* Esta cor pode ser utilizada para criar uma sobreposicao sutil com
+o fundo #FF8000 ou #A62900 */
+.color-3rd {
+    color: #E9C4A9;
+}
+
+/* Cor utilizada principalmente para border-color em um fundo cinza (#F5F5F5) */
+.color-4th {
+    color: #CCCCCC;
+}
+
+/* Cor utilizada para textos com menos destaque */
+.color-5th {
+    color: #555555;
+}
+
+/*Cor utilizada para destacar links */
+.color-link {
+    color: #00528C;
+}
+
+.color-link:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+}
+
+/* Cor utilizada para compor um background-color de um elemento sobreposto
+a um elemento de cor clara */
+.bg-color-1st {
+    background-color: #F5F5F5;
+}
+
+/* Variacao da cor principal (#FF8000) para compor um background-color de um elemento
+sobreposto a um elemento de cor clara */
+.bg-color-2nd {
+    background-color: #F8F0E8;
+}
+
+
+
+
+
+/* ----- Font ----- */
+
+.font-1x {
+    font-size: 13px;
+}
+
+/* Tamanho de fonte padrão - font-size-2x: font-size: 16px. */
+
+.font-3x {
+    font-size: 20px;
+}
+
+.header-title {
+    font-size: 60px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+}
+
+.justified {
+    text-align: justify;
+}
+
+
+
+
+
+/* ----- Helpers ----- */
+
+.padded-1x {
+    padding: 10px;
+}
+
+.padded-2x {
+    padding: 20px;
+}
+
+.padded-3x {
+    padding: 60px;
+}
+
+.padded-h-1x {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padded-h-2x {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.padded-h-3x {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.spaced-v-1x {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.spaced-v-2x {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spaced-v-3x {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.spaced-h-1x {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.spaced-h-2x {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.spaced-h-3x {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.spaced-below-1x {
+    margin-bottom: 10px;
+}
+
+.spaced-below-2x {
+    margin-bottom: 20px;
+}
+
+.spaced-below-3x {
+    margin-bottom: 30px;
+}
+
+.spaced-around-1x {
+    margin: 5px;
+}
+
+.spaced-around-2x {
+    margin: 20px;
+}
+
+.img-1x {
+    width: 40px;
+}
+
+.img-2x {
+    width: 180px;
+}
+
+.rounded-1x {
+    border-radius: 5px;
+}
+
+.rounded-2x {
+    border-radius: 10px;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+/* box-shadow utiliza RGB por causa da transparência */
+.shaded {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.text-shaded:hover {
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.72);
+    transition: 0.3s;
+}
+
+/* Aumenta o alcance da sombra, classe necessaria pois nem todos os elementos com
+classe shaded precisam de um hover */
+.shaded-hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shaded-hover:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.48), 0 2px 20px 0 rgba(0, 0, 0, 0.36);
+    transition: 0.3s;
+}
+
+
+
+
+
+/* ----- Animations ----- */
+
+.animate-1:hover {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.animate-2:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+.animate-3:hover {
+    -webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes flip-vertical-right {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes flip-vertical-right {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes top-to-initial {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes right-to-initial {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+
+
+
+
+/* ----- Media Queries ----- */
+
+@media (max-width: 1100px) {
+    .menu-main p {
+        display: none;
+    }
+
+    /* Altera todos os elementos que utilizam a classe flex-around para apenas uma coluna */
+    main .flex-around {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .column-main {
+        width: 100%;
+    }
+
+    .column-2nd {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-button {
+        border: none;
+        padding: 0;
+    }
+
+    .menu-button:hover {
+        background-color: transparent;
+        /* EQUALS .color-inv */
+        color: #FFFFFF;
+    }
+
+    .menu-button span {
+        display: none;
+    }
+
+    .index-menu a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .index-header img {
+        display: none;
+    }
+
+    .header-title {
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    /* Tamanho maximo para imagens de componente para não quebrar o layout no mobile */
+    .comp-show-some img,
+    .comp-show-all img {
+        max-width: 250px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav div {
+        margin-bottom: 40px;
+    }
+}
