@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ui/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="ui/css/main.css">
+    <title>Picture to People</title>
+</head>
+
+<body>
+
+    <!-- begin: Modal Box -->
+    <div class="modal-overlay flex-center hide-element">
+
+        <div class="modal-content rounded-1x">
+
+            <div class="flex-between bg-color-1st padded-1x">
+                <span class="font-3x bold">Warning</span>
+                <span><i class="fas fa-times fa-2x"></i></span>
+            </div>
+
+            <p class="padded-1x spaced-v-2x">Something went wrong.</p>
+
+            <div class="centered spaced-below-1x">
+                <button class="btn padded-h-2x">OK</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Modal Box -->
+
+    <!-- begin: Side Nav -->
+    <div id="sideNav" class="sidenav-overlay hide-element">
+
+        <div class="sidenav-content">
+
+            <div class="flex-between padded-1x">
+                <span class="font-3x bold">General</span>
+                <span><i class="fas fa-times fa-2x"></i></span>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Text Logos</p>
+                </a>
+            </div>
+
+            <div class="hoverable spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Frames</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Photo Effects</p>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Sketch</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Painting</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Cartoon</p>
+                </a>
+            </div>
+
+            <div class="hoverable spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Retro</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Text Effects</p>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Side Nav -->
+
+    <nav>
+
+        <!-- begin: Barra de Menu Principal -->
+        <div class="menu-main flex-between padded-h-1x bg-right-bottom shaded"
+            style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
+
+            <a class="flex-between text-shaded" href="index.html">
+                <img class="img-1x rounded-1x" src="ui/img/p2p-logo.png" alt="Picture to People Logo">
+                <span class="font-3x color-inv">&nbsp;&nbsp;Picture to People</span>
+            </a>
+
+            <p class="color-inv italic">World's biggest source of free online graphic design software</p>
+
+            <button class="flex-between menu-button">
+                <i class="fas fa-bars fa-2x">&nbsp;</i>
+                <span>Design Tools</span>
+            </button>
+
+        </div>
+        <!-- end: Barra de Menu Principal -->
+
+        <!-- begin: Barra de Menu Secundario -->
+        <div class="flex-between padded-1x">
+
+            <div>
+
+                <a href="link-target.html">
+                    <i class="fab fa-facebook color-2nd font-3x animate-1">&nbsp;</i>
+                </a>
+
+                <a href="link-target.html">
+                    <i class="fab fa-twitter color-2nd font-3x animate-1"></i>
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="link-target.html">
+                    <i class="fas fa-search color-1st font-3x animate-1">&nbsp;</i>
+                </a>
+
+                <a href="link-target.html">
+                    <i class="fas fa-question-circle color-1st font-3x animate-1"></i>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- end: Barra de Menu Secundario -->
+
+    </nav>
+
+    <header class="padded-h-2x">
+
+        <!-- begin: Titulo e Subtitulo -->
+        <div class="centered spaced-below-2x">
+            <h1 class="title bold spaced-below-1x">Photo to Cartoon Converter</h1>
+            <p class="font-3x">Turn your best photos into awesome cartoons as never before for free</p>
+        </div>
+        <!-- end: Titulo e Subtitulo -->
+
+        <hr class="ruler limiter">
+
+        <div class="spaced-below-2x"></div>
+
+    </header>
+
+    <main class="bg-bottom" style="background-image: url(ui/img/main-bg.png);">
+
+        <!-- begin: Container Principal max-width: 1600px -->
+        <div class="flex-around limiter">
+
+            <!-- begin: Coluna Principal -->
+            <div class="column-main padded-h-2x">
+
+                <!-- begin: Descricao do Efeito -->
+                <div class="spaced-below-3x">
+                    <p class="justified">
+                        It's a versatile cartoon photo editor to transform photos and complex pictures into cartoon
+                        drawings or comic illustrations. Behind the scenes, there is a powerful drawing application that
+                        offers you great control over colors, gradients and contours.
+                    </p>
+                </div>
+                <!-- end: Descricao do Efeito -->
+
+                <!-- begin: Caixa de Recomendacoes -->
+                <div class="box bg-color-2nd padded-2x">
+
+                    <p class="justified">
+                        This page offers our popular 3D text generator developed to create beautiful classic 3D text
+                        effects. However, <strong>if you prefer realistic cool 3D text effects</strong>, the best way to
+                        create 3D text
+                        logos is using our top 3D text generators. Here you have many online premium 3D text makers to
+                        be used easily for free, like for example:
+                    </p>
+
+                    <ul class="spaced-v-3x">
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                    </ul>
+
+                    <p class="justified">
+                        It's <strong>highly recommended</strong> you visit the page that has a special list with our
+                        free <a class="color-link" href="link-target.html"><strong>3D Online Logo Generator</strong></a>
+                        apps. All online
+                        logo creators
+                        available there have at least one cool logo image example, so it will be easy for you to choose
+                        the best 3D logo maker to design a graphic as you
+                        want.
+                    </p>
+
+                </div>
+                <!-- end: Caixa de Recomendacoes -->
+
+                <!-- begin: Dicas Importantes -->
+                <div class="spaced-v-3x">
+
+                    <span class="font-3x">Important Tips:</span>
+
+                    <div class="spaced-below-1x"></div>
+
+                    <ul>
+                        <li>
+                            Before using the text generator, please wait for the complete page loading, or you can get
+                            wrong results.
+                        </li>
+
+                        <li>
+                            If you choose to get a transparent PNG file, the selected background color will be ignored.
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- end: Dicas Importantes -->
+
+                <hr class="ruler">
+
+                <!-- begin: Imagem de Exemplo -->
+                <div class="centered spaced-v-3x">
+                    <img class="spaced-below-1x" src="img/metallic033_tlb_text_effect.jpg" alt="Metallic Text Effect">
+                    <p class="font-3x bold">Metallic Text Effect</p>
+                </div>
+                <!-- end: Imagem de Exemplo -->
+
+                <!-- begin: Caixa de Efeitos -->
+                <div class="spaced-v-3x centered">
+
+                    <div class="title-bar-2 padded-1x centered">
+                        <span class="font-3x">Metallic Text Logo Generators</span>
+                    </div>
+
+                    <div class="comp-show-some padded-1x">
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic001_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic002_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic003_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic004_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic005_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic006_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic007_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic008_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic009_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic010_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic011_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic012_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic013_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic014_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic015_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic016_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic017_text_effect.jpg">
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="configpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/metallic018_text_effect.jpg">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Caixa de Efeitos -->
+
+                <!-- begin: Categoria de Efeitos -->
+                <div class="spaced-v-3x">
+
+                    <div class="title-bar-2 padded-1x centered">
+                        <span class="font-3x">Artistic Text Logo</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+
+                    <div class="comp-show-all padded-1x">
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/splash001_text_effect.jpg">
+                                <p class="font-3x color-default">Splash</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/abstract001_text_effect.jpg">
+                                <p class="font-3x color-default">Abstract</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/geometric001_text_effect.jpg">
+                                <p class="font-3x color-default">Geometric</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/painted001_text_effect.jpg">
+                                <p class="font-3x color-default">Painted</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/decorated001_tlb_text_effect.jpg">
+                                <p class="font-3x color-default">Decorated</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/floral001_text_effect.jpg">
+                                <p class="font-3x color-default">Floral</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Categoria de Efeitos -->
+
+                <!-- begin: Categoria de Efeitos -->
+                <div class="spaced-v-3x">
+
+                    <div class="title-bar padded-1x centered">
+                        <span class="font-3x">Nature Based Text Logo</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+                    <div class="comp-show-all padded-1x hide-element">
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/splash001_text_effect.jpg">
+                                <p class="font-3x color-default">Splash</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/abstract001_text_effect.jpg">
+                                <p class="font-3x color-default">Abstract</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/geometric001_text_effect.jpg">
+                                <p class="font-3x color-default">Geometric</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/painted001_text_effect.jpg">
+                                <p class="font-3x color-default">Painted</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/decorated001_tlb_text_effect.jpg">
+                                <p class="font-3x color-default">Decorated</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/floral001_text_effect.jpg">
+                                <p class="font-3x color-default">Floral</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Categoria de Efeitos -->
+
+                <!-- begin: Categoria de Efeitos -->
+                <div class="spaced-v-3x">
+
+                    <div class="title-bar padded-1x centered">
+                        <span class="font-3x">Masonry Text Logo</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+
+                    <div class="comp-show-all padded-1x hide-element">
+
+                        <div class="in-block-display padded-1x spaced-below-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/splash001_text_effect.jpg">
+                                <p class="font-3x color-default">Splash</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/abstract001_text_effect.jpg">
+                                <p class="font-3x color-default">Abstract</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/geometric001_text_effect.jpg">
+                                <p class="font-3x color-default">Geometric</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/painted001_text_effect.jpg">
+                                <p class="font-3x color-default">Painted</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/decorated001_tlb_text_effect.jpg">
+                                <p class="font-3x color-default">Decorated</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display padded-1x">
+                            <a href="effectpage.html">
+                                <img class="spaced-below-1x" src="ui/comp/img/floral001_text_effect.jpg">
+                                <p class="font-3x color-default">Floral</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Categoria de Efeitos -->
+
+                <!-- begin: Componente com label -->
+                <div class="spaced-v-3x">
+
+                    <div class="title-bar-2 padded-1x centered">
+                        <span class="font-3x">Text Effects</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+
+                    <div class="comp-show-all padded-1x">
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/abstract083_text_effect.jpg">
+                            <p class="color-default">Abstract</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/bamboo003_text_effect.jpg">
+                            <p class="color-default">Bamboo</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/brick004_text_effect.jpg">
+                            <p class="color-default">Brick 1</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/brick023_text_effect.jpg">
+                            <p class="color-default">Brick 2</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/camouflage005_tlb_text_effect.jpg">
+                            <p class="color-default">Camouflage 1</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/camouflage017_tlb_text_effect.jpg">
+                            <p class="color-default">Camouflage 2</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/metallic034_text_effect.jpg">
+                            <p class="color-default">Metallic</p>
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+                            <img class="spaced-below-1x" src="ui/comp/img/psychedelic036_text_effect.jpg">
+                            <p class="color-default">Psychedelic</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Componente com label -->
+
+                <!-- begin: Componente com label e top-right icon -->
+                <div class="spaced-v-3x">
+
+                    <div class="title-bar-2 padded-1x centered">
+                        <span class="font-3x">Effect List</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+
+                    <div class="comp-show-all padded-1x">
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_001.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_002.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_003.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_004.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_005.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                        <div class="in-block-display padded-1x hoverable">
+
+                            <div class="position-relative">
+                                <img class="spaced-below-1x" src="ui/comp/img/lomo-photo-effect_006.jpg">
+                                <a class="position-top-right spaced-around-1x" href="link-target.html"><i
+                                        class="fas fa-edit fa-2x color-1st"></i></a>
+                            </div>
+
+                            <p class="color-default">Abstract</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Componente com label e top-right icon -->
+
+                <div class="centered spaced-v-3x">
+
+                    <button class="btn spaced-h-1x">
+                        <span>Show All&nbsp;</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <button class="btn spaced-h-1x">
+                        <span>Hide All&nbsp;</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </button>
+
+                </div>
+
+                <!-- begin: Formulario de Configuracao -->
+                <div class="box shaded padded-1x">
+
+                    <form action="">
+
+                        <div class="title-bar padded-1x centered">
+                            <span class="font-3x">Configuration</span>
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextToRender">Text Input :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <input type="text" maxlength="25" id="idTextToRender" name="TextToRender"
+                                placeholder="Your Text">
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFontSize">Font Size :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idFontSize" name="FontSize">
+                                <option value="0">Normal</option>
+                                <option value="1">Big</option>
+                                <option value="2">Large</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idMargin">Margin :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idMargin" name="Margin">
+                                <option value="0">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                                <option value="5">6</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <span>Background Color :&nbsp;</span>
+
+                            <div class="in-block-display animate-1">
+                                <div class="color-picker"></div>
+                            </div>
+
+                            <span>&nbsp;#A62900</span>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Shadow</p>
+
+                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
+                                    value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Customize Shadow</p>
+
+                                <input id="idCustomizeShadow" type="checkbox" name="CustomizeShadow">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShadowPosition">Shadow Position :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShadowPosition" name="ShadowPosition">
+                                <option value="0">Top</option>
+                                <option value="1">Bottom</option>
+                                <option value="2">Left</option>
+                                <option value="3">Right</option>
+                                <option value="4">Top-left</option>
+                                <option value="5">Top-right</option>
+                                <option value="6">Bottom-left</option>
+                                <option value="7">Bottom-right</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShadowDistance">Shadow Distance :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShadowDistance" name="ShadowDistance">
+                                <option value="0">Low</option>
+                                <option value="1">Normal</option>
+                                <option value="2">High</option>
+                                <option value="3">Very High</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShadowDispersion">Shadow Dispersion :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShadowDispersion" name="ShadowDispersion">
+                                <option value="0">Low</option>
+                                <option value="1">Normal</option>
+                                <option value="2">High</option>
+                                <option value="3">Very High</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Transparent Background</p>
+
+                                <input type="checkbox">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextToRender">Text Input :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <input type="text" maxlength="25" id="idTextToRender" name="TextToRender"
+                                placeholder="Your Text">
+
+                        </div>
+
+                        <!-- begin: Componente com imagens -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Select style :</p>
+                            <div class="comp-scroll">
+                                <img src="ui/comp/img/3d_text_style1.png">
+                                <img src="ui/comp/img/3d_text_style2.png">
+                                <img src="ui/comp/img/3d_text_style3.png">
+                                <img src="ui/comp/img/3d_text_style4.png">
+                                <img src="ui/comp/img/3d_text_style5.png">
+                                <img src="ui/comp/img/3d_text_style6.png">
+                                <img src="ui/comp/img/3d_text_style7.png">
+                                <img src="ui/comp/img/3d_text_style8.png">
+                                <img src="ui/comp/img/3d_text_style9.png">
+                                <img src="ui/comp/img/3d_text_style10.png">
+                                <img src="ui/comp/img/3d_text_style11.png">
+                            </div>
+                        </div>
+                        <!-- end: Componente com imagens -->
+
+                        <!-- begin: Componente com imagens -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Select image :</p>
+                            <div class="comp-scroll">
+                                <img src="ui/comp/img/abstract084_tlb.jpg">
+                                <img src="ui/comp/img/abstract085_tlb.jpg">
+                                <img src="ui/comp/img/bamboo002_tlb.jpg">
+                                <img src="ui/comp/img/bamboo013_tlb.jpg">
+                                <img src="ui/comp/img/bamboo014_tlb.jpg">
+                                <img src="ui/comp/img/bamboo015_tlb.jpg">
+                                <img src="ui/comp/img/brick025_tlb.jpg">
+                                <img src="ui/comp/img/brick037_tlb.jpg">
+                                <img src="ui/comp/img/camouflage001_tlb.jpg">
+                                <img src="ui/comp/img/camouflage002_tlb.jpg">
+                                <img src="ui/comp/img/camouflage005_tlb.jpg">
+                                <img src="ui/comp/img/camouflage007_tlb.jpg">
+                                <img src="ui/comp/img/camouflage017_tlb.jpg">
+                                <img src="ui/comp/img/concrete039_tlb.jpg">
+                                <img src="ui/comp/img/cracked040_tlb.jpg">
+                                <img src="ui/comp/img/decorated001_tlb.jpg">
+                                <img src="ui/comp/img/decorated002_tlb.jpg">
+                                <img src="ui/comp/img/decorated003_tlb.jpg">
+                                <img src="ui/comp/img/decorated004_tlb.jpg">
+                                <img src="ui/comp/img/decorated005_tlb.jpg">
+                                <img src="ui/comp/img/decorated006_tlb.jpg">
+                                <img src="ui/comp/img/decorated007_tlb.jpg">
+                                <img src="ui/comp/img/decorated008_tlb.jpg">
+                                <img src="ui/comp/img/decorated009_tlb.jpg">
+                                <img src="ui/comp/img/decorated010_tlb.jpg">
+                                <img src="ui/comp/img/decorated012_tlb.jpg">
+                                <img src="ui/comp/img/decorated013_tlb.jpg">
+                                <img src="ui/comp/img/decorated014_tlb.jpg">
+                                <img src="ui/comp/img/decorated015_tlb.jpg">
+                                <img src="ui/comp/img/decorated016_tlb.jpg">
+                                <img src="ui/comp/img/decorated017_tlb.jpg">
+                                <img src="ui/comp/img/decorated019_tlb.jpg">
+                                <img src="ui/comp/img/decorated020_tlb.jpg">
+                                <img src="ui/comp/img/decorated021_tlb.jpg">
+                                <img src="ui/comp/img/decorated022_tlb.jpg">
+                            </div>
+                        </div>
+                        <!-- end: Componente com imagens -->
+
+                        <!-- begin: Componente de lista -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Select a rendering style :</p>
+
+                            <div class="comp-scroll">
+                                <table style="background-image: url(ui/comp/img/merged_image_render_engine.gif);"
+                                    cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-2x">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end: Componente de lista -->
+
+                        <!-- begin: Componente de lista -->
+                        <div class="spaced-below-3x">
+                            <p class="spaced-below-1x">Font name :</p>
+
+                            <div class="comp-scroll">
+                                <table style="background-image: url(ui/comp/img/merged_image_writing_font_list1.gif);"
+                                    cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-cell-1x">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end: Componente de lista -->
+
+                    </form>
+
+                    <div class="spaced-v-2x centered">
+                        <button id="generateBtn" class="btn">Generate</button>
+                    </div>
+
+                </div>
+                <!-- end: Formulario de Configuracao -->
+
+            </div>
+            <!-- end: Coluna Principal -->
+
+            <!-- begin: Coluna Secundaria -->
+            <div class="column-2nd padded-h-1x">
+
+                <!-- begin: Popular Graphic Design Apps -->
+                <div class="centered spaced-below-3x">
+
+                    <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
+
+                    <div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects1.jpg">
+                                <p class="color-default">Textured 3D Effects</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects2.jpg">
+                                <p class="color-default">Page Curl</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects3.jpg">
+                                <p class="color-default">Photo Sticker</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects4.jpg">
+                                <p class="color-default">3D Graffiti</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects5.jpg">
+                                <p class="color-default">Grunge Photo</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects6.jpg">
+                                <p class="color-default">Beveled Texts</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Popular Graphic Design Apps -->
+
+                <!-- begin: Recommended Effects -->
+                <div class="centered">
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-pencil-alt fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">See our sketch and<br>drawing photo effects.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-user-circle fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Try our impressive<br>cartoon photo effects.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-cube fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Know our most used<br>free 3D effect apps.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-font fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Use our most popular<br>text logo generators.</a></p>
+
+                    </div>
+
+                </div>
+                <!-- end: Recommended Effects -->
+
+            </div>
+            <!-- end: Coluna Secundaria. -->
+
+        </div>
+        <!-- end: Container Principal max-width: 1600px -->
+
+    </main>
+
+    <footer class="centered padded-2x bg-right-bottom"
+        style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
+
+        <!-- begin: Footer Menu -->
+        <div class="footer-nav flex-around">
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">PROJECT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">About P2P</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Terms of Service</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Advertise</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Contact Us</a></p>
+            </div>
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">SUPPORT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">How to Use</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Get Help</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Tips & Tricks</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Extra Services</a></p>
+            </div>
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">DEVELOPMENT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Guidelines</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Maccala Library</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Pixsycho Library</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Researches</a></p>
+            </div>
+
+        </div>
+        <!-- end: Footer Menu -->
+
+        <div class="spaced-below-2x">
+            <p class="color-inv padded-h-2x">
+                The images created or modified by using Picture to People site can be used for any purpose (free,
+                personal or commercial) under a license similar to Creative Commons. It means you must provide the
+                proper credits to Picture to People Project (www.picturetopeople.org). Exceptions apply if you are a
+                subscriber. For further information, read our <a class="color-3rd" href="link-target.html">Terms of
+                    Service</a>.
+            </p>
+        </div>
+
+        <div>
+            <a href="link-target.html"><i class="fab fa-facebook fa-2x color-inv animate-1">&nbsp;</i></a>
+            <a href="link-target.html"><i class="fab fa-twitter fa-2x color-inv animate-1"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="ui/js/script.js"></script>
+
+</body>
+
+</html>
