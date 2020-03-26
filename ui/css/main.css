@@ -267,27 +267,27 @@ li {
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
-.table-cell-1x {
+.list-comp-1x {
     height: 50px;
     /* EQUALS .color-inv */
     border: 2px solid #FFFFFF;
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
-.table-cell-2x {
+.list-comp-2x {
     height: 125px;
     /* EQUALS .color-inv */
     border: 2px solid #FFFFFF;
 }
 
 /* to delete */
-.table-cell-2x:hover {
+.list-comp-2x:hover {
     /* EQUALS .color-2nd */
     border-color: #A62900;
 }
 
 /* to delete */
-.table-cell-1x:hover {
+.list-comp-1x:hover {
     /* EQUALS .color-2nd */
     border-color: #A62900;
 }
@@ -299,13 +299,13 @@ li {
 }
 
 .color-list-select {
-    color: #FFFFFF;
-    background-color: #0060C0;
+    /* EQUALS .color-2nd */
+    border-color: #A62900;
 }
 
 .css-table-sel-img .css-sel-img {
-    /* color-list-select (background) */
-    border: 2px solid #0060C0;
+    /* EQUALS .color-2nd */
+    border-color: #A62900;
 }
 
 /* Barra de titulo para componentes */
@@ -397,7 +397,6 @@ li {
     border-color: #FF8000;
     /* EQUALS .color-1st */
     background-color: #FF8000;
-    transition: 0.3s;
 }
 
 
