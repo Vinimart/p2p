@@ -118,8 +118,8 @@ li {
 /* Conteudo do modal box em si */
 .modal-content {
     position: relative;
-    width: 40%;
-    max-width: 800px;
+    min-width: 400px;
+    max-width: 700px;
     animation-name: top-to-initial;
     animation-duration: 0.4s;
     /* EQUALS .color-inv */
@@ -133,6 +133,33 @@ li {
     /* EQUALS .color-2nd */
     color: #A62900;
     cursor: pointer;
+}
+
+
+
+
+/* ----- Color Picker ----- */
+
+.color-table {
+    border-spacing: 7px;
+    border-collapse: separate;
+}
+
+.color-table td {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.color-table td:hover {
+    box-shadow: 0px 0px 4px 2px #a62a0094;
+}
+
+.color-display {
+    width: 40px;
+    height: 40px;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
 }
 
 
@@ -178,6 +205,10 @@ li {
     display: inline-block;
     /* to delete */
     padding: 5px;
+}
+
+.inline-display {
+    display: inline;
 }
 
 .hide-element {
@@ -380,7 +411,21 @@ li {
 }
 
 /* Classe para botoes genericos */
+.btn-1x {
+    min-width: 100px;
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    border-radius: 5px;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    padding: 15px;
+    cursor: pointer;
+}
+
 .btn {
+    min-width: 200px;
     /* EQUALS .color-2nd */
     border: solid 1px #A62900;
     border-radius: 5px;
@@ -393,6 +438,13 @@ li {
 }
 
 .btn:hover {
+    /* EQUALS .color-1st */
+    border-color: #FF8000;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.btn-1x:hover {
     /* EQUALS .color-1st */
     border-color: #FF8000;
     /* EQUALS .color-1st */
@@ -486,6 +538,14 @@ select:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+/* Color Display para utilizar no form de configuração de efeitos */
+form .color-display {
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
 }
 
 
@@ -977,6 +1037,17 @@ classe shaded precisam de um hover */
 }
 
 @media (max-width: 500px) {
+
+    .color-table td {
+        width: 22px;
+        height: 22px;
+    }
+
+    .modal-content {
+        min-width: 100px;
+        max-width: 300px;
+    }
+
     .menu-button {
         border: none;
         padding: 0;
@@ -1004,10 +1075,6 @@ classe shaded precisam de um hover */
     .header-title {
         line-height: 100%;
         margin-bottom: 20px;
-    }
-
-    .modal-content {
-        width: 80%;
     }
 
     /* Tamanho maximo para imagens de componente para não quebrar o layout no mobile */
