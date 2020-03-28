@@ -129,7 +129,7 @@ li {
 }
 
 /* Botao para fechar janela modal */
-.modal-content i:hover {
+.modal-header i:hover {
     /* EQUALS .color-2nd */
     color: #A62900;
     cursor: pointer;
@@ -1044,8 +1044,8 @@ classe shaded precisam de um hover */
     }
 
     .modal-content {
-        min-width: 200px;
-        max-width: 300px;
+        min-width: 300px;
+        max-width: 350px;
     }
 
     .menu-button {
