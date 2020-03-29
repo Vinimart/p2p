@@ -351,6 +351,7 @@ li {
     /* EQUALS .color-inv */
     color: #FFFFFF;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Title bar com border-radius bottom = 0 */
@@ -360,12 +361,6 @@ li {
     /* EQUALS .color-inv */
     color: #FFFFFF;
     border-radius: 10px 10px 0 0;
-}
-
-/* Icone fa-chevron-up ou down, alinhado a direita */
-.title-bar-2 i,
-.title-bar i {
-    float: right;
     cursor: pointer;
 }
 
@@ -552,6 +547,11 @@ form .color-display {
     position: relative;
     top: 15px;
     cursor: pointer;
+}
+
+/* Title-bar sem cursor pointer (excessão) */
+form .title-bar {
+    cursor: initial;
 }
 
 
