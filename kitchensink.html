@@ -26,13 +26,37 @@
             <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
 
             <div class="centered spaced-below-1x">
-                <button class="btn padded-h-2x" onclick="hide(['idOverlayModalMsg']);">OK</button>
+                <button class="btn padded-h-2x" onclick="hide(['idOverlayModalMsg']);">
+                    <i class="fas fa-check">&nbsp;</i>
+                    <span>OK</span>
+                </button>
             </div>
 
         </div>
 
     </div>
     <!-- end: Modal Box -->
+
+    <!-- begin: Search Box -->
+    <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
+        onclick="hide(['idOverlayModalSearch']);">
+
+        <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+
+            <div class="flex-between padded-2x">
+                <input class="spaced-h-1x" type="search" name="" id="" placeholder="Search">
+
+                <span class="padded-1x" onclick="hide(['idOverlayModalSearch']);">
+                    <a href="#">
+                        <i class="fas fa-search fa-2x color-1st animate-1"></i>
+                    </a>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Search Box -->
 
     <!-- begin: Color Picker -->
     <div id="idOverlayModalColor" class="modal-overlay flex-center hide-element">
@@ -191,7 +215,7 @@
             <div class="centered spaced-v-1x">
                 <button class="btn-1x spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
                     <i class="fas fa-check">&nbsp;</i>
-                    <span>Save</span>
+                    <span>OK</span>
                 </button>
 
                 <button class="btn-1x spaced-h-1x" onclick="hide(['idOverlayModalColor']);">
@@ -329,7 +353,7 @@
 
             <div>
 
-                <a href="link-target.html">
+                <a href="#" onclick="show(['idOverlayModalSearch']);">
                     <i class="fas fa-search color-1st font-3x animate-1">&nbsp;</i>
                 </a>
 
@@ -703,18 +727,18 @@
                 <div class="flex-center spaced-v-3x">
 
                     <button class="btn spaced-around-1x">
-                        <span>Show All&nbsp;</span>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down">&nbsp;</i>
+                        <span>Show All</span>
                     </button>
 
                     <button class="btn spaced-around-1x">
-                        <span>Hide All&nbsp;</span>
-                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-up">&nbsp;</i>
+                        <span>Hide All</span>
                     </button>
 
                     <button class="btn spaced-around-1x"
                         onclick="showModalMsg('idOverlayModalMsg', 'idModalMsgText', 'Something went wrong.');">
-                        <span>Modal Test&nbsp;</span>
+                        <span>Modal Test</span>
                     </button>
 
                 </div>

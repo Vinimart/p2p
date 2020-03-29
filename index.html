@@ -11,7 +11,28 @@
     <title>Picture to People</title>
 </head>
 
-<body>
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+
+    <!-- begin: Search Box -->
+    <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
+        onclick="hide(['idOverlayModalSearch']);">
+
+        <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+
+            <div class="flex-between padded-2x">
+                <input class="spaced-h-1x" type="search" name="" id="" placeholder="Search">
+
+                <span class="padded-1x" onclick="hide(['idOverlayModalSearch']);">
+                    <a href="#">
+                        <i class="fas fa-search fa-2x color-1st animate-1"></i>
+                    </a>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Search Box -->
 
     <header class="index-header" style="background-image: url(ui/img/index-header-bg.png);">
 
@@ -32,7 +53,7 @@
 
             <div>
 
-                <a href="link-target.html">
+                <a href="#" onclick="show(['idOverlayModalSearch']);">
                     <i class="fas fa-search color-inv font-3x animate-1">&nbsp;</i>
                 </a>
 
@@ -377,7 +398,83 @@
 
     </footer>
 
-    <script src="ui/js/script.js"></script>
+    <script src="ui/js/main.js"></script>
+
+    <script>
+        function defInit() {
+
+            hide(['idOverlayPreloader']);
+
+            SelLists.newList('i1', 'idImageName', ['css-sel-img'], 'idViewImageName',
+                'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
+            SelLists.newList('i2', 'idRenderingStyle', ['css-sel-img'], '', '', '2');
+            SelLists.newList('i3', 'idModel3D', ['css-sel-img'], '', '', '1');
+            SelLists.newList('f1', 'idFontName', ['css-sel-img'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
+                'Brushed');
+            SelLists.newList('s1', 'idImgName1', ['css-sel-img'], '', '', 'abstract_003');
+            SelLists.newList('s2', 'idImgName2', ['css-sel-img'], '', '', 'abstract084_tlb');
+            SelLists.newList('s3', 'idImgName3', ['css-sel-img'], '', '', '3d_text_style6');
+
+            SelLists.newList('te1', 'idSelectedTextEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'abstract083');
+            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'photo_effect_002');
+
+
+            // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
+            /*
+            GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
+            				'<div class="css-block-center pad-small">' +
+            					'<img class="size-full size-max-very-small" src="/www/images/text/splash<<0>>_text_effect.jpg" />' +
+            					'<p>Text Effect <<0>></p>' +
+            				'</div>',
+            				'0', 3, ['idGrowList1ButtonContainer']);
+            */
+
+            // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
+            // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
+            // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
+            var itemsToGrow = randomSlice(
+                [
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
+                ], 5);
+            GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2,
+                '<div class="css-block-center pad-small">' +
+                '<a href="<<0>>">' +
+                '<img class="size-full size-max-very-small" src="<<1>>" />' +
+                '</a>' +
+                '<p><<2>></p>' +
+                '</div>',
+                '0', 3, ['idGrowList1ButtonContainer']);
+
+            DataChecker.setMsgElements('idOverlayModalMsg', 'idModalMsgText', 'idModalMsgTitle');
+            DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
+            DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>=', '15');
+        }
+
+        function defSubmit() {
+            show(['idOverlayPreloader']);
+            var _submit = function () {
+                document.FormMain.submit();
+            }
+            window.setTimeout(_submit, 500);
+        }
+    </script>
 
 </body>
 

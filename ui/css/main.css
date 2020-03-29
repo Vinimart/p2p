@@ -119,7 +119,7 @@ li {
 .modal-content {
     position: relative;
     min-width: 400px;
-    max-width: 700px;
+    max-width: 800px;
     animation-name: top-to-initial;
     animation-duration: 0.4s;
     /* EQUALS .color-inv */
@@ -133,6 +133,11 @@ li {
     /* EQUALS .color-2nd */
     color: #A62900;
     cursor: pointer;
+}
+
+/* Modal Search Box ocupa maior parte da tela do que uma modal comum */
+#idModalSearchWindow {
+    width: 90%;
 }
 
 
@@ -458,6 +463,7 @@ li {
 /* ----- Form ---- */
 
 input[type=text],
+input[type=search],
 select {
     text-align: left;
     width: 100%;
@@ -624,6 +630,7 @@ sobreposto a um elemento de cor clara */
 .bg-color-2nd {
     background-color: #F8F0E8;
 }
+
 
 
 
@@ -1017,6 +1024,12 @@ classe shaded precisam de um hover */
 /* ----- Media Queries ----- */
 
 @media (max-width: 1100px) {
+
+    .modal-content {
+        min-width: 350px;
+        max-width: 450px;
+    }
+
     .menu-main p {
         display: none;
     }
