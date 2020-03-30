@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ui/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="ui/css/main.css">
+    <title>Picture to People</title>
+</head>
+
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+
+    <!-- begin: Modal Box -->
+    <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
+
+        <div id="idModalMsgWindow" class="modal-content rounded-1x">
+
+            <div class="modal-header flex-between bg-color-1st padded-1x">
+                <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
+                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x"></i></span>
+            </div>
+
+            <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
+
+            <div class="centered spaced-below-1x">
+                <button class="btn padded-h-2x" onclick="hide(['idOverlayModalMsg']);">
+                    <i class="fas fa-check">&nbsp;</i>
+                    <span>OK</span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Modal Box -->
+
+    <!-- begin: Search Box -->
+    <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
+        onclick="hide(['idOverlayModalSearch']);">
+
+        <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+
+            <div class="flex-between padded-2x">
+                <input class="spaced-h-1x" type="search" name="" id="" placeholder="Search">
+
+                <span class="padded-1x" onclick="hide(['idOverlayModalSearch']);">
+                    <a href="#">
+                        <i class="fas fa-search fa-2x color-1st animate-1"></i>
+                    </a>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Search Box -->
+
+    <!-- begin: Color Picker -->
+    <div id="idOverlayModalColor" class="modal-overlay flex-center hide-element">
+
+        <div id="idModalColorWindow" class="modal-content rounded-1x">
+
+            <div class="modal-header flex-between bg-color-1st padded-1x">
+                <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
+                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x"></i></span>
+            </div>
+
+            <div class="flex-center spaced-v-1x">
+
+                <table class="color-table" id="idColorTable">
+                    <tr>
+                        <td style="background-color: #000000;"></td>
+                        <td style="background-color: #202020;"></td>
+                        <td style="background-color: #404040;"></td>
+                        <td style="background-color: #606060;"></td>
+                        <td style="background-color: #808080;"></td>
+                        <td style="background-color: #A0A0A0;"></td>
+                        <td style="background-color: #C0C0C0;"></td>
+                        <td style="background-color: #D0D0D0;"></td>
+                        <td style="background-color: #F0F0F0;"></td>
+                        <td style="background-color: #FFFFFF;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #400020;"></td>
+                        <td style="background-color: #600030;"></td>
+                        <td style="background-color: #800040;"></td>
+                        <td style="background-color: #A00050;"></td>
+                        <td style="background-color: #C00060;"></td>
+                        <td style="background-color: #E00070;"></td>
+                        <td style="background-color: #FF0080;"></td>
+                        <td style="background-color: #FF4080;"></td>
+                        <td style="background-color: #FF70A0;"></td>
+                        <td style="background-color: #FFA0D0;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #400000;"></td>
+                        <td style="background-color: #600000;"></td>
+                        <td style="background-color: #800000;"></td>
+                        <td style="background-color: #A00000;"></td>
+                        <td style="background-color: #C00000;"></td>
+                        <td style="background-color: #E00000;"></td>
+                        <td style="background-color: #FF0000;"></td>
+                        <td style="background-color: #FF4040;"></td>
+                        <td style="background-color: #FF9090;"></td>
+                        <td style="background-color: #FFC0C0;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #402000;"></td>
+                        <td style="background-color: #603000;"></td>
+                        <td style="background-color: #804000;"></td>
+                        <td style="background-color: #A05000;"></td>
+                        <td style="background-color: #C06000;"></td>
+                        <td style="background-color: #E07000;"></td>
+                        <td style="background-color: #FF8000;"></td>
+                        <td style="background-color: #FFA060;"></td>
+                        <td style="background-color: #FFC090;"></td>
+                        <td style="background-color: #FFE0B0;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #404000;"></td>
+                        <td style="background-color: #606000;"></td>
+                        <td style="background-color: #808000;"></td>
+                        <td style="background-color: #A0A000;"></td>
+                        <td style="background-color: #C0C000;"></td>
+                        <td style="background-color: #E0E000;"></td>
+                        <td style="background-color: #FFFF00;"></td>
+                        <td style="background-color: #FFFF80;"></td>
+                        <td style="background-color: #FFFFA0;"></td>
+                        <td style="background-color: #FFFFC0;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #004000;"></td>
+                        <td style="background-color: #006000;"></td>
+                        <td style="background-color: #008000;"></td>
+                        <td style="background-color: #00A000;"></td>
+                        <td style="background-color: #00C000;"></td>
+                        <td style="background-color: #00E000;"></td>
+                        <td style="background-color: #00FF00;"></td>
+                        <td style="background-color: #80FF80;"></td>
+                        <td style="background-color: #B0FFB0;"></td>
+                        <td style="background-color: #D0FFD0;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #004040;"></td>
+                        <td style="background-color: #006060;"></td>
+                        <td style="background-color: #008080;"></td>
+                        <td style="background-color: #00A0A0;"></td>
+                        <td style="background-color: #00C0C0;"></td>
+                        <td style="background-color: #00E0E0;"></td>
+                        <td style="background-color: #00FFFF;"></td>
+                        <td style="background-color: #80FFFF;"></td>
+                        <td style="background-color: #B0FFFF;"></td>
+                        <td style="background-color: #D0FFFF;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #002040;"></td>
+                        <td style="background-color: #003060;"></td>
+                        <td style="background-color: #004080;"></td>
+                        <td style="background-color: #0050A0;"></td>
+                        <td style="background-color: #0060C0;"></td>
+                        <td style="background-color: #0070E0;"></td>
+                        <td style="background-color: #0080FF;"></td>
+                        <td style="background-color: #60A0FF;"></td>
+                        <td style="background-color: #90D0FF;"></td>
+                        <td style="background-color: #C0E0FF;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #000040;"></td>
+                        <td style="background-color: #000060;"></td>
+                        <td style="background-color: #000080;"></td>
+                        <td style="background-color: #0000A0;"></td>
+                        <td style="background-color: #0000C0;"></td>
+                        <td style="background-color: #0000E0;"></td>
+                        <td style="background-color: #0000FF;"></td>
+                        <td style="background-color: #4040FF;"></td>
+                        <td style="background-color: #9090FF;"></td>
+                        <td style="background-color: #C0C0FF;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #200040;"></td>
+                        <td style="background-color: #300060;"></td>
+                        <td style="background-color: #400080;"></td>
+                        <td style="background-color: #5000A0;"></td>
+                        <td style="background-color: #6000C0;"></td>
+                        <td style="background-color: #7000E0;"></td>
+                        <td style="background-color: #8000FF;"></td>
+                        <td style="background-color: #A040FF;"></td>
+                        <td style="background-color: #D090FF;"></td>
+                        <td style="background-color: #E0C0FF;"></td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #400040;"></td>
+                        <td style="background-color: #600060;"></td>
+                        <td style="background-color: #800080;"></td>
+                        <td style="background-color: #A000A0;"></td>
+                        <td style="background-color: #C000C0;"></td>
+                        <td style="background-color: #E000E0;"></td>
+                        <td style="background-color: #FF00FF;"></td>
+                        <td style="background-color: #FF60FF;"></td>
+                        <td style="background-color: #FF90FF;"></td>
+                        <td style="background-color: #FFC0FF;"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="flex-between spaced-around-2x">
+                <input type="text" name="BackColor" id="idBackColor" placeholder="#FF8000" style="width: 80%;">
+                <div class="color-display img-circle" title="Color Preview"></div>
+            </div>
+
+            <div class="centered spaced-v-1x">
+                <button class="btn-1x spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
+                    <i class="fas fa-check">&nbsp;</i>
+                    <span>OK</span>
+                </button>
+
+                <button class="btn-1x spaced-h-1x" onclick="hide(['idOverlayModalColor']);">
+                    <i class="fas fa-times">&nbsp;</i>
+                    <span>Cancel</span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Color Picker -->
+
+    <!-- begin: Side Nav -->
+    <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
+        onclick="hide(['idOverlayMainSideMenuFlow']);">
+
+        <div id="idMainSideMenuFlow" class="sidenav-content" onclick="stopProp(event);">
+
+            <div class="flex-between padded-1x">
+                <span class="font-3x bold">General</span>
+                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i class="fas fa-times fa-2x"></i></span>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Text Logos</p>
+                </a>
+            </div>
+
+            <div class="hoverable spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Frames</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Photo Effects</p>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Sketch</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Painting</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Cartoon</p>
+                </a>
+            </div>
+
+            <div class="hoverable spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Retro</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Text Effects</p>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Side Nav -->
+
+    <nav>
+
+        <!-- begin: Barra de Menu Principal -->
+        <div class="menu-main flex-between padded-h-1x bg-right-bottom shaded"
+            style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
+
+            <a class="flex-between text-shaded" href="index.html">
+                <img class="img-1x rounded-1x" src="ui/img/p2p-logo.png" alt="Picture to People Logo">
+                <span class="font-3x color-inv">&nbsp;&nbsp;Picture to People</span>
+            </a>
+
+            <p class="color-inv italic">World's biggest source of free online graphic design software</p>
+
+            <button class="flex-between menu-button" onclick="show(['idOverlayMainSideMenuFlow']);">
+                <i class="fas fa-bars fa-2x">&nbsp;</i>
+                <span>Design Tools</span>
+            </button>
+
+        </div>
+        <!-- end: Barra de Menu Principal -->
+
+        <!-- begin: Barra de Menu Secundario -->
+        <div class="flex-between padded-1x">
+
+            <div>
+
+                <a href="link-target.html">
+                    <i class="fab fa-facebook color-2nd font-3x animate-1">&nbsp;</i>
+                </a>
+
+                <a href="link-target.html">
+                    <i class="fab fa-twitter color-2nd font-3x animate-1"></i>
+                </a>
+
+            </div>
+
+            <div>
+
+                <a href="#" onclick="show(['idOverlayModalSearch']);">
+                    <i class="fas fa-search color-1st font-3x animate-1">&nbsp;</i>
+                </a>
+
+                <a href="link-target.html">
+                    <i class="fas fa-question-circle color-1st font-3x animate-1"></i>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- end: Barra de Menu Secundario -->
+
+    </nav>
+
+    <header class="padded-h-2x">
+
+        <!-- begin: Titulo e Subtitulo -->
+        <div class="centered spaced-below-2x">
+            <h1 class="title bold spaced-below-1x">Online Text Logo Design Generators</h1>
+            <p class="font-3x">Our Main Online Text Effect Editors</p>
+        </div>
+        <!-- end: Titulo e Subtitulo -->
+
+        <hr class="ruler limiter">
+
+        <div class="spaced-below-2x"></div>
+
+    </header>
+
+    <main class="bg-bottom" style="background-image: url(ui/img/main-bg.png);">
+
+        <!-- begin: Container Principal max-width: 1600px -->
+        <div class="flex-around limiter">
+
+            <!-- begin: Coluna Principal -->
+            <div class="column-main padded-h-2x">
+
+                <!-- begin: Descricao do Efeito -->
+                <div class="spaced-below-3x">
+                    <p class="justified spaced-below-2x">
+                        See below our main online text effect editors. Each text logo generator (or group of generators)
+                        has at least one example image, so you have a basic idea about the style of text design it can
+                        create.
+                    </p>
+
+                    <p class="justified">
+                        Most of these online text effect makers are versatile and can be configured in many different
+                        ways, creating a lot of cool text effects, text designs, text logos, text banners or whatever
+                        you need.
+                    </p>
+                </div>
+                <!-- end: Descricao do Efeito -->
+
+                <!-- begin: Categorias de Efeito -->
+                <div>
+
+                    <div>
+                        <div class="flex-around centered two-columns">
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/professional_special_material_text_effects.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Realistic 3D Text Logo
+                                        Generators</a>
+                                </p>
+
+                                <p>
+                                    It's the most complete collection of free professional realistic 3D text logo
+                                    creators
+                                    ever
+                                    published online. There are <strong>more than 1350 first class text logo
+                                        makers</strong>
+                                    covering more than
+                                    35 themes. These great online text generators render astonishingly realistic
+                                    graphics
+                                    and
+                                    all of them have the option to create 3D text effects with transparent backgrounds,
+                                    so
+                                    they
+                                    can be used to make any composition you can imagine. You can see a list of all text
+                                    logo
+                                    themes at the <a href="kitchensink.html" class="color-link">Realistic 3D Text Logo
+                                        Generators</a> index page.
+                                </p>
+                            </div>
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/realistic_engraved_text_effect_1.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Realistic Carved Text Effect
+                                        Generators</a>
+                                </p>
+
+                                <p>
+                                    It's the biggest and best set of free realistic carved text effect makers ever
+                                    released online. Here you have for free <strong>more than 940 world class text
+                                        effects</strong>. All
+                                    these advanced text renderers can, among many other features, make text effects with
+                                    transparent background (it's specially useful when selecting rounded corners), so
+                                    they are perfect to create images ready for any composition you can need. You can
+                                    see a complete list of all text effect themes at the <a href="kitchensink.html"
+                                        class="color-link">Realistic Carved Text Effect
+                                        Generators</a> index page.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex-around centered two-columns">
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/realistic-bevel-text-effect-logo-1.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Bevel Text Effect Logo Makers</a>
+                                </p>
+
+                                <p>
+                                    Use the <a href="kitchensink.html" class="color-link">Beveled Text Effect
+                                        Creators</a> to generate the best bevel text logos with
+                                    customized design and transparent background.
+                                </p>
+                            </div>
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x" src="ui/img/graffiti_text1.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">3D Graffiti Text Effect Creator</a>
+                                </p>
+
+                                <p>
+                                    The most professional software ever created to generate graffiti texts. You can get
+                                    astonishing realistic results: it's like if you had really painted the images on
+                                    that walls in real life. Come to get the more impressive graffiti effects by using
+                                    our <a href="kitchensink.html" class="color-link">3D Graffiti Text Effect
+                                        Creator</a>.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex-around centered two-columns">
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/long-shadow-text-effect-logo.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Long Shadow Text Logo Creator</a>
+                                </p>
+
+                                <p>
+                                    This <a href="kitchensink.html" class="color-link">Long Shadow Text Effect
+                                        Designer</a> can create several styles of long shadow text
+                                    logos very easily.
+                                </p>
+                            </div>
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/3d-glitter-text-effect-logo.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Glitter Text Effect Generators</a>
+                                </p>
+
+                                <p>
+                                    This <a href="kitchensink.html" class="color-link">Glitter Text Effect Logo
+                                        Maker</a> app creates the best glitter text effects for
+                                    you easily. You don't need to have design skills.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex-around centered two-columns">
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/futuristic-sci-fi-text-logo-effect.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Sci-Fi Text Effect Logo
+                                        Generator</a>
+                                </p>
+
+                                <p>
+                                    Use this <a href="kitchensink.html" class="color-link">Sci-Fi Text Effect
+                                        Generator</a> app to create cool shiny high-tech logos that
+                                    look realistic and can have a transparent background.
+                                </p>
+                            </div>
+
+                            <div class="spaced-v-3x padded-h-2x">
+                                <a href="kitchensink.html">
+                                    <img class="spaced-below-1x img-height-2x"
+                                        src="ui/img/realistic-hair-text-logo-effect.jpg">
+                                </a>
+
+                                <p class="font-3x bold spaced-v-1x">
+                                    <a class="color-default" href="kitchensink.html">Hair Text Logo Effect
+                                        Generators</a>
+                                </p>
+
+                                <p>
+                                    Use our <a href="kitchensink.html" class="color-link">Hair Text Effect Creators</a>
+                                    to design top realistic hair logos, words, names,
+                                    letters or whatever you need.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="spaced-below-3x">&nbsp;</div>
+
+                    <div class="centered">
+                        <button class="btn spaced-around-1x">
+                            <i class="fas fa-chevron-down">&nbsp;</i>
+                            <span>Show All</span>
+                        </button>
+                    </div>
+
+                </div>
+                <!-- end: Categorias de Efeito -->
+
+            </div>
+            <!-- end: Coluna Principal -->
+
+
+            <!-- begin: Coluna Secundaria -->
+            <div class="column-2nd padded-h-1x">
+
+                <!-- begin: Popular Graphic Design Apps -->
+                <div class="centered spaced-below-3x">
+
+                    <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
+
+                    <div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects1.jpg">
+                                <p class="color-default">Textured 3D Effects</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects2.jpg">
+                                <p class="color-default">Page Curl</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects3.jpg">
+                                <p class="color-default">Photo Sticker</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects4.jpg">
+                                <p class="color-default">3D Graffiti</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects5.jpg">
+                                <p class="color-default">Grunge Photo</p>
+                            </a>
+                        </div>
+
+                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                            <a href="link-target.html">
+                                <img src="ui/img/pop_effects6.jpg">
+                                <p class="color-default">Beveled Texts</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end: Popular Graphic Design Apps -->
+
+                <!-- begin: Recommended Effects -->
+                <div class="centered">
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-pencil-alt fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">See our sketch and<br>drawing photo effects.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-user-circle fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Try our impressive<br>cartoon photo effects.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-cube fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Know our most used<br>free 3D effect apps.</a></p>
+
+                    </div>
+
+                    <div class="in-block-display spaced-around-2x">
+
+                        <div class="spaced-below-1x">
+                            <a class="round-container flex-center animate-2" href="link-target.html">
+                                <i class="fas fa-font fa-7x"></i>
+                            </a>
+                        </div>
+
+                        <p><a href="link-target.html">Use our most popular<br>text logo generators.</a></p>
+
+                    </div>
+
+                </div>
+                <!-- end: Recommended Effects -->
+
+            </div>
+            <!-- end: Coluna Secundaria -->
+
+        </div>
+        <!-- end: Container Principal max-width: 1600px -->
+
+    </main>
+
+    <footer class="centered padded-2x bg-right-bottom"
+        style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
+
+        <!-- begin: Footer Menu -->
+        <div class="footer-nav flex-around">
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">PROJECT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">About P2P</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Terms of Service</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Advertise</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Contact Us</a></p>
+            </div>
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">SUPPORT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">How to Use</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Get Help</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Tips & Tricks</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Extra Services</a></p>
+            </div>
+
+            <div class="spaced-below-2x">
+                <p class="color-inv font-3x spaced-below-1x">DEVELOPMENT</p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Guidelines</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Maccala Library</a></p>
+
+                <p class="spaced-below-1x"><a class="color-3rd" href="link-target.html">Pixsycho Library</a></p>
+
+                <p><a class="color-3rd" href="link-target.html">Researches</a></p>
+            </div>
+
+        </div>
+        <!-- end: Footer Menu -->
+
+        <div class="spaced-below-2x">
+            <p class="color-inv padded-h-2x">
+                The images created or modified by using Picture to People site can be used for any purpose (free,
+                personal or commercial) under a license similar to Creative Commons. It means you must provide the
+                proper credits to Picture to People Project (www.picturetopeople.org). Exceptions apply if you are a
+                subscriber. For further information, read our <a class="color-3rd" href="link-target.html">Terms of
+                    Service</a>.
+            </p>
+        </div>
+
+        <div>
+            <a href="link-target.html"><i class="fab fa-facebook fa-2x color-inv animate-1">&nbsp;</i></a>
+            <a href="link-target.html"><i class="fab fa-twitter fa-2x color-inv animate-1"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="ui/js/main.js"></script>
+    <script>
+        function defInit() {
+
+            hide(['idOverlayPreloader']);
+
+            SelLists.newList('i1', 'idImageName', ['css-sel-img'], 'idViewImageName',
+                'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
+            SelLists.newList('i2', 'idRenderingStyle', ['css-sel-img'], '', '', '2');
+            SelLists.newList('i3', 'idModel3D', ['css-sel-img'], '', '', '1');
+            SelLists.newList('f1', 'idFontName', ['css-sel-img'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
+                'Brushed');
+            SelLists.newList('s1', 'idImgName1', ['css-sel-img'], '', '', 'abstract_003');
+            SelLists.newList('s2', 'idImgName2', ['css-sel-img'], '', '', 'abstract084_tlb');
+            SelLists.newList('s3', 'idImgName3', ['css-sel-img'], '', '', '3d_text_style6');
+
+            SelLists.newList('te1', 'idSelectedTextEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'abstract083');
+            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+                'photo_effect_002');
+
+
+            // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
+            /*
+            GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
+            				'<div class="css-block-center pad-small">' +
+            					'<img class="size-full size-max-very-small" src="/www/images/text/splash<<0>>_text_effect.jpg" />' +
+            					'<p>Text Effect <<0>></p>' +
+            				'</div>',
+            				'0', 3, ['idGrowList1ButtonContainer']);
+            */
+
+            // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
+            // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
+            // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
+            var itemsToGrow = randomSlice(
+                [
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
+                    '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
+                    '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
+                    '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
+                    '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
+                ], 5);
+            GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2,
+                '<div class="css-block-center pad-small">' +
+                '<a href="<<0>>">' +
+                '<img class="size-full size-max-very-small" src="<<1>>" />' +
+                '</a>' +
+                '<p><<2>></p>' +
+                '</div>',
+                '0', 3, ['idGrowList1ButtonContainer']);
+
+            DataChecker.setMsgElements('idOverlayModalMsg', 'idModalMsgText', 'idModalMsgTitle');
+            DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
+            DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
+            DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
+            DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>=', '15');
+        }
+
+        function defSubmit() {
+            show(['idOverlayPreloader']);
+            var _submit = function () {
+                document.FormMain.submit();
+            }
+            window.setTimeout(_submit, 500);
+        }
+    </script>
+
+</body>
+
+</html>

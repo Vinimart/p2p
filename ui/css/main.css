@@ -451,6 +451,11 @@ li {
     background-color: #FF8000;
 }
 
+.two-columns div {
+    flex-basis: 50%;
+}
+
+
 
 
 
@@ -761,6 +766,10 @@ sobreposto a um elemento de cor clara */
 
 .img-2x {
     width: 180px;
+}
+
+.img-height-2x {
+    height: 180px;
 }
 
 .rounded-1x {
