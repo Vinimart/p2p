@@ -1056,6 +1056,10 @@ classe shaded precisam de um hover */
     .column-2nd {
         width: 100%;
     }
+
+    .img-height-2x {
+        height: auto;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1100,8 +1104,7 @@ classe shaded precisam de um hover */
     }
 
     /* Tamanho maximo para imagens de componente para não quebrar o layout no mobile */
-    .comp-show-some img,
-    .comp-show-all img {
+    img {
         max-width: 250px;
     }
 
