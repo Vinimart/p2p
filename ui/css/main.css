@@ -1084,7 +1084,7 @@ classe shaded precisam de um hover */
 
     /* Tamanho maximo para imagens de componente para não quebrar o layout no mobile */
     img {
-        max-width: 250px;
+        max-width: 95%;
     }
 
     /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
