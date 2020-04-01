@@ -43,14 +43,20 @@
 
         <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
 
-            <div class="flex-between padded-2x">
-                <input class="spaced-h-1x" type="search" name="" id="" placeholder="Search">
+            <div class="modal-header flex-between bg-color-1st padded-1x">
+                <span id="idModalMsgTitle" class="font-3x bold">Search</span>
+                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x"></i></span>
+            </div>
 
-                <span class="padded-1x" onclick="hide(['idOverlayModalSearch']);">
-                    <a href="#">
-                        <i class="fas fa-search fa-2x color-1st animate-1"></i>
-                    </a>
-                </span>
+            <div class="spaced-around-2x">
+                <input type="search" name="" id="" placeholder="Search">
+            </div>
+
+            <div class="centered spaced-below-1x">
+                <button class="btn-1x padded-h-2x" onclick="hide(['idOverlayModalSearch']);">
+                    <i class="fas fa-search">&nbsp;</i>
+                    <span>Search</span>
+                </button>
             </div>
 
         </div>
