@@ -286,7 +286,7 @@ li {
 .comp-scroll img {
     /* EQUALS .color-inv */
     border: solid 5px #FFFFFF;
-    max-width: 190px;
+    max-width: 200px;
 }
 
 /* Componentes de listas */
@@ -312,20 +312,24 @@ li {
     border: 2px solid #FFFFFF;
 }
 
-/* to delete */
-.list-comp-2x:hover {
+/* Selecao de item de componente com imagens */
+.sel-item {
     /* EQUALS .color-2nd */
-    border-color: #A62900;
+    background-color: #A62900;
+}
+
+/* Altera a cor do label do item de componente selecionado */
+.sel-item p {
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
+.sel-list-item {
+    border-color: #A62900!important;
 }
 
 /* to delete */
 .list-comp-1x:hover {
-    /* EQUALS .color-2nd */
-    border-color: #A62900;
-}
-
-/* to delete */
-.comp-scroll img:hover {
     /* EQUALS .color-2nd */
     border-color: #A62900;
 }
@@ -351,6 +355,11 @@ li {
 }
 
 /* Necessario para elementos que exigem um background-color em estado hover */
+.hoverable {
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
+}
+
 .hoverable:hover {
     /* EQUALS .color-4th */
     background-color: #CCCCCC;
