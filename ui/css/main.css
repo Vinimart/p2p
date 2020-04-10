@@ -325,11 +325,13 @@ li {
 }
 
 .sel-list-item {
-    border-color: #A62900!important;
+    border-color: #A62900 !important;
 }
 
 /* to delete */
-.list-comp-1x:hover {
+.list-comp-1x:hover,
+.list-comp-2x:hover,
+.comp-scroll img:hover {
     /* EQUALS .color-2nd */
     border-color: #A62900;
 }
