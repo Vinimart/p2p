@@ -13,22 +13,13 @@
 
 <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
+    <!-- begin: Preloader -->
     <div id="idOverlayPreloader" class="flex-center">
-        <div class="preloader">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div>
+            <img src="ui/img/three-dots.svg">
         </div>
     </div>
+    <!-- end: Preloader -->
 
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
@@ -3202,33 +3193,61 @@
 
                         <!-- begin: Componente com imagens -->
                         <div class="spaced-v-2x">
+                            <input type="hidden" name="SelectedIcon3dModel" id="idSelectedIcon3dModel" value="">
+
                             <p class="spaced-below-1x">Select a 3D model :</p>
+
                             <div class="comp-scroll">
-                                <img src="ui/comp/img/icon_3d_model_01.gif">
-                                <img src="ui/comp/img/icon_3d_model_02.gif">
-                                <img src="ui/comp/img/icon_3d_model_03.gif">
-                                <img src="ui/comp/img/icon_3d_model_04.gif">
-                                <img src="ui/comp/img/icon_3d_model_05.gif">
-                                <img src="ui/comp/img/icon_3d_model_06.gif">
-                                <img src="ui/comp/img/icon_3d_model_07.gif">
-                                <img src="ui/comp/img/icon_3d_model_08.gif">
-                                <img src="ui/comp/img/icon_3d_model_09.gif">
-                                <img src="ui/comp/img/icon_3d_model_10.gif">
-                                <img src="ui/comp/img/icon_3d_model_11.gif">
-                                <img src="ui/comp/img/icon_3d_model_12.gif">
-                                <img src="ui/comp/img/icon_3d_model_13.gif">
-                                <img src="ui/comp/img/icon_3d_model_14.gif">
-                                <img src="ui/comp/img/icon_3d_model_15.gif">
-                                <img src="ui/comp/img/icon_3d_model_16.gif">
-                                <img src="ui/comp/img/icon_3d_model_17.gif">
-                                <img src="ui/comp/img/icon_3d_model_18.gif">
-                                <img src="ui/comp/img/icon_3d_model_19.gif">
-                                <img src="ui/comp/img/icon_3d_model_20.gif">
-                                <img src="ui/comp/img/icon_3d_model_21.gif">
-                                <img src="ui/comp/img/icon_3d_model_22.gif">
-                                <img src="ui/comp/img/icon_3d_model_23.gif">
-                                <img src="ui/comp/img/icon_3d_model_24.gif">
-                                <img src="ui/comp/img/icon_3d_model_25.gif">
+                                <img id="icon_3d_model.01" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_01.gif">
+                                <img id="icon_3d_model.02" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_02.gif">
+                                <img id="icon_3d_model.03" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_03.gif">
+                                <img id="icon_3d_model.04" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_04.gif">
+                                <img id="icon_3d_model.05" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_05.gif">
+                                <img id="icon_3d_model.06" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_06.gif">
+                                <img id="icon_3d_model.07" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_07.gif">
+                                <img id="icon_3d_model.08" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_08.gif">
+                                <img id="icon_3d_model.09" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_09.gif">
+                                <img id="icon_3d_model.10" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_10.gif">
+                                <img id="icon_3d_model.11" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_11.gif">
+                                <img id="icon_3d_model.12" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_12.gif">
+                                <img id="icon_3d_model.13" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_13.gif">
+                                <img id="icon_3d_model.14" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_14.gif">
+                                <img id="icon_3d_model.15" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_15.gif">
+                                <img id="icon_3d_model.16" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_16.gif">
+                                <img id="icon_3d_model.17" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_17.gif">
+                                <img id="icon_3d_model.18" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_18.gif">
+                                <img id="icon_3d_model.19" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_19.gif">
+                                <img id="icon_3d_model.20" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_20.gif">
+                                <img id="icon_3d_model.21" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_21.gif">
+                                <img id="icon_3d_model.22" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_22.gif">
+                                <img id="icon_3d_model.23" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_23.gif">
+                                <img id="icon_3d_model.24" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_24.gif">
+                                <img id="icon_3d_model.25" onclick="SelLists.change(this.id);"
+                                    src="ui/comp/img/icon_3d_model_25.gif">
                             </div>
                         </div>
                         <!-- end: Componente com imagens -->
@@ -5246,18 +5265,29 @@
 
             SelLists.newList('i1', 'idImageName', ['sel-list-item'], 'idViewImageName',
                 'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
+
             SelLists.newList('i2', 'idRenderingStyle', ['sel-list-item'], '', '', '1');
+
             SelLists.newList('i3', 'idModel3D', ['sel-list-item'], '', '', '1');
+
             SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
                 '01 Digit');
+
             SelLists.newList('s1', 'idImgName1', ['sel-list-item'], '', '', 'abstract_003');
+
             SelLists.newList('s2', 'idImgName2', ['sel-list-item'], '', '', 'abstract084_tlb');
+
             SelLists.newList('s3', 'idImgName3', ['sel-list-item'], '', '', '3d_text_style1');
 
             SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable', 'sel-item'], '', '',
                 'abstract083');
+
             SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable', 'sel-item'], '', '',
                 'lomo-photo-effect_001');
+
+            SelLists.newList('icon_3d_model', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', '01');
+
+
 
 
             // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
