@@ -13,6 +13,23 @@
 
 <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
+    <div id="idOverlayPreloader" class="flex-center">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
@@ -68,177 +85,6 @@
 
     </div>
     <!-- end: Search Box -->
-
-    <!-- begin: Color Picker -->
-    <div id="idOverlayModalColor" class="modal-overlay flex-center hide-element">
-
-        <div id="idModalColorWindow" class="modal-content rounded-1x">
-
-            <div class="modal-header flex-between bg-color-1st padded-1x">
-                <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
-                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x"></i></span>
-            </div>
-
-            <div class="flex-center spaced-v-1x">
-
-                <table class="color-table" id="idColorTable">
-                    <tr>
-                        <td style="background-color: #000000;"></td>
-                        <td style="background-color: #202020;"></td>
-                        <td style="background-color: #404040;"></td>
-                        <td style="background-color: #606060;"></td>
-                        <td style="background-color: #808080;"></td>
-                        <td style="background-color: #A0A0A0;"></td>
-                        <td style="background-color: #C0C0C0;"></td>
-                        <td style="background-color: #D0D0D0;"></td>
-                        <td style="background-color: #F0F0F0;"></td>
-                        <td style="background-color: #FFFFFF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400020;"></td>
-                        <td style="background-color: #600030;"></td>
-                        <td style="background-color: #800040;"></td>
-                        <td style="background-color: #A00050;"></td>
-                        <td style="background-color: #C00060;"></td>
-                        <td style="background-color: #E00070;"></td>
-                        <td style="background-color: #FF0080;"></td>
-                        <td style="background-color: #FF4080;"></td>
-                        <td style="background-color: #FF70A0;"></td>
-                        <td style="background-color: #FFA0D0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400000;"></td>
-                        <td style="background-color: #600000;"></td>
-                        <td style="background-color: #800000;"></td>
-                        <td style="background-color: #A00000;"></td>
-                        <td style="background-color: #C00000;"></td>
-                        <td style="background-color: #E00000;"></td>
-                        <td style="background-color: #FF0000;"></td>
-                        <td style="background-color: #FF4040;"></td>
-                        <td style="background-color: #FF9090;"></td>
-                        <td style="background-color: #FFC0C0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #402000;"></td>
-                        <td style="background-color: #603000;"></td>
-                        <td style="background-color: #804000;"></td>
-                        <td style="background-color: #A05000;"></td>
-                        <td style="background-color: #C06000;"></td>
-                        <td style="background-color: #E07000;"></td>
-                        <td style="background-color: #FF8000;"></td>
-                        <td style="background-color: #FFA060;"></td>
-                        <td style="background-color: #FFC090;"></td>
-                        <td style="background-color: #FFE0B0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #404000;"></td>
-                        <td style="background-color: #606000;"></td>
-                        <td style="background-color: #808000;"></td>
-                        <td style="background-color: #A0A000;"></td>
-                        <td style="background-color: #C0C000;"></td>
-                        <td style="background-color: #E0E000;"></td>
-                        <td style="background-color: #FFFF00;"></td>
-                        <td style="background-color: #FFFF80;"></td>
-                        <td style="background-color: #FFFFA0;"></td>
-                        <td style="background-color: #FFFFC0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #004000;"></td>
-                        <td style="background-color: #006000;"></td>
-                        <td style="background-color: #008000;"></td>
-                        <td style="background-color: #00A000;"></td>
-                        <td style="background-color: #00C000;"></td>
-                        <td style="background-color: #00E000;"></td>
-                        <td style="background-color: #00FF00;"></td>
-                        <td style="background-color: #80FF80;"></td>
-                        <td style="background-color: #B0FFB0;"></td>
-                        <td style="background-color: #D0FFD0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #004040;"></td>
-                        <td style="background-color: #006060;"></td>
-                        <td style="background-color: #008080;"></td>
-                        <td style="background-color: #00A0A0;"></td>
-                        <td style="background-color: #00C0C0;"></td>
-                        <td style="background-color: #00E0E0;"></td>
-                        <td style="background-color: #00FFFF;"></td>
-                        <td style="background-color: #80FFFF;"></td>
-                        <td style="background-color: #B0FFFF;"></td>
-                        <td style="background-color: #D0FFFF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #002040;"></td>
-                        <td style="background-color: #003060;"></td>
-                        <td style="background-color: #004080;"></td>
-                        <td style="background-color: #0050A0;"></td>
-                        <td style="background-color: #0060C0;"></td>
-                        <td style="background-color: #0070E0;"></td>
-                        <td style="background-color: #0080FF;"></td>
-                        <td style="background-color: #60A0FF;"></td>
-                        <td style="background-color: #90D0FF;"></td>
-                        <td style="background-color: #C0E0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #000040;"></td>
-                        <td style="background-color: #000060;"></td>
-                        <td style="background-color: #000080;"></td>
-                        <td style="background-color: #0000A0;"></td>
-                        <td style="background-color: #0000C0;"></td>
-                        <td style="background-color: #0000E0;"></td>
-                        <td style="background-color: #0000FF;"></td>
-                        <td style="background-color: #4040FF;"></td>
-                        <td style="background-color: #9090FF;"></td>
-                        <td style="background-color: #C0C0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #200040;"></td>
-                        <td style="background-color: #300060;"></td>
-                        <td style="background-color: #400080;"></td>
-                        <td style="background-color: #5000A0;"></td>
-                        <td style="background-color: #6000C0;"></td>
-                        <td style="background-color: #7000E0;"></td>
-                        <td style="background-color: #8000FF;"></td>
-                        <td style="background-color: #A040FF;"></td>
-                        <td style="background-color: #D090FF;"></td>
-                        <td style="background-color: #E0C0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400040;"></td>
-                        <td style="background-color: #600060;"></td>
-                        <td style="background-color: #800080;"></td>
-                        <td style="background-color: #A000A0;"></td>
-                        <td style="background-color: #C000C0;"></td>
-                        <td style="background-color: #E000E0;"></td>
-                        <td style="background-color: #FF00FF;"></td>
-                        <td style="background-color: #FF60FF;"></td>
-                        <td style="background-color: #FF90FF;"></td>
-                        <td style="background-color: #FFC0FF;"></td>
-                    </tr>
-                </table>
-
-            </div>
-
-            <div class="flex-between spaced-around-2x">
-                <input type="text" name="BackColor" id="idBackColor" placeholder="#FF8000" style="width: 80%;">
-                <div class="color-display img-circle" title="Color Preview"></div>
-            </div>
-
-            <div class="centered spaced-v-1x">
-                <button class="btn-1x spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
-                    <i class="fas fa-check">&nbsp;</i>
-                    <span>OK</span>
-                </button>
-
-                <button class="btn-1x spaced-h-1x" onclick="hide(['idOverlayModalColor']);">
-                    <i class="fas fa-times">&nbsp;</i>
-                    <span>Cancel</span>
-                </button>
-            </div>
-
-        </div>
-
-    </div>
-    <!-- end: Color Picker -->
 
     <!-- begin: Side Nav -->
     <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
@@ -808,36 +654,27 @@
     </footer>
 
     <script src="ui/js/main.js"></script>
+
     <script>
         function defInit() {
 
             hide(['idOverlayPreloader']);
 
-            SelLists.newList('i1', 'idImageName', ['css-sel-img'], 'idViewImageName',
+            SelLists.newList('i1', 'idImageName', ['sel-list-item'], 'idViewImageName',
                 'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
-            SelLists.newList('i2', 'idRenderingStyle', ['css-sel-img'], '', '', '2');
-            SelLists.newList('i3', 'idModel3D', ['css-sel-img'], '', '', '1');
-            SelLists.newList('f1', 'idFontName', ['css-sel-img'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
-                'Brushed');
-            SelLists.newList('s1', 'idImgName1', ['css-sel-img'], '', '', 'abstract_003');
-            SelLists.newList('s2', 'idImgName2', ['css-sel-img'], '', '', 'abstract084_tlb');
-            SelLists.newList('s3', 'idImgName3', ['css-sel-img'], '', '', '3d_text_style6');
+            SelLists.newList('i2', 'idRenderingStyle', ['sel-list-item'], '', '', '1');
+            SelLists.newList('i3', 'idModel3D', ['sel-list-item'], '', '', '1');
+            SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
+                '01 Digit');
+            SelLists.newList('s1', 'idImgName1', ['sel-list-item'], '', '', 'abstract_003');
+            SelLists.newList('s2', 'idImgName2', ['sel-list-item'], '', '', 'abstract084_tlb');
+            SelLists.newList('s3', 'idImgName3', ['sel-list-item'], '', '', '3d_text_style1');
 
-            SelLists.newList('te1', 'idSelectedTextEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
+            SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable', 'sel-item'], '', '',
                 'abstract083');
-            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['color-brightest-hoverable', 'color-list-select'], '', '',
-                'photo_effect_002');
+            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable', 'sel-item'], '', '',
+                'lomo-photo-effect_001');
 
-
-            // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
-            /*
-            GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
-            				'<div class="css-block-center pad-small">' +
-            					'<img class="size-full size-max-very-small" src="/www/images/text/splash<<0>>_text_effect.jpg" />' +
-            					'<p>Text Effect <<0>></p>' +
-            				'</div>',
-            				'0', 3, ['idGrowList1ButtonContainer']);
-            */
 
             // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
             // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
