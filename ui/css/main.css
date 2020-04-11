@@ -84,7 +84,7 @@ li {
     top: 0;
     right: 0;
     /* EQUALS .color-inv */
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     overflow-x: hidden;
     animation-name: right-to-initial;
     animation-duration: 0.4s;
