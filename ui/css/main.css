@@ -35,27 +35,12 @@ li {
 
 
 
-/* ----- Preloader ----- */
-
-#idOverlayPreloader {
-    position: fixed;
-    z-index: 30;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-
-
-
-
 /* ----- Side Nav ----- */
 
 /* Overlay para o side nav, ocupa 100% da pagina */
 .sidenav-overlay {
     position: fixed;
-    z-index: 1;
+    z-index: 20;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -87,12 +72,27 @@ li {
 
 
 
+/* ----- Preloader ----- */
+
+#idOverlayPreloader {
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
 /* ----- Modal Box ----- */
 
 /* Overlay para o modal box, ocupa 100% da pagina */
 .modal-overlay {
     position: fixed;
-    z-index: 2;
+    z-index: 40;
     left: 0;
     top: 0;
     width: 100%;
@@ -339,6 +339,7 @@ li {
 }
 
 .sel-list-item {
+    /* EQUALS .color-2nd */
     border-color: #A62900 !important;
 }
 
