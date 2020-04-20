@@ -198,51 +198,6 @@ li {
     margin-bottom: 30px;
 }
 
-/* Container com display flex para espacamento homogeneo entre os elementos */
-.flex-around {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* Container com display flex para criar espacamento entre os elementos */
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Container com display flex para elementos centralizados */
-.flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Container com display inline-block */
-.in-block-display {
-    display: inline-block;
-    /* to delete */
-    padding: 5px;
-}
-
-.inline-display {
-    display: inline;
-}
-
-.hide-element {
-    display: none;
-}
-
-.position-relative {
-    position: relative;
-}
-
-.position-top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
 /* Icone que fica no topo direito de um elemento */
 .position-top-right i:hover {
     /* EQUALS .color-inv */
@@ -369,14 +324,14 @@ li {
 }
 
 /* Necessario para elementos que exigem um background-color em estado hover */
-.hoverable {
-    /* EQUALS .color-inv */
-    background-color: #FFFFFF;
-}
-
-.hoverable:hover {
+.hoverable-bg-4th:hover {
     /* EQUALS .color-4th */
     background-color: #CCCCCC;
+}
+
+.hoverable-inv:hover {
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
 }
 
 /* Limita a largura e centraliza o elemento */
@@ -567,18 +522,6 @@ form .color-display {
 /* Title-bar sem cursor pointer (excessão) */
 form .title-bar {
     cursor: initial;
-}
-
-
-
-
-
-/* ----- Footer ----- */
-
-/* Hover para destacar os elementos de color-3rd */
-footer .color-3rd:hover {
-    /* EQUALS .color-inv */
-    color: #FFFFFF;
 }
 
 
@@ -812,6 +755,57 @@ classe shaded precisam de um hover */
 .shaded-hover:hover {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.48), 0 2px 20px 0 rgba(0, 0, 0, 0.36);
     transition: 0.3s;
+}
+
+
+
+
+
+/* ----- Display Helpers ----- */
+
+/* Container com display flex para espacamento homogeneo entre os elementos */
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Container com display flex para criar espacamento entre os elementos */
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container com display flex para elementos centralizados */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container com display inline-block */
+.in-block-display {
+    display: inline-block;
+    /* to delete */
+    padding: 5px;
+}
+
+.inline-display {
+    display: inline;
+}
+
+.hide-element {
+    display: none;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 
