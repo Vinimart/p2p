@@ -13,22 +13,14 @@
 
 <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
-    <!-- begin: Preloader -->
-    <div id="idOverlayPreloader" class="flex-center">
-        <div>
-            <img src="ui/img/three-dots-loader.svg">
-        </div>
-    </div>
-    <!-- end: Preloader -->
-
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
         <div id="idModalMsgWindow" class="modal-content rounded-1x">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
-                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
@@ -51,9 +43,9 @@
 
         <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Search</span>
-                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="spaced-around-2x">
@@ -82,145 +74,145 @@
 
         <div id="idModalColorWindow" class="modal-content rounded-1x">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
-                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="flex-center spaced-v-1x">
 
                 <table class="color-table" id="idColorTable">
                     <tr>
-                        <td style="background-color: #000000;"></td>
-                        <td style="background-color: #202020;"></td>
-                        <td style="background-color: #404040;"></td>
-                        <td style="background-color: #606060;"></td>
-                        <td style="background-color: #808080;"></td>
-                        <td style="background-color: #A0A0A0;"></td>
-                        <td style="background-color: #C0C0C0;"></td>
-                        <td style="background-color: #D0D0D0;"></td>
-                        <td style="background-color: #F0F0F0;"></td>
-                        <td style="background-color: #FFFFFF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #000000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #202020;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #404040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #606060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #808080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A0A0A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C0C0C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #D0D0D0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #F0F0F0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFFFFF;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #400020;"></td>
-                        <td style="background-color: #600030;"></td>
-                        <td style="background-color: #800040;"></td>
-                        <td style="background-color: #A00050;"></td>
-                        <td style="background-color: #C00060;"></td>
-                        <td style="background-color: #E00070;"></td>
-                        <td style="background-color: #FF0080;"></td>
-                        <td style="background-color: #FF4080;"></td>
-                        <td style="background-color: #FF70A0;"></td>
-                        <td style="background-color: #FFA0D0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #400020;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #600030;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #800040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A00050;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C00060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E00070;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF0080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF4080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF70A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFA0D0;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #400000;"></td>
-                        <td style="background-color: #600000;"></td>
-                        <td style="background-color: #800000;"></td>
-                        <td style="background-color: #A00000;"></td>
-                        <td style="background-color: #C00000;"></td>
-                        <td style="background-color: #E00000;"></td>
-                        <td style="background-color: #FF0000;"></td>
-                        <td style="background-color: #FF4040;"></td>
-                        <td style="background-color: #FF9090;"></td>
-                        <td style="background-color: #FFC0C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #400000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #600000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #800000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A00000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C00000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E00000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF0000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF4040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF9090;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFC0C0;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #402000;"></td>
-                        <td style="background-color: #603000;"></td>
-                        <td style="background-color: #804000;"></td>
-                        <td style="background-color: #A05000;"></td>
-                        <td style="background-color: #C06000;"></td>
-                        <td style="background-color: #E07000;"></td>
-                        <td style="background-color: #FF8000;"></td>
-                        <td style="background-color: #FFA060;"></td>
-                        <td style="background-color: #FFC090;"></td>
-                        <td style="background-color: #FFE0B0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #402000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #603000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #804000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A05000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C06000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E07000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF8000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFA060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFC090;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFE0B0;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #404000;"></td>
-                        <td style="background-color: #606000;"></td>
-                        <td style="background-color: #808000;"></td>
-                        <td style="background-color: #A0A000;"></td>
-                        <td style="background-color: #C0C000;"></td>
-                        <td style="background-color: #E0E000;"></td>
-                        <td style="background-color: #FFFF00;"></td>
-                        <td style="background-color: #FFFF80;"></td>
-                        <td style="background-color: #FFFFA0;"></td>
-                        <td style="background-color: #FFFFC0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #404000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #606000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #808000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A0A000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C0C000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E0E000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFFF00;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFFF80;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFFFA0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFFFC0;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #004000;"></td>
-                        <td style="background-color: #006000;"></td>
-                        <td style="background-color: #008000;"></td>
-                        <td style="background-color: #00A000;"></td>
-                        <td style="background-color: #00C000;"></td>
-                        <td style="background-color: #00E000;"></td>
-                        <td style="background-color: #00FF00;"></td>
-                        <td style="background-color: #80FF80;"></td>
-                        <td style="background-color: #B0FFB0;"></td>
-                        <td style="background-color: #D0FFD0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #004000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #006000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #008000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00A000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00C000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00E000;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00FF00;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #80FF80;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #B0FFB0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #D0FFD0;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #004040;"></td>
-                        <td style="background-color: #006060;"></td>
-                        <td style="background-color: #008080;"></td>
-                        <td style="background-color: #00A0A0;"></td>
-                        <td style="background-color: #00C0C0;"></td>
-                        <td style="background-color: #00E0E0;"></td>
-                        <td style="background-color: #00FFFF;"></td>
-                        <td style="background-color: #80FFFF;"></td>
-                        <td style="background-color: #B0FFFF;"></td>
-                        <td style="background-color: #D0FFFF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #004040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #006060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #008080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00A0A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00C0C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00E0E0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #00FFFF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #80FFFF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #B0FFFF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #D0FFFF;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #002040;"></td>
-                        <td style="background-color: #003060;"></td>
-                        <td style="background-color: #004080;"></td>
-                        <td style="background-color: #0050A0;"></td>
-                        <td style="background-color: #0060C0;"></td>
-                        <td style="background-color: #0070E0;"></td>
-                        <td style="background-color: #0080FF;"></td>
-                        <td style="background-color: #60A0FF;"></td>
-                        <td style="background-color: #90D0FF;"></td>
-                        <td style="background-color: #C0E0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #002040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #003060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #004080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0050A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0060C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0070E0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0080FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #60A0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #90D0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C0E0FF;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #000040;"></td>
-                        <td style="background-color: #000060;"></td>
-                        <td style="background-color: #000080;"></td>
-                        <td style="background-color: #0000A0;"></td>
-                        <td style="background-color: #0000C0;"></td>
-                        <td style="background-color: #0000E0;"></td>
-                        <td style="background-color: #0000FF;"></td>
-                        <td style="background-color: #4040FF;"></td>
-                        <td style="background-color: #9090FF;"></td>
-                        <td style="background-color: #C0C0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #000040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #000060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #000080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0000A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0000C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0000E0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #0000FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #4040FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #9090FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C0C0FF;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #200040;"></td>
-                        <td style="background-color: #300060;"></td>
-                        <td style="background-color: #400080;"></td>
-                        <td style="background-color: #5000A0;"></td>
-                        <td style="background-color: #6000C0;"></td>
-                        <td style="background-color: #7000E0;"></td>
-                        <td style="background-color: #8000FF;"></td>
-                        <td style="background-color: #A040FF;"></td>
-                        <td style="background-color: #D090FF;"></td>
-                        <td style="background-color: #E0C0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #200040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #300060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #400080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #5000A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #6000C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #7000E0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #8000FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A040FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #D090FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E0C0FF;"></td>
                     </tr>
                     <tr>
-                        <td style="background-color: #400040;"></td>
-                        <td style="background-color: #600060;"></td>
-                        <td style="background-color: #800080;"></td>
-                        <td style="background-color: #A000A0;"></td>
-                        <td style="background-color: #C000C0;"></td>
-                        <td style="background-color: #E000E0;"></td>
-                        <td style="background-color: #FF00FF;"></td>
-                        <td style="background-color: #FF60FF;"></td>
-                        <td style="background-color: #FF90FF;"></td>
-                        <td style="background-color: #FFC0FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #400040;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #600060;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #800080;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #A000A0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #C000C0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #E000E0;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF00FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF60FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FF90FF;"></td>
+                        <td class="hoverable-sh-1x" style="background-color: #FFC0FF;"></td>
                     </tr>
                 </table>
 
@@ -248,6 +240,14 @@
     </div>
     <!-- end: Color Picker -->
 
+    <!-- begin: Preloader -->
+    <div id="idOverlayPreloader" class="flex-center">
+        <div>
+            <img src="ui/img/three-dots-loader.svg">
+        </div>
+    </div>
+    <!-- end: Preloader -->
+
     <!-- begin: Side Nav -->
     <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
         onclick="hide(['idOverlayMainSideMenuFlow']);">
@@ -256,7 +256,8 @@
 
             <div class="flex-between padded-1x">
                 <span class="font-3x bold">General</span>
-                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i
+                        class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="hoverable-bg-4th">
@@ -432,19 +433,20 @@
                     </p>
 
                     <ul class="spaced-v-3x">
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
-                        <li><a class="color-link" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
+                        <li><a class="hoverable-2nd" href="link-target.html">Comic Drawing Cartoon Photo Maker;</a></li>
                     </ul>
 
                     <p class="justified">
                         It's <strong>highly recommended</strong> you visit the page that has a special list with our
-                        free <a class="color-link" href="link-target.html"><strong>3D Online Logo Generator</strong></a>
+                        free <a class="hoverable-2nd" href="link-target.html"><strong>3D Online Logo
+                                Generator</strong></a>
                         apps. All online
                         logo creators
                         available there have at least one cool logo image example, so it will be easy for you to choose
@@ -686,7 +688,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/online_color_improvement_effect_001.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Colors and Details Enhance</p>
@@ -699,7 +701,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/online_color_improvement_effect_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Smart Enhancement</p>
@@ -712,7 +714,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/online_color_improvement_effect_003.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Enhancement by Channels</p>
@@ -725,7 +727,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/online_color_improvement_effect_004.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Vivid Hot Colors</p>
@@ -738,7 +740,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/online_color_improvement_effect_005.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Strong Colors</p>
@@ -771,7 +773,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_001.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Pen and Ink Drawing</p>
@@ -785,7 +787,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Soft Pencil Drawing</p>
@@ -799,7 +801,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_003.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Clean Pencil Drawing</p>
@@ -813,7 +815,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_004.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Dark Pencil Drawing</p>
@@ -827,7 +829,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_005.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Clean Charcoal Drawing</p>
@@ -841,7 +843,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_006.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Soft Charcoal Drawing</p>
@@ -855,7 +857,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_007.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Dark Charcoal Drawing</p>
@@ -869,7 +871,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_008.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Monochrome Crayon Drawing</p>
@@ -883,7 +885,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_pencil_sketch_photo_effect_009.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Monochrome Pastel Drawing</p>
@@ -916,7 +918,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_001.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Fine Pastel Drawing</p>
@@ -930,7 +932,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Clean Crayon Drawing</p>
@@ -944,7 +946,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_003.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Strong Crayon Drawing</p>
@@ -958,7 +960,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_004.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Dark Crayon Drawing</p>
@@ -972,7 +974,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_005.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Clean Pencil Drawing</p>
@@ -986,7 +988,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_006.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Stroked Pencil Drawing</p>
@@ -1000,7 +1002,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_007.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Soft Pencil Drawing</p>
@@ -1014,7 +1016,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_008.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Fine Pencil Drawing</p>
@@ -1028,7 +1030,7 @@
                                 <img class="spaced-below-1x"
                                     src="ui/comp/img/realistic_colorful_drawing_photo_effect_009.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Detailed Pencil Drawing</p>
@@ -1060,7 +1062,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_001.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Fast Charcoal Sketch</p>
@@ -1073,7 +1075,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Charcoal Sketch</p>
@@ -1086,7 +1088,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_colorful_drawing_001.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Fast Crayon Sketch</p>
@@ -1099,7 +1101,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_003.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Pen and Ink Sketch</p>
@@ -1112,7 +1114,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_004.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Fast Pencil Sketch</p>
@@ -1125,7 +1127,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_005.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Pencil Sketch</p>
@@ -1138,7 +1140,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_sketch_006.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Clean Pencil Sketch</p>
@@ -1151,7 +1153,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_colorful_drawing_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Colorful Pencil Sketch</p>
@@ -1164,7 +1166,7 @@
                             <div class="position-relative">
                                 <img class="spaced-below-1x" src="ui/comp/img/photo_colorful_drawing_002.jpg">
                                 <a class="position-top-right spaced-around-1x" href="link-target.html"><i
-                                        class="fas fa-edit fa-2x color-4th"></i></a>
+                                        class="fas fa-edit fa-2x color-4th hoverable-inv"></i></a>
                             </div>
 
                             <p class="color-default">Colorful Delicate Pencil Sketch</p>
@@ -1206,7 +1208,7 @@
                         <!-- Para a lista de efeitos de foto selecionaveis acima. -->
                         <input type="hidden" name="SelectedPhotoEffect" id="idSelectedPhotoEffect" value="" />
 
-                        <div class="title-bar padded-1x centered">
+                        <div class="title-bar padded-1x centered cursor-default">
                             <span class="font-3x">Configuration</span>
                         </div>
 
@@ -5732,42 +5734,42 @@
 
                     <div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects1.jpg">
                                 <p class="color-default">Textured 3D Effects</p>
                             </a>
                         </div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects2.jpg">
                                 <p class="color-default">Page Curl</p>
                             </a>
                         </div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects3.jpg">
                                 <p class="color-default">Photo christmas</p>
                             </a>
                         </div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects4.jpg">
                                 <p class="color-default">3D Graffiti</p>
                             </a>
                         </div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects5.jpg">
                                 <p class="color-default">Grunge Photo</p>
                             </a>
                         </div>
 
-                        <div class="in-block-display box spaced-around-1x shaded-hover">
+                        <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                             <a href="link-target.html">
                                 <img src="ui/img/pop_effects6.jpg">
                                 <p class="color-default">Beveled Texts</p>

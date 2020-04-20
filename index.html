@@ -13,22 +13,14 @@
 
 <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
-    <!-- begin: Preloader -->
-    <div id="idOverlayPreloader" class="flex-center">
-        <div>
-            <img src="ui/img/three-dots.svg">
-        </div>
-    </div>
-    <!-- end: Preloader -->
-
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
         <div id="idModalMsgWindow" class="modal-content rounded-1x">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
-                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
@@ -51,9 +43,9 @@
 
         <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Search</span>
-                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="spaced-around-2x">
@@ -76,6 +68,101 @@
 
     </div>
     <!-- end: Search Box -->
+
+    <!-- begin: Preloader -->
+    <div id="idOverlayPreloader" class="flex-center">
+        <div>
+            <img src="ui/img/three-dots-loader.svg">
+        </div>
+    </div>
+    <!-- end: Preloader -->
+
+    <!-- begin: Side Nav -->
+    <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
+        onclick="hide(['idOverlayMainSideMenuFlow']);">
+
+        <div id="idMainSideMenuFlow" class="sidenav-content" onclick="stopProp(event);">
+
+            <div class="flex-between padded-1x">
+                <span class="font-3x bold">General</span>
+                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i
+                        class="fas fa-times fa-2x hoverable-2nd"></i></span>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Text Logos</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Frames</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Photo Effects</p>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Sketch</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Painting</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Cartoon</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th spaced-below-2x">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Retro</p>
+                </a>
+            </div>
+
+            <p class="font-3x bold padded-1x">Top Text Effects</p>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+            <div class="hoverable-bg-4th">
+                <a href="link-target.html">
+                    <p class="color-5th padded-1x">Photo Effects</p>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end: Side Nav -->
 
     <header class="index-header" style="background-image: url(ui/img/index-header-bg.png);">
 
@@ -134,7 +221,7 @@
                 online photo effect editors, free online text generators and much more. Here everything is developed
                 from scratch, so there always are new fresh creative, innovative and exclusive graphic design
                 software
-                being published online. If you are a new user, please visit the <a class="color-link bold"
+                being published online. If you are a new user, please visit the <a class="hoverable-2nd bold"
                     href="link-target.html">How to Use</a> section to get started.
             </p>
 
@@ -143,7 +230,7 @@
                 works
                 internally. Feel invited to see how our software is constructed on a solid basis by visiting the
                 page
-                about <a class="color-link bold" href="link-target.html">Maccala</a>.
+                about <a class="hoverable-2nd bold" href="link-target.html">Maccala</a>.
             </p>
 
         </div>
@@ -158,7 +245,7 @@
 
                     <div class="spaced-v-3x padded-h-2x">
                         <a href="cat.html">
-                            <img class="img-circle animate-3 spaced-below-1x" src="ui/img/photo-effects.jpg">
+                            <img class="rounded-3x animate-3 spaced-below-1x" src="ui/img/photo-effects.jpg">
                         </a>
 
                         <p class="font-3x bold spaced-v-1x">
@@ -166,7 +253,7 @@
                         </p>
 
                         <p>
-                            Here you have tens of exclusive top <a class="color-link bold"
+                            Here you have tens of exclusive top <a class="hoverable-2nd bold"
                                 href="link-target.html">online
                                 photo editors</a>. Many of them were researched
                             exclusively to this project and represent the state of art in artistic photo effects.
@@ -175,7 +262,7 @@
 
                     <div class="spaced-v-3x padded-h-2x">
                         <a href="cat.html">
-                            <img class="img-circle animate-3 spaced-below-1x" src="ui/img/text-effects.jpg">
+                            <img class="rounded-3x animate-3 spaced-below-1x" src="ui/img/text-effects.jpg">
                         </a>
 
                         <p class="font-3x bold spaced-v-1x">
@@ -190,7 +277,7 @@
 
                     <div class="spaced-v-3x padded-h-2x">
                         <a href="cat.html">
-                            <img class="img-circle animate-3 spaced-below-1x" src="ui/img/logo-effects.jpg">
+                            <img class="rounded-3x animate-3 spaced-below-1x" src="ui/img/logo-effects.jpg">
                         </a>
 
                         <p class="font-3x bold spaced-v-1x">
@@ -328,42 +415,42 @@
 
                 <div class="spaced-below-3x">
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects1.jpg">
                             <p class="color-default">Textured 3D Effects</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects2.jpg">
                             <p class="color-default">Page Curl</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects3.jpg">
                             <p class="color-default">Photo Sticker</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects4.jpg">
                             <p class="color-default">3D Graffiti</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects5.jpg">
                             <p class="color-default">Grunge Photo</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects6.jpg">
                             <p class="color-default">Beveled Texts</p>
