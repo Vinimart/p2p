@@ -274,7 +274,7 @@ li {
     line-height: 0px;
 }
 
-/* Container para componentes sem barra de rolagem com Lazy Loader / overflow: hidden; */
+/* Container para componentes sem barra de rolagem / overflow: hidden; */
 .comp-show-some {
     width: 100%;
     max-height: 500px;
@@ -380,7 +380,7 @@ li {
 }
 
 /* Limita a largura e centraliza o elemento */
-.limiter {
+.limiter-2x {
     max-width: 1600px;
     margin: auto;
 }
@@ -426,7 +426,7 @@ li {
 }
 
 /* Classe para botoes genericos */
-.btn-1x {
+.btn-small {
     min-width: 100px;
     /* EQUALS .color-2nd */
     border: solid 1px #A62900;
@@ -460,7 +460,7 @@ li {
     background-color: #FF8000;
 }
 
-.btn-1x:hover {
+.btn-small:hover {
     /* EQUALS .color-1st */
     border-color: #FF8000;
     /* EQUALS .color-1st */
@@ -789,7 +789,7 @@ sobreposto a um elemento de cor clara */
     border-radius: 10px;
 }
 
-.img-circle {
+.rounded-3x {
     border-radius: 100%;
 }
 
