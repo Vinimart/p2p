@@ -10,22 +10,14 @@
 
 <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
-    <!-- begin: Preloader -->
-    <div id="idOverlayPreloader" class="flex-center">
-        <div>
-            <img src="ui/img/three-dots.svg">
-        </div>
-    </div>
-    <!-- end: Preloader -->
-
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
         <div id="idModalMsgWindow" class="modal-content rounded-1x">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
-                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <p id="idModalMsgText" class="padded-1x spaced-v-2x">Modal Msg</p>
@@ -48,9 +40,9 @@
 
         <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
 
-            <div class="modal-header flex-between bg-color-1st padded-1x">
+            <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Search</span>
-                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="spaced-around-2x">
@@ -74,176 +66,13 @@
     </div>
     <!-- end: Search Box -->
 
-    <!-- begin: Color Picker -->
-    <div id="idOverlayModalColor" class="modal-overlay flex-center hide-element">
-
-        <div id="idModalColorWindow" class="modal-content rounded-1x">
-
-            <div class="modal-header flex-between bg-color-1st padded-1x">
-                <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
-                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x"></i></span>
-            </div>
-
-            <div class="flex-center spaced-v-1x">
-
-                <table class="color-table" id="idColorTable">
-                    <tr>
-                        <td style="background-color: #000000;"></td>
-                        <td style="background-color: #202020;"></td>
-                        <td style="background-color: #404040;"></td>
-                        <td style="background-color: #606060;"></td>
-                        <td style="background-color: #808080;"></td>
-                        <td style="background-color: #A0A0A0;"></td>
-                        <td style="background-color: #C0C0C0;"></td>
-                        <td style="background-color: #D0D0D0;"></td>
-                        <td style="background-color: #F0F0F0;"></td>
-                        <td style="background-color: #FFFFFF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400020;"></td>
-                        <td style="background-color: #600030;"></td>
-                        <td style="background-color: #800040;"></td>
-                        <td style="background-color: #A00050;"></td>
-                        <td style="background-color: #C00060;"></td>
-                        <td style="background-color: #E00070;"></td>
-                        <td style="background-color: #FF0080;"></td>
-                        <td style="background-color: #FF4080;"></td>
-                        <td style="background-color: #FF70A0;"></td>
-                        <td style="background-color: #FFA0D0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400000;"></td>
-                        <td style="background-color: #600000;"></td>
-                        <td style="background-color: #800000;"></td>
-                        <td style="background-color: #A00000;"></td>
-                        <td style="background-color: #C00000;"></td>
-                        <td style="background-color: #E00000;"></td>
-                        <td style="background-color: #FF0000;"></td>
-                        <td style="background-color: #FF4040;"></td>
-                        <td style="background-color: #FF9090;"></td>
-                        <td style="background-color: #FFC0C0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #402000;"></td>
-                        <td style="background-color: #603000;"></td>
-                        <td style="background-color: #804000;"></td>
-                        <td style="background-color: #A05000;"></td>
-                        <td style="background-color: #C06000;"></td>
-                        <td style="background-color: #E07000;"></td>
-                        <td style="background-color: #FF8000;"></td>
-                        <td style="background-color: #FFA060;"></td>
-                        <td style="background-color: #FFC090;"></td>
-                        <td style="background-color: #FFE0B0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #404000;"></td>
-                        <td style="background-color: #606000;"></td>
-                        <td style="background-color: #808000;"></td>
-                        <td style="background-color: #A0A000;"></td>
-                        <td style="background-color: #C0C000;"></td>
-                        <td style="background-color: #E0E000;"></td>
-                        <td style="background-color: #FFFF00;"></td>
-                        <td style="background-color: #FFFF80;"></td>
-                        <td style="background-color: #FFFFA0;"></td>
-                        <td style="background-color: #FFFFC0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #004000;"></td>
-                        <td style="background-color: #006000;"></td>
-                        <td style="background-color: #008000;"></td>
-                        <td style="background-color: #00A000;"></td>
-                        <td style="background-color: #00C000;"></td>
-                        <td style="background-color: #00E000;"></td>
-                        <td style="background-color: #00FF00;"></td>
-                        <td style="background-color: #80FF80;"></td>
-                        <td style="background-color: #B0FFB0;"></td>
-                        <td style="background-color: #D0FFD0;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #004040;"></td>
-                        <td style="background-color: #006060;"></td>
-                        <td style="background-color: #008080;"></td>
-                        <td style="background-color: #00A0A0;"></td>
-                        <td style="background-color: #00C0C0;"></td>
-                        <td style="background-color: #00E0E0;"></td>
-                        <td style="background-color: #00FFFF;"></td>
-                        <td style="background-color: #80FFFF;"></td>
-                        <td style="background-color: #B0FFFF;"></td>
-                        <td style="background-color: #D0FFFF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #002040;"></td>
-                        <td style="background-color: #003060;"></td>
-                        <td style="background-color: #004080;"></td>
-                        <td style="background-color: #0050A0;"></td>
-                        <td style="background-color: #0060C0;"></td>
-                        <td style="background-color: #0070E0;"></td>
-                        <td style="background-color: #0080FF;"></td>
-                        <td style="background-color: #60A0FF;"></td>
-                        <td style="background-color: #90D0FF;"></td>
-                        <td style="background-color: #C0E0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #000040;"></td>
-                        <td style="background-color: #000060;"></td>
-                        <td style="background-color: #000080;"></td>
-                        <td style="background-color: #0000A0;"></td>
-                        <td style="background-color: #0000C0;"></td>
-                        <td style="background-color: #0000E0;"></td>
-                        <td style="background-color: #0000FF;"></td>
-                        <td style="background-color: #4040FF;"></td>
-                        <td style="background-color: #9090FF;"></td>
-                        <td style="background-color: #C0C0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #200040;"></td>
-                        <td style="background-color: #300060;"></td>
-                        <td style="background-color: #400080;"></td>
-                        <td style="background-color: #5000A0;"></td>
-                        <td style="background-color: #6000C0;"></td>
-                        <td style="background-color: #7000E0;"></td>
-                        <td style="background-color: #8000FF;"></td>
-                        <td style="background-color: #A040FF;"></td>
-                        <td style="background-color: #D090FF;"></td>
-                        <td style="background-color: #E0C0FF;"></td>
-                    </tr>
-                    <tr>
-                        <td style="background-color: #400040;"></td>
-                        <td style="background-color: #600060;"></td>
-                        <td style="background-color: #800080;"></td>
-                        <td style="background-color: #A000A0;"></td>
-                        <td style="background-color: #C000C0;"></td>
-                        <td style="background-color: #E000E0;"></td>
-                        <td style="background-color: #FF00FF;"></td>
-                        <td style="background-color: #FF60FF;"></td>
-                        <td style="background-color: #FF90FF;"></td>
-                        <td style="background-color: #FFC0FF;"></td>
-                    </tr>
-                </table>
-
-            </div>
-
-            <div class="flex-between spaced-around-2x">
-                <input type="text" name="BackColor" id="idBackColor" placeholder="#FF8000" style="width: 80%;">
-                <div class="color-display rounded-3x" title="Color Preview"></div>
-            </div>
-
-            <div class="centered spaced-v-1x">
-                <button class="btn-small spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
-                    <i class="fas fa-check">&nbsp;</i>
-                    <span>OK</span>
-                </button>
-
-                <button class="btn-small spaced-h-1x" onclick="hide(['idOverlayModalColor']);">
-                    <i class="fas fa-times">&nbsp;</i>
-                    <span>Cancel</span>
-                </button>
-            </div>
-
+    <!-- begin: Preloader -->
+    <div id="idOverlayPreloader" class="flex-center">
+        <div>
+            <img src="ui/img/three-dots-loader.svg">
         </div>
-
     </div>
-    <!-- end: Color Picker -->
+    <!-- end: Preloader -->
 
     <!-- begin: Side Nav -->
     <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
@@ -253,7 +82,8 @@
 
             <div class="flex-between padded-1x">
                 <span class="font-3x bold">General</span>
-                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i class="fas fa-times fa-2x"></i></span>
+                <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i
+                        class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="hoverable-bg-4th">
@@ -330,7 +160,6 @@
 
     </div>
     <!-- end: Side Nav -->
-
     <nav>
 
         <!-- begin: Barra de Menu Principal -->
@@ -423,42 +252,42 @@
 
                 <div class="spaced-below-3x">
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects1.jpg">
                             <p class="color-default">Textured 3D Effects</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects2.jpg">
                             <p class="color-default">Page Curl</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects3.jpg">
                             <p class="color-default">Photo Sticker</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects4.jpg">
                             <p class="color-default">3D Graffiti</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects5.jpg">
                             <p class="color-default">Grunge Photo</p>
                         </a>
                     </div>
 
-                    <div class="in-block-display box spaced-around-1x shaded-hover">
+                    <div class="in-block-display box spaced-around-1x shaded hoverable-sh-2x">
                         <a href="link-target.html">
                             <img src="ui/img/pop_effects6.jpg">
                             <p class="color-default">Beveled Texts</p>
@@ -528,7 +357,7 @@
                 The images created or modified by using Picture to People site can be used for any purpose (free,
                 personal or commercial) under a license similar to Creative Commons. It means you must provide the
                 proper credits to Picture to People Project (www.picturetopeople.org). Exceptions apply if you are a
-                subscriber. For further information, read our <a class="color-3rd" href="link-target.html">Terms of
+                subscriber. For further information, read our <a class="color-3rd hoverable-inv" href="link-target.html">Terms of
                     Service</a>.
             </p>
         </div>
@@ -545,33 +374,6 @@
         function defInit() {
 
             hide(['idOverlayPreloader']);
-
-            SelLists.newList('i1', 'idImageName', ['sel-list-item'], 'idViewImageName',
-                'Selected image : &nbsp;&nbsp; <<0>>', 'wall_005_tlb');
-
-            SelLists.newList('i2', 'idRenderingStyle', ['sel-list-item'], '', '', '1');
-
-            SelLists.newList('i3', 'idModel3D', ['sel-list-item'], '', '', '1');
-
-            SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
-                '01 Digit');
-
-            SelLists.newList('s1', 'idImgName1', ['sel-list-item'], '', '', 'abstract_003');
-
-            SelLists.newList('s2', 'idImgName2', ['sel-list-item'], '', '', 'abstract084_tlb');
-
-            SelLists.newList('s3', 'idImgName3', ['sel-list-item'], '', '', '3d_text_style1');
-
-            SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
-                'abstract083');
-
-            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
-                'color_improvement_effect_001');
-
-            SelLists.newList('icon_3d_model', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', '01');
-
-
-
 
             // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
             // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
