@@ -621,12 +621,11 @@ var ColorTable = new(function () {
         }
     }
 
-    this.setColor = function (color) {
+    this.setColor = function (color, id) {
         this.selColor = color
         let colorTableOkBtn = document.getElementById('idColorTableOkBtn')
 
         colorTableOkBtn.addEventListener('click', () => {
-
             this.target.value = this.selColor;
             this.colorDisplay.style.backgroundColor = '#' + this.selColor
         })
