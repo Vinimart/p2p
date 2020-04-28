@@ -590,12 +590,15 @@ var GrowLists = new(function () {
 
 
 /* --------------- BEGIN: COLOR TABLE --------------- */
+
+// Foram feitas alteracoes nos metodos dessa classe para ser compativel com o novo prototipo (vinimartdev.com)
 var ColorTable = new(function () {
 
     this.target;
 
-    this.set = function (id) {
+    this.set = function (id, idDisplay) {
         this.target = document.getElementById(id);
+        this.colorDisplay = document.getElementById(idDisplay)
 
         var container = document.getElementById("idColorTableContainer");
 
@@ -608,34 +611,24 @@ var ColorTable = new(function () {
         toggleHide([container.id]);
     }
 
-    this.setColorInput = function (id) {
+    this.setColorInput = function (id, idDisplay) {
         this.target = document.getElementById(id);
+        this.colorDisplay = document.getElementById(idDisplay)
 
-        let BackColorDisplay = document.getElementById('idBackColorDisplay')
-
-        this.target.addEventListener('input', (e) => {
-            let selColor = null
-            
-            console.log(e.target.value)
-
-            if (e.target.value.length === 6) {
-                selColor = e.target.value;
-
-                BackColorDisplay.style.backgroundColor = '#' + selColor
-            }
-        })
+        if (this.target.value.length === 6) {
+            this.selColor = this.target.value
+            this.colorDisplay.style.backgroundColor = '#' + this.selColor
+        }
     }
 
     this.setColor = function (color) {
-        let selColor = color
-
+        this.selColor = color
         let colorTableOkBtn = document.getElementById('idColorTableOkBtn')
-        let BackColorDisplay = document.getElementById('idBackColorDisplay')
 
         colorTableOkBtn.addEventListener('click', () => {
 
-            this.target.value = selColor;
-            BackColorDisplay.style.backgroundColor = '#' + selColor
+            this.target.value = this.selColor;
+            this.colorDisplay.style.backgroundColor = '#' + this.selColor
         })
     }
 

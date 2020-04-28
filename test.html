@@ -329,7 +329,8 @@
             </div>
 
             <div class="centered spaced-v-1x">
-                <button id="idColorTableOkBtn" class="btn-small spaced-h-1x spaced-below-1x" onclick="hide(['idColorTableContainer']);">
+                <button id="idColorTableOkBtn" class="btn-small spaced-h-1x spaced-below-1x"
+                    onclick="hide(['idColorTableContainer']);">
                     <i class="fas fa-check">&nbsp;</i>
                     <span>OK</span>
                 </button>
@@ -1609,14 +1610,29 @@
 
                             <label for="idBackColor">Background Color :</label><br>
 
-                            <div class="spaced-below-1x"></div>
-
                             <div>
-                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor" placeholder="FF8000"
-                                    value="" onclick="ColorTable.setColorInput(this.id)">
+                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
+                                    placeholder="FF8000" value="" oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
 
                                 <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idBackColor')" style="background-color: #FF8000;" title="Color Picker">
+                                    onclick="ColorTable.set('idBackColor', this.id)"
+                                    style="background-color: #FF8000;" title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idLogoColor1">Logo Color 1 :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
+                                    placeholder="FF8000" value="" oninput="ColorTable.setColorInput(this.id, 'idLogoColor1Display')">
+
+                                <div id="idLogoColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idLogoColor1', this.id)"
+                                    style="background-color: #FF8000;" title="Color Picker">
                                 </div>
                             </div>
 
@@ -7773,10 +7789,6 @@
         function defInit() {
 
             hide(['idOverlayPreloader']);
-
-            SelLists.newList('cp1', 'idBgColor', ['hoverable-sh-1x', 'sel-item'], 'idViewBgColor',
-                'Font name : &nbsp;&nbsp; <<0>>',
-                '#000000');
 
             SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
                 'abstract083');
