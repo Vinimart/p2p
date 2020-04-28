@@ -218,11 +218,6 @@
 
             </div>
 
-            <div class="flex-between spaced-around-2x">
-                <input type="text" name="BackColor" id="idBackColor" placeholder="#FF8000" style="width: 80%;">
-                <div class="color-display rounded-3x" title="Color Preview"></div>
-            </div>
-
             <div class="centered spaced-v-1x">
                 <button class="btn-small spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
                     <i class="fas fa-check">&nbsp;</i>
@@ -1500,14 +1495,20 @@
 
                         </div>
 
-                        <div class="spaced-below-2x">
+                        <div class="spaced-v-2x">
 
-                            <span>Background Color :&nbsp;</span>
+                            <label for="idBackColor">Background Color :</label><br>
 
-                            <div class="color-display rounded-3x animate-1" onclick="show(['idOverlayModalColor']);">
+                            <div class="spaced-below-1x"></div>
+
+                            <div>
+                                <input type="text" maxlength="7" id="idBackColor" name="BackColor"
+                                    placeholder="#000000" style="width: 85%;">
+
+                                <div class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="show(['idOverlayModalColor']);">
+                                </div>
                             </div>
-
-                            <span>&nbsp;#FF8000</span>
 
                         </div>
 
@@ -7662,6 +7663,10 @@
         function defInit() {
 
             hide(['idOverlayPreloader']);
+
+            SelLists.newList('cp1', 'idBgColor', ['hoverable-sh-1x', 'sel-item'], 'idViewBgColor',
+                'Font name : &nbsp;&nbsp; <<0>>',
+                '#000000');
 
             SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
                 'abstract083');
