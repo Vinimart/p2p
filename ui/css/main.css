@@ -411,8 +411,8 @@ select:focus {
     outline-color: #FF8000;
 }
 
-/* to delete */
-#idBackColor {
+.color-input {
+    width: 90%!important;
     text-transform: uppercase;
 }
 
@@ -1042,6 +1042,10 @@ sobreposto a um elemento de cor clara */
     .column-2nd {
         width: 100%;
     }
+
+    .color-input {
+        width: 85%!important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1049,6 +1053,8 @@ sobreposto a um elemento de cor clara */
     .color-table td {
         width: 22px;
         height: 22px;
+        border: solid 1px;
+        border-color: #FFFFFF;
     }
 
     .modal-content {
@@ -1084,6 +1090,10 @@ sobreposto a um elemento de cor clara */
     .header-title {
         line-height: 100%;
         margin-bottom: 20px;
+    }
+
+    .color-input {
+        width: 75%!important;
     }
 
     /* Tamanho maximo para nao quebrar o layout no mobile */
