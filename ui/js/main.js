@@ -597,19 +597,46 @@ var ColorTable = new(function () {
     this.set = function (id) {
         this.target = document.getElementById(id);
 
-        var container = document.getElementById("idColorTableContainer"),
-            values = getElemPosAndSize(this.target);
+        var container = document.getElementById("idColorTableContainer");
 
-        container.style.left = values.left + "px";
-        container.style.top = (values.top + values.height) + "px";
-        container.style.width = values.width + "px";
+        //values = getElemPosAndSize(this.target);
+
+        //container.style.left = values.left + "px";
+        //container.style.top = (values.top + values.height) + "px";
+        //container.style.width = values.width + "px";
 
         toggleHide([container.id]);
     }
 
+    this.setColorInput = function (id) {
+        this.target = document.getElementById(id);
+
+        let BackColorDisplay = document.getElementById('idBackColorDisplay')
+
+        this.target.addEventListener('input', (e) => {
+            let selColor = null
+            
+            console.log(e.target.value)
+
+            if (e.target.value.length === 6) {
+                selColor = e.target.value;
+
+                BackColorDisplay.style.backgroundColor = '#' + selColor
+            }
+        })
+    }
+
     this.setColor = function (color) {
-        this.target.value = color;
-        toggleHide(["idColorTableContainer"]);
+        let selColor = color
+
+        let colorTableOkBtn = document.getElementById('idColorTableOkBtn')
+        let BackColorDisplay = document.getElementById('idBackColorDisplay')
+
+        colorTableOkBtn.addEventListener('click', () => {
+
+            this.target.value = selColor;
+            BackColorDisplay.style.backgroundColor = '#' + selColor
+        })
     }
 
     return this;

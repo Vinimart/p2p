@@ -70,161 +70,271 @@
     <!-- end: Search Box -->
 
     <!-- begin: Color Picker -->
-    <div id="idOverlayModalColor" class="modal-overlay flex-center hide-element">
+    <div id="idColorTableContainer" class="modal-overlay flex-center hide-element">
 
-        <div id="idModalColorWindow" class="modal-content rounded-1x">
+        <div class="modal-content rounded-1x">
 
             <div class="flex-between bg-color-1st padded-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
-                <span onclick="hide(['idOverlayModalColor']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
+                <span onclick="hide(['idColorTableContainer']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
             </div>
 
             <div class="flex-center spaced-v-1x">
 
                 <table class="color-table" id="idColorTable">
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #000000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #202020;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #404040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #606060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #808080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A0A0A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C0C0C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #D0D0D0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #F0F0F0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFFFFF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #000000;" title="000000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #202020;" title="202020"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #404040;" title="404040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #606060;" title="606060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #808080;" title="808080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A0A0A0;" title="A0A0A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C0C0C0;" title="C0C0C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #D0D0D0;" title="D0D0D0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #F0F0F0;" title="F0F0F0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFFFFF;" title="FFFFFF"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #400020;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #600030;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #800040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A00050;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C00060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E00070;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF0080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF4080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF70A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFA0D0;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #400020;" title="400020"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #600030;" title="600030"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #800040;" title="800040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A00050;" title="A00050"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C00060;" title="C00060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E00070;" title="E00070"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF0080;" title="FF0080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF4080;" title="FF4080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF70A0;" title="FF70A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFA0D0;" title="FFA0D0"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #400000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #600000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #800000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A00000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C00000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E00000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF0000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF4040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF9090;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFC0C0;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #400000;" title="400000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #600000;" title="600000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #800000;" title="800000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A00000;" title="A00000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C00000;" title="C00000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E00000;" title="E00000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF0000;" title="FF0000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF4040;" title="FF4040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF9090;" title="FF9090"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFC0C0;" title="FFC0C0"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #402000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #603000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #804000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A05000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C06000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E07000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF8000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFA060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFC090;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFE0B0;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #402000;" title="402000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #603000;" title="603000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #804000;" title="804000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A05000;" title="A05000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C06000;" title="C06000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E07000;" title="E07000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF8000;" title="FF8000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFA060;" title="FFA060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFC090;" title="FFC090"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFE0B0;" title="FFE0B0"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #404000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #606000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #808000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A0A000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C0C000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E0E000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFFF00;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFFF80;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFFFA0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFFFC0;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #404000;" title="404000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #606000;" title="606000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #808000;" title="808000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A0A000;" title="A0A000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C0C000;" title="C0C000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E0E000;" title="E0E000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFFF00;" title="FFFF00"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFFF80;" title="FFFF80"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFFFA0;" title="FFFFA0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFFFC0;" title="FFFFC0"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #004000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #006000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #008000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00A000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00C000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00E000;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00FF00;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #80FF80;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #B0FFB0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #D0FFD0;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #004000;" title="004000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #006000;" title="006000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #008000;" title="008000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00A000;" title="00A000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00C000;" title="00C000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00E000;" title="00E000"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00FF00;" title="00FF00"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #80FF80;" title="80FF80"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #B0FFB0;" title="B0FFB0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #D0FFD0;" title="D0FFD0"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #004040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #006060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #008080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00A0A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00C0C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00E0E0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #00FFFF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #80FFFF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #B0FFFF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #D0FFFF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #004040;" title="004040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #006060;" title="006060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #008080;" title="008080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00A0A0;" title="00A0A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00C0C0;" title="00C0C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00E0E0;" title="00E0E0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #00FFFF;" title="00FFFF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #80FFFF;" title="80FFFF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #B0FFFF;" title="B0FFFF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #D0FFFF;" title="D0FFFF"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #002040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #003060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #004080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0050A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0060C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0070E0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0080FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #60A0FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #90D0FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C0E0FF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #002040;" title="002040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #003060;" title="003060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #004080;" title="004080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0050A0;" title="0050A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0060C0;" title="0060C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0070E0;" title="0070E0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0080FF;" title="0080FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #60A0FF;" title="60A0FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #90D0FF;" title="90D0FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C0E0FF;" title="C0E0FF"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #000040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #000060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #000080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0000A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0000C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0000E0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #0000FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #4040FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #9090FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C0C0FF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #000040;" title="000040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #000060;" title="000060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #000080;" title="000080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0000A0;" title="0000A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0000C0;" title="0000C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0000E0;" title="0000E0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #0000FF;" title="0000FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #4040FF;" title="4040FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #9090FF;" title="9090FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C0C0FF;" title="C0C0FF"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #200040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #300060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #400080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #5000A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #6000C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #7000E0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #8000FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A040FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #D090FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E0C0FF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #200040;" title="200040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #300060;" title="300060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #400080;" title="400080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #5000A0;" title="5000A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #6000C0;" title="6000C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #7000E0;" title="7000E0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #8000FF;" title="8000FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A040FF;" title="A040FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #D090FF;" title="D090FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E0C0FF;" title="E0C0FF"></td>
                     </tr>
                     <tr>
-                        <td class="hoverable-sh-1x" style="background-color: #400040;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #600060;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #800080;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #A000A0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #C000C0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #E000E0;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF00FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF60FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FF90FF;"></td>
-                        <td class="hoverable-sh-1x" style="background-color: #FFC0FF;"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #400040;" title="400040"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #600060;" title="600060"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #800080;" title="800080"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #A000A0;" title="A000A0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #C000C0;" title="C000C0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #E000E0;" title="E000E0"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF00FF;" title="FF00FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF60FF;" title="FF60FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FF90FF;" title="FF90FF"></td>
+                        <td class="hoverable-sh-1x" onclick="ColorTable.setColor(this.title);"
+                            style="background-color: #FFC0FF;" title="FFC0FF"></td>
                     </tr>
                 </table>
 
             </div>
 
             <div class="centered spaced-v-1x">
-                <button class="btn-small spaced-h-1x spaced-below-1x" onclick="hide(['idOverlayModalColor']);">
+                <button id="idColorTableOkBtn" class="btn-small spaced-h-1x spaced-below-1x" onclick="hide(['idColorTableContainer']);">
                     <i class="fas fa-check">&nbsp;</i>
                     <span>OK</span>
                 </button>
 
-                <button class="btn-small spaced-h-1x" onclick="hide(['idOverlayModalColor']);">
+                <button class="btn-small spaced-h-1x" onclick="hide(['idColorTableContainer']);">
                     <i class="fas fa-times">&nbsp;</i>
                     <span>Cancel</span>
                 </button>
@@ -1502,11 +1612,11 @@
                             <div class="spaced-below-1x"></div>
 
                             <div>
-                                <input type="text" maxlength="7" id="idBackColor" name="BackColor"
-                                    placeholder="#000000" style="width: 85%;">
+                                <input type="text" maxlength="6" id="idBackColor" name="BackColor" placeholder="FF8000"
+                                    value="" style="width: 85%;" onclick="ColorTable.setColorInput(this.id)">
 
-                                <div class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="show(['idOverlayModalColor']);">
+                                <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idBackColor')" style="background-color: #FF8000;" title="Color Picker">
                                 </div>
                             </div>
 

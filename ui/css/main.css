@@ -126,14 +126,18 @@ li {
 .color-table td {
     width: 30px;
     height: 30px;
+    border: solid 2px;
+    border-color: #FFFFFF;
     cursor: pointer;
 }
 
 .color-display {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 15px;
     width: 40px;
     height: 40px;
-    /* EQUALS .color-1st */
-    background-color: #FF8000;
 }
 
 
@@ -407,6 +411,11 @@ select:focus {
     outline-color: #FF8000;
 }
 
+/* to delete */
+#idBackColor {
+    text-transform: uppercase;
+}
+
 .check-box {
     display: block;
     position: relative;
@@ -472,13 +481,6 @@ select:focus {
     transform: rotate(45deg);
 }
 
-/* Color Display do form de configuracao (Abre o Color Picker) */
-form .color-display {
-    display: inline-block;
-    position: relative;
-    top: 15px;
-    cursor: pointer;
-}
 
 
 
