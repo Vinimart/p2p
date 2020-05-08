@@ -1676,6 +1676,7 @@
                             <span class="font-3x">Configuration</span>
                         </div>
 
+                        <!-- begin: Campo de Texto -->
                         <div class="spaced-v-2x">
 
                             <label for="idTextToRender">Text Input :</label><br>
@@ -1686,7 +1687,9 @@
                                 placeholder="Your Text">
 
                         </div>
+                        <!-- end: Campo de Texto -->
 
+                        <!-- begin: Combo Box -->
                         <div class="spaced-v-2x">
 
                             <label for="idFontSize">Font Size :</label><br>
@@ -1715,69 +1718,6 @@
                                 <option value="4">5</option>
                                 <option value="5">6</option>
                             </select>
-
-                        </div>
-
-                        <div class="spaced-v-2x">
-
-                            <label for="idBackColor">Background Color :</label><br>
-
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
-                                    placeholder="FF8000" value=""
-                                    oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
-
-                                <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idBackColor', this.id)" style="background-color: #FF8000;"
-                                    title="Color Picker">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-2x">
-
-                            <label for="idLogoColor1">Logo Color 1 :</label><br>
-
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
-                                    placeholder="FF8000" value=""
-                                    oninput="ColorTable.setColorInput(this.id, 'idLogoColor1Display')">
-
-                                <div id="idLogoColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idLogoColor1', this.id)" style="background-color: #FF8000;"
-                                    title="Color Picker">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-2x">
-
-                            <label class="check-box">
-
-                                <p>Draw Shadow</p>
-
-                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
-                                    value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-2x">
-
-                            <label class="check-box">
-
-                                <p>Customize Shadow</p>
-
-                                <input id="idCustomizeShadow" type="checkbox" name="CustomizeShadow">
-
-                                <span class="checkmark"></span>
-
-                            </label>
 
                         </div>
 
@@ -1832,6 +1772,57 @@
 
                         <div class="spaced-v-2x">
 
+                            <label for="idColorImprovement">Color Improvement :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idColorImprovement" name="ColorImprovement">
+                                <option value="0" selected>None</option>
+                                <option value="1">Strong</option>
+                                <option value="2">Privilege Bright</option>
+                                <option value="3">Privilege Dark</option>
+                                <option value="4">Smart</option>
+                                <option value="5">Smart Channels</option>
+                                <option value="6">Hot Colors</option>
+                                <option value="7">Smart Hot</option>
+                                <option value="8">Pastel</option>
+                            </select>
+
+                        </div>
+                        <!-- end: Combo Box -->
+
+                        <!-- begin: Checkbox -->
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Shadow</p>
+
+                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
+                                    value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Customize Shadow</p>
+
+                                <input id="idCustomizeShadow" type="checkbox" name="CustomizeShadow">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
                             <label class="check-box">
 
                                 <p>Transparent Background</p>
@@ -1843,6 +1834,43 @@
                             </label>
 
                         </div>
+                        <!-- end: Checkbox -->
+
+                        <!-- begin: Selecao de Cor -->
+                        <div class="spaced-v-2x">
+
+                            <label for="idBackColor">Background Color :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
+                                    placeholder="FFFFFF" value=""
+                                    oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
+
+                                <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idBackColor', this.id)" style="background-color: #FF8000;"
+                                    title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idLogoColor1">Logo Color 1 :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
+                                    placeholder="FFFFFF" value=""
+                                    oninput="ColorTable.setColorInput(this.id, 'idLogoColor1Display')">
+
+                                <div id="idLogoColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idLogoColor1', this.id)" style="background-color: #FF8000;"
+                                    title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end: Selecao de Cor -->
 
                         <!-- begin: Componente de lista -->
                         <div class="spaced-below-3x">
