@@ -1687,6 +1687,26 @@
                                 placeholder="Your Text">
 
                         </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextLine1">Text Line 1 :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <input type="text" maxlength="25" id="idTextLine1" name="TextLine1" placeholder="Your Text">
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextLine1">Text Line 2 :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <input type="text" maxlength="25" id="idTextLine2" name="TextLine2" placeholder="Your Text">
+
+                        </div>
                         <!-- end: Campo de Texto -->
 
                         <!-- begin: Combo Box -->
@@ -1697,9 +1717,9 @@
                             <div class="spaced-below-1x"></div>
 
                             <select id="idFontSize" name="FontSize">
-                                <option value="0">Normal</option>
-                                <option value="1">Big</option>
-                                <option value="2">Large</option>
+                                <option value="28">Small</option>
+                                <option value="35" selected>Normal</option>
+                                <option value="42">Big</option>
                             </select>
 
                         </div>
@@ -1772,6 +1792,23 @@
 
                         <div class="spaced-v-2x">
 
+                            <label for="idShadowFade">Shadow Fade :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShadowFade" name="ShadowFade">
+                                <option value="0" selected>None</option>
+                                <option value="10">Very low</option>
+                                <option value="15">Low</option>
+                                <option value="20">Normal</option>
+                                <option value="30">High</option>
+                                <option value="40">Very high</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
                             <label for="idColorImprovement">Color Improvement :</label><br>
 
                             <div class="spaced-below-1x"></div>
@@ -1789,6 +1826,835 @@
                             </select>
 
                         </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idImprovementLevel">Improvement Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idImprovementLevel" name="ImprovementLevel">
+                                <option value="10">1</option>
+                                <option value="20">2</option>
+                                <option value="30">3</option>
+                                <option value="40">4</option>
+                                <option value="50" selected>5</option>
+                                <option value="60">6</option>
+                                <option value="70">7</option>
+                                <option value="80">8</option>
+                                <option value="90">9</option>
+                                <option value="100">10</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idOutlineColor">Outline Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idOutlineColor" name="OutlineColor">
+                                <option value="808080">Dark</option>
+                                <option value="A0A0A0">Average</option>
+                                <option value="C0C0C0" selected>Bright</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idNumTextLines">Num Text Lines :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idNumTextLines" name="NumTextLines">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextAlign">Text Alignment :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idTextAlign" name="TextAlign">
+                                <option value="1">Left</option>
+                                <option value="3" selected>Center</option>
+                                <option value="2">Right</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShadowSizePercent">General Shadow Size :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShadowSizePercent" name="ShadowSizePercent">
+                                <option value="80">Very Small</option>
+                                <option value="90">Small</option>
+                                <option value="100" selected>Normal</option>
+                                <option value="110">Big</option>
+                                <option value="120">Very Big</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idCombinationStyle">Combination Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idCombinationStyle" name="CombinationStyle">
+                                <option value="SoftMerge">SoftMerge</option>
+                                <option value="Merge">Merge</option>
+                                <option value="HardMerge">HardMerge</option>
+                                <option value="Multiply">Multiply</option>
+                                <option value="Darken">Darken</option>
+                                <option value="Lighten">Lighten</option>
+                                <option value="Screen">Screen</option>
+                                <option value="ColorDodge">ColorDodge</option>
+                                <option value="LinearDodge">LinearDodge</option>
+                                <option value="ColorBurn">ColorBurn</option>
+                                <option value="LinearBurn">LinearBurn</option>
+                                <option value="Overlay">Overlay</option>
+                                <option value="Reflex">Reflex</option>
+                                <option value="SoftLight">SoftLight</option>
+                                <option value="Light" selected>Light</option>
+                                <option value="HardLight">HardLight</option>
+                                <option value="LinearLight">LinearLight</option>
+                                <option value="PinLight">PinLight</option>
+                                <option value="VividLight">VividLight</option>
+                                <option value="Color">Color</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idCombinationLevel">Combination Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idCombinationLevel" name="CombinationLevel">
+                                <option value="50">1</option>
+                                <option value="60">2</option>
+                                <option value="70">3</option>
+                                <option value="80" selected>4</option>
+                                <option value="90">5</option>
+                                <option value="100">6</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idImageName">Country Flag :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idImageName" name="ImageName">
+                                <option value="afghanistan">Afghanistan</option>
+                                <option value="albania">Albania</option>
+                                <option value="algeria">Algeria</option>
+                                <option value="andorra">andorra</option>
+                                <option value="angola">Angola</option>
+                                <option value="antigua_and_barbuda">Antigua and Barbuda</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="armenia">Armenia</option>
+                                <option value="australia">Australia</option>
+                                <option value="austria">Austria</option>
+                                <option value="azerbaijan">Azerbaijan</option>
+                                <option value="bahamas">Bahamas</option>
+                                <option value="bahrain">Bahrain</option>
+                                <option value="bangladesh">Bangladesh</option>
+                                <option value="barbados">Barbados</option>
+                                <option value="belarus">Belarus</option>
+                                <option value="belgium">Belgium</option>
+                                <option value="belize">Belize</option>
+                                <option value="benin">Benin</option>
+                                <option value="bhutan">Bhutan</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="bosnia_and_herzegovina">Bosnia and Herzegovina</option>
+                                <option value="botswana">Botswana</option>
+                                <option value="brazil" selected>Brazil</option>
+                                <option value="brunei">Brunei</option>
+                                <option value="bulgaria">Bulgaria</option>
+                                <option value="burkina_faso">Burkina Faso</option>
+                                <option value="burma">Burma</option>
+                                <option value="burundi">Burundi</option>
+                                <option value="cambodia">Cambodia</option>
+                                <option value="cameroon">Cameroon</option>
+                                <option value="canada">Canada</option>
+                                <option value="cape_verde">Cape Verde</option>
+                                <option value="central_african_republic">Central African Republic</option>
+                                <option value="chad">Chad</option>
+                                <option value="chile">Chile</option>
+                                <option value="china">China</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="comoros">Comoros</option>
+                                <option value="congo_brazzaville">Congo Brazzaville</option>
+                                <option value="congo_kinshasa">Congo Kinshasa</option>
+                                <option value="costa_rica">Costa Rica</option>
+                                <option value="croatia">Croatia</option>
+                                <option value="cuba">Cuba</option>
+                                <option value="cyprus">Cyprus</option>
+                                <option value="czech_republic">Czech Republic</option>
+                                <option value="denmark">Denmark</option>
+                                <option value="djibouti">Djibouti</option>
+                                <option value="dominica">Dominica</option>
+                                <option value="dominican_republic">Dominican Republic</option>
+                                <option value="east_timor">East Timor</option>
+                                <option value="ecuador">Ecuador</option>
+                                <option value="egypt">Egypt</option>
+                                <option value="el_salvador">El Salvador</option>
+                                <option value="england">England</option>
+                                <option value="equatorial_guinea">Equatorial Guinea</option>
+                                <option value="eritrea">Eritrea</option>
+                                <option value="estonia">Estonia</option>
+                                <option value="ethiopia">Ethiopia</option>
+                                <option value="european_union">European Union</option>
+                                <option value="faroe_islands">Faroe Islands</option>
+                                <option value="fiji">Fiji</option>
+                                <option value="finland">Finland</option>
+                                <option value="france">France</option>
+                                <option value="gabon">Gabon</option>
+                                <option value="gambia">Gambia</option>
+                                <option value="georgia">Georgia</option>
+                                <option value="germany">Germany</option>
+                                <option value="ghana">Ghana</option>
+                                <option value="greece">Greece</option>
+                                <option value="grenada">Grenada</option>
+                                <option value="guatemala">Guatemala</option>
+                                <option value="guinea">Guinea</option>
+                                <option value="guinea_bissau">Guinea Bissau</option>
+                                <option value="guyana">Guyana</option>
+                                <option value="haiti">Haiti</option>
+                                <option value="honduras">Honduras</option>
+                                <option value="hong_kong">Hong Kong</option>
+                                <option value="hungary">Hungary</option>
+                                <option value="iceland">Iceland</option>
+                                <option value="india">India</option>
+                                <option value="indonesia">Indonesia</option>
+                                <option value="iran">Iran</option>
+                                <option value="iraq">Iraq</option>
+                                <option value="ireland">Ireland</option>
+                                <option value="israel">Israel</option>
+                                <option value="italy">Italy</option>
+                                <option value="cote_d_Ivoire">Ivory Coast</option>
+                                <option value="jamaica">Jamaica</option>
+                                <option value="japan">Japan</option>
+                                <option value="jordan">Jordan</option>
+                                <option value="kazakhstan">Kazakhstan</option>
+                                <option value="kenya">Kenya</option>
+                                <option value="kiribati">Kiribati</option>
+                                <option value="kosovo">Kosovo</option>
+                                <option value="kuwait">Kuwait</option>
+                                <option value="kyrgyzstan">Kyrgyzstan</option>
+                                <option value="laos">Laos</option>
+                                <option value="latvia">Latvia</option>
+                                <option value="lebanon">Lebanon</option>
+                                <option value="lesotho">Lesotho</option>
+                                <option value="liberia">Liberia</option>
+                                <option value="libya">Libya</option>
+                                <option value="liechtenstein">Liechtenstein</option>
+                                <option value="lithuania">Lithuania</option>
+                                <option value="luxembourg">Luxembourg</option>
+                                <option value="macau">Macau</option>
+                                <option value="macedonia">Macedonia</option>
+                                <option value="madagascar">Madagascar</option>
+                                <option value="malawi">Malawi</option>
+                                <option value="malaysia">Malaysia</option>
+                                <option value="maldives">Maldives</option>
+                                <option value="mali">Mali</option>
+                                <option value="malta">Malta</option>
+                                <option value="marshall_islands">Marshall Islands</option>
+                                <option value="mauritania">Mauritania</option>
+                                <option value="mauritius">Mauritius</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="micronesia">Micronesia</option>
+                                <option value="moldova">Moldova</option>
+                                <option value="monaco">Monaco</option>
+                                <option value="mongolia">Mongolia</option>
+                                <option value="montenegro">Montenegro</option>
+                                <option value="morocco">Morocco</option>
+                                <option value="mozambique">Mozambique</option>
+                                <option value="namibia">Namibia</option>
+                                <option value="nauru">Nauru</option>
+                                <option value="nepal">Nepal</option>
+                                <option value="netherlands">Netherlands</option>
+                                <option value="new_zealand">New Zealand</option>
+                                <option value="nicaragua">Nicaragua</option>
+                                <option value="niger">Niger</option>
+                                <option value="nigeria">Nigeria</option>
+                                <option value="korea_north">North Korea</option>
+                                <option value="norway">Norway</option>
+                                <option value="oman">Oman</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="palau">Palau</option>
+                                <option value="panama">Panama</option>
+                                <option value="papua_new_guinea">Papua New Guinea</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="peru">Peru</option>
+                                <option value="philippines">Philippines</option>
+                                <option value="poland">Poland</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="puerto_rico">Puerto Rico</option>
+                                <option value="qatar">Qatar</option>
+                                <option value="republic_of_china">Republic of China</option>
+                                <option value="romania">Romania</option>
+                                <option value="russia">Russia</option>
+                                <option value="rwanda">Rwanda</option>
+                                <option value="saint_kitts_and_nevis">Saint Kitts and Nevis</option>
+                                <option value="saint_lucia">Saint Lucia</option>
+                                <option value="saint_vincent_and_the_grenadines">Saint Vincent and The Grenadines
+                                </option>
+                                <option value="samoa">Samoa</option>
+                                <option value="san_marino">San Marino</option>
+                                <option value="sao_tome_and_principe">Sao Tome and Principe</option>
+                                <option value="saudi_arabia">Saudi Arabia</option>
+                                <option value="scotland">Scotland</option>
+                                <option value="senegal">Senegal</option>
+                                <option value="serbia">Serbia</option>
+                                <option value="seychelles">Seychelles</option>
+                                <option value="sierra_leone">Sierra Leone</option>
+                                <option value="singapore">Singapore</option>
+                                <option value="slovakia">Slovakia</option>
+                                <option value="slovenia">Slovenia</option>
+                                <option value="solomon_islands">Solomon Islands</option>
+                                <option value="somalia">Somalia</option>
+                                <option value="south_africa">South Africa</option>
+                                <option value="korea_south">South Korea</option>
+                                <option value="spain">Spain</option>
+                                <option value="sri_lanka">Sri Lanka</option>
+                                <option value="sudan">Sudan</option>
+                                <option value="suriname">Suriname</option>
+                                <option value="swaziland">Swaziland</option>
+                                <option value="sweden">Sweden</option>
+                                <option value="switzerland">Switzerland</option>
+                                <option value="syria">Syria</option>
+                                <option value="tajikistan">Tajikistan</option>
+                                <option value="tanzania">Tanzania</option>
+                                <option value="thailand">Thailand</option>
+                                <option value="togo">Togo</option>
+                                <option value="tonga">Tonga</option>
+                                <option value="trinidad_and_tobago">Trinidad and Tobago</option>
+                                <option value="tunisia">Tunisia</option>
+                                <option value="turkey">Turkey</option>
+                                <option value="turkmenistan">Turkmenistan</option>
+                                <option value="tuvalu">Tuvalu</option>
+                                <option value="uganda">Uganda</option>
+                                <option value="ukraine">Ukraine</option>
+                                <option value="united_arab_emirates">United Arab Emirates</option>
+                                <option value="united_kingdom">United Kingdom</option>
+                                <option value="united_states_of_america">United States of America</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="uzbekistan">Uzbekistan</option>
+                                <option value="vanuatu">Vanuatu</option>
+                                <option value="vatican_city">Vatican City</option>
+                                <option value="venezuela">Venezuela</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="wales">Wales</option>
+                                <option value="yemen">Yemen</option>
+                                <option value="zambia">Zambia</option>
+                                <option value="zimbabwe">Zimbabwe</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idMappingStyle">Mapping Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idMappingStyle" name="MappingStyle">
+                                <option value="4" selected>Full</option>
+                                <option value="7">Proportional</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idDispAmplitude">Spatial Amplitude :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idDispAmplitude" name="DispAmplitude">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idDispSmoothness">Smoothness :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idDispSmoothness" name="DispSmoothness">
+                                <option value="1">1</option>
+                                <option value="3" selected>2</option>
+                                <option value="6">3</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShapeRotation">Shape Rotation :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShapeRotation" name="ShapeRotation">
+                                <option value="-165">-165</option>
+                                <option value="-150">-150</option>
+                                <option value="-135">-135</option>
+                                <option value="-120">-120</option>
+                                <option value="-105">-105</option>
+                                <option value="-90">-90</option>
+                                <option value="-75">-75</option>
+                                <option value="-60">-60</option>
+                                <option value="-45">-45</option>
+                                <option value="-30">-30</option>
+                                <option value="-15">-15</option>
+                                <option value="0" selected>0</option>
+                                <option value="15">15</option>
+                                <option value="30">30</option>
+                                <option value="45">45</option>
+                                <option value="60">60</option>
+                                <option value="75">75</option>
+                                <option value="90">90</option>
+                                <option value="105">105</option>
+                                <option value="120">120</option>
+                                <option value="135">135</option>
+                                <option value="150">150</option>
+                                <option value="165">165</option>
+                                <option value="180">180</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idContourThickness">Contour Thickness :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idContourThickness" name="ContourThickness">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idContourLevel">Contour Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idContourLevel" name="ContourLevel">
+                                <option value="0">1</option>
+                                <option value="1" selected>2</option>
+                                <option value="2">3</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFoldPosition">Fold Position :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idFoldPosition" name="FoldPosition">
+                                <option value="2">Top</option>
+                                <option value="6">Bottom</option>
+                                <option value="8">Left</option>
+                                <option value="4">Right</option>
+                                <option value="1">Top-left</option>
+                                <option value="3">Top-right</option>
+                                <option value="7">Bottom-left</option>
+                                <option value="5" selected>Bottom-right</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFoldSize">Fold Size :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idFoldSize" name="FoldSize">
+                                <option value="1">Very small</option>
+                                <option value="2">Small</option>
+                                <option value="3" selected>Average</option>
+                                <option value="5">Big</option>
+                                <option value="7">Very big</option>
+                                <option value="10">Maximum</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFoldMaterial">Fold Material :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idFoldMaterial" name="FoldMaterial">
+                                <option value="PlainColor">Plain color</option>
+                                <option value="tex_paper001">Paper style 1</option>
+                                <option value="tex_paper002">Paper style 2</option>
+                                <option value="tex_paper003">Paper style 3</option>
+                                <option value="tex_paper004">Paper style 4</option>
+                                <option value="tex_paper005">Paper style 5</option>
+                                <option value="tex_paper006">Paper style 6</option>
+                                <option value="tex_paper007" selected>Paper style 7</option>
+                                <option value="tex_paper008">Paper style 8</option>
+                                <option value="tex_paper009">Paper style 9</option>
+                                <option value="tex_paper010">Paper style 10</option>
+                                <option value="tex_paper011">Paper style 11</option>
+                                <option value="tex_paper012">Paper style 12</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFoldDarkness">Fold Darkness :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idFoldDarkness" name="FoldDarkness">
+                                <option value="0">None</option>
+                                <option value="10">Small</option>
+                                <option value="20">Average</option>
+                                <option value="30">Big</option>
+                                <option value="40" selected>Very big</option>
+                                <option value="50">Maximum</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idAquaLevel">Aqua Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idAquaLevel" name="AquaLevel">
+                                <option value="1" selected>Normal</option>
+                                <option value="2">High</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idMixtureLevel">Ink Mixture Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idMixtureLevel" name="MixtureLevel">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idMixtureSize">Mixture Region Size :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idMixtureSize" name="MixtureSize">
+                                <option value="50">1</option>
+                                <option value="55">2</option>
+                                <option value="60" selected>3</option>
+                                <option value="65">4</option>
+                                <option value="70">5</option>
+                                <option value="75">6</option>
+                                <option value="80">7</option>
+                                <option value="85">8</option>
+                                <option value="90">9</option>
+                                <option value="100">10</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idHotColors">Hot Light Colors :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idHotColors" name="HotColors">
+                                <option value="-30">0</option>
+                                <option value="-25">1</option>
+                                <option value="-20">2</option>
+                                <option value="-15">3</option>
+                                <option value="-10" selected>4</option>
+                                <option value="-5">5</option>
+                                <option value="0">6</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idOverallStyle">Drawing Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idOverallStyle" name="OverallStyle">
+                                <option value="1">Strong</option>
+                                <option value="2">Dark</option>
+                                <option value="3">Soft</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idStrokesStyle">Strokes Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idStrokesStyle" name="StrokesStyle">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idEffectColor">Illustration Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idEffectColor" name="idEffectColor">
+                                <option value="-1" selected>Gray</option>
+                                <option value="0">Red</option>
+                                <option value="40">Orange</option>
+                                <option value="80">Yellow</option>
+                                <option value="120">Green</option>
+                                <option value="160">Ciano</option>
+                                <option value="200">Ocean</option>
+                                <option value="240">Blue</option>
+                                <option value="280">Purple</option>
+                                <option value="320">Pink</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idHotColorsLevel">Hot Colors Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idHotColorsLevel" name="idHotColorsLevel">
+                                <option value="10">1</option>
+                                <option value="15">2</option>
+                                <option value="20" selected>3</option>
+                                <option value="25">4</option>
+                                <option value="30">5</option>
+                                <option value="35">6</option>
+                                <option value="40">7</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idSmokeSpread">Smoke Spread :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idSmokeSpread" name="SmokeSpread">
+                                <option value="30">1</option>
+                                <option value="35">2</option>
+                                <option value="40" selected>3</option>
+                                <option value="45">4</option>
+                                <option value="50">5</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idSmokeColor">Smoke Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idSmokeColor" name="SmokeColor">
+                                <option value="-1">Gray</option>
+                                <option value="0">Red</option>
+                                <option value="40" selected>Orange</option>
+                                <option value="80">Yellow</option>
+                                <option value="120">Green</option>
+                                <option value="160">Ciano</option>
+                                <option value="200">Ocean</option>
+                                <option value="240">Blue</option>
+                                <option value="280">Purple</option>
+                                <option value="320">Pink</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idShapePreservation">Shape Preservation :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idShapePreservation" name="idShapePreservation">
+                                <option value="40">1</option>
+                                <option value="45">2</option>
+                                <option value="50">3</option>
+                                <option value="55">4</option>
+                                <option value="60" selected>5</option>
+                                <option value="65">6</option>
+                                <option value="70">7</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idEffectStyle">Psychedelic Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idEffectStyle" name="EffectStyle">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idGradientLevel">Gradient Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idGradientLevel" name="GradientLevel">
+                                <option value="0" selected>None</option>
+                                <option value="1">Soft</option>
+                                <option value="2">Big</option>
+                                <option value="3">Maximum</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idGradientStyle">Gradient Style :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idGradientStyle" name="GradientStyle">
+                                <option value="1" selected>Horizontal</option>
+                                <option value="2">Vertical</option>
+                                <option value="3">Ascending diagonal</option>
+                                <option value="4">Descending diagonal</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idNumGradientColors">Num Gradient Colors :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idNumGradientColors" name="NumGradientColors">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5" selected>5</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idDetailLevel">Detail Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idDetailLevel" name="idDetailLevel">
+                                <option value="8">1</option>
+                                <option value="12">2</option>
+                                <option value="16">3</option>
+                                <option value="20">4</option>
+                                <option value="24">5</option>
+                                <option value="28">6</option>
+                                <option value="32" selected>7</option>
+                                <option value="36">8</option>
+                                <option value="40">9</option>
+                                <option value="50">10</option>
+                                <option value="60">11</option>
+                                <option value="70">12</option>
+                                <option value="80">13</option>
+                                <option value="90">14</option>
+                                <option value="100">15</option>
+                                <option value="128">16</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idLegoSize">Lego Size :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idLegoSize" name="LegoSize">
+                                <option value="16">1</option>
+                                <option value="20" selected>2</option>
+                                <option value="24">3</option>
+                                <option value="28">4</option>
+                                <option value="32">5</option>
+                                <option value="36">6</option>
+                                <option value="40">7</option>
+                                <option value="44">8</option>
+                                <option value="48">9</option>
+                            </select>
+
+                        </div>
                         <!-- end: Combo Box -->
 
                         <!-- begin: Checkbox -->
@@ -1800,6 +2666,95 @@
 
                                 <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
                                     value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Left Shadow</p>
+
+                                <input id="idDrawLeftShadow" type="checkbox" name="DrawLeftShadow" checked="true"
+                                    value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Right Shadow</p>
+
+                                <input id="idDrawRightShadow" type="checkbox" name="DrawRightShadow" checked="true"
+                                    value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Bottom-left Shadow</p>
+
+                                <input id="idDrawBottomLeftShadow" type="checkbox" name="DrawBottomLeftShadow"
+                                    checked="true" value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Bottom-right Shadow</p>
+
+                                <input id="idDrawBottomRightShadow" type="checkbox" name="DrawBottomRightShadow"
+                                    checked="true" value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Make Spatial Fit</p>
+
+                                <input id="idUseDisplace" type="checkbox" name="UseDisplace" checked="true"
+                                    value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label class="check-box">
+
+                                <p>Draw Paper Fold</p>
+
+                                <input id="idDrawFold" type="checkbox" name="DrawFold" checked="true" value="checked">
 
                                 <span class="checkmark"></span>
 
@@ -1827,7 +2782,7 @@
 
                                 <p>Transparent Background</p>
 
-                                <input type="checkbox">
+                                <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked">
 
                                 <span class="checkmark"></span>
 
@@ -1843,7 +2798,7 @@
 
                             <div>
                                 <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
-                                    placeholder="FFFFFF" value=""
+                                    placeholder="FFFFFF" value="FF8000"
                                     oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
 
                                 <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
@@ -1856,16 +2811,84 @@
 
                         <div class="spaced-v-2x">
 
+                            <label for="idTextColor">Text Color :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idTextColor" name="TextColor"
+                                    placeholder="FFFFFF" value="404040"
+                                    oninput="ColorTable.setColorInput(this.id, 'idTextColorDisplay')">
+
+                                <div id="idTextColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idTextColor', this.id)" style="background-color: #404040;"
+                                    title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
                             <label for="idLogoColor1">Logo Color 1 :</label><br>
 
                             <div>
                                 <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
-                                    placeholder="FFFFFF" value=""
+                                    placeholder="FFFFFF" value="FF8000"
                                     oninput="ColorTable.setColorInput(this.id, 'idLogoColor1Display')">
 
                                 <div id="idLogoColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
                                     onclick="ColorTable.set('idLogoColor1', this.id)" style="background-color: #FF8000;"
                                     title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idContourColor">Contour Color :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idContourColor"
+                                    name="ContourColor" placeholder="FFFFFF" value="FF8000"
+                                    oninput="ColorTable.setColorInput(this.id, 'idContourColorDisplay')">
+
+                                <div id="idContourColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idContourColor', this.id)"
+                                    style="background-color: #FF8000;" title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idFoldColor">Fold Color :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idFoldColor" name="FoldColor"
+                                    placeholder="FFFFFF" value="C0C080"
+                                    oninput="ColorTable.setColorInput(this.id, 'idFoldColorDisplay')">
+
+                                <div id="idFoldColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idFoldColor', this.id)" style="background-color: #C0C080;"
+                                    title="Color Picker">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idBackColor">Gradient Color 1 :</label><br>
+
+                            <div>
+                                <input class="color-input" type="text" maxlength="6" id="idGradientColor1"
+                                    name="GradientColor1" placeholder="FFFFFF" value="FF8000"
+                                    oninput="ColorTable.setColorInput(this.id, 'idGradientColor1Display')">
+
+                                <div id="idGradientColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
+                                    onclick="ColorTable.set('idGradientColor1', this.id)"
+                                    style="background-color: #FF8000;" title="Color Picker">
                                 </div>
                             </div>
 
