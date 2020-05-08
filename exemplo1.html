@@ -678,7 +678,7 @@
                 <!-- end: Caixa de Recomendacoes -->
 
                 <!-- begin: Dicas Importantes -->
-                <div class="spaced-v-3x">
+                <div class="spaced-v-3x justified">
 
                     <span class="font-3x">Important Tips:</span>
 
@@ -711,6 +711,8 @@
                 </div>
                 <!-- end: Dicas Importantes -->
 
+                <hr class="ruler">
+
                 <!-- begin: Imagem de Exemplo -->
                 <div class="centered spaced-v-3x">
                     <img class="spaced-below-1x lazyload" src="ui/img/loader-100px.svg"
@@ -722,7 +724,8 @@
                 <!-- begin: Formulario de Configuracao -->
                 <div class="box shaded padded-1x">
 
-                    <form id="idFormMain" name="FormMain" action="/result.html">
+                    <form id="idFormMain" name="FormMain" method="POST"
+                        action="http://www.picturetopeople.org/p2p/text_effects_generator.p2p/3d_abstract_text_effect">
 
                         <div class="title-bar padded-1x centered cursor-default">
                             <span class="font-3x">Configuration</span>
@@ -2973,7 +2976,8 @@
                         <input type="hidden" name="ResultType" id="idResultType" value="view" />
 
                         <div class="spaced-v-2x centered">
-                            <button type="submit" class="btn">Generate</button>
+                            <button class="btn"
+                                onclick="if (DataChecker.checkAllWithMsg()) alert('submit');">Generate</button>
                         </div>
 
                     </form>
