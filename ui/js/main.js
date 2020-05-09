@@ -618,8 +618,8 @@ var ColorTable = new(function () {
                 return this.target.value
             } else {
 
-                showModalMsg('idOverlayModalMsg', 'idModalMsgText', `${id} :  Invalid Hex Value`)
                 this.target.value = ''
+                showModalMsg('idOverlayModalMsg', 'idModalMsgText', `${id} :  Invalid Hex Value`)
             }
         }
 

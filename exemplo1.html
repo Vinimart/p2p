@@ -724,8 +724,8 @@
                 <!-- begin: Formulario de Configuracao -->
                 <div class="box shaded padded-1x">
 
-                    <form id="idFormMain" name="FormMain" method="POST"
-                        action="http://www.picturetopeople.org/p2p/text_effects_generator.p2p/3d_abstract_text_effect">
+                    <form id="idFormMain" name="FormMain"
+                        action="result.html">
 
                         <div class="title-bar padded-1x centered cursor-default">
                             <span class="font-3x">Configuration</span>
@@ -770,7 +770,7 @@
 
                             <div class="spaced-below-1x"></div>
 
-                            <input type="text" maxlength="25" id="idTextToRender" name="TextToRender"
+                            <input type="text" id="idTextToRender" name="TextToRender" maxlength="25" required
                                 placeholder="Your Text">
 
                         </div>
@@ -3184,73 +3184,10 @@
 
             SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
 
-            SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
-                'abstract083');
-
-            SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
-                'color_improvement_effect_001');
-
             SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
                 '01 Digit');
 
-            SelLists.newList('i2', 'idRenderingStyle', ['sel-list-item'], '', '', '1');
-
-            SelLists.newList('i3', 'idModel3D', ['sel-list-item'], '', '', '1');
-
             SelLists.newList('s1', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1');
-
-            SelLists.newList('s2', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
-
-            SelLists.newList('s3', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00');
-
-            SelLists.newList('s4', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
-
-            SelLists.newList('s5', 'idOrnament01', ['sel-list-item'], '', '', 'abstract001');
-
-            SelLists.newList('s6', 'idOrnament02', ['sel-list-item'], '', '', 'star_001');
-
-            SelLists.newList('s7', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
-
-            SelLists.newList('s8', 'idOrnament03', ['sel-list-item'], '', '', 'love_001');
-
-            SelLists.newList('s9', 'idOrnament04', ['sel-list-item'], '', '', 'office_001');
-
-            SelLists.newList('s10', 'idOrnament05', ['sel-list-item'], '', '', 'christmas_001');
-
-            SelLists.newList('s11', 'idOrnament06', ['sel-list-item'], '', '', 'tech_001');
-
-            SelLists.newList('s12', 'idOrnament07', ['sel-list-item'], '', '', 'female_001');
-
-            SelLists.newList('s13', 'idOrnament08', ['sel-list-item'], '', '', 'male_001');
-
-            SelLists.newList('s14', 'idOrnament09', ['sel-list-item'], '', '', 'horror_001');
-
-            SelLists.newList('s15', 'idOrnament10', ['sel-list-item'], '', '', 'art_001');
-
-            SelLists.newList('s16', 'idOrnament11', ['sel-list-item'], '', '', 'kids_001');
-
-            SelLists.newList('s17', 'idOrnament12', ['sel-list-item'], '', '', 'game_001');
-
-            SelLists.newList('s18', 'idOrnament13', ['sel-list-item'], '', '', 'sport_001');
-
-            SelLists.newList('s19', 'idOrnament14', ['sel-list-item'], '', '', 'food_001');
-
-            SelLists.newList('s20', 'idOrnament15', ['sel-list-item'], '', '', 'clothing_001');
-
-            SelLists.newList('s21', 'idOrnament16', ['sel-list-item'], '', '', 'music_001');
-
-            SelLists.newList('s22', 'idOrnament17', ['sel-list-item'], '', '', 'animal_001');
-
-            SelLists.newList('s23', 'idOrnament18', ['sel-list-item'], '', '', 'science_001');
-
-            SelLists.newList('s24', 'idOrnament19', ['sel-list-item'], '', '', 'flower_001');
-
-            SelLists.newList('s25', 'idOrnament20', ['sel-list-item'], '', '', 'transport_001');
-
-            SelLists.newList('s26', 'idOrnament21', ['sel-list-item'], '', '', 'cloud_001');
-
-            SelLists.newList('s27', 'idOrnament22', ['sel-list-item'], '', '', 'zodiac_001');
-
 
             // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
             // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
