@@ -611,14 +611,15 @@ var ColorTable = new(function () {
 
         this.checkHexValue = () => {
 
-            let hexValidator = /^[0-9a-f]+$/
+            this.hexValidator = /^[0-9a-fA-F]+$/
 
-            if (hexValidator.test(this.target.value)) {
+            if (this.hexValidator.test(this.target.value)) {
 
                 return this.target.value
             } else {
 
-                showModalMsg('idOverlayModalMsg', 'idModalMsgText', 'Invalid Hex Value')
+                showModalMsg('idOverlayModalMsg', 'idModalMsgText', `${id} :  Invalid Hex Value`)
+                this.target.value = ''
             }
         }
 
