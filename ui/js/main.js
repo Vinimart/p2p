@@ -602,12 +602,6 @@ var ColorTable = new(function () {
 
         var container = document.getElementById("idColorTableContainer");
 
-        //values = getElemPosAndSize(this.target);
-
-        //container.style.left = values.left + "px";
-        //container.style.top = (values.top + values.height) + "px";
-        //container.style.width = values.width + "px";
-
         toggleHide([container.id]);
     }
 
@@ -615,18 +609,32 @@ var ColorTable = new(function () {
         this.target = document.getElementById(id);
         this.colorDisplay = document.getElementById(idDisplay)
 
+        this.checkHexValue = () => {
+
+            let hexValidator = /^[0-9a-f]+$/
+
+            if (hexValidator.test(this.target.value)) {
+
+                return this.target.value
+            } else {
+
+                showModalMsg('idOverlayModalMsg', 'idModalMsgText', 'Invalid Hex Value')
+            }
+        }
+
         if (this.target.value.length === 6) {
-            this.selColor = this.target.value
+
+            this.selColor = this.checkHexValue()
             this.colorDisplay.style.backgroundColor = '#' + this.selColor
         }
     }
 
-    this.setColor = function (color, id) {
+    this.setColor = function (color) {
         this.selColor = color
-        let colorTableOkBtn = document.getElementById('idColorTableOkBtn')
+        this.colorTableOkBtn = document.getElementById('idColorTableOkBtn')
 
-        colorTableOkBtn.addEventListener('click', () => {
-            this.target.value = this.selColor;
+        this.colorTableOkBtn.addEventListener('click', () => {
+            this.target.value = this.selColor
             this.colorDisplay.style.backgroundColor = '#' + this.selColor
         })
     }
