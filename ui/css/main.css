@@ -201,14 +201,15 @@ li {
 .comp-scroll {
     width: 100%;
     max-height: 300px;
-    overflow: auto;
+    overflow-y: auto;
     text-align: center;
     /* EQUALS .color-4th */
     border: solid 1px #CCCCCC;
     border-radius: 5px;
     /* EQUALS .color-inv */
     background-color: #FFFFFF;
-    line-height: 0px;
+    /* Impede que o container crie espaçamento entre rows */
+    font-size: 0px;
 }
 
 /* Container para componentes sem barra de rolagem / overflow: hidden; */
