@@ -759,7 +759,7 @@ sobreposto a um elemento de cor clara */
 .in-block-display {
     display: inline-block;
     /* to delete */
-    padding: 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .inline-display {
@@ -1099,7 +1099,7 @@ sobreposto a um elemento de cor clara */
 
     /* Tamanho maximo para nao quebrar o layout no mobile */
     img {
-        max-width: 95%;
+        max-width: 99%;
     }
 
     /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
