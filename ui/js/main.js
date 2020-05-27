@@ -592,55 +592,30 @@ var GrowLists = new(function () {
 /* --------------- BEGIN: COLOR TABLE --------------- */
 
 // Foram feitas alteracoes nos metodos dessa classe para ser compativel com o novo prototipo (vinimartdev.com)
+
 var ColorTable = new(function () {
 
     this.target;
 
     this.set = function (id, idDisplay) {
+
         this.target = document.getElementById(id);
         this.colorDisplay = document.getElementById(idDisplay)
-
-        var container = document.getElementById("idColorTableContainer");
-
-        toggleHide([container.id]);
-    }
-
-    this.setColorInput = function (id, idDisplay) {
-        this.target = document.getElementById(id);
-        this.colorDisplay = document.getElementById(idDisplay)
-
-        this.checkHexValue = () => {
-
-            this.hexValidator = /^[0-9a-fA-F]+$/
-
-            if (this.hexValidator.test(this.target.value)) {
-
-                return this.target.value
-            } else {
-
-                this.target.value = ''
-                showModalMsg('idOverlayModalMsg', 'idModalMsgText', `${id} :  Invalid Hex Value`)
-            }
-        }
-
-        if (this.target.value.length === 6) {
-
-            this.selColor = this.checkHexValue()
-            this.colorDisplay.style.backgroundColor = '#' + this.selColor
-        }
+        this.container = document.getElementById("idColorTableContainer");
+        toggleHide([this.container.id]);
     }
 
     this.setColor = function (color) {
-        this.selColor = color
-        this.colorTableOkBtn = document.getElementById('idColorTableOkBtn')
+        
+        this.selectedColor = color
+    }
 
-        this.colorTableOkBtn.addEventListener('click', () => {
-            this.target.value = this.selColor
-            this.colorDisplay.style.backgroundColor = '#' + this.selColor
-        })
+    this.applyColor = () => {
+
+        this.target.value = this.selectedColor
+        toggleHide([this.container.id]);
     }
 
     return this;
-
 })();
 /* --------------- END: COLOR TABLE --------------- */

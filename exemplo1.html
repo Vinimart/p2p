@@ -442,7 +442,7 @@
 
             <div class="centered spaced-v-1x">
                 <button id="idColorTableOkBtn" class="btn-small spaced-h-1x spaced-below-1x"
-                    onclick="hide(['idColorTableContainer']);">
+                    onclick="ColorTable.applyColor()">
                     <i class="fas fa-check">&nbsp;</i>
                     <span>OK</span>
                 </button>
@@ -716,8 +716,7 @@
                 <!-- begin: Formulario de Configuracao -->
                 <div class="box shaded padded-1x">
 
-                    <form id="idFormMain" name="FormMain"
-                        action="result.html">
+                    <form id="idFormMain" name="FormMain" action="result.html">
 
                         <div class="title-bar padded-1x centered cursor-default">
                             <span class="font-3x">Configuration</span>
@@ -785,15 +784,15 @@
 
                             <label for="idBackColor">Background Color :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
-                                    placeholder="FFFFFF" value="FF8000"
-                                    oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idBackColor', this.id)" style="background-color: #FF8000;"
-                                    title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
+                                    value="000000">
+
+                                <i id="idBackColorDisplay" class="color-display far fa-edit title color-1st"
+                                    onclick="ColorTable.set('idBackColor', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>

@@ -132,12 +132,8 @@ li {
 }
 
 .color-display {
-    display: inline-block;
-    position: relative;
     cursor: pointer;
-    top: 15px;
-    width: 40px;
-    height: 40px;
+    margin-left: 10px;
 }
 
 
@@ -398,7 +394,6 @@ select:focus {
 }
 
 .color-input {
-    width: 90%!important;
     text-transform: uppercase;
 }
 
@@ -1028,10 +1023,6 @@ sobreposto a um elemento de cor clara */
     .column-2nd {
         width: 100%;
     }
-
-    .color-input {
-        width: 85%!important;
-    }
 }
 
 @media (max-width: 500px) {
@@ -1080,10 +1071,6 @@ sobreposto a um elemento de cor clara */
     .header-title {
         line-height: 100%;
         margin-bottom: 20px;
-    }
-
-    .color-input {
-        width: 75%!important;
     }
 
     /* Restaura o tamanho original das imagens */
