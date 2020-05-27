@@ -1086,9 +1086,9 @@ sobreposto a um elemento de cor clara */
         width: 75%!important;
     }
 
-    /* Tamanho maximo para nao quebrar o layout no mobile */
+    /* Restaura o tamanho original das imagens */
     img {
-        max-width: 99%;
+        max-width: 100%;
     }
 
     /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
