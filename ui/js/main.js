@@ -602,16 +602,18 @@ var ColorTable = new(function () {
         this.target = document.getElementById(id);
         this.colorDisplay = document.getElementById(idDisplay)
         this.container = document.getElementById("idColorTableContainer");
+
         toggleHide([this.container.id]);
     }
 
     this.setColor = function (color) {
-        
+
         this.selectedColor = color
     }
 
     this.applyColor = () => {
 
+        this.selectedColor = this.selectedColor ? this.selectedColor : '000000'
         this.target.value = this.selectedColor
         toggleHide([this.container.id]);
     }
