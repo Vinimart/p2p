@@ -1766,6 +1766,17 @@
 
                         </div>
 
+                        <div class="spaced-v-2x">
+
+                            <label for="idTextToRender">Text Input :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <input type="text" maxlength="25" id="idTextToRender" name="TextToRender"
+                                placeholder="Your Text">
+
+                        </div>
+
                         <div>
 
                             <label for="idMargin">Margin :</label><br>
@@ -1863,6 +1874,26 @@
 
                         <div class="spaced-v-2x">
 
+                            <label for="idColorImprovement">Color Improvement :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select class="spaced-1x" id="idColorImprovement" name="ColorImprovement">
+                                <option value="0" selected>None</option>
+                                <option value="1">Strong</option>
+                                <option value="2">Privilege Bright</option>
+                                <option value="3">Privilege Dark</option>
+                                <option value="4">Smart</option>
+                                <option value="5">Smart Channels</option>
+                                <option value="6">Hot Colors</option>
+                                <option value="7">Smart Hot</option>
+                                <option value="8">Pastel</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
                             <label for="idLogoColor1">Logo Color 1 :</label><br>
 
                             <div class="spaced-below-1x"></div>
@@ -1873,6 +1904,24 @@
 
                                 <i id="idLogoColor1Display" class="color-display far fa-edit title color-1st animate-1"
                                     onclick="ColorTable.set('idLogoColor1', this.id)" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-2x">
+
+                            <label for="idContourColor">Contour Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idContourColor"
+                                    name="ContourColor" value="000000">
+
+                                <i id="idContourColorDisplay"
+                                    class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idContourColor', this.id)" title="Color Picker">
                                 </i>
                             </div>
 
@@ -1908,21 +1957,18 @@
 
                         <div class="spaced-v-2x">
 
-                            <label for="idContourColor">Contour Color :</label><br>
+                            <label class="check-box">
 
-                            <div class="spaced-below-1x"></div>
+                                <p>Draw Paper Fold</p>
 
-                            <div class="flex-between">
-                                <input class="color-input" type="text" maxlength="6" id="idContourColor"
-                                    name="ContourColor" value="000000">
+                                <input id="idDrawFold" type="checkbox" name="DrawFold" checked="true" value="checked">
 
-                                <i id="idContourColorDisplay"
-                                    class="color-display far fa-edit title color-1st animate-1"
-                                    onclick="ColorTable.set('idContourColor', this.id)" title="Color Picker">
-                                </i>
-                            </div>
+                                <span class="checkmark"></span>
+
+                            </label>
 
                         </div>
+
 
                         <div class="spaced-v-2x">
 
