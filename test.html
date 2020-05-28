@@ -442,7 +442,7 @@
 
             <div class="centered spaced-v-1x">
                 <button id="idColorTableOkBtn" class="btn-small spaced-h-1x spaced-below-1x"
-                    onclick="hide(['idColorTableContainer']);">
+                    onclick="ColorTable.applyColor()">
                     <i class="fas fa-check">&nbsp;</i>
                     <span>OK</span>
                 </button>
@@ -1741,15 +1741,15 @@
 
                             <label for="idBackColor">Background Color :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
-                                    placeholder="FFFFFF" value="FF8000"
-                                    oninput="ColorTable.setColorInput(this.id, 'idBackColorDisplay')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idBackColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idBackColor', this.id)" style="background-color: #FF8000;"
-                                    title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idBackColor" name="BackColor"
+                                    value="000000">
+
+                                <i id="idBackColorDisplay" class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idBackColor', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
@@ -1787,15 +1787,15 @@
 
                             <label for="idTextColor">Text Color :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idTextColor" name="TextColor"
-                                    placeholder="FFFFFF" value="404040"
-                                    oninput="ColorTable.setColorInput(this.id, 'idTextColorDisplay')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idTextColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idTextColor', this.id)" style="background-color: #404040;"
-                                    title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idTextColor" name="TextColor"
+                                    value="000000">
+
+                                <i id="idTextColorDisplay" class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idTextColor', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
@@ -1865,15 +1865,15 @@
 
                             <label for="idLogoColor1">Logo Color 1 :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
-                                    placeholder="FFFFFF" value="FF8000"
-                                    oninput="ColorTable.setColorInput(this.id, 'idLogoColor1Display')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idLogoColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idLogoColor1', this.id)" style="background-color: #FF8000;"
-                                    title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
+                                    value="000000">
+
+                                <i id="idLogoColor1Display" class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idLogoColor1', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
@@ -1910,15 +1910,16 @@
 
                             <label for="idContourColor">Contour Color :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idContourColor"
-                                    name="ContourColor" placeholder="FFFFFF" value="FF8000"
-                                    oninput="ColorTable.setColorInput(this.id, 'idContourColorDisplay')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idContourColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idContourColor', this.id)"
-                                    style="background-color: #FF8000;" title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idContourColor"
+                                    name="ContourColor" value="000000">
+
+                                <i id="idContourColorDisplay"
+                                    class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idContourColor', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
@@ -1954,15 +1955,15 @@
 
                             <label for="idFoldColor">Fold Color :</label><br>
 
-                            <div>
-                                <input class="color-input" type="text" maxlength="6" id="idFoldColor" name="FoldColor"
-                                    placeholder="FFFFFF" value="C0C080"
-                                    oninput="ColorTable.setColorInput(this.id, 'idFoldColorDisplay')">
+                            <div class="spaced-below-1x"></div>
 
-                                <div id="idFoldColorDisplay" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idFoldColor', this.id)" style="background-color: #C0C080;"
-                                    title="Color Picker">
-                                </div>
+                            <div class="flex-between">
+                                <input class="color-input" type="text" maxlength="6" id="idFoldColor" name="FoldColor"
+                                    value="000000">
+
+                                <i id="idFoldColorrDisplay" class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idFoldColor', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
@@ -2011,17 +2012,18 @@
 
                         <div class="spaced-v-2x">
 
-                            <label for="idBackColor">Gradient Color 1 :</label><br>
+                            <label for="idGradientColor1">Gradient Color 1 :</label><br>
 
-                            <div>
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
                                 <input class="color-input" type="text" maxlength="6" id="idGradientColor1"
-                                    name="GradientColor1" placeholder="FFFFFF" value="FF8000"
-                                    oninput="ColorTable.setColorInput(this.id, 'idGradientColor1Display')">
+                                    name="GradientColor1" value="000000">
 
-                                <div id="idGradientColor1Display" class="color-display rounded-3x spaced-h-1x animate-1"
-                                    onclick="ColorTable.set('idGradientColor1', this.id)"
-                                    style="background-color: #FF8000;" title="Color Picker">
-                                </div>
+                                <i id="idGradientColor1Display"
+                                    class="color-display far fa-edit title color-1st animate-1"
+                                    onclick="ColorTable.set('idGradientColor1', this.id)" title="Color Picker">
+                                </i>
                             </div>
 
                         </div>
