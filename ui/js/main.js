@@ -7,11 +7,11 @@ function checkElemPropertyValue(idElem, propName, operator, value) {
 function randomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    // The Math.random() function returns a floating-point, pseudo-random number 
+    // The Math.random() function returns a floating-point, pseudo-random number
     // in the range [0, 1); that is, from 0 (inclusive) up to but not including
-    // 1 (exclusive), which you can then scale to your desired range. The 
-    // implementation selects the initial seed to the random number generation 
-    // algorithm; it cannot be chosen or reset by the user.	
+    // 1 (exclusive), which you can then scale to your desired range. The
+    // implementation selects the initial seed to the random number generation
+    // algorithm; it cannot be chosen or reset by the user.
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -53,8 +53,8 @@ function isBlankStr(str) {
     // A chamada ao metodo "replace" faz o trim da string
     // evitando que strings compostas so de espacos em branco
     // cheguem ao servidor.
-    str = str.replace(/^\s+|\s+$/g, "");
-    return str === "";
+    str = str.replace(/^\s+|\s+$/g, '');
+    return str === '';
 }
 
 function strEndsWith(str, end) {
@@ -64,28 +64,23 @@ function strEndsWith(str, end) {
 
 function strEndsWithOneOf(str, ends) {
     for (var i = 0; i < ends.length; i++) {
-        if (strEndsWith(str, ends[i]))
-            return true;
+        if (strEndsWith(str, ends[i])) return true;
     }
 
     return false;
 }
 
 function strPad(str, isLeftPad, finalStrSize, padChar) {
-
     var padSize = finalStrSize - str.length;
 
     if (padSize > 0) {
-
         var pad = '';
         for (var i = 0; i < padSize; i++) {
             pad = pad + padChar;
         }
 
-        if (isLeftPad)
-            str = pad + str;
-        else
-            str = str + pad;
+        if (isLeftPad) str = pad + str;
+        else str = str + pad;
     }
 
     return str;
@@ -93,22 +88,23 @@ function strPad(str, isLeftPad, finalStrSize, padChar) {
 
 // "toReplace" e "newValue" podem ser strings ou vetores de strings.
 function replaceAll(str, toReplace, newValue, leftFlag, rightFlag) {
-
     var newStr = str;
 
     if (isArray(toReplace)) {
-
         for (var i = 0; i < toReplace.length; i++) {
             if (i < newValue.length)
-                newStr = replaceAll(newStr, toReplace[i], newValue[i], leftFlag, rightFlag);
-            else
-                newStr = replaceAll(newStr, toReplace[i], "", leftFlag, rightFlag);
+                newStr = replaceAll(
+                    newStr,
+                    toReplace[i],
+                    newValue[i],
+                    leftFlag,
+                    rightFlag
+                );
+            else newStr = replaceAll(newStr, toReplace[i], '', leftFlag, rightFlag);
         }
-
     } else {
-
-        leftFlag = leftFlag || "";
-        rightFlag = rightFlag || "";
+        leftFlag = leftFlag || '';
+        rightFlag = rightFlag || '';
 
         var itemToReplace = leftFlag + toReplace + rightFlag;
 
@@ -117,27 +113,25 @@ function replaceAll(str, toReplace, newValue, leftFlag, rightFlag) {
         index = newStr.indexOf(itemToReplace, index);
 
         while (index >= 0) {
-            newStr = newStr.replace(itemToReplace, newValue + "");
+            newStr = newStr.replace(itemToReplace, newValue + '');
             index = newStr.indexOf(itemToReplace, index);
         }
     }
 
     return newStr;
-
-};
+}
 
 function format(str, items, leftFlag, rightFlag) {
     str = str + '';
 
     // Eu sei que os valores a serem substituidos sao numeros.
     var toReplace = [];
-    for (var i = 0; i < items.length; i++)
-        toReplace[i] = i;
+    for (var i = 0; i < items.length; i++) toReplace[i] = i;
 
     str = replaceAll(str, toReplace, items, leftFlag, rightFlag);
 
     return str;
-};
+}
 
 function arrayToStr(array, sep) {
     var str = '';
@@ -150,12 +144,11 @@ function arrayToStr(array, sep) {
     }
 
     return str;
-};
+}
 
 function isArray(item) {
-    return item && (item instanceof Object) && (item.constructor === Array);
-};
-
+    return item && item instanceof Object && item.constructor === Array;
+}
 
 function getElemPosAndSize(element) {
     var bodyRect = document.body.getBoundingClientRect(),
@@ -173,7 +166,7 @@ function getElemPosAndSize(element) {
 function show(ids) {
     if (ids) {
         for (var i = 0; i < ids.length; i++) {
-            document.getElementById(ids[i]).classList.remove("hide-element");
+            document.getElementById(ids[i]).classList.remove('hide-element');
         }
     }
 }
@@ -181,7 +174,7 @@ function show(ids) {
 function hide(ids) {
     if (ids) {
         for (var i = 0; i < ids.length; i++) {
-            document.getElementById(ids[i]).classList.add("hide-element");
+            document.getElementById(ids[i]).classList.add('hide-element');
         }
     }
 }
@@ -211,11 +204,11 @@ function toggleCss(ids, cssClasses) {
 }
 
 function toggleHide(ids) {
-    toggleCss(ids, ["hide-element"]);
+    toggleCss(ids, ['hide-element']);
 }
 
 function setInnerImagesSrc(outerId, path, files) {
-    var imgs = document.getElementById(outerId).getElementsByTagName("img");
+    var imgs = document.getElementById(outerId).getElementsByTagName('img');
 
     /* Nao pode haver menos imagens do que nomes de arquivos passados. */
     for (var i = 0; i < files.length; i++) {
@@ -223,18 +216,26 @@ function setInnerImagesSrc(outerId, path, files) {
     }
 }
 
-function changeSel(selKeeperId, newSelValue, prefixToSelElemId, cssToToggle, viewKeeperId, viewTextMask, setOnlyIfEmpty) {
+function changeSel(
+    selKeeperId,
+    newSelValue,
+    prefixToSelElemId,
+    cssToToggle,
+    viewKeeperId,
+    viewTextMask,
+    setOnlyIfEmpty
+) {
     // Tem que existir.
     var keeper = document.getElementById(selKeeperId);
 
     // Seguranca.
     if (keeper) {
         // Pode existir ou nao.
-        var viewKeeper = viewKeeperId !== "" ? document.getElementById(viewKeeperId) : undefined;
+        var viewKeeper =
+            viewKeeperId !== '' ? document.getElementById(viewKeeperId) : undefined;
 
         if (setOnlyIfEmpty) {
-            if (keeper.value === "")
-                keeper.value = newSelValue;
+            if (keeper.value === '') keeper.value = newSelValue;
             // Tem que fazer essa parte de qualquer jeito, senao nao seta a interface quando vai para outra pagina e volta.
             var selElemId = prefixToSelElemId + keeper.value;
             toggleCss([selElemId], cssToToggle);
@@ -246,13 +247,22 @@ function changeSel(selKeeperId, newSelValue, prefixToSelElemId, cssToToggle, vie
         }
 
         if (viewKeeper)
-            viewKeeper.innerHTML = viewTextMask !== "" ? viewTextMask.replace("<<0>>", keeper.value) : keeper.value;
+            viewKeeper.innerHTML =
+            viewTextMask !== '' ?
+            viewTextMask.replace('<<0>>', keeper.value) :
+            keeper.value;
     } else {
         alert('ERROR: Id = "' + selKeeperId + '" is not valid in this page.');
     }
 }
 
-function showModalMsg(idMsgContainerElem, idMsgTextElem, msg, idMsgTitleElem, title) {
+function showModalMsg(
+    idMsgContainerElem,
+    idMsgTextElem,
+    msg,
+    idMsgTitleElem,
+    title
+) {
     var msgElem = document.getElementById(idMsgTextElem),
         titleElem = document.getElementById(idMsgTitleElem);
 
@@ -267,31 +277,41 @@ function showModalMsg(idMsgContainerElem, idMsgTextElem, msg, idMsgTitleElem, ti
 
 function stopProp(event) {
     event.cancelBubble = true; // IE
-    if (event.stopPropagation)
-        event.stopPropagation(); // Others
+    if (event.stopPropagation) event.stopPropagation(); // Others
 }
-
 
 /* --------------- BEGIN: DATA CHECKER --------------- */
 var DataChecker = new(function () {
-
     this.toCheck = [];
     this.checkFunctionsWithMsg = {};
     this.idMsgContainerElem;
     this.idMsgTextElem;
     this.idMsgTitleElem;
 
-    this.setMsgElements = function (idMsgContainerElem, idMsgTextElem, idMsgTitleElem) {
+    this.setMsgElements = function (
+        idMsgContainerElem,
+        idMsgTextElem,
+        idMsgTitleElem
+    ) {
         this.idMsgContainerElem = idMsgContainerElem;
         this.idMsgTextElem = idMsgTextElem;
         this.idMsgTitleElem = idMsgTitleElem;
-    }
+    };
 
     // Os 4 ultimos parametros sao opcionais e referem-se a uma
     // condicao a ser obedecida para que o check seja feito.
     // Condicao: que a propriedade "condProperty" do elemento de id "idElemToCond" retorne true para o operador "condOperator" com o valor "condValue".
-    this.newCheck = function (idElemToCheck, propertyToCheck, elemViewName, checkType, valuesToCheck, idElemToCond, condProperty, condOperator, condValue) {
-
+    this.newCheck = function (
+        idElemToCheck,
+        propertyToCheck,
+        elemViewName,
+        checkType,
+        valuesToCheck,
+        idElemToCond,
+        condProperty,
+        condOperator,
+        condValue
+    ) {
         // Tem que existir para o check existir.
         var elemToCheck = document.getElementById(idElemToCheck);
 
@@ -306,86 +326,114 @@ var DataChecker = new(function () {
             if (idElemToCond) {
                 // Condicional a ser obedecida para que o check seja feito.
                 newCheck.cond = {
-                    "idElem": idElemToCond,
-                    "propName": condProperty,
-                    "operator": condOperator,
-                    "propValue": condValue
+                    idElem: idElemToCond,
+                    propName: condProperty,
+                    operator: condOperator,
+                    propValue: condValue,
                 };
             }
 
             this.toCheck[this.toCheck.length] = newCheck;
         }
-    }
+    };
 
-    this.checkBlankWithMsg = function (idElemToCheck, propertyToCheck, elemViewName, valuesToCheck) {
+    this.checkBlankWithMsg = function (
+        idElemToCheck,
+        propertyToCheck,
+        elemViewName,
+        valuesToCheck
+    ) {
         var elem = document.getElementById(idElemToCheck),
             result = {
-                "ok": "true",
-                "msg": ""
+                ok: 'true',
+                msg: '',
             };
 
         if (elem) {
-            var value = elem["value"];
+            var value = elem['value'];
 
             if (isBlankStr(value)) {
                 result.ok = false;
-                result.msg = format('Field "<<0>>" value is empty or has only blank characters.', [elemViewName], "<<", ">>");
+                result.msg = format(
+                    'Field "<<0>>" value is empty or has only blank characters.',
+                    [elemViewName],
+                    '<<',
+                    '>>'
+                );
             }
         }
 
         return result;
-    }
+    };
 
-    this.checkRangeWithMsg = function (idElemToCheck, propertyToCheck, elemViewName, valuesToCheck) {
+    this.checkRangeWithMsg = function (
+        idElemToCheck,
+        propertyToCheck,
+        elemViewName,
+        valuesToCheck
+    ) {
         var elem = document.getElementById(idElemToCheck),
             result = {
-                "ok": "true",
-                "msg": ""
+                ok: 'true',
+                msg: '',
             };
 
         if (elem) {
-            var value = elem["value"];
+            var value = elem['value'];
 
             if (value < valuesToCheck[0] || value > valuesToCheck[1]) {
                 result.ok = false;
-                result.msg = format('Field "<<0>>" must have a value between <<1>> and <<2>>. ', [elemViewName, valuesToCheck[0], valuesToCheck[1]], "<<", ">>");
+                result.msg = format(
+                    'Field "<<0>>" must have a value between <<1>> and <<2>>. ',
+                    [elemViewName, valuesToCheck[0], valuesToCheck[1]],
+                    '<<',
+                    '>>'
+                );
             }
         }
 
         return result;
-    }
+    };
 
-    this.checkExtensionWithMsg = function (idElemToCheck, propertyToCheck, elemViewName, valuesToCheck) {
+    this.checkExtensionWithMsg = function (
+        idElemToCheck,
+        propertyToCheck,
+        elemViewName,
+        valuesToCheck
+    ) {
         var elem = document.getElementById(idElemToCheck),
             result = {
-                "ok": "true",
-                "msg": ""
+                ok: 'true',
+                msg: '',
             };
 
         if (elem) {
-            var value = elem["value"];
+            var value = elem['value'];
 
             if (!strEndsWithOneOf(value, valuesToCheck)) {
                 result.ok = false;
-                result.msg = format('File "<<0>>" must have one of these types: (<<1>>). ', [elemViewName, arrayToStr(valuesToCheck, ", ")], "<<", ">>");
+                result.msg = format(
+                    'File "<<0>>" must have one of these types: (<<1>>). ',
+                    [elemViewName, arrayToStr(valuesToCheck, ', ')],
+                    '<<',
+                    '>>'
+                );
             }
         }
 
         return result;
-    }
+    };
 
     // Seta um objeto com as funcoes de check, sendo que cada uma e enderecada
     // por uma string especifica que identifica o tipo de verificacao.
-    this.checkFunctionsWithMsg["blk"] = this.checkBlankWithMsg;
-    this.checkFunctionsWithMsg["rng"] = this.checkRangeWithMsg;
-    this.checkFunctionsWithMsg["ext"] = this.checkExtensionWithMsg;
+    this.checkFunctionsWithMsg['blk'] = this.checkBlankWithMsg;
+    this.checkFunctionsWithMsg['rng'] = this.checkRangeWithMsg;
+    this.checkFunctionsWithMsg['ext'] = this.checkExtensionWithMsg;
 
     this.checkAllWithMsg = function (msgTitle) {
-
         var check, func, result;
 
         for (var i = 0; i < this.toCheck.length; i++) {
-
             check = this.toCheck[i];
 
             // So entra no if se:
@@ -397,35 +445,51 @@ var DataChecker = new(function () {
             // - o nome da propriedade do elemento e guardado em "cond.propName";
             // - o operador desejado para comparar os dois valores e guardado em "cond.operator";
             // - o valor da propriedade do elemento e guardado em "cond.propValue".
-            if (!check.cond || checkElemPropertyValue(check.cond.idElem, check.cond.propName, check.cond.operator, check.cond.propValue)) {
-
+            if (
+                !check.cond ||
+                checkElemPropertyValue(
+                    check.cond.idElem,
+                    check.cond.propName,
+                    check.cond.operator,
+                    check.cond.propValue
+                )
+            ) {
                 // Seta a funcao certa pelo tipo de verificacao desejado.
                 func = this.checkFunctionsWithMsg[check.checkType];
                 result = func(check.idElem, check.prop, check.viewName, check.values);
 
                 if (!result.ok) {
-                    showModalMsg(this.idMsgContainerElem, this.idMsgTextElem, result.msg, this.idMsgTitleElem, msgTitle);
+                    showModalMsg(
+                        this.idMsgContainerElem,
+                        this.idMsgTextElem,
+                        result.msg,
+                        this.idMsgTitleElem,
+                        msgTitle
+                    );
                     return false;
                 }
             }
         }
 
         return true;
-    }
+    };
 
     return this;
-
 })();
 /* --------------- END: DATA CHECKER --------------- */
 
-
 /* --------------- BEGIN: SELECTION LISTS --------------- */
 var SelLists = new(function () {
-
     this.lists = [];
 
-    this.newList = function (listName, keeperId, cssToToggle, viewKeeperId, viewTextMask, firstValue) {
-
+    this.newList = function (
+        listName,
+        keeperId,
+        cssToToggle,
+        viewKeeperId,
+        viewTextMask,
+        firstValue
+    ) {
         // Tem que existir para a lista existir.
         var keeper = document.getElementById(keeperId);
 
@@ -434,48 +498,69 @@ var SelLists = new(function () {
             var list = {};
             list.keeperId = keeperId;
             list.cssToToggle = cssToToggle;
-            list.viewKeeperId = viewKeeperId || "";
-            list.viewTextMask = viewTextMask || "";
+            list.viewKeeperId = viewKeeperId || '';
+            list.viewTextMask = viewTextMask || '';
 
             this.lists[listName] = list;
 
             if (firstValue)
-                changeSel(list.keeperId, firstValue, listName + ".", list.cssToToggle, list.viewKeeperId, list.viewTextMask, true);
+                changeSel(
+                    list.keeperId,
+                    firstValue,
+                    listName + '.',
+                    list.cssToToggle,
+                    list.viewKeeperId,
+                    list.viewTextMask,
+                    true
+                );
         }
-    }
+    };
 
     this.change = function (listNameAndValue, setOnlyIfEmpty) {
-        var vector = listNameAndValue.split("."),
+        var vector = listNameAndValue.split('.'),
             listName = vector[0],
             value = vector[1],
             list = this.lists[listName];
 
-        changeSel(list.keeperId, value, listName + ".", list.cssToToggle, list.viewKeeperId, list.viewTextMask, setOnlyIfEmpty);
-    }
+        changeSel(
+            list.keeperId,
+            value,
+            listName + '.',
+            list.cssToToggle,
+            list.viewKeeperId,
+            list.viewTextMask,
+            setOnlyIfEmpty
+        );
+    };
 
     return this;
-
 })();
 /* --------------- END: SELECTION LISTS --------------- */
 
-
 /* --------------- BEGIN: GROW LISTS --------------- */
 var GrowLists = new(function () {
-
-    this.subItemsSeparator = " ## ";
+    this.subItemsSeparator = ' ## ';
 
     this.lists = {};
 
     // "itemsToAdd" pode ser um array com todos os valores ou uma string do tipo "from-to" para indicar um range de numeros.
     // "addSlice" pode ser um numero ou um array de numeros (um valor de slice para cada iteracao).
-    this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
-
+    this.newList = function (
+        listName,
+        containerId,
+        itemsToAdd,
+        addSlice,
+        itemMask,
+        padChar,
+        itemsSizeWithPad,
+        idElemsToHideWhenAddAll,
+        callbackWhenAddAll
+    ) {
         // Tem que existir para a lista existir.
         var container = document.getElementById(containerId);
 
         // Seguranca. Esse teste permite que eu tente adicionar listas que nao necessariamente existem na pagina.
         if (container) {
-
             var list = {};
 
             list.container = container;
@@ -490,7 +575,7 @@ var GrowLists = new(function () {
                 // final de cada item da lista).
                 // Este range passado sera transformado num array de valores sequenciais.
                 list.itemsToAdd = [];
-                var fromTo = itemsToAdd.split("-"),
+                var fromTo = itemsToAdd.split('-'),
                     from = parseInt(fromTo[0]),
                     to = parseInt(fromTo[1]),
                     index = 0;
@@ -500,8 +585,8 @@ var GrowLists = new(function () {
             }
 
             list.addSlice = addSlice;
-            list.itemMask = itemMask || "";
-            list.padChar = padChar || "";
+            list.itemMask = itemMask || '';
+            list.padChar = padChar || '';
             list.itemsSizeWithPad = itemsSizeWithPad;
             list.idElemsToHideWhenAddAll = idElemsToHideWhenAddAll || [];
             list.callbackWhenAddAll = callbackWhenAddAll;
@@ -511,16 +596,13 @@ var GrowLists = new(function () {
 
             this.lists[listName] = list;
         }
-
-    }
+    };
 
     this.grow = function (listName, growToEnd) {
-
         var list = this.lists[listName];
 
         // So faz algo se a lista ainda nao estiver completa.
         if (!list.finished) {
-
             // Determina o indice inicial e final do proximo crescimento da lista.
             var startItem, endItem;
             startItem = list.nextItem;
@@ -530,12 +612,14 @@ var GrowLists = new(function () {
             } else {
                 // A lista vai crescer o proximo slice.
                 // "list.addSlice" pode ser um numero ou um array de numeros.
-                var slice = isArray(list.addSlice) ? list.addSlice[list.nextSlice] : list.addSlice;
+                var slice = isArray(list.addSlice) ?
+                    list.addSlice[list.nextSlice] :
+                    list.addSlice;
                 endItem = startItem + slice - 1;
             }
 
             // Determina se e mais um crescimento intermediario ou se ja e o ultimo.
-            if (endItem >= (list.itemsToAdd.length - 1)) {
+            if (endItem >= list.itemsToAdd.length - 1) {
                 endItem = list.itemsToAdd.length - 1;
                 // Significa que nao havera uma proxima iteracao.
                 list.finished = true;
@@ -548,8 +632,8 @@ var GrowLists = new(function () {
                 list.nextItem = endItem + 1;
             }
 
-            if (list.itemMask !== "") {
-                // Se existe uma mascara, cada item representa os valores para a parte da mascara que tem que ser substituida.				
+            if (list.itemMask !== '') {
+                // Se existe uma mascara, cada item representa os valores para a parte da mascara que tem que ser substituida.
                 var item,
                     sep = this.subItemsSeparator;
                 for (var i = startItem; i <= endItem; i++) {
@@ -558,22 +642,22 @@ var GrowLists = new(function () {
                         // Se a string de "item" contem o separador de subitens, entende-se que a string
                         // na verdade tem varios subitens que devem ser separados e substituidos individualmente.
                         var subItems = item.split(sep);
-                        item = format(list.itemMask, subItems, "<<", ">>");
+                        item = format(list.itemMask, subItems, '<<', '>>');
                     } else {
                         // Faz o padding no item se for o caso.
-                        if (list.padChar !== "")
+                        if (list.padChar !== '')
                             item = strPad(item, true, list.itemsSizeWithPad, list.padChar);
                         // Faz a substituicao na mascara.
-                        item = format(list.itemMask, [item], "<<", ">>");
+                        item = format(list.itemMask, [item], '<<', '>>');
                     }
                     // Adiciona o item ao container.
-                    list.container.innerHTML += item + "\n";
+                    list.container.innerHTML += item + '\n';
                 }
             } else {
                 // Se nao existe mascara para os itens, significa que eles ja vem totalmente prontos.
                 for (var i = startItem; i <= endItem; i++) {
                     // Adiciona o item ao container.
-                    list.container.innerHTML += list.itemsToAdd[i] + "\n";
+                    list.container.innerHTML += list.itemsToAdd[i] + '\n';
                 }
             }
 
@@ -581,45 +665,39 @@ var GrowLists = new(function () {
             if (list.finished && list.callbackWhenAddAll)
                 list.callbackWhenAddAll(list);
         }
-    }
+    };
 
     return this;
-
 })();
 /* --------------- END: GROW LISTS --------------- */
-
 
 /* --------------- BEGIN: COLOR TABLE --------------- */
 
 // Foram feitas alteracoes nos metodos dessa classe para ser compativel com o novo prototipo (vinimartdev.com)
 
 var ColorTable = new(function () {
-
     this.target;
 
     this.set = function (id, idDisplay) {
-
         this.target = document.getElementById(id);
-        this.colorDisplay = document.getElementById(idDisplay)
-        this.container = document.getElementById("idColorTableContainer");
+        this.colorDisplay = document.getElementById(idDisplay);
+        this.container = document.getElementById('idColorTableContainer');
 
         toggleHide([this.container.id]);
-    }
+    };
 
     this.setColor = function (color) {
-
-        this.selectedColor = color
-    }
+        this.selectedColor = color;
+    };
 
     this.applyColor = () => {
-
         // Valor padrao
-        //this.selectedColor = this.selectedColor ? this.selectedColor : '000000'
-        
-        this.target.value = this.selectedColor
-        console.log(this.target)
+        this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
+
+        this.target.value = this.selectedColor;
+        console.log(this.target);
         toggleHide([this.container.id]);
-    }
+    };
 
     return this;
 })();
