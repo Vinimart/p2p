@@ -11,7 +11,7 @@
     <title>Picture to People</title>
 </head>
 
-<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+<body onload="defInit();">
 
     <!-- begin: Modal Box -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
@@ -68,14 +68,6 @@
 
     </div>
     <!-- end: Search Box -->
-
-    <!-- begin: Preloader -->
-    <div id="idOverlayPreloader" class="flex-center">
-        <div>
-            <img src="ui/img/preloader.svg">
-        </div>
-    </div>
-    <!-- end: Preloader -->
 
     <header class="index-header" style="background-image: url(ui/img/index-header-bg.png);">
 
@@ -450,7 +442,7 @@
     <script>
         function defInit() {
 
-            hide(['idOverlayPreloader']);
+            //hide(['idOverlayPreloader']);
 
             // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
             // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
