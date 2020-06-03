@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
+    <!-- BEGIN: [[*Head*]] -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="ui/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="ui/css/main.css">
+    <!-- END: [[*Head*]] -->
     <title>Picture to People</title>
 </head>
 
 <body onload="defInit();">
 
-    <!-- begin: Modal Box -->
+    <!-- BEGIN: [[*ModalBox*]] -->
     <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-element">
 
         <div id="idModalMsgWindow" class="modal-content rounded-1x">
@@ -35,9 +37,9 @@
         </div>
 
     </div>
-    <!-- end: Modal Box -->
+    <!-- END: [[*ModalBox*]] -->
 
-    <!-- begin: Search Box -->
+    <!-- BEGIN: [[*SearchBox*]] -->
     <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
         onclick="hide(['idOverlayModalSearch']);">
 
@@ -67,9 +69,9 @@
         </div>
 
     </div>
-    <!-- end: Search Box -->
+    <!-- END: [[*SearchBox*]] -->
 
-    <!-- begin: Color Picker -->
+    <!-- BEGIN: [[*ColorPicker*]] -->
     <div id="idColorTableContainer" class="modal-overlay flex-center hide-element">
 
         <div class="modal-content rounded-1x">
@@ -456,17 +458,9 @@
         </div>
 
     </div>
-    <!-- end: Color Picker -->
+    <!-- END: [[*ColorPicker*]] -->
 
-    <!-- begin: Preloader
-    <div id="idOverlayPreloader" class="flex-center">
-        <div>
-            <img src="ui/img/preloader.svg">
-        </div>
-    </div>
-     -->
-
-    <!-- begin: Side Nav -->
+    <!-- BEGIN: [[*SideNav*]] -->
     <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-element"
         onclick="hide(['idOverlayMainSideMenuFlow']);">
 
@@ -551,11 +545,10 @@
         </div>
 
     </div>
-    <!-- end: Side Nav -->
+    <!-- END: [[*SideNav*]] -->
 
+    <!-- BEGIN: [[*Menu*]] -->
     <nav>
-
-        <!-- begin: Barra de Menu Principal -->
         <div class="menu-main flex-between padded-h-1x bg-right-bottom shaded"
             style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
 
@@ -572,9 +565,7 @@
             </button>
 
         </div>
-        <!-- end: Barra de Menu Principal -->
 
-        <!-- begin: Barra de Menu Secundario -->
         <div class="flex-between padded-1x">
 
             <div>
@@ -602,18 +593,15 @@
             </div>
 
         </div>
-        <!-- end: Barra de Menu Secundario -->
-
     </nav>
+    <!-- END: [[*Menu*]] -->
 
     <header class="padded-h-2x">
 
-        <!-- begin: Titulo e Subtitulo -->
         <div class="centered spaced-below-2x">
             <h1 class="title bold spaced-below-1x">Photo to Cartoon Converter</h1>
             <p class="font-3x">Turn your best photos into awesome cartoons as never before for free</p>
         </div>
-        <!-- end: Titulo e Subtitulo -->
 
         <hr class="ruler limiter-2x">
 
@@ -623,13 +611,13 @@
 
     <main class="bg-bottom" style="background-image: url(ui/img/main-bg.png);">
 
-        <!-- begin: Container Principal max-width: 1600px -->
+        <!-- Container Principal max-width: 1600px -->
         <div class="flex-around limiter-2x">
 
-            <!-- begin: Coluna Principal -->
+            <!-- Coluna Principal -->
             <div class="column-main padded-h-2x">
 
-                <!-- BEGIN: [[*DescricaoEfeito*]] -->
+                <!-- begin: Descricao -->
                 <div class="spaced-below-3x">
                     <p class="justified">
                         It's a versatile cartoon photo editor to transform photos and complex pictures into cartoon
@@ -637,7 +625,7 @@
                         offers you great control over colors, gradients and contours.
                     </p>
                 </div>
-                <!-- END: [[*DescricaoEfeito*]] -->
+                <!-- end: Descricao -->
 
                 <!-- begin: Caixa de Recomendacoes -->
                 <div class="box bg-color-2nd padded-2x">
@@ -2110,7 +2098,7 @@
 
                         <!-- begin: Componentes -->
 
-                        <!-- begin: Componente de lista -->
+                        <!-- BEGIN: [[*FontComponent*]] -->
                         <div class="spaced-below-3x">
                             <input type="hidden" name="FontName" id="idFontName" value="" />
 
@@ -4185,9 +4173,9 @@
                                 </table>
                             </div>
                         </div>
-                        <!-- end: Componente de lista -->
+                        <!-- END: [[*FontComponent*]] -->
 
-                        <!-- begin: Componente de lista -->
+                        <!-- BEGIN: [[*RenderingStyleComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="RenderingStyle" id="idRenderingStyle" value="" />
 
@@ -4217,9 +4205,9 @@
                                 </table>
                             </div>
                         </div>
-                        <!-- end: Componente de lista -->
+                        <!-- END: [[*RenderingStyleComponent*]] -->
 
-                        <!-- begin: Componente de lista -->
+                        <!-- BEGIN: [[*Model3DComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="Model3D" id="idModel3D" value="" />
 
@@ -4333,9 +4321,9 @@
                                 </table>
                             </div>
                         </div>
-                        <!-- end: Componente de lista -->
+                        <!-- END: [[*Model3DComponent*]] -->
 
-                        <!-- begin: Componente com imagens -->
+                        <!-- BEGIN: [[*3DTextStyleComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="ImgName3" id="idImgName3" value="" />
 
@@ -4366,9 +4354,9 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/3d_text_style11.png">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*3DTextStyleComponent*]] -->
 
-                        <!-- begin: Componente com imagens -->
+                        <!-- BEGIN: [[*Icon3DModelComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedIcon3dModel" id="idSelectedIcon3dModel" value="">
 
@@ -4427,9 +4415,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/icon_3d_model_25.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*Icon3DModelComponent*]] -->
 
-                        <!-- begin: Componente com imagens /image_utilities/photo-text-caption/add-text-caption-to-photo -->
+                        <!-- /image_utilities/photo-text-caption/add-text-caption-to-photo -->
+                        <!-- BEGIN: [[*TextLayoutStyleComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="TextLayoutStyle" id="idTextLayoutStyle"
                                 value="text-layout-style-00">
@@ -4475,9 +4464,9 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/text-layout-style-17.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*TextLayoutStyleComponent*]] -->
 
-                        <!-- begin: Componente com imagens -->
+                        <!-- BEGIN: [[*TextureComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSmallImage" id="idSelectedSmallImage"
                                 value="abstract084_tlb">
@@ -4721,9 +4710,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/wood048_tlb.jpg">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*TextureComponent*]] -->
 
-                        <!-- begin: Componente com imagens /photo-frame/decorated-photo-frame-generator -->
+                        <!-- /photo-frame/decorated-photo-frame-generator -->
+                        <!-- BEGIN: [[*AbstractSymbolComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol1" id="idOrnament01" value="abstract_001">
 
@@ -4916,10 +4906,11 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/abstract_110.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*AbstractSymbolComponent*]] -->
 
 
-                        <!-- begin: Componente com imagens - /photo-frame/star-photo-frame-generator -->
+                        <!-- /photo-frame/star-photo-frame-generator -->
+                        <!-- BEGIN: [[*StarSymbolComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol2" id="idOrnament02" value="star_001">
 
@@ -5012,9 +5003,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/star_043.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*StarSymbolComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/ -->
+                        <!-- /sticker-creator/ -->
+                        <!-- BEGIN: [[*StickerShapeComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedStickerShape" id="idSelectedStickerShape"
                                 value="sticker_001">
@@ -5120,9 +5112,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/sticker_048.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*StickerShapeComponent*]] -->
 
-                        <!-- begin: Componente com imagens /sticker-creator/love-sticker-maker -->
+                        <!-- /sticker-creator/love-sticker-maker -->
+                        <!-- BEGIN: [[*LoveStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol3" id="idOrnament03" value="love_001">
 
@@ -5281,9 +5274,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/love_080.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*LoveStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens /sticker-creator/business-sticker-maker -->
+                        <!-- /sticker-creator/business-sticker-maker -->
+                        <!-- BEGIN: [[*BusinessStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol4" id="idOrnament04" value="office_001">
 
@@ -5424,9 +5418,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/money_010.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*BusinessStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/stickers-christmas-maker -->
+                        <!-- /sticker-creator/stickers-christmas-maker -->
+                        <!-- BEGIN: [[*ChristmasStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol5" id="idOrnament05" value="christmas_001">
 
@@ -5562,9 +5557,10 @@
 
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*ChristmasStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/social-media-sticker-maker -->
+                        <!-- /sticker-creator/social-media-sticker-maker -->
+                        <!-- BEGIN: [[*SocialMediaStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol6" id="idOrnament06" value="tech_001">
 
@@ -6001,9 +5997,10 @@
                                     data-src="ui/comp/img/social_icon_zootool_1.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*SocialMediaStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/female-sticker-maker -->
+                        <!-- /sticker-creator/female-sticker-maker -->
+                        <!-- BEGIN: [[*FemaleStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol7" id="idOrnament07" value="female_001">
 
@@ -6091,9 +6088,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/cartoon_020.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*FemaleStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/male-sticker-maker -->
+                        <!-- /sticker-creator/male-sticker-maker -->
+                        <!-- BEGIN: [[*MaleStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol8" id="idOrnament08" value="male_001">
 
@@ -6188,9 +6186,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/adventure_034.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*MaleStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/horror-sticker-maker -->
+                        <!-- /sticker-creator/horror-sticker-maker -->
+                        <!-- BEGIN: [[*HorrorStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol9" id="idOrnament09" value="horror_001">
 
@@ -6338,9 +6337,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/skull_015.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*HorrorStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/art-sticker-maker -->
+                        <!-- /sticker-creator/art-sticker-maker -->
+                        <!-- BEGIN: [[*ArtStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol10" id="idOrnament10" value="art_001">
 
@@ -6440,9 +6440,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/splash_024.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*ArtStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/kid-sticker-maker -->
+                        <!-- /sticker-creator/kid-sticker-maker -->
+                        <!-- BEGIN: [[*KidStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol11" id="idOrnament11" value="kids_001">
 
@@ -6555,9 +6556,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/cartoon_022.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*KidStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/game-sticker-maker -->
+                        <!-- /sticker-creator/game-sticker-maker -->
+                        <!-- BEGIN: [[*GameStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol12" id="idOrnament12" value="game_001">
 
@@ -6680,9 +6682,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/cartoon_022.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*GameStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/sport-sticker-maker -->
+                        <!-- /sticker-creator/sport-sticker-maker -->
+                        <!-- BEGIN: [[*SportsStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol13" id="idOrnament13" value="sport_001">
 
@@ -6788,9 +6791,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/sign_005.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*SportsStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/food-sticker-maker -->
+                        <!-- /sticker-creator/food-sticker-maker -->
+                        <!-- BEGIN: [[*FoodStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol14" id="idOrnament14" value="food_001">
 
@@ -6931,9 +6935,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/food_066.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*FoodStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/fashion-sticker-maker -->
+                        <!-- /sticker-creator/fashion-sticker-maker -->
+                        <!-- BEGIN: [[*FashionStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol15" id="idOrnament15" value="clothing_001">
 
@@ -7069,9 +7074,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/sun_glasses_006.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*FashionStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/music-sticker-maker -->
+                        <!-- /sticker-creator/music-sticker-maker -->
+                        <!-- BEGIN: [[*MusicStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol16" id="idOrnament16" value="music_001">
 
@@ -7170,9 +7176,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/music_047.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*MusicStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/animal-sticker-maker -->
+                        <!-- /sticker-creator/animal-sticker-maker -->
+                        <!-- BEGIN: [[*AnimalStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol17" id="idOrnament17" value="animal_001">
 
@@ -7349,9 +7356,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/animal_088.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*AnimalStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/science-sticker-maker -->
+                        <!-- /sticker-creator/science-sticker-maker -->
+                        <!-- BEGIN: [[*ScienceStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol18" id="idOrnament18" value="science_001">
 
@@ -7463,9 +7471,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/space_023.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*ScienceStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/flower-sticker-maker -->
+                        <!-- /sticker-creator/flower-sticker-maker -->
+                        <!-- BEGIN: [[*FlowerStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol19" id="idOrnament19" value="flower_001">
 
@@ -7636,9 +7645,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/flower_090.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*FlowerStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/transport-sticker-maker -->
+                        <!-- /sticker-creator/transport-sticker-maker -->
+                        <!-- BEGIN: [[*TransportStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol20" id="idOrnament20" value="transport_001">
 
@@ -7746,9 +7756,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/space_021.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*TransportStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/weather-sticker-maker -->
+                        <!-- /sticker-creator/weather-sticker-maker -->
+                        <!-- BEGIN: [[*WeatherStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol21" id="idOrnament21" value="cloud_002">
 
@@ -7855,9 +7866,10 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/umbrella_005.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*WeatherStickerComponent*]] -->
 
-                        <!-- begin: Componente com imagens - /sticker-creator/zodiac-sticker-maker -->
+                        <!-- /sticker-creator/zodiac-sticker-maker -->
+                        <!-- BEGIN: [[*ZodiacStickerComponent*]] -->
                         <div class="spaced-v-2x">
                             <input type="hidden" name="SelectedSymbol22" id="idOrnament22" value="zodiac_001">
 
@@ -7962,13 +7974,22 @@
                                     src="ui/img/loader-100px.svg" data-src="ui/comp/img/zodiac_048.symbol.gif">
                             </div>
                         </div>
-                        <!-- end: Componente com imagens -->
+                        <!-- END: [[*ZodiacStickerComponent*]] -->
 
                         <!-- end: Componentes -->
 
+                        <!-- BEGIN: [[*ImageInput*]] -->
+                        <div class="spaced-v-2x">
+                            <p class="spaced-below-1x">Input image (jpg, png or gif) :</p>
+                            <input type="file" name="ImageInput" id="idImageInput">
+                        </div>
+                        <!-- END: [[*ImageInput*]] -->
+
+                        <!-- BEGIN: [[*GenerateButton*]] -->
                         <div class="spaced-v-2x centered">
                             <button type="submit" class="btn">Generate</button>
                         </div>
+                        <!-- END: [[*GenerateButton*]] -->
 
                     </form>
 
@@ -7979,7 +8000,7 @@
             <!-- end: Coluna Principal -->
 
 
-            <!-- begin: Coluna Secundaria -->
+            <!-- BEGIN: [[*2ndColumn*]] -->
             <div class="column-2nd padded-h-1x">
 
                 <!-- begin: Popular Graphic Design Apps -->
@@ -8091,13 +8112,14 @@
                 <!-- end: Recommended Effects -->
 
             </div>
-            <!-- end: Coluna Secundaria -->
+            <!-- END: [[*2ndColumn*]] -->
 
         </div>
         <!-- end: Container Principal max-width: 1600px -->
 
     </main>
 
+    <!-- BEGIN: [[*Footer*]] -->
     <footer class="centered padded-2x bg-right-bottom"
         style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #FF8000, #A62900);">
 
@@ -8164,7 +8186,9 @@
         </div>
 
     </footer>
+    <!-- END: [[*Footer*]] -->
 
+    <!-- BEGIN: [[*Script*]] -->
     <script src="ui/js/lazysizes.min.js" async=""></script>
     <script src="ui/js/main.js"></script>
     <script>
@@ -8286,6 +8310,7 @@
             window.setTimeout(_submit, 500);
         }
     </script>
+    <!-- END: [[*Script*]] -->
 
 </body>
 
