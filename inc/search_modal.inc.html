@@ -1,31 +1,31 @@
 <!-- BEGIN: [[*SearchBox*]] -->
-<div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
-onclick="hide(['idOverlayModalSearch']);">
+    <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-element"
+    onclick="hide(['idOverlayModalSearch']);">
 
-<div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+    <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
 
-    <div class="flex-between bg-color-1st padded-1x">
-        <span id="idModalMsgTitle" class="font-3x bold">Search</span>
-        <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
+        <div class="flex-between bg-color-1st padded-1x">
+            <span id="idModalMsgTitle" class="font-3x bold">Search</span>
+            <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hoverable-2nd"></i></span>
+        </div>
+
+        <div class="spaced-around-2x">
+            <input type="search" name="" id="">
+        </div>
+
+        <div class="centered spaced-below-1x">
+            <button class="btn-small spaced-h-1x" onclick="hide(['idOverlayModalSearch']);">
+                <i class="fas fa-check">&nbsp;</i>
+                <span>OK</span>
+            </button>
+
+            <button class="btn-small" onclick="hide(['idOverlayModalSearch']);">
+                <i class="fas fa-times">&nbsp;</i>
+                <span>Cancel</span>
+            </button>
+        </div>
+
     </div>
 
-    <div class="spaced-around-2x">
-        <input type="search" name="" id="">
     </div>
-
-    <div class="centered spaced-below-1x">
-        <button class="btn-small spaced-h-1x" onclick="hide(['idOverlayModalSearch']);">
-            <i class="fas fa-check">&nbsp;</i>
-            <span>OK</span>
-        </button>
-
-        <button class="btn-small" onclick="hide(['idOverlayModalSearch']);">
-            <i class="fas fa-times">&nbsp;</i>
-            <span>Cancel</span>
-        </button>
-    </div>
-
-</div>
-
-</div>
-<!-- END: [[*SearchBox*]] -->
+    <!-- END: [[*SearchBox*]] -->
