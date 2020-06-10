@@ -17,7 +17,7 @@ function defInit() {
 
 	SelLists.newList('i3', 'idModel3D', ['sel-list-item'], '', '', '1');
 
-	SelLists.newList('s1', 'idImgName3', ['sel-list-item'], '', '', '3d_text_style1');
+	SelLists.newList('s1', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1');
 
 	SelLists.newList('s2', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
 
