@@ -135,16 +135,430 @@
 
                     <!-- BEGIN: [[*EffectConfiguration*]] -->
                     <div class="box shaded padded-1x">
-                        <form id="idFormMain" name="FormMain" action="result.html">
+                        <form id="idFormMain" name="FormMain" action="/result.html">
                             <div class="title-bar padded-1x centered cursor-default">
                                 <span class="font-3x">Configuration</span>
                             </div>
 
-                            
+                            <div class="spaced-v-2x">
+                                <label for="idFrameStyle">Frame Style :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idFrameStyle" name="FrameStyle">
+                                    <option value="1">Inner</option>
+                                    <option value="2" selected>Outer</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idFrameSize">Frame Thickness :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idFrameSize" name="FrameSize">
+                                    <option value="50">50</option>
+                                    <option value="60">60</option>
+                                    <option value="70" selected>70</option>
+                                    <option value="80">80</option>
+                                    <option value="90">90</option>
+                                    <option value="100">100</option>
+                                    <option value="110">110</option>
+                                    <option value="120">120</option>
+                                    <option value="130">130</option>
+                                    <option value="140">140</option>
+                                    <option value="150">150</option>
+                                    <option value="160">160</option>
+                                    <option value="170">170</option>
+                                    <option value="180">180</option>
+                                    <option value="190">190</option>
+                                    <option value="200">200</option>
+                                    <option value="210">210</option>
+                                    <option value="220">220</option>
+                                    <option value="230">230</option>
+                                    <option value="240">240</option>
+                                    <option value="250">250</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idFrameContourSize">Frame Contour :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idFrameContourSize" name="FrameContourSize">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idCornerSize">Corner Size :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idCornerSize" name="CornerSize">
+                                    <option value="1">Minimum</option>
+                                    <option value="1.2">Very small</option>
+                                    <option value="1.35">Small</option>
+                                    <option value="1.5" selected>Average</option>
+                                    <option value="1.65">Big</option>
+                                    <option value="1.80">Very big</option>
+                                    <option value="2">Maximum</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idNumOrnaments">Num Ornaments :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idNumOrnaments" name="NumOrnaments">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentSize">Ornaments Size :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentSize" name="OrnamentSize">
+                                    <option value="0.5">Very small</option>
+                                    <option value="0.6">Small</option>
+                                    <option value="0.7">Average</option>
+                                    <option value="0.8" selected>Big</option>
+                                    <option value="0.9">Very big</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentStyle">Ornaments Style :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentStyle" name="OrnamentStyle">
+                                    <option value="1">Fixed</option>
+                                    <option value="2" selected>Oriented</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentDistance">Ornaments Distance :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentDistance" name="OrnamentDistance">
+                                    <option value="0.05">Minimum</option>
+                                    <option value="0.1" selected>Very small</option>
+                                    <option value="0.2">Small</option>
+                                    <option value="0.3">Average</option>
+                                    <option value="0.4">Big</option>
+                                    <option value="0.5">Very big</option>
+                                    <option value="0.75">Huge</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idContourThickness">Ornaments Contour :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idContourThickness" name="ContourThickness">
+                                    <option value="0">None</option>
+                                    <option value="1" selected>Small</option>
+                                    <option value="2">Average</option>
+                                    <option value="3">Big</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label class="check-box">
+                                    <p>Thicker contour in corner ornament</p>
+
+                                    <input
+                                        id="idThickerContourInCorner"
+                                        type="checkbox"
+                                        name="ThickerContourInCorner"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idColorMode">Color Mode :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idColorMode" name="ColorMode">
+                                    <option value="1">Easy</option>
+                                    <option value="2" selected>Advanced</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentColor">Ornaments Color :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="color-input"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idOrnamentColor"
+                                        name="OrnamentColor"
+                                        value="000000"
+                                    />
+
+                                    <i
+                                        id="idOrnamentColorDisplay"
+                                        class="color-display fas fa-palette title color-1st animate-1"
+                                        onclick="ColorTable.set('idOrnamentColor', this.id)"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentContourColor">Ornaments Contour :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="color-input"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idOrnamentContourColor"
+                                        name="OrnamentContourColor"
+                                        value="000000"
+                                    />
+
+                                    <i
+                                        id="idOrnamentContourColorDisplay"
+                                        class="color-display fas fa-palette title color-1st animate-1"
+                                        onclick="ColorTable.set('idOrnamentContourColor', this.id)"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idFrameColor">Frame Color :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="color-input"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idFrameColor"
+                                        name="FrameColor"
+                                        value="000000"
+                                    />
+
+                                    <i
+                                        id="idFrameColorDisplay"
+                                        class="color-display fas fa-palette title color-1st animate-1"
+                                        onclick="ColorTable.set('idFrameColor', this.id)"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-2x">
+                                <label for="idFrameContourColor">Frame Contour :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="color-input"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idFrameContourColor"
+                                        name="FrameContourColor"
+                                        value="000000"
+                                    />
+
+                                    <i
+                                        id="idFrameContourColorDisplay"
+                                        class="color-display fas fa-palette title color-1st animate-1"
+                                        onclick="ColorTable.set('idFrameContourColor', this.id)"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_4.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+
+                            <div class="spaced-v-2x">
+                                <label for="idCornerRotation">Corner Rotation :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idCornerRotation" name="CornerRotation">
+                                    <option value="-165">-165</option>
+                                    <option value="-150">-150</option>
+                                    <option value="-135">-135</option>
+                                    <option value="-120">-120</option>
+                                    <option value="-105">-105</option>
+                                    <option value="-90">-90</option>
+                                    <option value="-75">-75</option>
+                                    <option value="-60">-60</option>
+                                    <option value="-45">-45</option>
+                                    <option value="-30">-30</option>
+                                    <option value="-15">-15</option>
+                                    <option value="0" selected>0</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                    <option value="60">60</option>
+                                    <option value="75">75</option>
+                                    <option value="90">90</option>
+                                    <option value="105">105</option>
+                                    <option value="120">120</option>
+                                    <option value="135">135</option>
+                                    <option value="150">150</option>
+                                    <option value="165">165</option>
+                                    <option value="180">180</option>
+                                </select>
+                            </div>
+
+                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_1.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentRotation1">Ornament 1 Rotation :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentRotation1" name="OrnamentRotation1">
+                                    <option value="-165">-165</option>
+                                    <option value="-150">-150</option>
+                                    <option value="-135">-135</option>
+                                    <option value="-120">-120</option>
+                                    <option value="-105">-105</option>
+                                    <option value="-90">-90</option>
+                                    <option value="-75">-75</option>
+                                    <option value="-60">-60</option>
+                                    <option value="-45">-45</option>
+                                    <option value="-30">-30</option>
+                                    <option value="-15">-15</option>
+                                    <option value="0" selected>0</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                    <option value="60">60</option>
+                                    <option value="75">75</option>
+                                    <option value="90">90</option>
+                                    <option value="105">105</option>
+                                    <option value="120">120</option>
+                                    <option value="135">135</option>
+                                    <option value="150">150</option>
+                                    <option value="165">165</option>
+                                    <option value="180">180</option>
+                                </select>
+                            </div>
+
+                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_2.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentRotation2">Ornament 2 Rotation :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentRotation2" name="OrnamentRotation2">
+                                    <option value="-165">-165</option>
+                                    <option value="-150">-150</option>
+                                    <option value="-135">-135</option>
+                                    <option value="-120">-120</option>
+                                    <option value="-105">-105</option>
+                                    <option value="-90">-90</option>
+                                    <option value="-75">-75</option>
+                                    <option value="-60">-60</option>
+                                    <option value="-45">-45</option>
+                                    <option value="-30">-30</option>
+                                    <option value="-15">-15</option>
+                                    <option value="0" selected>0</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                    <option value="60">60</option>
+                                    <option value="75">75</option>
+                                    <option value="90">90</option>
+                                    <option value="105">105</option>
+                                    <option value="120">120</option>
+                                    <option value="135">135</option>
+                                    <option value="150">150</option>
+                                    <option value="165">165</option>
+                                    <option value="180">180</option>
+                                </select>
+                            </div>
+
+                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_3.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+
+                            <div class="spaced-v-2x">
+                                <label for="idOrnamentRotation3">Ornament 3 Rotation :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select id="idOrnamentRotation3" name="OrnamentRotation3">
+                                    <option value="-165">-165</option>
+                                    <option value="-150">-150</option>
+                                    <option value="-135">-135</option>
+                                    <option value="-120">-120</option>
+                                    <option value="-105">-105</option>
+                                    <option value="-90">-90</option>
+                                    <option value="-75">-75</option>
+                                    <option value="-60">-60</option>
+                                    <option value="-45">-45</option>
+                                    <option value="-30">-30</option>
+                                    <option value="-15">-15</option>
+                                    <option value="0" selected>0</option>
+                                    <option value="15">15</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                    <option value="60">60</option>
+                                    <option value="75">75</option>
+                                    <option value="90">90</option>
+                                    <option value="105">105</option>
+                                    <option value="120">120</option>
+                                    <option value="135">135</option>
+                                    <option value="150">150</option>
+                                    <option value="165">165</option>
+                                    <option value="180">180</option>
+                                </select>
+                            </div>
 
                             <input type="hidden" name="ResultType" id="idResultType" value="view" />
 
                             <!-- BEGIN: [[*ImageInput]] -->
+                            <!--#include VIRTUAL="/inc/image_input.inc.html" -->
                             <!-- END: [[*ImageInput]] -->
 
                             <div class="spaced-v-2x centered">
@@ -173,12 +587,10 @@
 
         <!-- BEGIN: [[*SCRIPT::Internal*]] -->
         <!--#include VIRTUAL="/inc/script_main.inc.html" -->
-        <!--#include VIRTUAL="/inc/script_init.inc.html" -->
+        <script src="/ui/js/init.js"></script>
         <!-- END: [[*SCRIPT::Internal*]] -->
 
         <!-- BEGIN: [[*SCRIPT::Ads*]] -->
         <!-- END: [[*SCRIPT::Ads*]] -->
-
-        <!--#include VIRTUAL="/inc/scripts.inc.html" -->
     </body>
 </html>
