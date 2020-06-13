@@ -25,11 +25,11 @@ function defInit() {
 
 	SelLists.newList('s4', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
 
+	SelLists.newList('s7', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
+
 	SelLists.newList('s5', 'idOrnament01', ['sel-list-item'], '', '', 'abstract001');
 
 	SelLists.newList('s6', 'idOrnament02', ['sel-list-item'], '', '', 'star_001');
-
-	SelLists.newList('s7', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
 
 	SelLists.newList('s8', 'idOrnament03', ['sel-list-item'], '', '', 'love_001');
 
