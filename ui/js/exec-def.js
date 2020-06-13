@@ -45,7 +45,7 @@ function defInit() {
 
 	SelLists.newList('s14', 'idOrnament09', ['sel-list-item'], '', '', 'horror_001');
 
-	//SelLists.newList('s15', 'idOrnament10', ['sel-list-item'], '', '', 'art_001');
+	SelLists.newList('s15', 'idOrnament10', ['sel-list-item'], '', '', 'art_001');
 
 	SelLists.newList('s16', 'idOrnament11', ['sel-list-item'], '', '', 'kids_001');
 
@@ -70,8 +70,6 @@ function defInit() {
 	SelLists.newList('s26', 'idOrnament21', ['sel-list-item'], '', '', 'cloud_001');
 
 	SelLists.newList('s27', 'idOrnament22', ['sel-list-item'], '', '', 'zodiac_001');
-
-	SelLists.newList('symbol4', 'idSelectedSymbol4', ['sel-list-item'], '', '', 'art_001');
 
 	// Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
 	// Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
