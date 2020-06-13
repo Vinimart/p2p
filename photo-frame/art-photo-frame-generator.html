@@ -153,7 +153,7 @@
                         <p class="font-3x bold centered spaced-below-1x">Art Photo Frame Maker</p>
 
                         <div class="centered">
-                            <div class="in-block-display spaced-around-2x">
+                            <div class="in-block-display spaced-h-1x">
                                 <img
                                     class="spaced-below-1x lazyload"
                                     src="/ui/img/loader-100px.svg"
@@ -162,7 +162,7 @@
                                 />
                             </div>
 
-                            <div class="in-block-display spaced-around-2x">
+                            <div class="in-block-display spaced-h-1x">
                                 <img
                                     class="spaced-below-1x lazyload"
                                     src="/ui/img/loader-100px.svg"
@@ -181,7 +181,7 @@
                                 <span class="font-3x">Configuration</span>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idFrameStyle">Frame Style :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -192,7 +192,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idFrameSize">Frame Thickness :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -222,7 +222,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idFrameContourSize">Frame Contour :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -239,7 +239,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idCornerSize">Corner Size :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -255,7 +255,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idNumOrnaments">Num Ornaments :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -267,7 +267,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentSize">Ornaments Size :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -281,7 +281,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentStyle">Ornaments Style :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -292,7 +292,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentDistance">Ornaments Distance :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -308,7 +308,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idContourThickness">Ornaments Contour :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -321,7 +321,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label class="check-box">
                                     <p>Thicker contour in corner ornament</p>
 
@@ -337,7 +337,7 @@
                                 </label>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idColorMode">Color Mode :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -348,7 +348,7 @@
                                 </select>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentColor">Ornaments Color :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -373,7 +373,7 @@
                                 </div>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentContourColor">Ornaments Contour :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -398,7 +398,7 @@
                                 </div>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idFrameColor">Frame Color :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -423,7 +423,7 @@
                                 </div>
                             </div>
 
-                            <div class="spaced-v-2x">
+                            <div class="spaced-v-3x">
                                 <label for="idFrameContourColor">Frame Contour :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -448,11 +448,13 @@
                                 </div>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
-                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_4.inc.html" -->
-                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+                            <p class="font-3x italic">Corner Ornament :</p>
 
-                            <div class="spaced-v-2x">
+                            <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_4.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtStickerList*]] -->
+
+                            <div class="spaced-v-3x">
                                 <label for="idCornerRotation">Corner Rotation :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -485,11 +487,13 @@
                                 </select>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
-                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_1.inc.html" -->
-                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+                            <p class="font-3x italic">Ornament 1 :</p>
 
-                            <div class="spaced-v-2x">
+                            <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_1.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtStickerList*]] -->
+
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentRotation1">Ornament 1 Rotation :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -522,11 +526,13 @@
                                 </select>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
-                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_2.inc.html" -->
-                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+                            <p class="font-3x italic">Ornament 2 :</p>
 
-                            <div class="spaced-v-2x">
+                            <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_2.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtStickerList*]] -->
+
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentRotation2">Ornament 2 Rotation :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -559,11 +565,13 @@
                                 </select>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::ArtSticker*]] -->
-                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_3.inc.html" -->
-                            <!-- END: [[*COMPONENT::ArtSticker*]] -->
+                            <p class="font-3x italic">Ornament 3 :</p>
 
-                            <div class="spaced-v-2x">
+                            <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/art_sticker_component_3.inc.html" -->
+                            <!-- END: [[*COMPONENT::ArtStickerList*]] -->
+
+                            <div class="spaced-v-3x">
                                 <label for="idOrnamentRotation3">Ornament 3 Rotation :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -602,7 +610,7 @@
                             <!--#include VIRTUAL="/inc/image_input.inc.html" -->
                             <!-- END: [[*ImageInput]] -->
 
-                            <div class="spaced-v-2x centered">
+                            <div class="spaced-v-3x centered">
                                 <button class="btn" onclick="if (DataChecker.checkAllWithMsg()) alert('submit');">
                                     Generate
                                 </button>
@@ -628,7 +636,7 @@
 
         <!-- BEGIN: [[*SCRIPT::Internal*]] -->
         <!--#include VIRTUAL="/inc/script_main.inc.html" -->
-        <script src="/ui/js/init.js"></script>
+        <!--#include VIRTUAL="/inc/script_init.inc.html" -->
         <!-- END: [[*SCRIPT::Internal*]] -->
 
         <!-- BEGIN: [[*SCRIPT::Ads*]] -->

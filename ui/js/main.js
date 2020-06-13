@@ -695,7 +695,6 @@ var ColorTable = new(function () {
         this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
 
         this.target.value = this.selectedColor;
-        console.log(this.target);
         toggleHide([this.container.id]);
     };
 
