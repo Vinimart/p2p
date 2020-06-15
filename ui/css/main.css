@@ -31,6 +31,10 @@ li {
     margin-bottom: 10px;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 
 
@@ -59,6 +63,20 @@ li {
     overflow-x: hidden;
     animation-name: right-to-initial;
     animation-duration: 0.4s;
+}
+
+.sidenav-header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.sidenav-item:hover {
+    /* EQUALS .bg-color-2nd */
+    background-color: #F8F0E8;
 }
 
 
@@ -131,8 +149,8 @@ li {
     cursor: pointer;
 }
 
-.color-display {
-    cursor: pointer;
+/* Icone do color picker */
+.fa-palette {
     margin-left: 10px;
 }
 
@@ -154,7 +172,6 @@ li {
     /* EQUALS .color-inv */
     color: #FFFFFF;
     padding: 5px 10px;
-    cursor: pointer;
 }
 
 .menu-button:hover {
@@ -268,23 +285,21 @@ li {
 }
 
 /* Barra de titulo para componentes */
-.title-bar {
+.title-bar-closed {
     /* EQUALS .color-1st */
     background-color: #FF8000;
     /* EQUALS .color-inv */
     color: #FFFFFF;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 /* Title bar com border-radius bottom = 0 */
-.title-bar-2 {
+.title-bar-opened {
     /* EQUALS .color-1st */
     background-color: #FF8000;
     /* EQUALS .color-inv */
     color: #FFFFFF;
     border-radius: 10px 10px 0 0;
-    cursor: pointer;
 }
 
 /* Limita a largura e centraliza o elemento */
@@ -344,7 +359,6 @@ li {
     /* EQUALS .color-2nd */
     background-color: #A62900;
     padding: 15px;
-    cursor: pointer;
 }
 
 .btn {
@@ -352,7 +366,6 @@ li {
     min-width: 180px;
     border-radius: 5px;
     padding: 15px;
-    cursor: pointer;
     /* EQUALS .color-2nd */
     border: solid 1px #A62900;
     /* EQUALS .color-2nd */
@@ -527,7 +540,6 @@ sobreposto a um elemento de cor clara */
 
 
 
-
 /* ----- Font ----- */
 
 .font-1x {
@@ -670,8 +682,8 @@ sobreposto a um elemento de cor clara */
     border-radius: 100%;
 }
 
-.cursor-default {
-    cursor: initial;
+.pointer {
+    cursor: pointer;
 }
 
 /* Necessario para elementos que exigem um background-color em estado hover */
