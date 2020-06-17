@@ -11,7 +11,7 @@ function defPopDesignApps(containerId) {
     // A chamada a "GrowLists.newList" abaixo nao cria a lista se o container nao existir, mas fazendo este teste
     // aqui eu evito a criacao de "itemsToGrow", que inclusive tem o overhead do sorteio dos itens aleatorios.
     if (container) {
-    
+
         // Cria uma lista com todas as possibilidades e escolhe 6 aleatoriamente para mostrar.
         // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
         // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
@@ -76,94 +76,136 @@ function defPopDesignApps(containerId) {
                 ['/image_effects/photo-lego-toy/lego-toy-photo-effect-editor.html', 'lego-photo-effect.jpg', 'Lego Effect'],
                 ['/image_effects/photo_graffiti/photo_graffiti_effect_generator.html', 'graffiti-photo-effect.jpg', 'Photo Graffiti']
             ], 6);
-    
+
         var images = [],
             links = [],
             labels = [],
             chosenPopEffect;
-        
+
         for (var i = 0; i < chosenPopEffects.length; i++) {
             chosenPopEffect = chosenPopEffects[i];
             links[i] = chosenPopEffect[0];
             images[i] = chosenPopEffect[1];
             labels[i] = chosenPopEffect[2];
         }
-        
+
         // function PreloadImageList(startNumber, imageElemName, imagePath, images, linkElemName, linkPath, links, labelElemName, labels, callbackAfterLoadAll) {
-        var preloadList = new PreloadImageList(1, 'PopEffectsImg', '/ui/images/popular-design-app/', images, 'PopEffectsLink', '', links, 'PopEffectsLabel', labels, function() {show([containerId]);} );
-        preloadList.loadAll();			
+        var preloadList = new PreloadImageList(1, 'PopEffectsImg', '/ui/images/popular-design-app/', images, 'PopEffectsLink', '', links, 'PopEffectsLabel', labels, function () {
+            show([containerId]);
+        });
+        preloadList.loadAll();
     }
 }
 
 function defInit() {
+    function initialValue(keeper) {
+        var compContainerId = keeper + "Container";
+        var compContainer = document.getElementById(compContainerId);
+
+        // Caso o componente nao exista na pagina nao ocorrera ReferenceError ou TypeError.
+        var firstValue = compContainer ? compContainer.firstElementChild.id : ''
+
+        return firstValue;
+    }
 
     //hide(['idOverlayPreloader']);
-    
-    // So cria a lista de apps populares se o container existir.
-    defPopDesignApps('idPopEffectsContainer');
 
-    
+    // So cria a lista de apps populares se o container existir.
+    defPopDesignApps("idPopEffectsContainer");
+
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
-    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['color-brightest-hoverable', 'color-list-select'], '', '', 'realistic_pencil_sketch_photo_effect_004');
-    
+    SelLists.newList(
+        "pe1",
+        "idSelectedPhotoEffect",
+        ["color-brightest-hoverable", "color-list-select"],
+        "",
+        "",
+        "realistic_pencil_sketch_photo_effect_004"
+    );
+
     // Lista de efeitos de texto que fica fora do formulario.
     //SelLists.newList('te1', 'idSelectedTextEffect', ['color-brightest-hoverable', 'color-list-select'], '', '', initialNamedTextEffect);
-    
-    // dpe = "downloadable photo effects" = lista de efeitos distribuida em varias janelas na tela, sendo que as 
+
+    // dpe = "downloadable photo effects" = lista de efeitos distribuida em varias janelas na tela, sendo que as
     //        imagens da maioria das janelas nao sao carregadas de antemao -> usado no simple photo editor.
-    SelLists.newList('dpe1', 'idSelectedEffect', ['color-brightest-hoverable', 'color-list-select'], '', '', 'vintage-retro-photo-effect_004');
+    SelLists.newList(
+        "dpe1",
+        "idSelectedEffect",
+        ["color-brightest-hoverable", "color-list-select"],
+        "",
+        "",
+        "vintage-retro-photo-effect_004"
+    );
     // -------------------------
 
-    
     // Listas de imagens que sao mostradas com tabelas.
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');	
+    SelLists.newList("rendStyle3d", "idRenderingStyle", ["sel-list-item"], "", "", "2", "idHasMergedImageTable3dRenderingStyle");
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1', 'idHasMergedImageTable3dTextModel');	
+    SelLists.newList("textModel3d", "idModel3D", ["sel-list-item"], "", "", "1", "idHasMergedImageTable3dTextModel");
     // Lista usada na pagina que desenha texto em foto.
-    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasMergedImageTableTextLayout');
+    SelLists.newList(
+        "textLayout",
+        "idTextLayoutStyle",
+        ["sel-list-item"],
+        "",
+        "",
+        "text-layout-style-00",
+        "idHasMergedImageTableTextLayout"
+    );
     // -------------------------
 
-    
     // Lista de fontes (mostrada com tabela).
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
-    //SelLists.newList('f' + getFontListNum(), 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber'); 
+    //SelLists.newList('f' + getFontListNum(), 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
     // -------------------------
 
-    
     // Listas de imagens.
     // -------------------------
     // Lista usada nas paginas dos textos 3D texturizados.
     //SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_textured6', 'idHasImageList3dTextStyle');
     // Lista usada nas paginas dos textos de luz e neon.
-    SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
+    SelLists.newList(
+        "textStyleLight",
+        "idTextStyleLightName",
+        ["sel-list-item"],
+        "",
+        "",
+        "light_text_style_01",
+        "idHasImageListLightTextStyle"
+    );
     // -------------------------
 
-    
     // Listas de imagens pequenas.
     // -------------------------
-    SelLists.newList('sChalk', 'idImageName', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');	
-    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');	
-    SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract085_tlb', 'idHasSmallImageListTexture');
-    SelLists.newList('sModel3d', 'idSelected3dModel', ['sel-list-item'], '', '', '3d_model_01', 'idHasSmallImageList3dModel');
-    SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_011', 'idHasSmallImageListSticker');
-    SelLists.newList('sSocial', 'idSelectedIcon', ['sel-list-item'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');
-    //SelLists.newList('sSymbol1', 'idSelectedSymbol1', ['sel-list-item'], '', '', initialSymbol1, 'idHasSmallImageListSymbol1');
-    //SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['sel-list-item'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
-    //SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['sel-list-item'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
-    SelLists.newList('symbol1', 'idSelectedSymbol1', ['sel-list-item'], '', '', 'art_001');
-    SelLists.newList('symbol2', 'idSelectedSymbol2', ['sel-list-item'], '', '', 'art_001');
-    SelLists.newList('symbol3', 'idSelectedSymbol3', ['sel-list-item'], '', '', 'art_001');
-    SelLists.newList('symbol4', 'idSelectedSymbol4', ['sel-list-item'], '', '', 'art_001');
+    SelLists.newList("sChalk", "idImageName", ["sel-list-item"], "", "", "chalkboard_003", "idHasSmallImageListChalkboard");
+    SelLists.newList("sWall", "idImageName", ["sel-list-item"], "", "", "wall_002_tlb", "idHasSmallImageListWall");
+    SelLists.newList("sTex", "idSelectedSmallImage", ["sel-list-item"], "", "", "abstract085_tlb", "idHasSmallImageListTexture");
+    SelLists.newList("sModel3d", "idSelected3dModel", ["sel-list-item"], "", "", "3d_model_01", "idHasSmallImageList3dModel");
+    SelLists.newList(
+        "sSticker",
+        "idSelectedStickerShape",
+        ["sel-list-item"],
+        "",
+        "",
+        "sticker_011",
+        "idHasSmallImageListSticker"
+    );
+    SelLists.newList("sSocial", "idSelectedIcon", ["sel-list-item"], "", "", "apple_1", "idHasSmallImageListSocialLogo");
+    SelLists.newList("sSymbol1", "idSelectedSymbol1", ["sel-list-item"], "", "", initialValue("idSelectedSymbol1"));
+    SelLists.newList("sSymbol2", "idSelectedSymbol2", ["sel-list-item"], "", "", initialValue("idSelectedSymbol2"));
+    SelLists.newList("sSymbol3", "idSelectedSymbol3", ["sel-list-item"], "", "", initialValue("idSelectedSymbol3"));
+    SelLists.newList("sSymbol4", "idSelectedSymbol4", ["sel-list-item"], "", "", initialValue("idSelectedSymbol4"));
+    // Nao existe (teste):
+    SelLists.newList("sSymbol5", "idSelectedSymbol5", ["sel-list-item"], "", "", initialValue("idSelectedSymbol5"));
     // -------------------------
 
-    
     // Listas que crescem.
     // -------------------------
     // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
@@ -175,48 +217,55 @@ function defInit() {
                     '</div>',
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
-    
+
     // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
     // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
     // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
     var itemsToGrow = randomSlice(
-                    [
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
-                    ], 5);
-    GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2, 
-                    '<div class="css-block-center pad-small">' +
-                        '<a href="<<0>>">' +
-                            '<img class="size-full size-max-very-small" src="<<1>>" />' +
-                        '</a>' +
-                        '<p><<2>></p>' +
-                    '</div>',
-                    '0', 3, ['idGrowList1ButtonContainer']);
+        [
+            "/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect",
+            "/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect",
+            "/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect",
+            "/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect",
+            "/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2",
+            "/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2",
+            "/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2",
+            "/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2",
+            "/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3",
+            "/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3",
+            "/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3",
+            "/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3",
+        ],
+        5
+    );
+    GrowLists.newList(
+        "g1",
+        "idGrowList1",
+        itemsToGrow,
+        2,
+        '<div class="css-block-center pad-small">' +
+        '<a href="<<0>>">' +
+        '<img class="size-full size-max-very-small" src="<<1>>" />' +
+        "</a>" +
+        "<p><<2>></p>" +
+        "</div>",
+        "0",
+        3,
+        ["idGrowList1ButtonContainer"]
+    );
     // -------------------------
-                    
 
     // Verificacoes de dados.
     // -------------------------
-    DataChecker.setMsgElements('idOverlayModalMsg', 'idModalMsgText', 'idModalMsgTitle');
-    DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
-    DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
-    DataChecker.newCheck('idTextLine1', 'value', 'Text line', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
-    DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
-    DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
+    DataChecker.setMsgElements("idOverlayModalMsg", "idModalMsgText", "idModalMsgTitle");
+    DataChecker.newCheck("blabla", "value", "Text", "blk"); // Teste: o elemento deste check nao existe.
+    DataChecker.newCheck("idTextToRender", "value", "Text", "blk");
+    DataChecker.newCheck("idTextLine1", "value", "Text line", "blk");
+    DataChecker.newCheck("idImageInput", "value", "Input image", "blk");
+    DataChecker.newCheck("idImageInput", "value", "Input image", "ext", [".jpg", ".png", ".gif"]);
+    DataChecker.newCheck("idValueOne", "value", "Value one", "rng", [20, 30]);
+    DataChecker.newCheck("idValueOne", "value", "Value one", "rng", [20, 22], "idMargin", "value", ">", "15");
     // -------------------------
-    
 }
 
 function defSubmit() {
@@ -227,7 +276,9 @@ function defSubmit() {
 }
 
 function resultPageSubmit() {
-    var changeVisibility = function () {toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['css-hide']);}	
+    var changeVisibility = function () {
+        toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['css-hide']);
+    }
     // Torna o botao invisivel e a mensagem visivel.
     changeVisibility();
     // Vai tornar o botao visivel de novo e a mensagem invisivel em 60 segundos.

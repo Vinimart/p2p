@@ -45,10 +45,7 @@ function defInit() {
 
 	SelLists.newList('s14', 'idOrnament09', ['sel-list-item'], '', '', 'horror_001');
 
-	SelLists.newList('s15_1', 'idOrnament10_1', ['sel-list-item'], '', '', 'art_001');
-	SelLists.newList('s15_2', 'idOrnament10_2', ['sel-list-item'], '', '', 'art_001');
-	SelLists.newList('s15_3', 'idOrnament10_3', ['sel-list-item'], '', '', 'art_001');
-	SelLists.newList('s15_4', 'idOrnament10_4', ['sel-list-item'], '', '', 'art_001');
+	SelLists.newList('s15', 'idOrnament10', ['sel-list-item'], '', '', 'art_001');
 
 	SelLists.newList('s16', 'idOrnament11', ['sel-list-item'], '', '', 'kids_001');
 
