@@ -184,6 +184,10 @@ function defInit() {
 
     // Listas de imagens pequenas.
     // -------------------------
+    SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
+
+    // Listas de imagens pequenas.
+    // -------------------------
     SelLists.newList("sChalk", "idImageName", ["sel-list-item"], "", "", "chalkboard_003", "idHasSmallImageListChalkboard");
     SelLists.newList("sWall", "idImageName", ["sel-list-item"], "", "", "wall_002_tlb", "idHasSmallImageListWall");
     SelLists.newList("sTex", "idSelectedSmallImage", ["sel-list-item"], "", "", "abstract085_tlb", "idHasSmallImageListTexture");
