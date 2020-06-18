@@ -182,7 +182,7 @@ function defInit() {
     );
     // -------------------------
 
-    // Listas de imagens pequenas.
+    // Color Picker.
     // -------------------------
     SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
 
