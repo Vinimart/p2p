@@ -677,6 +677,10 @@ sobreposto a um elemento de cor clara */
     width: 180px;
 }
 
+.img-3x {
+    width: 350px;
+}
+
 .rounded-1x {
     border-radius: 5px;
 }
