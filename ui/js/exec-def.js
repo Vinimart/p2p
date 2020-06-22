@@ -7,6 +7,9 @@ function defInit() {
 	SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
 		'abstract083');
 
+	SelLists.newList('te2', 'idSelectedTextEffect2', ['hoverable-bg-4th', 'sel-item'], '', '',
+		'3d_blue');
+
 	SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
 		'color_improvement_effect_001');
 
