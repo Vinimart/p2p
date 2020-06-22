@@ -13,6 +13,9 @@ function defInit() {
 	SelLists.newList('fe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '',
 		'color_improvement_effect_001');
 
+	SelLists.newList('fe2', 'idSelectedPhotoEffect2', ['hoverable-bg-4th', 'sel-item'], '', '',
+		'no_effect');
+
 	SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>',
 		'01 Digit');
 
