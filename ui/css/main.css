@@ -354,10 +354,11 @@ img {
     overflow-x: hidden;
 }
 
-.column-main .box {
-    /* Largura minima necessaria para nao afetar a largura dos componentes de listas */
+/* to delete */
+/*.column-main .box {
+    Largura minima necessaria para nao afetar a largura dos componentes de listas 
     min-width: 325px;
-}
+}*/
 
 
 .btn-small {
