@@ -623,6 +623,21 @@ sobreposto a um elemento de cor clara */
     padding-right: 30px;
 }
 
+.padded-v-1x {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padded-v-2x {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padded-v-3x {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .spaced-v-1x {
     margin-top: 10px;
     margin-bottom: 10px;
