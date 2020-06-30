@@ -680,19 +680,19 @@ var ColorTable = new(function () {
     this.container = document.getElementById('idColorTableContainer');
     this.hexDisplay = document.getElementById('idHexDisplay');
 
-    this.set = function (id, idColorDisplay) {
+    this.set = function (id) {
         this.target = document.getElementById(id);
-        this.colorDisplay = document.getElementById(idColorDisplay)
         toggleHide([this.container.id]);
     };
 
     this.setColor = function (color) {
-        this.selectedColor = color;
-        this.hexDisplay.textContent = '#' + color;
+        this.color = color;
+        this.selectedColor = this.color;
+        this.hexDisplay.textContent = '#' + this.color;
     };
 
     this.applyColor = () => {
-        // Valor padrao
+        // Valor padrao inicial
         this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
         this.target.value = this.selectedColor;
         toggleHide([this.container.id]);
