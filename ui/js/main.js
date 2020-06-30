@@ -677,23 +677,23 @@ var GrowLists = new(function () {
 
 var ColorTable = new(function () {
     this.target;
+    this.container = document.getElementById('idColorTableContainer');
+    this.hexDisplay = document.getElementById('idHexDisplay');
 
-    this.set = function (id, idDisplay) {
+    this.set = function (id, idColorDisplay) {
         this.target = document.getElementById(id);
-        this.colorDisplay = document.getElementById(idDisplay);
-        this.container = document.getElementById('idColorTableContainer');
-
+        this.colorDisplay = document.getElementById(idColorDisplay)
         toggleHide([this.container.id]);
     };
 
     this.setColor = function (color) {
         this.selectedColor = color;
+        this.hexDisplay.textContent = '#' + color;
     };
 
     this.applyColor = () => {
         // Valor padrao
         this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
-
         this.target.value = this.selectedColor;
         toggleHide([this.container.id]);
     };
