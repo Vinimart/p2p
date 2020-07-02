@@ -686,14 +686,14 @@ var ColorTable = new(function () {
     };
 
     this.setColor = function (color) {
-        this.color = color;
-        this.selectedColor = this.color;
-        this.hexDisplay.textContent = '#' + this.color;
+        this.selectedColor = color;
+        this.hexDisplay.textContent = this.selectedColor;
     };
 
     this.applyColor = () => {
         // Valor padrao inicial
-        this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
+        this.initialValue = '000000';
+        this.selectedColor = this.selectedColor ? this.selectedColor : this.initialValue;
         this.target.value = this.selectedColor;
         toggleHide([this.container.id]);
     };
