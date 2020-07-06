@@ -8,17 +8,31 @@
     <title>Picture to People</title>
 </head>
 
-<body onload="defInit();">
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 
+    <!-- BEGIN: [[*Preloader*]] -->
+    <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+    <!-- END: [[*Preloader*]] -->
+
+    <!-- BEGIN: [[*Modal*]] -->
     <!--#include VIRTUAL="/inc/modal.inc.html" -->
+    <!-- END: [[*Modal*]] -->
 
+    <!-- BEGIN: [[*SearchModal*]] -->
     <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+    <!-- END: [[*SearchModal*]] -->
 
+    <!-- BEGIN: [[*ColorPicker*]] -->
     <!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+    <!-- END: [[*ColorPicker*]] -->
 
+    <!-- BEGIN: [[*SideNav*]] -->
     <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+    <!-- END: [[*SideNav*]] -->
 
+    <!-- BEGIN: [[*Menu*]] -->
     <!--#include VIRTUAL="/inc/menu.inc.html" -->
+    <!-- END: [[*Menu*]] -->
 
     <!-- BEGIN: [[*Header*]] -->
     <header class="padded-h-2x">
@@ -420,20 +434,20 @@
                 <!-- END: [[*EffectEnum-Styles*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::PhotoEffectMultiList*]] -->
-                <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html" -->
+                <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html<<<disabled>>>" -->
                 <!--#include VIRTUAL="/inc/show_all_hide_all_btn.inc.html" -->
                 <!-- END: [[*COMPONENT::PhotoEffectMultiList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_01.inc.html" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_01.inc.html<<<disabled>>>" -->
                 <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledPhotoEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html<<<disabled>>>" -->
                 <!-- END: [[*COMPONENT::LabeledPhotoEffectList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_02.inc.html" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_02.inc.html<<<disabled>>>" -->
                 <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
 
                 <!-- BEGIN: [[*EffectExamples*]] -->
@@ -908,143 +922,146 @@
                         <!-- END: [[*COMPONENT::FontList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::3DModelList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DTextStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::3DTextStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DIconModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::3DIconModelList*]] -->
 
                         <!-- /image_utilities/photo-text-caption/add-text-caption-to-photo -->
                         <!-- BEGIN: [[*COMPONENT::TextLayoutStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::TextLayoutStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::TextureList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::TextureList*]] -->
 
                         <!-- /photo-frame/decorated-photo-frame-generator -->
                         <!-- BEGIN: [[*COMPONENT::AbstractSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::AbstractSymbolList*]] -->
 
                         <!-- /photo-frame/star-photo-frame-generator -->
                         <!-- BEGIN: [[*COMPONENT::StarSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::StarSymbolList*]] -->
 
                         <!-- /sticker-creator/ -->
                         <!-- BEGIN: [[*COMPONENT::StickerShapeList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::StickerShapeList*]] -->
+
+                        <!-- /sticker-creator/art-sticker-maker -->
+                        <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_1.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_2.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_3.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_4.inc.html" -->
+                        <!-- END: [[*COMPONENT::ArtStickerList*]] -->
 
                         <!-- /sticker-creator/love-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::LoveStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_love_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_love_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::LoveStickerList*]] -->
 
                         <!-- /sticker-creator/business-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::BusinessStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_business_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_business_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::BusinessStickerList*]] -->
 
                         <!-- /sticker-creator/stickers-christmas-maker -->
                         <!-- BEGIN: [[*COMPONENT::ChristmasStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_christmass_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_christmass_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::ChristmasStickerList*]] -->
 
                         <!-- /sticker-creator/social-media-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::SocialMediaStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_social_media_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_social_media_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::SocialMediaStickerList*]] -->
 
                         <!-- /sticker-creator/female-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::FemaleStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_female_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_female_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::FemaleStickerList*]] -->
 
                         <!-- /sticker-creator/male-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::MaleStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_male_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_male_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::MaleStickerList*]] -->
 
                         <!-- /sticker-creator/horror-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::HorrorStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_horror_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_horror_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::HorrorStickerList*]] -->
-
-                        <!-- /sticker-creator/art-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_art_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::ArtStickerList*]] -->
 
                         <!-- /sticker-creator/kid-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::KidStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_kid_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_kid_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::KidStickerList*]] -->
 
                         <!-- /sticker-creator/game-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::GameStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_game_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_game_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::GameStickerList*]] -->
 
                         <!-- /sticker-creator/sport-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::SportsStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_sport_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_sport_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::SportsStickerList*]] -->
 
                         <!-- /sticker-creator/food-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::FoodStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_food_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_food_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::FoodStickerList*]] -->
 
                         <!-- /sticker-creator/fashion-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::FashionStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_fashion_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_fashion_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::FashionStickerList*]] -->
 
                         <!-- /sticker-creator/music-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::MusicStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_music_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_music_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::MusicStickerList*]] -->
 
                         <!-- /sticker-creator/animal-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::AnimalStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_animal_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_animal_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::AnimalStickerList*]] -->
 
                         <!-- /sticker-creator/science-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::ScienceStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_science_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_science_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::ScienceStickerList*]] -->
 
                         <!-- /sticker-creator/flower-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::FlowerStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_flower_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_flower_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::FlowerStickerList*]] -->
 
                         <!-- /sticker-creator/transport-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::TransportStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_transport_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_transport_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::TransportStickerList*]] -->
 
                         <!-- /sticker-creator/weather-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::WeatherStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_weather_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_weather_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::WeatherStickerList*]] -->
 
                         <!-- /sticker-creator/zodiac-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::ZodiacStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_zodiac_component.inc.html" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_list_zodiac_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::ZodiacStickerList*]] -->
 
                         <!-- BEGIN: [[*ImageInput*]] -->
@@ -1075,19 +1092,35 @@
 
     <!-- BEGIN: [[*SCRIPT::Internal*]] -->
     <!--#include VIRTUAL="/inc/script_main.inc.html" -->
+
+    <script>
+        try {
+            // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+            // Default para f3 (writing) = 'Brushed'.
+            // Default para f4 (graffiti) = 'Jungle LIFE'.
+            // Default para f5 (horror) = 'Creepsville'.
+            var initialFontName = '01 Digit';
+
+            // Para as telas que usam simbolos.
+            var initialSymbol1 = 'kids_001',
+                initialSymbol2 = 'kids_001',
+                initialSymbol3 = 'kids_001',
+                initialSymbol4 = 'kids_001';
+
+            // Para as telas que usam lista de efeito de texto com nome.
+            var initialNamedTextEffect = '3d_red'; // Valor para a lista de efeitos classicos.
+            // var initialNamedTextEffect = 'abstract083'; // Valor para a lista de efeitos 3d.
+        } catch (e) {
+            showModalMsg('idOverlayModalMsg', 'idModalMsgText', e.message ? e.message : e, 'idModalMsgTitle',
+                'Error');
+        }
+    </script>
+
     <!--#include VIRTUAL="/inc/script_init.inc.html" -->
     <!-- END: [[*SCRIPT::Internal*]] -->
 
     <!-- BEGIN: [[*SCRIPT::Ads*]] -->
     <!-- END: [[*SCRIPT::Ads*]] -->
-
-    <script>
-        let initialValue = function (keeperId) {
-            let containerId = `${keeperId} + Container`
-            let container = document.getElementById(containerId)
-            let value = container.firstElementChild.id
-        }
-    </script>
 </body>
 
 </html>
