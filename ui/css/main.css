@@ -94,7 +94,7 @@ img {
 
 
 
-/* ----- Preloader 
+/* ----- Preloader ----- */
 
 #idOverlayPreloader {
     position: fixed;
@@ -102,10 +102,10 @@ img {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* EQUALS .color-default + alpha-transparency
+    /*EQUALS .color-default + alpha-transparency*/
     background-color: rgba(32, 32, 32, 0.7);
 }
------ */
+
 
 
 

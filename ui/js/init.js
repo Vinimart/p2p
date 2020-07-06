@@ -104,7 +104,7 @@ function defInit() {
     // So cria a lista de apps populares se o container existir.
     defPopDesignApps('idPopEffectsContainer');
 
-    // Lista de cores do Color Picker (mostrada com tabela).
+    // Lista de cores do Color Picker (mostrada com modal).
     // -------------------------
     SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
     // -------------------------

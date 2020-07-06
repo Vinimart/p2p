@@ -6,7 +6,11 @@
     <title>Picture to People</title>
 </head>
 
-<body onload="defInit();">
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+
+    <!-- BEGIN: [[*Preloader*]] -->
+    <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+    <!-- END: [[*Preloader*]] -->
 
     <!--#include VIRTUAL="/inc/modal.inc.html" -->
 
