@@ -51,10 +51,10 @@
 
     <main class="bg-bottom" style="background-image: url(ui/img/main-bg.png);">
 
-        <!-- Container Principal max-width: 1600px -->
+        <!-- Container Principal (max-width: 1600px) -->
         <div class="flex-around limiter-2x">
 
-            <!-- Coluna Principal -->
+            <!-- BEGIN: [[*MainColumn*]] -->
             <div class="column-main padded-h-2x">
 
                 <!-- BEGIN: [[*Description*]] -->
@@ -434,20 +434,20 @@
                 <!-- END: [[*EffectEnum-Styles*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::PhotoEffectMultiList*]] -->
-                <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html<<<disabled>>>" -->
+                <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html" -->
                 <!--#include VIRTUAL="/inc/show_all_hide_all_btn.inc.html" -->
                 <!-- END: [[*COMPONENT::PhotoEffectMultiList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_01.inc.html<<<disabled>>>" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_1.inc.html" -->
                 <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledPhotoEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html<<<disabled>>>" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html" -->
                 <!-- END: [[*COMPONENT::LabeledPhotoEffectList*]] -->
 
                 <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_02.inc.html<<<disabled>>>" -->
+                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_2.inc.html" -->
                 <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
 
                 <!-- BEGIN: [[*EffectExamples*]] -->
@@ -504,17 +504,17 @@
 
                     <form name="FormMain" action="result.html">
 
-                        <!-- Para a lista de efeitos de texto selecionaveis acima. -->
-                        <input type="hidden" name="SelectedTextEffect" id="idSelectedTextEffect" value="" />
+                        <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_1). -->
+                        <input type="hidden" name="SelectedTextEffect1" id="idSelectedTextEffect1" value="" />
 
-                        <!-- Para a lista de efeitos de texto selecionaveis acima. -->
+                        <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_2). -->
                         <input type="hidden" name="SelectedTextEffect2" id="idSelectedTextEffect2" value="" />
 
-                        <!-- Para a lista de efeitos de foto selecionaveis acima. -->
+                        <!-- Lista de efeitos de foto selecionaveis acima (photo_effect_multilist). -->
                         <input type="hidden" name="SelectedPhotoEffect" id="idSelectedPhotoEffect" value="" />
 
-                        <!-- Para a lista de efeitos de foto selecionaveis acima. -->
-                        <input type="hidden" name="SelectedPhotoEffect2" id="idSelectedPhotoEffect2" value="" />
+                        <!-- Lista de efeitos de foto selecionaveis acima (labeled_photo_effect_list). -->
+                        <input type="hidden" name="SelectedEffect" id="idSelectedEffect" value="" />
 
                         <div class="title-bar-closed padded-1x centered">
                             <span class="font-3x">Configuration</span>
@@ -922,43 +922,33 @@
                         <!-- END: [[*COMPONENT::FontList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::3DModelList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DTextStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::3DTextStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::3DIconModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::3DIconModelList*]] -->
 
                         <!-- /image_utilities/photo-text-caption/add-text-caption-to-photo -->
                         <!-- BEGIN: [[*COMPONENT::TextLayoutStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::TextLayoutStyleList*]] -->
 
                         <!-- BEGIN: [[*COMPONENT::TextureList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::TextureList*]] -->
-
-                        <!-- /photo-frame/decorated-photo-frame-generator -->
-                        <!-- BEGIN: [[*COMPONENT::AbstractSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::AbstractSymbolList*]] -->
-
-                        <!-- /photo-frame/star-photo-frame-generator -->
-                        <!-- BEGIN: [[*COMPONENT::StarSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::StarSymbolList*]] -->
 
                         <!-- /sticker-creator/ -->
                         <!-- BEGIN: [[*COMPONENT::StickerShapeList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html<<<disabled>>>" -->
+                        <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::StickerShapeList*]] -->
 
                         <!-- /sticker-creator/art-sticker-maker -->
@@ -1064,6 +1054,16 @@
                         <!--#include VIRTUAL="/ui/comp/sticker_list_zodiac_component.inc.html<<<disabled>>>" -->
                         <!-- END: [[*COMPONENT::ZodiacStickerList*]] -->
 
+                        <!-- /photo-frame/decorated-photo-frame-generator -->
+                        <!-- BEGIN: [[*COMPONENT::AbstractSymbolList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html<<<disabled>>>" -->
+                        <!-- END: [[*COMPONENT::AbstractSymbolList*]] -->
+
+                        <!-- /photo-frame/star-photo-frame-generator -->
+                        <!-- BEGIN: [[*COMPONENT::StarSymbolList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html<<<disabled>>>" -->
+                        <!-- END: [[*COMPONENT::StarSymbolList*]] -->
+
                         <!-- BEGIN: [[*ImageInput*]] -->
                         <!--#include VIRTUAL="/inc/image_input.inc.html" -->
                         <!-- END: [[*ImageInput*]] -->
@@ -1077,8 +1077,22 @@
                 <!-- END: [[*EffectConfiguration*]] -->
 
             </div>
-
-            <!--#include VIRTUAL="/inc/second_column.inc.html" -->
+            <!-- END: [[*MainColumn*]] -->
+            
+            <!-- BEGIN: [[*SecondColumn*]] -->
+            <div class="column-2nd padded-h-1x">
+                <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                <div class="centered spaced-below-3x">
+                    <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
+                    <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                </div>
+                <!-- END: [[*PopularGraphicDesignApps*]] -->
+            
+                <!-- BEGIN: [[*RecommendedEffects*]] -->
+                <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+                <!-- END: [[*RecommendedEffects*]] -->
+            </div>
+            <!-- END: [[*SecondColumn*]] -->
         </div>
     </main>
 
@@ -1102,14 +1116,15 @@
             var initialFontName = '01 Digit';
 
             // Para as telas que usam simbolos.
-            var initialSymbol1 = 'kids_001',
-                initialSymbol2 = 'kids_001',
-                initialSymbol3 = 'kids_001',
-                initialSymbol4 = 'kids_001';
+            var initialSymbol1 = 'art_001',
+                initialSymbol2 = 'art_001',
+                initialSymbol3 = 'art_001',
+                initialSymbol4 = 'art_001';
 
             // Para as telas que usam lista de efeito de texto com nome.
-            var initialNamedTextEffect = '3d_red'; // Valor para a lista de efeitos classicos.
-            // var initialNamedTextEffect = 'abstract083'; // Valor para a lista de efeitos 3d.
+            var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
+                initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+
         } catch (e) {
             showModalMsg('idOverlayModalMsg', 'idModalMsgText', e.message ? e.message : e, 'idModalMsgTitle',
                 'Error');

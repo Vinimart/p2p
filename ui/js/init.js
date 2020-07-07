@@ -112,14 +112,15 @@ function defInit() {
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
-    //SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'realistic_pencil_sketch_photo_effect_004');
+    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'color_improvement_effect_001');
 
     // Lista de efeitos de texto que fica fora do formulario.
-    //SelLists.newList('te1', 'idSelectedTextEffect', ['hoverable-bg-4th', 'sel-item'], '', '', initialNamedTextEffect);
+    SelLists.newList('te1', 'idSelectedTextEffect1', ['hoverable-bg-4th', 'sel-item'], '', '', initialNamedTextEffect1);
+    SelLists.newList('te2', 'idSelectedTextEffect2', ['hoverable-bg-4th', 'sel-item'], '', '', initialNamedTextEffect2);
 
     // dpe = "downloadable photo effects" = lista de efeitos distribuida em varias janelas na tela, sendo que as 
     //        imagens da maioria das janelas nao sao carregadas de antemao -> usado no simple photo editor.
-    //SelLists.newList('dpe1', 'idSelectedEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'vintage-retro-photo-effect_004');
+    SelLists.newList('dpe1', 'idSelectedEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'no_effect');
     // -------------------------
 
 
@@ -127,11 +128,11 @@ function defInit() {
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
     // Lista usada na pagina de texto 3D classico.
-    //SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');	
+    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '1');	
     // Lista usada na pagina de texto 3D classico.
-    //SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1', 'idHasMergedImageTable3dTextModel');	
+    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1');	
     // Lista usada na pagina que desenha texto em foto.
-    //SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasMergedImageTableTextLayout');
+    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00');
     // -------------------------
 
 
@@ -146,7 +147,7 @@ function defInit() {
     // Listas de imagens.
     // -------------------------
     // Lista usada nas paginas dos textos 3D texturizados.
-    //SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_textured6', 'idHasImageList3dTextStyle');
+    SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1');
     // Lista usada nas paginas dos textos de luz e neon.
     //SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
     // -------------------------
@@ -156,10 +157,9 @@ function defInit() {
     // -------------------------
     //SelLists.newList('sChalk', 'idImageName', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');	
     //SelLists.newList('sWall', 'idImageName', ['sel-list-item'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');	
-    //SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract085_tlb', 'idHasSmallImageListTexture');
-    //SelLists.newList('sModel3d', 'idSelected3dModel', ['sel-list-item'], '', '', '3d_model_01', 'idHasSmallImageList3dModel');
-    //SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_011', 'idHasSmallImageListSticker');
-    //SelLists.newList('sSocial', 'idSelectedIcon', ['sel-list-item'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');
+    SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
+    SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
+    SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
     SelLists.newList('sSymbol1', 'idSelectedSymbol1', ['sel-list-item'], '', '', initialSymbol1);
     SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['sel-list-item'], '', '', initialSymbol2);
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['sel-list-item'], '', '', initialSymbol3);
