@@ -7,13 +7,25 @@
 </head>
 
 <body onload="defInit();">
+    <!-- BEGIN: [[*Preloader*]] -->
+    <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+    <!-- END: [[*Preloader*]] -->
+
+    <!-- BEGIN: [[*Modal*]] -->
     <!--#include VIRTUAL="/inc/modal.inc.html" -->
+    <!-- END: [[*Modal*]] -->
 
+    <!-- BEGIN: [[*SearchModal*]] -->
     <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+    <!-- END: [[*SearchModal*]] -->
 
+    <!-- BEGIN: [[*SideNav*]] -->
     <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+    <!-- END: [[*SideNav*]] -->
 
+    <!-- BEGIN: [[*Menu*]] -->
     <!--#include VIRTUAL="/inc/menu.inc.html" -->
+    <!-- END: [[*Menu*]] -->
 
     <!-- BEGIN: [[*Header*]] -->
     <header class="padded-h-2x">
@@ -63,6 +75,31 @@
 
     <!-- BEGIN: [[*SCRIPT::Internal*]] -->
     <!--#include VIRTUAL="/inc/script_main.inc.html" -->
+
+    <script>
+        try {
+            // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+            // Default para f3 (writing) = 'Brushed'.
+            // Default para f4 (graffiti) = 'Jungle LIFE'.
+            // Default para f5 (horror) = 'Creepsville'.
+            var initialFontName = '01 Digit';
+
+            // Para as telas que usam simbolos.
+            var initialSymbol1 = 'art_001',
+                initialSymbol2 = 'art_001',
+                initialSymbol3 = 'art_001',
+                initialSymbol4 = 'art_001';
+
+            // Para as telas que usam lista de efeito de texto com nome.
+            var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
+                initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+
+        } catch (e) {
+            showModalMsg('idOverlayModalMsg', 'idModalMsgText', e.message ? e.message : e, 'idModalMsgTitle',
+                'Error');
+        }
+    </script>
+
     <!--#include VIRTUAL="/inc/script_init.inc.html" -->
     <!-- END: [[*SCRIPT::Internal*]] -->
 
