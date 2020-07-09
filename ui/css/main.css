@@ -413,30 +413,26 @@ select:focus {
     outline-color: #FF8000;
 }
 
-.color-input {
+.uppercase {
     text-transform: uppercase;
 }
 
 .check-box {
     display: block;
     position: relative;
-    padding-left: 30px;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    padding-left: 30px;
 }
 
 .check-box input {
     position: absolute;
-    opacity: 0;
     cursor: pointer;
+    opacity: 0;
     height: 0;
     width: 0;
 }
 
-/* Marcador de caixa checkbox */
+/* Marcador da caixa checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -481,7 +477,6 @@ select:focus {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 
 
 
@@ -728,13 +723,18 @@ sobreposto a um elemento de cor clara */
     color: #A62900;
 }
 
+.shaded {
+    /* EQUALS .color-default + alpha-transparency */
+    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
+}
+
 /* Hoverable para box-shadow */
-.hoverable-sh-1x:hover {
+.hoverable-shaded-1x:hover {
     /* EQUALS .color-default + alpha-transparency */
     box-shadow: 0px 0px 4px 2px rgba(32, 32, 32, 0.5);
 }
 
-.hoverable-sh-2x:hover {
+.hoverable-shaded-2x:hover {
     /* EQUALS .color-default + alpha-transparency */
     box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
 }
@@ -742,11 +742,6 @@ sobreposto a um elemento de cor clara */
 .text-shaded:hover {
     /* EQUALS .color-default + alpha-transparency */
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
-}
-
-.shaded {
-    /* EQUALS .color-default + alpha-transparency */
-    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
 }
 
 
