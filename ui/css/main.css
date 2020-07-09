@@ -716,7 +716,7 @@ sobreposto a um elemento de cor clara */
 /* Hoverable para box-shadow */
 .hoverable-shaded-1x:hover {
     /* EQUALS .color-default + alpha-transparency */
-    box-shadow: 0px 0px 4px 2px rgba(32, 32, 32, 0.5);
+    box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
 }
 
 .hoverable-shaded-2x:hover {
@@ -758,8 +758,6 @@ sobreposto a um elemento de cor clara */
 /* Container com display inline-block */
 .in-block-display {
     display: inline-block;
-    /* to delete */
-    /*padding: 5px 5px 5px 5px;*/
 }
 
 .inline-display {
@@ -1002,17 +1000,6 @@ sobreposto a um elemento de cor clara */
     }
 }
 
-@keyframes preloader {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-
 
 
 
@@ -1031,7 +1018,7 @@ sobreposto a um elemento de cor clara */
         display: none;
     }
 
-    /* Altera os elementos que utilizam .flex-around para apenas uma coluna, com execao do footer */
+    /* Altera os elementos que utilizam .flex-around dentro de main para apenas uma coluna */
     main .flex-around {
         flex-direction: column;
         flex-wrap: wrap;
@@ -1049,14 +1036,14 @@ sobreposto a um elemento de cor clara */
 @media (max-width: 500px) {
 
     .color-table {
-        border-spacing: 1px;
+        border-spacing: 2px;
     }
 
     .color-table td {
         width: 30px;
         height: 30px;
-        border: solid 4px;
-        border-color: #FFFFFF;
+        /* EQUALS .color-inv */
+        border: solid 3px #FFFFFF;
     }
 
     .modal-content {
