@@ -42,6 +42,7 @@ img {
 
 
 
+
 /* ----- Side Nav ----- */
 
 /* Overlay para o side nav, ocupa 100% da pagina */
@@ -104,7 +105,6 @@ img {
     overflow: hidden;
     background-color: rgba(32, 32, 32, 0.7);
 } */
-
 
 
 
@@ -210,15 +210,15 @@ img {
     margin-bottom: 30px;
 }
 
-/* Container para elementos circulares com tamanho de 200px */
+/* Container para elementos redondos com tamanho de 200px (recommended effects) */
 .round-container {
+    border-radius: 100%;
     width: 200px;
     height: 200px;
     /* EQUALS .color-1st */
     background-color: #FF8000;
     /* EQUALS .color-inv */
     color: #FFFFFF;
-    border-radius: 100%;
 }
 
 /* Container para componentes que necessitam de barra de rolagem e altura fixa */
@@ -236,17 +236,6 @@ img {
     font-size: 0px;
 }
 
-/* Container para componentes sem altura fixa */
-.comp-show-all {
-    width: 100%;
-    text-align: center;
-    /* EQUALS .color-1st */
-    border: solid 1px #FF8000;
-    border-radius: 0 0 10px 10px;
-    /* EQUALS .color-inv */
-    background-color: #FFFFFF;
-}
-
 .comp-scroll img {
     /* EQUALS .color-inv */
     border: solid 5px #FFFFFF;
@@ -260,6 +249,17 @@ img {
     background-size: contain;
     border-collapse: separate;
     width: 100%;
+}
+
+/* Container para componentes sem altura fixa e barra de rolagem */
+.comp-show-all {
+    width: 100%;
+    text-align: center;
+    /* EQUALS .color-1st */
+    border: solid 1px #FF8000;
+    border-radius: 0 0 10px 10px;
+    /* EQUALS .color-inv */
+    background-color: #FFFFFF;
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
@@ -290,12 +290,13 @@ img {
     color: #FFFFFF;
 }
 
+/* Selecao de item de componente com tabela */
 .sel-list-item {
     /* EQUALS .color-2nd */
     border-color: #A62900 !important;
 }
 
-/* Barra de titulo para componentes */
+/* Barra de titulo para componentes em estado fechado e sessão de configuracao de efeito */
 .title-bar-closed {
     /* EQUALS .color-1st */
     background-color: #FF8000;
@@ -304,7 +305,7 @@ img {
     border-radius: 10px;
 }
 
-/* Title bar com border-radius bottom = 0 */
+/* Title bar sem border-bottom-radius para componentes em estado aberto */
 .title-bar-opened {
     /* EQUALS .color-1st */
     background-color: #FF8000;
@@ -313,13 +314,13 @@ img {
     border-radius: 10px 10px 0 0;
 }
 
-/* Limita a largura e centraliza o elemento */
+/* Limita a largura do container e o centraliza na tela */
 .limiter-2x {
     max-width: 1600px;
     margin: auto;
 }
 
-/* Limita a largura e centraliza o elemento */
+/* Limita a largura do container e o centraliza na tela (ex: EffectEnum-Types) */
 .limiter-1x {
     max-width: 800px;
     margin: auto;
@@ -327,8 +328,8 @@ img {
 
 /* Posicionamento inferior para background-image */
 .bg-bottom {
-    background-repeat: no-repeat;
     background-position: bottom;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -354,13 +355,20 @@ img {
     overflow-x: hidden;
 }
 
-/* to delete */
-/*.column-main .box {
-    Largura minima necessaria para nao afetar a largura dos componentes de listas 
-    min-width: 325px;
-}*/
+/* Tamanho padrão para botoes */
+.btn-regular {
+    width: 180px;
+    border-radius: 5px;
+    padding: 15px;
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
 
-
+/* Tamanho usado principalmente em modal-box */
 .btn-small {
     width: 120px;
     /* EQUALS .color-2nd */
@@ -373,20 +381,7 @@ img {
     padding: 15px;
 }
 
-.btn {
-    /* Tamanho minimo para botoes */
-    min-width: 180px;
-    border-radius: 5px;
-    padding: 15px;
-    /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-    /* EQUALS .color-inv */
-    color: #FFFFFF;
-}
-
-.btn:hover,
+.btn-regular:hover,
 .btn-small:hover {
     /* EQUALS .color-1st */
     border-color: #FF8000;
