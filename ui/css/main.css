@@ -1058,9 +1058,9 @@ sobreposto a um elemento de cor clara */
     }
 
     .menu-button:hover {
-        background-color: transparent;
         /* EQUALS .color-inv */
         color: #FFFFFF;
+        background-color: transparent;
     }
 
     .menu-button span {
