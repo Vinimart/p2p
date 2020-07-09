@@ -37,7 +37,7 @@ button {
 
 img {
     max-width: 100%;
-} 
+}
 
 
 
@@ -355,21 +355,8 @@ img {
     overflow-x: hidden;
 }
 
-/* Tamanho padrão para botoes */
-.btn-regular {
-    width: 180px;
-    border-radius: 5px;
-    padding: 15px;
-    /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-    /* EQUALS .color-inv */
-    color: #FFFFFF;
-}
-
 /* Tamanho usado principalmente em modal-box */
-.btn-small {
+.btn-1x {
     width: 120px;
     /* EQUALS .color-2nd */
     border: solid 1px #A62900;
@@ -381,8 +368,21 @@ img {
     padding: 15px;
 }
 
-.btn-regular:hover,
-.btn-small:hover {
+/* Tamanho padrão para botoes */
+.btn-2x {
+    width: 180px;
+    border-radius: 5px;
+    padding: 15px;
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
+.btn-1x:hover,
+.btn-2x:hover {
     /* EQUALS .color-1st */
     border-color: #FF8000;
     /* EQUALS .color-1st */
