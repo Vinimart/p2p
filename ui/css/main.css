@@ -177,6 +177,11 @@ img {
     background-color: #FFFFFF;
 }
 
+.index-header {
+    background-size: cover;
+    height: 550px;
+}
+
 
 
 
@@ -374,6 +379,17 @@ img {
     background-color: #FF8000;
 }
 
+.btn-header {
+    border-radius: 5px;
+    padding: 15px;
+    /* EQUALS .color-1st */
+    border: solid 1px #FF8000;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
 
 
 
@@ -542,7 +558,7 @@ sobreposto a um elemento de cor clara */
     font-size: 20px;
 }
 
-.header-title {
+.title-2x {
     font-size: 60px;
 }
 
@@ -1063,7 +1079,8 @@ sobreposto a um elemento de cor clara */
         background-color: transparent;
     }
 
-    .menu-button span {
+    .menu-button span,
+    .menu-main div {
         display: none;
     }
 
@@ -1072,11 +1089,12 @@ sobreposto a um elemento de cor clara */
         font-size: 16px;
     }
 
-    .index-header img {
+    /*.index-header img {
         display: none;
-    }
+    }*/
 
-    .header-title {
+    /*to delete*/
+    .title-2x {
         line-height: 100%;
         margin-bottom: 20px;
     }
