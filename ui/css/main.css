@@ -11,28 +11,15 @@ body {
     color: #202020;
 }
 
-p {
-    line-height: 140%;
+p,
+ul {
+    line-height: 150%;
 }
 
 a {
     text-decoration: none;
     /* EQUALS .color-link */
     color: #00528C;
-}
-
-ul {
-    list-style: disc;
-    padding-left: 20px;
-    line-height: 140%;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-button {
-    cursor: pointer;
 }
 
 img {
@@ -542,12 +529,12 @@ sobreposto a um elemento de cor clara */
     font-size: 20px;
 }
 
-.header-title {
-    font-size: 60px;
+.font-4x {
+    font-size: 35px;
 }
 
-.title {
-    font-size: 35px;
+.font-5x {
+    font-size: 60px;
 }
 
 .bold {
@@ -1076,7 +1063,8 @@ sobreposto a um elemento de cor clara */
         display: none;
     }
 
-    .header-title {
+    /* to delete */
+    .font-5x {
         line-height: 100%;
         margin-bottom: 20px;
     }
