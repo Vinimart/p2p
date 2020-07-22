@@ -54,16 +54,17 @@ img {
     background-color: #FFFFFF;
     overflow-x: hidden;
     animation-name: right-to-initial;
-    animation-duration: 0.4s;
+    animation-duration: 0.5s;
 }
-
+/*
 .sidenav-content p {
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
+    padding-top: 10px;
+    padding-bottom: 10px;
+}*/
 
+ /* Hover para itens do menu lateral */
 .sidenav-content p:hover {
     /* EQUALS .bg-color-2nd */
     background-color: #F8F0E8;
