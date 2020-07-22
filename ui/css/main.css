@@ -128,11 +128,6 @@ img {
     cursor: pointer;
 }
 
-/* Icone para abrir o color picker 
-.fa-palette {
-    margin-left: 10px;
-}*/
-
 
 
 
@@ -169,13 +164,11 @@ img {
 /* Coluna principal */
 .column-main {
     width: 75%;
-    margin-bottom: 30px;
 }
 
 /* Coluna secundaria com largura fixa */
 .column-2nd {
     width: 400px;
-    margin-bottom: 30px;
 }
 
 /* Container para elementos redondos com tamanho de 200px (recommended effects) */
