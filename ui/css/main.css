@@ -118,7 +118,7 @@ img {
     border-collapse: separate;
 }
 
-/* Celula de cor do color picker */ 
+/* Celula de cor do color picker */
 .color-table td {
     width: 35px;
     height: 35px;
@@ -214,6 +214,7 @@ img {
     text-align: center;
     /* EQUALS .color-1st */
     border: solid 1px #FF8000;
+    /* Bordas inferiores arredondadas */
     border-radius: 0 0 10px 10px;
     /* EQUALS .color-inv */
     background-color: #FFFFFF;
@@ -268,6 +269,7 @@ img {
     background-color: #FF8000;
     /* EQUALS .color-inv */
     color: #FFFFFF;
+    /* Bordas superiores arredondadas */
     border-radius: 10px 10px 0 0;
 }
 
@@ -500,6 +502,43 @@ a um elemento de cor clara */
     background-color: #F5F5F5;
 }
 
+/* Necessario para elementos que exigem um background-color em estado hover */
+.hoverable-bg-4th:hover {
+    /* EQUALS .color-4th */
+    background-color: #CCCCCC;
+}
+
+.hoverable-inv:hover {
+    /* EQUALS .color-inv */
+    color: #FFFFFF;
+}
+
+.hoverable-2nd:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+}
+
+.shaded {
+    /* EQUALS .color-default + alpha-transparency */
+    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
+}
+
+/* Hoverable para box-shadow */
+.hoverable-shaded-1x:hover {
+    /* EQUALS .color-default + alpha-transparency */
+    box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
+}
+
+.hoverable-shaded-2x:hover {
+    /* EQUALS .color-default + alpha-transparency */
+    box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
+}
+
+.text-shaded:hover {
+    /* EQUALS .color-default + alpha-transparency */
+    text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
+}
+
 
 
 
@@ -667,43 +706,6 @@ a um elemento de cor clara */
 
 .pointer {
     cursor: pointer;
-}
-
-/* Necessario para elementos que exigem um background-color em estado hover */
-.hoverable-bg-4th:hover {
-    /* EQUALS .color-4th */
-    background-color: #CCCCCC;
-}
-
-.hoverable-inv:hover {
-    /* EQUALS .color-inv */
-    color: #FFFFFF;
-}
-
-.hoverable-2nd:hover {
-    /* EQUALS .color-2nd */
-    color: #A62900;
-}
-
-.shaded {
-    /* EQUALS .color-default + alpha-transparency */
-    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
-}
-
-/* Hoverable para box-shadow */
-.hoverable-shaded-1x:hover {
-    /* EQUALS .color-default + alpha-transparency */
-    box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
-}
-
-.hoverable-shaded-2x:hover {
-    /* EQUALS .color-default + alpha-transparency */
-    box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
-}
-
-.text-shaded:hover {
-    /* EQUALS .color-default + alpha-transparency */
-    text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
 
 
