@@ -346,6 +346,7 @@ img {
     border-color: #FF8000;
     /* EQUALS .color-1st */
     background-color: #FF8000;
+    cursor: pointer;
 }
 
 
@@ -1046,19 +1047,8 @@ a um elemento de cor clara */
         display: none;
     }
 
-    .index-menu a {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-
     .index-header img {
         display: none;
-    }
-
-    /* to delete */
-    .font-5x {
-        line-height: 100%;
-        margin-bottom: 20px;
     }
 
     /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
