@@ -56,21 +56,15 @@ img {
     animation-name: right-to-initial;
     animation-duration: 0.5s;
 }
-/*
-.sidenav-content p {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}*/
 
- /* Hover para itens do menu lateral */
+/* Hover para itens do menu lateral */
 .sidenav-content p:hover {
     /* EQUALS .bg-color-2nd */
     background-color: #F8F0E8;
 }
 
 .sidenav-header {
+    /* Mesma altura da barra de menu principal */
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 20px;
@@ -124,6 +118,7 @@ img {
     border-collapse: separate;
 }
 
+/* Celula de cor do color picker */ 
 .color-table td {
     width: 35px;
     height: 35px;
@@ -133,10 +128,10 @@ img {
     cursor: pointer;
 }
 
-/* Icone para abrir o color picker */
+/* Icone para abrir o color picker 
 .fa-palette {
     margin-left: 10px;
-}
+}*/
 
 
 
