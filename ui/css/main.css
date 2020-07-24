@@ -373,10 +373,6 @@ select:focus {
     outline-color: #FF8000;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
 .check-box {
     display: block;
     position: relative;
@@ -581,6 +577,10 @@ a um elemento de cor clara */
 
 .justified {
     text-align: justify;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 
