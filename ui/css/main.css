@@ -1047,10 +1047,6 @@ a um elemento de cor clara */
         display: none;
     }
 
-    .index-header img {
-        display: none;
-    }
-
     /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
     .footer-nav,
     .column-main .flex-center {
