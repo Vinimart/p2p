@@ -735,7 +735,6 @@ a um elemento de cor clara */
     justify-content: center;
 }
 
-/* Container com display inline-block */
 .in-block-display {
     display: inline-block;
 }
