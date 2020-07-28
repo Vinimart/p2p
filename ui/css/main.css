@@ -206,6 +206,7 @@ img {
     background-size: contain;
     border-collapse: separate;
     width: 100%;
+    min-width: 300px;
 }
 
 /* Container para componentes sem altura fixa e barra de rolagem */
