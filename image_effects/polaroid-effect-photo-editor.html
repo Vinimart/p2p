@@ -172,41 +172,85 @@
 
                         <div class="spaced-v-3x">
 
-                            <label for="idTextToRender1">Text Input 1 :</label><br>
+                            <label for="idColorImprovement">Color Improvement :</label><br>
 
                             <div class="spaced-below-1x"></div>
 
-                            <input type="text" maxlength="25" id="idTextToRender1" name="TextToRender1"
-                                placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idFontSize">Font Size :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select id="idFontSize" name="FontSize">
-                                <option value="28">Small</option>
-                                <option value="35" selected>Normal</option>
-                                <option value="42">Big</option>
+                            <select id="idColorImprovement" name="ColorImprovement">
+                                <option value="0" selected>None</option>
+                                <option value="1">Strong</option>
+                                <option value="2">Privilege bright</option>
+                                <option value="3">Privilege dark</option>
+                                <option value="4">Smart</option>
+                                <option value="5">Smart channels</option>
+                                <option value="6">Hot colors</option>
+                                <option value="7">Smart hot</option>
+                                <option value="8">Pastel</option>
                             </select>
 
                         </div>
 
                         <div class="spaced-v-3x">
 
-                            <label class="check-box">
+                            <label for="idImprovementLevel">Improvement Level :</label><br>
 
-                                <p>Draw Shadow</p>
+                            <div class="spaced-below-1x"></div>
 
-                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
-                                    value="checked">
+                            <select id="idImprovementLevel" name="ImprovementLevel">
+                                <option value="10">1</option>
+                                <option value="20">2</option>
+                                <option value="30">3</option>
+                                <option value="40">4</option>
+                                <option value="50" selected>5</option>
+                                <option value="60">6</option>
+                                <option value="70">7</option>
+                                <option value="80">8</option>
+                                <option value="90">9</option>
+                                <option value="100">10</option>
+                            </select>
 
-                                <span class="checkmark"></span>
+                        </div>
 
-                            </label>
+                        <div class="spaced-v-3x">
+
+                            <label for="idImprovementLevel">Improvement Level :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idImprovementLevel" name="ImprovementLevel">
+                                <option value="10">1</option>
+                                <option value="20">2</option>
+                                <option value="30">3</option>
+                                <option value="40">4</option>
+                                <option value="50" selected>5</option>
+                                <option value="60">6</option>
+                                <option value="70">7</option>
+                                <option value="80">8</option>
+                                <option value="90">9</option>
+                                <option value="100">10</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label for="idMargin">Margin :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idMargin" name="Margin">
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30" selected>30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                            </select>
 
                         </div>
 
@@ -229,6 +273,34 @@
 
                         <div class="spaced-v-3x">
 
+                            <label for="idOutlineColor">Outline Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idOutlineColor" name="OutlineColor">
+                                <option value="808080">Dark</option>
+                                <option value="A0A0A0">Average</option>
+                                <option value="C0C0C0" selected>Bright</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label for="idNumTextLines">Num Text Lines : </label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idNumTextLines" name="NumTextLines">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
                             <label for="idTextLine1">Text Line 1 :</label><br>
 
                             <div class="spaced-below-1x"></div>
@@ -239,28 +311,24 @@
 
                         <div class="spaced-v-3x">
 
-                            <label for="idTextToRender2">Text Input 2 :</label><br>
+                            <label for="idTextLine2">Text Line 2 :</label><br>
 
                             <div class="spaced-below-1x"></div>
 
-                            <input type="text" maxlength="25" id="idTextToRender2" name="TextToRender2"
-                                placeholder="Your Text">
+                            <input type="text" maxlength="25" id="idTextLine2" name="TextLine2" placeholder="Your Text">
 
                         </div>
 
                         <div class="spaced-v-3x">
 
-                            <label for="idMargin">Margin :</label><br>
+                            <label for="idTextAlign">Text Alignment : </label><br>
 
                             <div class="spaced-below-1x"></div>
 
-                            <select class="spaced-1x" id="idMargin" name="Margin">
-                                <option value="0">1</option>
-                                <option value="1">2</option>
-                                <option value="2">3</option>
-                                <option value="3">4</option>
-                                <option value="4">5</option>
-                                <option value="5">6</option>
+                            <select id="idTextAlign" name="TextAlign">
+                                <option value="1">Left</option>
+                                <option value="3" selected>Center</option>
+                                <option value="2">Right</option>
                             </select>
 
                         </div>
@@ -284,6 +352,25 @@
 
                         <div class="spaced-v-3x">
 
+                            <label for="idFontSize">Font Size : </label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idFontSize" name="FontSize">
+                                <option value="28">Small</option>
+                                <option value="35" selected>Normal</option>
+                                <option value="42">Big</option>
+                            </select>
+
+                        </div>
+
+                        <!-- BEGIN: [[*COMPONENT::FontList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
+                        <!-- END: [[*COMPONENT::FontList*]] -->
+
+
+                        <div class="spaced-v-3x">
+
                             <label class="check-box">
 
                                 <p>Draw Left Shadow</p>
@@ -294,16 +381,6 @@
                                 <span class="checkmark"></span>
 
                             </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine1">Text Line 2 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine2" name="TextLine2" placeholder="Your Text">
 
                         </div>
 
@@ -324,93 +401,9 @@
 
                         <div class="spaced-v-3x">
 
-                            <label for="idShadowPosition">Shadow Position :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowPosition" name="ShadowPosition">
-                                <option value="0">Top</option>
-                                <option value="1">Bottom</option>
-                                <option value="2">Left</option>
-                                <option value="3">Right</option>
-                                <option value="4">Top-left</option>
-                                <option value="5">Top-right</option>
-                                <option value="6">Bottom-left</option>
-                                <option value="7">Bottom-right</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idColorImprovement">Color Improvement :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idColorImprovement" name="ColorImprovement">
-                                <option value="0" selected>None</option>
-                                <option value="1">Strong</option>
-                                <option value="2">Privilege Bright</option>
-                                <option value="3">Privilege Dark</option>
-                                <option value="4">Smart</option>
-                                <option value="5">Smart Channels</option>
-                                <option value="6">Hot Colors</option>
-                                <option value="7">Smart Hot</option>
-                                <option value="8">Pastel</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idLogoColor1">Logo Color 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
-                                    value="000000">&nbsp;&nbsp;
-
-                                <i id="idLogoColor1Picker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idLogoColor1')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idContourColor">Contour Color :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idContourColor"
-                                    name="ContourColor" value="000000">&nbsp;&nbsp;
-
-                                <i id="idContourColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idContourColor')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextToRender3">Text Input 3 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender3" name="TextToRender3"
-                                placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
                             <label class="check-box">
 
-                                <p>Draw Bottom-left Shadow</p>
+                                <p>Draw Bottom-Left Shadow</p>
 
                                 <input id="idDrawBottomLeftShadow" type="checkbox" name="DrawBottomLeftShadow"
                                     checked="true" value="checked">
@@ -425,79 +418,7 @@
 
                             <label class="check-box">
 
-                                <p>Draw Paper Fold</p>
-
-                                <input id="idDrawFold" type="checkbox" name="DrawFold" checked="true" value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowDistance">Shadow Distance :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowDistance" name="ShadowDistance">
-                                <option value="0">Low</option>
-                                <option value="1">Normal</option>
-                                <option value="2">High</option>
-                                <option value="3">Very High</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine3">Text Line 3 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine3" name="TextLine3" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idFoldColor">Fold Color :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idFoldColor" name="FoldColor"
-                                    value="000000">&nbsp;&nbsp;
-
-                                <i id="idFoldColorrPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idFoldColor')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowDispersion">Shadow Dispersion :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowDispersion" name="ShadowDispersion">
-                                <option value="0">Low</option>
-                                <option value="1">Normal</option>
-                                <option value="2">High</option>
-                                <option value="3">Very High</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Bottom-right Shadow</p>
+                                <p>Draw Bottom-Right Shadow</p>
 
                                 <input id="idDrawBottomRightShadow" type="checkbox" name="DrawBottomRightShadow"
                                     checked="true" value="checked">
@@ -510,29 +431,17 @@
 
                         <div class="spaced-v-3x">
 
-                            <label for="idTextLine4">Text Line 4 :</label><br>
+                            <label for="idShadowSizePercent">General Shadow Size : </label><br>
 
                             <div class="spaced-below-1x"></div>
 
-                            <input type="text" maxlength="25" id="idTextLine4" name="TextLine4" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idGradientColor1">Gradient Color 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idGradientColor1"
-                                    name="GradientColor1" value="000000">&nbsp;&nbsp;
-
-                                <i id="idGradientColor1Picker"
-                                    class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idGradientColor1')" title="Color Picker">
-                                </i>
-                            </div>
+                            <select id="idShadowSizePercent" name="ShadowSizePercent">
+                                <option value="80">Very small</option>
+                                <option value="90">Small</option>
+                                <option value="100" selected>Normal</option>
+                                <option value="110">Big</option>
+                                <option value="120">Very big</option>
+                            </select>
 
                         </div>
 
@@ -540,10 +449,9 @@
 
                             <label class="check-box">
 
-                                <p>Make Spatial Fit</p>
+                                <p>Get as a transparent PNG file</p>
 
-                                <input id="idUseDisplace" type="checkbox" name="UseDisplace" checked="true"
-                                    value="checked">
+                                <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked">
 
                                 <span class="checkmark"></span>
 
@@ -551,26 +459,6 @@
 
                         </div>
 
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowFade">Shadow Fade :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowFade" name="ShadowFade">
-                                <option value="0" selected>None</option>
-                                <option value="10">Very low</option>
-                                <option value="15">Low</option>
-                                <option value="20">Normal</option>
-                                <option value="30">High</option>
-                                <option value="40">Very high</option>
-                            </select>
-
-                        </div>
-
-                        <!-- BEGIN: [[*COMPONENT::FontList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::FontList*]] -->
 
                         <!-- BEGIN: [[*ImageInput*]] -->
                         <!--#include VIRTUAL="/inc/image_input.inc.html" -->
@@ -621,7 +509,7 @@
             // Default para f3 (writing) = 'Brushed'.
             // Default para f4 (graffiti) = 'Jungle LIFE'.
             // Default para f5 (horror) = 'Creepsville'.
-            var initialFontName = '01 Digit';
+            var initialFontName = 'Arial';
 
             // Para as telas que usam simbolos.
             var initialSymbol1 = 'art_001',
