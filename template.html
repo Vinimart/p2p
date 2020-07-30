@@ -931,6 +931,20 @@
 
                         </div>
 
+                        <div class="spaced-v-3x">
+
+                            <label class="check-box">
+
+                                <p>Get as a transparent PNG file</p>
+
+                                <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
                         <!-- BEGIN: [[*COMPONENT::FontList*]] -->
                         <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::FontList*]] -->
@@ -1128,6 +1142,9 @@
             // Default para f4 (graffiti) = 'Jungle LIFE'.
             // Default para f5 (horror) = 'Creepsville'.
             var initialFontName = '01 Digit';
+
+            // RenderingStyle (default = "1")
+            var initialRenderingStyle = '1';
 
             // Para as telas que usam simbolos.
             var initialSymbol1 = 'art_001',
