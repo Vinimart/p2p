@@ -212,14 +212,22 @@
                             <span class="font-3x">Configuration</span>
                         </div>
 
+                        <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
+                        <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
+
+                        <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
+                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
+                        <!-- END: [[*COMPONENT::3DModelList*]] -->
+
                         <div class="spaced-v-3x">
 
-                            <label for="idTextToRender1">Text Input 1 :</label><br>
+                            <label for="idTextToRender1">Text (max 25) :</label><br>
 
                             <div class="spaced-below-1x"></div>
 
                             <input type="text" maxlength="25" id="idTextToRender1" name="TextToRender1"
-                                placeholder="Your Text">
+                                placeholder="Your Text" value="Sample">
 
                         </div>
 
@@ -230,25 +238,62 @@
                             <div class="spaced-below-1x"></div>
 
                             <select id="idFontSize" name="FontSize">
-                                <option value="28">Small</option>
-                                <option value="35" selected>Normal</option>
-                                <option value="42">Big</option>
+                                <option value="120">Normal</option>
+                                <option value="150" selected>Big</option>
+                                <option value="200">Very big</option>
                             </select>
 
                         </div>
 
                         <div class="spaced-v-3x">
 
-                            <label class="check-box">
+                            <label for="idTextDepth">Text Depth :</label><br>
 
-                                <p>Draw Shadow</p>
+                            <div class="spaced-below-1x"></div>
 
-                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
-                                    value="checked">
+                            <select id="idTextDepth" name="TextDepth">
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20" selected>20</option>
+                            </select>
 
-                                <span class="checkmark"></span>
+                        </div>
 
-                            </label>
+                        <div class="spaced-v-3x">
+
+                            <label for="idDrawShadow">Draw Shadow :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idDrawShadow" name="DrawShadow">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label for="idMargin">Margin :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <select id="idMargin" name="Margin">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15" selected>15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                            </select>
 
                         </div>
 
@@ -269,17 +314,113 @@
 
                         </div>
 
+                        <div class="spaced-v-3x">
+
+                            <label for="idFrontFaceColor">Front Face Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="uppercase" type="text" maxlength="6" id="idFrontFaceColor"
+                                    name="FrontFaceColor" value="000000">&nbsp;&nbsp;
+
+                                <i id="idFrontFaceColorPicker"
+                                    class="pointer fas fa-palette font-4x color-1st animate-1"
+                                    onclick="ColorTable.set('idFrontFaceColor')" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label for="idLineColor">Line Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="uppercase" type="text" maxlength="6" id="idLineColor" name="LineColor"
+                                    value="000000">&nbsp;&nbsp;
+
+                                <i id="idLineColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
+                                    onclick="ColorTable.set('idLineColor')" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label for="idDepthColor">Depth Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="uppercase" type="text" maxlength="6" id="idDepthColor" name="DepthColor"
+                                    value="000000">&nbsp;&nbsp;
+
+                                <i id="idDepthColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
+                                    onclick="ColorTable.set('idDepthColor')" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <!-- Este item começa invisível (display = none) porque estou considerando que o rendering style inicial é "2". -->
+                        <div class="spaced-v-3x hide-element">
+
+                            <label for="idDepthDarkColor">Depth Dark Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="uppercase" type="text" maxlength="6" id="idDepthDarkColor"
+                                    name="DepthDarkColor" value="000000">&nbsp;&nbsp;
+
+                                <i id="idDepthDarkColorPicker"
+                                    class="pointer fas fa-palette font-4x color-1st animate-1"
+                                    onclick="ColorTable.set('idDepthDarkColor')" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <!-- Este item começa invisível (display = none) porque estou considerando que o rendering style inicial é "2". -->
+                        <div class="spaced-v-3x hide-element">
+
+                            <label for="idDepthBrightColor">Depth Bright Color :</label><br>
+
+                            <div class="spaced-below-1x"></div>
+
+                            <div class="flex-between">
+                                <input class="uppercase" type="text" maxlength="6" id="idDepthBrightColor"
+                                    name="DepthBrightColor" value="000000">&nbsp;&nbsp;
+
+                                <i id="idDepthBrightColorPicker"
+                                    class="pointer fas fa-palette font-4x color-1st animate-1"
+                                    onclick="ColorTable.set('idDepthBrightColor')" title="Color Picker">
+                                </i>
+                            </div>
+
+                        </div>
+
+                        <div class="spaced-v-3x">
+
+                            <label class="check-box">
+
+                                <p>Get as a transparent PNG file</p>
+
+                                <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked">
+
+                                <span class="checkmark"></span>
+
+                            </label>
+
+                        </div>
+
                         <!-- BEGIN: [[*COMPONENT::FontList*]] -->
                         <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
                         <!-- END: [[*COMPONENT::FontList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::3DModelList*]] -->
 
                         <!-- BEGIN: [[*GenerateButton*]] -->
                         <!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
@@ -326,7 +467,10 @@
             // Default para f3 (writing) = 'Brushed'.
             // Default para f4 (graffiti) = 'Jungle LIFE'.
             // Default para f5 (horror) = 'Creepsville'.
-            var initialFontName = '01 Digit';
+            var initialFontName = 'Arial';
+
+            // RenderingStyle (default = "1")
+            var initialRenderingStyle = '2'
 
             // Para as telas que usam simbolos.
             var initialSymbol1 = 'art_001',
