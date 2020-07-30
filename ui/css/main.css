@@ -226,7 +226,7 @@ img {
     /* Height baseado no total de celulas do componente */
     height: 50px;
     /* EQUALS .color-inv */
-    border: 2px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
@@ -234,7 +234,13 @@ img {
     /* Height baseado no total de celulas do componente */
     height: 125px;
     /* EQUALS .color-inv */
-    border: 2px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
+}
+
+/* Para componentes de lista que contem imagens (diferente de .comp-scroll img) ex: sWall */
+.list-comp-1x img {
+    max-width: none;
+    border: none;
 }
 
 /* Selecao de item de componente com imagens */
