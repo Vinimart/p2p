@@ -16,6 +16,10 @@ ul {
     line-height: 150%;
 }
 
+li {
+    margin-left: 30px;
+}
+
 a {
     text-decoration: none;
     /* EQUALS .color-link */
