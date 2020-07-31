@@ -170,14 +170,21 @@ function defInit() {
     // Listas que crescem.
     // -------------------------
     // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
-    /*
-    GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
+    /*GrowLists.newList('g1', 'idGrowList1', '4-15', 5, 
                     '<div class="css-block-center pad-small">' +
                         '<img class="size-full size-max-very-small" src="/www/images/text/splash<<0>>_text_effect.jpg" />' +
                         '<p>Text Effect <<0>></p>' +
                     '</div>',
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
+
+   GrowLists.newList('g1', 'idGrowList1', '10-86', 3,
+   '<div class="in-block-display padded-2x">' +
+       '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
+           '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/abstract<<0>>_text_effect.jpg">' +
+       '</a>' +
+   '</div>',
+   '0', 3, ['idGrowList1ButtonContainer']);
 
     // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
     // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
@@ -197,14 +204,15 @@ function defInit() {
             '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
             '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
         ], 5);
-    GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2,
+
+    /*GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2,
         '<div class="css-block-center pad-small">' +
         '<a href="<<0>>">' +
         '<img class="size-full size-max-very-small" src="<<1>>" />' +
         '</a>' +
         '<p><<2>></p>' +
         '</div>',
-        '0', 3, ['idGrowList1ButtonContainer']);
+        '0', 3, ['idGrowList1ButtonContainer']);*/
     // -------------------------
 
 
