@@ -119,17 +119,17 @@
                     </p>
 
                     <p class="spaced-below-1x">
-                        You could also like to know our huge list of high quality <a
+                        You could also like to know our huge list of high quality <a class="hoverable-2nd"
                             href="/online-text-logo-design-generators.html">Online Text Logo Design Generators</a>.
                     </p>
 
                     <p class="spaced-below-1x">
                         If you have doubts about how to use any of our softwares, please read our <a
-                            href="/how_to_use.html">How To Use</a> page.
+                            class="hoverable-2nd" href="/how_to_use.html">How To Use</a> page.
                     </p>
 
-                    <p class="spaced-below-1x">
-                        We also have a version of this free online image editor in Portuguese: <a
+                    <p>
+                        We also have a version of this free online image editor in Portuguese: <a class="hoverable-2nd"
                             href="/lang/pt/editor-de-fotos-online.html">Editor de Fotos Online</a>.
                         If you can be a volunteer to translate this page to your native language, so people from your
                         country can use the effects more easily, please contact us at picturetopeople[at]gmail[dot]com.
@@ -236,14 +236,46 @@
             'idPhotoEffectList12'
         ];
 
-        function showAll(id) {
+        function closeTitle(id) {
             let e = document.getElementById(id)
-            e.classList.remove('hide-element')
+            let barMask = id + 'Bar'
+            let arrowMask = id + "Btn"
+
+            e.classList.add('hide-element')
+
+            let bar = document.getElementById(barMask)
+            let arrow = document.getElementById(arrowMask)
+
+            if (bar.classList.contains("title-bar-opened")) {
+                bar.classList.add("title-bar-closed")
+                bar.classList.remove("title-bar-opened")
+            }
+
+            if (arrow.classList.contains("fa-chevron-up")) {
+                arrow.classList.add("fa-chevron-down")
+                arrow.classList.remove("fa-chevron-up")
+            }
         }
 
-        function hideAll(id) {
+        function openTitle(id) {
             let e = document.getElementById(id)
-            e.classList.add('hide-element')
+            let barMask = id + 'Bar'
+            let arrowMask = id + "Btn"
+
+            e.classList.remove('hide-element')
+
+            let bar = document.getElementById(barMask)
+            let arrow = document.getElementById(arrowMask)
+
+            if (bar.classList.contains("title-bar-closed")) {
+                bar.classList.add("title-bar-opened")
+                bar.classList.remove("title-bar-closed")
+            }
+
+            if (arrow.classList.contains("fa-chevron-down")) {
+                arrow.classList.add("fa-chevron-up")
+                arrow.classList.remove("fa-chevron-down")
+            }
         }
     </script>
 
