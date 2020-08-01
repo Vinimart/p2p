@@ -128,9 +128,9 @@ function defInit() {
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', initialRenderingStyle);	
+    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', initialRenderingStyle);
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1');	
+    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1');
     // Lista usada na pagina que desenha texto em foto.
     SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00');
     // -------------------------
@@ -156,7 +156,7 @@ function defInit() {
     // Listas de imagens pequenas.
     // -------------------------
     //SelLists.newList('sChalk', 'idImageName', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');	
-    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], 'idViewImageName', 'Selected Image : &nbsp;&nbsp; <<0>>', 'wall_001_tlb');	
+    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], 'idViewImageName', 'Selected Image : &nbsp;&nbsp; <<0>>', 'wall_001_tlb');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
@@ -178,13 +178,13 @@ function defInit() {
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
 
-   GrowLists.newList('g1', 'idGrowList1', '10-86', 3,
-   '<div class="in-block-display padded-2x">' +
-       '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
-           '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/abstract<<0>>_text_effect.jpg">' +
-       '</a>' +
-   '</div>',
-   '0', 3, ['idGrowList1ButtonContainer']);
+    GrowLists.newList('g1', 'idGrowList1', '10-86', 3,
+        '<div class="in-block-display padded-2x">' +
+        '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
+        '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/abstract<<0>>_text_effect.jpg">' +
+        '</a>' +
+        '</div>',
+        '0', 3, ['idGrowList1ButtonContainer']);
 
     // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
     // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.

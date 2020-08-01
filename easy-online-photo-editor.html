@@ -221,6 +221,30 @@
             showModalMsg('idOverlayModalMsg', 'idModalMsgText', e.message ? e.message : e, 'idModalMsgTitle',
                 'Error');
         }
+
+        let multilist = ['idPhotoEffectList1',
+            'idPhotoEffectList2',
+            'idPhotoEffectList3',
+            'idPhotoEffectList4',
+            'idPhotoEffectList5',
+            'idPhotoEffectList6',
+            'idPhotoEffectList7',
+            'idPhotoEffectList8',
+            'idPhotoEffectList9',
+            'idPhotoEffectList10',
+            'idPhotoEffectList11',
+            'idPhotoEffectList12'
+        ];
+
+        function showAll(id) {
+            let e = document.getElementById(id)
+            e.classList.remove('hide-element')
+        }
+
+        function hideAll(id) {
+            let e = document.getElementById(id)
+            e.classList.add('hide-element')
+        }
     </script>
 
     <!--#include VIRTUAL="/inc/script_init.inc.html" -->
