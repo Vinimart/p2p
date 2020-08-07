@@ -232,8 +232,8 @@ function defInit() {
 
 function defSubmit() {
     show(['idOverlayPreloader']);
-    // var _submit = function () {document.FormMain.submit();}
-    // window.setTimeout(_submit, 1500);
+    //var _submit = function () {document.FormMain.submit();}
+    //window.setTimeout(_submit, 1500);
     document.FormMain.submit();
 }
 
