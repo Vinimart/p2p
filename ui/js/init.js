@@ -179,6 +179,7 @@ function defInit() {
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
 
+    // Lista para o prototipo da pagina /text_generator/others/3d/realistic/3d_abstract_text_effect.html
     GrowLists.newList('g1', 'idGrowList1', '10-86', 3,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
