@@ -104,6 +104,7 @@ function defInit() {
     // So cria a lista de apps populares se o container existir.
     defPopDesignApps('idPopEffectsContainer');
 
+    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker (Vinícius)
     // Lista de cores do Color Picker (mostrada com modal).
     // -------------------------
     SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
@@ -128,11 +129,11 @@ function defInit() {
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2');
+    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1');
+    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1', 'idHasMergedImageTable3dTextModel');
     // Lista usada na pagina que desenha texto em foto.
-    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00');
+    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasMergedImageTableTextLayout');
     // -------------------------
 
 
