@@ -580,13 +580,15 @@
                             <!-- Lista de efeitos de foto selecionaveis acima (labeled_photo_effect_list). -->
                             <input type="hidden" name="SelectedEffect" id="idSelectedEffect" value="" />
 
-                            <div class="title-bar-closed padded-2x centered">
+                            <div class="title-bar-closed padded-2x spaced-below-3x centered">
                                 <span class="font-3x">Configuration</span>
                             </div>
 
-                            <div class="spaced-v-3x">
-                                <p class="font-3x spaced-below-1x">General:</p>
+                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
 
+                            <div class="spaced-v-3x">
                                 <label for="idTextToRender1">Text Input 1 :</label><br />
 
                                 <div class="spaced-below-1x"></div>
@@ -652,6 +654,8 @@
                                     </i>
                                 </div>
                             </div>
+
+                            <p class="font-3x">Back drawing :</p>
 
                             <div class="spaced-v-3x">
                                 <label for="idTextLine1">Text Line 1 :</label><br />
@@ -721,6 +725,8 @@
                                 </div>
                             </div>
 
+                            <p class="font-3x">Middle drawing :</p>
+
                             <div class="spaced-v-3x">
                                 <label class="check-box">
                                     <p>Draw Left Shadow</p>
@@ -783,6 +789,8 @@
                                     <option value="7">Bottom-right</option>
                                 </select>
                             </div>
+
+                            <p class="font-3x">Text drawing :</p>
 
                             <div class="spaced-v-3x">
                                 <label for="idColorImprovement">Color Improvement :</label><br />
@@ -1059,13 +1067,9 @@
                                 </label>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
-                            <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
-                            <!-- END: [[*COMPONENT::FontList*]] -->
-
-                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
+                            <!-- BEGIN: [[*COMPONENT::WalltList*]] -->
                             <!--#include VIRTUAL="/ui/comp/wall_list_component.inc.html" -->
-                            <!-- END: [[*COMPONENT::FontList*]] -->
+                            <!-- END: [[*COMPONENT::WalltList*]] -->
 
                             <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
                             <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
