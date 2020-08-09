@@ -248,7 +248,7 @@ function resultPageSubmit() {
     // Torna o botao invisivel e a mensagem visivel.
     changeVisibility();
     // Vai tornar o botao visivel de novo e a mensagem invisivel em 60 segundos.
-    window.setTimeout(changeVisibility, 6000);
+    window.setTimeout(changeVisibility, 60000);
 
     // Se em producao, descomentar a linha abaixo.
     //document.FormMain.submit();
