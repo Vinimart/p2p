@@ -180,7 +180,7 @@ function defInit() {
     */
 
     // Lista para o prototipo da pagina /text_generator/others/3d/realistic/3d_abstract_text_effect.html
-    GrowLists.newList('g1', 'idGrowList1', '10-86', 3,
+    GrowLists.newList('g1', 'idGrowList1', '7-86', 6,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
         '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/abstract<<0>>_text_effect.jpg">' +
