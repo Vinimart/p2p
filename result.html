@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+        <title>Picture to People</title>
+    </head>
 
-<head>
-    <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
-    <title>Picture to People</title>
-</head>
+    <body>
+        <!-- BEGIN: [[*Modal*]] -->
+        <!--#include VIRTUAL="/inc/modal.inc.html" -->
+        <!-- END: [[*Modal*]] -->
 
-<body>
-    <!-- BEGIN: [[*Modal*]] -->
-    <!--#include VIRTUAL="/inc/modal.inc.html" -->
-    <!-- END: [[*Modal*]] -->
+        <!-- BEGIN: [[*SearchModal*]] -->
+        <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+        <!-- END: [[*SearchModal*]] -->
 
-    <!-- BEGIN: [[*SearchModal*]] -->
-    <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
-    <!-- END: [[*SearchModal*]] -->
+        <!-- BEGIN: [[*SideNav*]] -->
+        <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+        <!-- END: [[*SideNav*]] -->
 
-    <!-- BEGIN: [[*SideNav*]] -->
-    <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
-    <!-- END: [[*SideNav*]] -->
+        <!-- BEGIN: [[*Menu*]] -->
+        <!--#include VIRTUAL="/inc/menu.inc.html" -->
+        <!-- END: [[*Menu*]] -->
 
-    <!-- BEGIN: [[*Menu*]] -->
-    <!--#include VIRTUAL="/inc/menu.inc.html" -->
-    <!-- END: [[*Menu*]] -->
-
-    <!-- BEGIN: [[*Header*]] -->
-    <header class="padded-h-2x">
-
-        <div class="centered">
-            <h1 class="font-4x bold spaced-below-1x">Your Effect Is Ready!</h1>
-            <p class="font-3x">&nbsp;</p>
-        </div>
-
-        <hr class="ruler limiter-2x">
-
-        <div class="spaced-below-1x"></div>
-
-    </header>
-    <!-- END: [[*Header*]] -->
-
-    <main>
-
-        <div class="limiter-2x centered padded-3x">
-
-            <div>
-                <p class="limiter-1x color-5th">
-                    Download the result image now or go back to create a new one. You can use the buttons below. This
-                    image file expires in a few minutes. If the image is big, it can be shown reduced here.
-                </p>
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-4x bold spaced-below-1x">Your Effect Is Ready!</h1>
+                <p class="font-3x">Download the result image now or go back to create a new one</p>
             </div>
 
-            <div class="spaced-v-3x">
-                <img src="/img/3000-1000-result.png">
+            <hr class="ruler limiter-2x" />
+
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
+
+        <main>
+            <div class="limiter-2x centered padded-h-2x">
+                <div>
+                    <p class="limiter-1x color-5th">
+                        You can use the buttons below. This image file expires in a few minutes. If
+                        the image is big, it can be shown reduced here.
+                    </p>
+                </div>
+
+                <div class="spaced-v-3x">
+                    <img src="/img/3000-1000-result.png" />
+                </div>
+
+                <div class="spaced-v-3x">
+                    <button class="btn-2x spaced-around-2x">
+                        <i class="fas fa-file-download">&nbsp;</i>
+                        <span>Download</span>
+                    </button>
+
+                    <button class="btn-2x" onclick="window.history.go(-1);">
+                        <i class="fas fa-undo-alt">&nbsp;</i>
+                        <span>Back</span>
+                    </button>
+                </div>
             </div>
 
-            <div class="spaced-v-3x">
-                <button class="btn-2x spaced-around-2x">
-                    <i class="fas fa-file-download">&nbsp;</i>
-                    <span>Download</span>
-                </button>
-
-                <button class="btn-2x" onclick="window.history.go(-1);">
-                    <i class="fas fa-undo-alt">&nbsp;</i>
-                    <span>Back</span>
-                </button>
+            <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+            <div class="centered padded-v-2x bg-color-3rd">
+                <div class="limiter-2x spaced-below-3x">
+                    <p class="font-4x padded-2x">Popular Graphic Design Apps</p>
+                    <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                </div>
             </div>
+            <!-- END: [[*PopularGraphicDesignApps*]] -->
+        </main>
 
-        </div>
+        <!-- BEGIN: [[*Footer*]] -->
+        <!--#include VIRTUAL="/inc/footer.inc.html" -->
+        <!-- END: [[*Footer*]] -->
 
-        <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
-        <div class="centered padded-v-2x bg-color-3rd">
-            <div class="limiter-2x spaced-below-3x">
-                <p class="font-4x padded-3x">Popular Graphic Design Apps</p>
-                <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
-            </div>
-        </div>
-        <!-- END: [[*PopularGraphicDesignApps*]] -->
+        <!-- BEGIN: [[*SCRIPT::External*]] -->
+        <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
+        <!-- END: [[*SCRIPT::External*]] -->
 
-    </main>
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+        <!--#include VIRTUAL="/inc/script_main.inc.html" -->
 
-    <!-- BEGIN: [[*Footer*]] -->
-    <!--#include VIRTUAL="/inc/footer.inc.html" -->
-    <!-- END: [[*Footer*]] -->
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = 'Arial';
 
-    <!-- BEGIN: [[*SCRIPT::External*]] -->
-    <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
-    <!-- END: [[*SCRIPT::External*]] -->
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = 'kids_003',
+                    initialSymbol2 = 'kids_004',
+                    initialSymbol3 = 'kids_007',
+                    initialSymbol4 = 'kids_005';
 
-    <!-- BEGIN: [[*SCRIPT::Internal*]] -->
-    <!--#include VIRTUAL="/inc/script_main.inc.html" -->
-    <!-- END: [[*SCRIPT::Internal*]] -->
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg(
+                    'idOverlayModalMsg',
+                    'idModalMsgText',
+                    e.message ? e.message : e,
+                    'idModalMsgTitle',
+                    'Error'
+                );
+            }
+        </script>
 
-    <!-- BEGIN: [[*SCRIPT::Ads*]] -->
-    <!-- END: [[*SCRIPT::Ads*]] -->
+        <!--#include VIRTUAL="/inc/script_init.inc.html" -->
+        <!-- END: [[*SCRIPT::Internal*]] -->
 
-</body>
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
+</html>
