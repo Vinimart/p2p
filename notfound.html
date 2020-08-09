@@ -8,7 +8,11 @@
         <title>Picture to People - Not Found</title>
     </head>
 
-    <body>
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+        <!-- BEGIN: [[*Preloader*]] -->
+        <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+        <!-- END: [[*Preloader*]] -->
+
         <!-- BEGIN: [[*Modal*]] -->
         <!--#include VIRTUAL="/inc/modal.inc.html" -->
         <!-- END: [[*Modal*]] -->

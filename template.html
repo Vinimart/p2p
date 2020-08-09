@@ -1,1338 +1,1441 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- BEGIN: [[*HeadCommons*]] -->
+        <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+        <!-- END: [[*HeadCommons*]] -->
+        <title>Picture to People - Template</title>
+    </head>
 
-<head>
-    <!-- BEGIN: [[*HeadCommons*]] -->
-    <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
-    <!-- END: [[*HeadCommons*]] -->
-    <title>Picture to People - Template</title>
-</head>
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+        <!-- BEGIN: [[*Preloader*]] -->
+        <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+        <!-- END: [[*Preloader*]] -->
 
-<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+        <!-- BEGIN: [[*Modal*]] -->
+        <!--#include VIRTUAL="/inc/modal.inc.html" -->
+        <!-- END: [[*Modal*]] -->
 
-    <!-- BEGIN: [[*Preloader*]] -->
-    <!--#include VIRTUAL="/inc/preloader.inc.html" -->
-    <!-- END: [[*Preloader*]] -->
+        <!-- BEGIN: [[*SearchModal*]] -->
+        <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+        <!-- END: [[*SearchModal*]] -->
 
-    <!-- BEGIN: [[*Modal*]] -->
-    <!--#include VIRTUAL="/inc/modal.inc.html" -->
-    <!-- END: [[*Modal*]] -->
+        <!-- BEGIN: [[*ColorPicker*]] -->
+        <!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+        <!-- END: [[*ColorPicker*]] -->
 
-    <!-- BEGIN: [[*SearchModal*]] -->
-    <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
-    <!-- END: [[*SearchModal*]] -->
+        <!-- BEGIN: [[*SideNav*]] -->
+        <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+        <!-- END: [[*SideNav*]] -->
 
-    <!-- BEGIN: [[*ColorPicker*]] -->
-    <!--#include VIRTUAL="/inc/color_picker.inc.html" -->
-    <!-- END: [[*ColorPicker*]] -->
+        <!-- BEGIN: [[*Menu*]] -->
+        <!--#include VIRTUAL="/inc/menu.inc.html" -->
+        <!-- END: [[*Menu*]] -->
 
-    <!-- BEGIN: [[*SideNav*]] -->
-    <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
-    <!-- END: [[*SideNav*]] -->
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-4x bold spaced-below-1x">Photo to Cartoon Converter</h1>
+                <p class="font-3x">Turn your best photos into awesome cartoons as never before for free</p>
+            </div>
 
-    <!-- BEGIN: [[*Menu*]] -->
-    <!--#include VIRTUAL="/inc/menu.inc.html" -->
-    <!-- END: [[*Menu*]] -->
+            <hr class="ruler limiter-2x" />
 
-    <!-- BEGIN: [[*Header*]] -->
-    <header class="padded-h-2x">
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
 
-        <div class="centered spaced-below-3x">
-            <h1 class="font-4x bold spaced-below-1x">Photo to Cartoon Converter</h1>
-            <p class="font-3x">Turn your best photos into awesome cartoons as never before for free</p>
-        </div>
-
-        <hr class="ruler limiter-2x">
-
-        <div class="spaced-below-3x"></div>
-
-    </header>
-    <!-- END: [[*Header*]] -->
-
-    <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png);">
-
-        <!-- Container Principal (max-width: 1600px) -->
-        <div class="flex-around limiter-2x">
-
-            <!-- BEGIN: [[*MainColumn*]] -->
-            <div class="column-main padded-h-2x spaced-below-3x">
-
-                <!-- BEGIN: [[*Description*]] -->
-                <div class="spaced-below-3x justified">
-                    <p class="spaced-below-1x">
-                        It's a powerful border generator that can easily add frame to photos online. Please, read the
-                        tips below before using one of our best photo frame maker softwares.
-                    </p>
-
-                    <p>
-                        When using this free online frame maker to design a beautiful border to your picture, you have
-                        many decoration styles to choose. Here you can produce a high quality and customized frame to
-                        your portrait, landscape, card, banner, flyer, poster, header, title, cover, drawing, page,
-                        blog, site, app, game, document, picture, avatar, social image, wallpaper, graphic design, image
-                        composition or whatever you want.
-                    </p>
-                </div>
-                <!-- END: [[*Description*]] -->
-
-                <!-- BEGIN: [[*Suggestions*]] -->
-                <div class="box bg-color-2nd padded-3x">
-
-                    <p class="spaced-below-2x justified">
-                        This page offers our popular 3D text generator developed to create beautiful classic 3D text
-                        effects. However, <strong>if you prefer realistic cool 3D text effects</strong>, the best way to
-                        create 3D text
-                        logos is using our top 3D text generators. Here you have many online premium 3D text makers to
-                        be used easily for free, like for example:
-                    </p>
-
-                    <ul class="spaced-below-2x">
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                        <li class="spaced-below-1x"><a class="hoverable-2nd" href="/link-target.html">Comic Drawing
-                                Cartoon Photo Maker;</a></li>
-                    </ul>
-
-                    <p class="justified">
-                        It's <strong>highly recommended</strong> you visit the page that has a special list with our
-                        free <a class="hoverable-2nd" href="/link-target.html"><strong>3D Online Logo
-                                Generator</strong></a>
-                        apps. All online
-                        logo creators
-                        available there have at least one cool logo image example, so it will be easy for you to choose
-                        the best 3D logo maker to design a graphic as you
-                        want.
-                    </p>
-
-                </div>
-                <!-- END: [[*Suggestions*]] -->
-
-                <!-- BEGIN: [[*Tips*]] -->
-                <div class="spaced-v-3x justified">
-
-                    <span class="font-3x">Important Tips:</span>
-
-                    <div class="spaced-below-2x"></div>
-
-                    <ul>
-                        <li class="spaced-below-1x">
-                            Before using the text generator, please wait for the complete page loading, or you can get
-                            wrong results.
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            If you choose to get a transparent PNG file, the selected background color will be ignored.
-                        </li>
-                    </ul>
-
-                </div>
-
-                <hr class="ruler">
-
-                <!-- END: [[*Tips*]] -->
-
-                <!-- BEGIN: [[*EffectEnum-Types*]] -->
-                <div class="centered limiter-1x spaced-v-3x">
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Realistic 3D Text Logo
-                                Generators</a>
+        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png);">
+            <!-- Container Principal (max-width: 1600px) -->
+            <div class="flex-around limiter-2x">
+                <!-- BEGIN: [[*MainColumn*]] -->
+                <div class="column-main padded-h-2x spaced-below-3x">
+                    <!-- BEGIN: [[*Description*]] -->
+                    <div class="spaced-below-3x justified">
+                        <p class="spaced-below-1x">
+                            It's a powerful border generator that can easily add frame to photos online. Please, read
+                            the tips below before using one of our best photo frame maker softwares.
                         </p>
 
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/professional_special_material_text_effects.jpg">
-                        </a>
+                        <p>
+                            When using this free online frame maker to design a beautiful border to your picture, you
+                            have many decoration styles to choose. Here you can produce a high quality and customized
+                            frame to your portrait, landscape, card, banner, flyer, poster, header, title, cover,
+                            drawing, page, blog, site, app, game, document, picture, avatar, social image, wallpaper,
+                            graphic design, image composition or whatever you want.
+                        </p>
+                    </div>
+                    <!-- END: [[*Description*]] -->
+
+                    <!-- BEGIN: [[*Suggestions*]] -->
+                    <div class="box bg-color-2nd padded-3x">
+                        <p class="spaced-below-2x justified">
+                            This page offers our popular 3D text generator developed to create beautiful classic 3D text
+                            effects. However, <strong>if you prefer realistic cool 3D text effects</strong>, the best
+                            way to create 3D text logos is using our top 3D text generators. Here you have many online
+                            premium 3D text makers to be used easily for free, like for example:
+                        </p>
+
+                        <ul class="spaced-below-2x">
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                            <li class="spaced-below-1x">
+                                <a class="hoverable-2nd" href="/link-target.html">Comic Drawing Cartoon Photo Maker;</a>
+                            </li>
+                        </ul>
 
                         <p class="justified">
-                            It's the most complete collection of free professional realistic 3D text logo
-                            creators
-                            ever
-                            published online. There are <strong>more than 1350 first class text logo
-                                makers</strong>
-                            covering more than
-                            35 themes. These great online text generators render astonishingly realistic
-                            graphics
-                            and
-                            all of them have the option to create 3D text effects with transparent backgrounds,
-                            so
-                            they
-                            can be used to make any composition you can imagine. You can see a list of all text
-                            logo
-                            themes at the <a href="/link-target.html" class="color-link">Realistic 3D Text Logo
-                                Generators</a> index page.
+                            It's <strong>highly recommended</strong> you visit the page that has a special list with our
+                            free
+                            <a class="hoverable-2nd" href="/link-target.html"
+                                ><strong>3D Online Logo Generator</strong></a
+                            >
+                            apps. All online logo creators available there have at least one cool logo image example, so
+                            it will be easy for you to choose the best 3D logo maker to design a graphic as you want.
                         </p>
+                    </div>
+                    <!-- END: [[*Suggestions*]] -->
 
+                    <!-- BEGIN: [[*Tips*]] -->
+                    <div class="spaced-v-3x justified">
+                        <span class="font-3x">Important Tips:</span>
+
+                        <div class="spaced-below-2x"></div>
+
+                        <ul>
+                            <li class="spaced-below-1x">
+                                Before using the text generator, please wait for the complete page loading, or you can
+                                get wrong results.
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                If you choose to get a transparent PNG file, the selected background color will be
+                                ignored.
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="spaced-v-3x">&nbsp;</div>
+                    <hr class="ruler" />
 
-                    <div>
+                    <!-- END: [[*Tips*]] -->
 
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Realistic Carved Text Effect
-                                Generators</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/realistic_engraved_text_effect_1.jpg">
-                        </a>
-
-                        <p class="justified">
-                            It's the biggest and best set of free realistic carved text effect makers ever
-                            released online. Here you have for free <strong>more than 940 world class text
-                                effects</strong>. All
-                            these advanced text renderers can, among many other features, make text effects with
-                            transparent background (it's specially useful when selecting rounded corners), so
-                            they are perfect to create images ready for any composition you can need. You can
-                            see a complete list of all text effect themes at the <a href="/link-target.html"
-                                class="color-link">Realistic Carved Text Effect
-                                Generators</a> index page.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Bevel Text Effect Logo Makers</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/realistic-bevel-text-effect-logo-1.jpg">
-                        </a>
-
-                        <p class="justified">
-                            Use the <a href="/link-target.html" class="color-link">Beveled Text Effect
-                                Creators</a> to generate the best bevel text logos with
-                            customized design and transparent background.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">3D Graffiti Text Effect Creator</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/graffiti_text1.jpg">
-                        </a>
-
-                        <p class="justified">
-                            The most professional software ever created to generate graffiti texts. You can get
-                            astonishing realistic results: it's like if you had really painted the images on
-                            that walls in real life. Come to get the more impressive graffiti effects by using
-                            our <a href="/link-target.html" class="color-link">3D Graffiti Text Effect
-                                Creator</a>.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Long Shadow Text Logo Creator</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/long-shadow-text-effect-logo.jpg">
-                        </a>
-
-                        <p class="justified">
-                            This <a href="/link-target.html" class="color-link">Long Shadow Text Effect
-                                Designer</a> can create several styles of long shadow text
-                            logos very easily.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Glitter Text Effect Generators</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/3d-glitter-text-effect-logo.jpg">
-                        </a>
-
-                        <p class="justified">
-                            This <a href="/link-target.html" class="color-link">Glitter Text Effect Logo
-                                Maker</a> app creates the best glitter text effects for
-                            you easily. You don't need to have design skills.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Sci-Fi Text Effect Logo
-                                Generator</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/futuristic-sci-fi-text-logo-effect.jpg">
-                        </a>
-
-                        <p class="justified">
-                            Sci-Fi Text Effect
-                            Generator</a> app to create cool shiny high-tech logos that
-                            look realistic and can have a transparent background.
-                        </p>
-
-                    </div>
-
-                    <div class="spaced-v-3x">&nbsp;</div>
-
-                    <div>
-
-                        <p class="font-4x">
-                            <a class="color-default" href="/link-target.html">Hair Text Logo Effect
-                                Generators</a>
-                        </p>
-
-                        <a href="/link-target.html">
-                            <img class="spaced-v-2x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/img/realistic-hair-text-logo-effect.jpg">
-                        </a>
-
-                        <p class="justified">
-                            Use our <a href="/link-target.html" class="color-link">Hair Text Effect Creators</a>
-                            to design top realistic hair logos, words, names,
-                            letters or whatever you need.
-                        </p>
-
-                    </div>
-
-                    <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
-
-                </div>
-                <!-- END: [[*EffectEnum-Types*]] -->
-
-                <!-- BEGIN: [[*EffectEnum-Groups*]] -->
-                <div class="centered spaced-v-3x">
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/splash001_text_effect.jpg">
-                            <p class="font-3x color-default">Splash</p>
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/abstract001_text_effect.jpg">
-                            <p class="font-3x color-default">Abstract</p>
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/geometric001_text_effect.jpg">
-                            <p class="font-3x color-default">Geometric</p>
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/painted001_text_effect.jpg">
-                            <p class="font-3x color-default">Painted</p>
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/decorated001_tlb_text_effect.jpg">
-                            <p class="font-3x color-default">Decorated</p>
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/floral001_text_effect.jpg">
-                            <p class="font-3x color-default">Floral</p>
-                        </a>
-                    </div>
-
-                    <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
-
-                </div>
-                <!-- END: [[*EffectEnum-Groups*]] -->
-
-                <!-- BEGIN: [[*EffectEnum-Styles*]] -->
-                <div class="centered spaced-v-3x">
-                    <div class="title-bar-closed padded-2x centered">
-                        <span class="font-3x">Abstract Text Logo Generators</span>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic001_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic002_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic003_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic004_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic005_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <div class="in-block-display padded-2x">
-                        <a href="/link-target.html">
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/ui/comp/img/metallic006_text_effect.jpg">
-                        </a>
-                    </div>
-
-                    <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
-                </div>
-                <!-- END: [[*EffectEnum-Styles*]] -->
-
-                <!-- BEGIN: [[*COMPONENT::PhotoEffectMultiList*]] -->
-                <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html" -->
-                <!--#include VIRTUAL="/inc/btn_show_all_hide_all.inc.html" -->
-                <!-- END: [[*COMPONENT::PhotoEffectMultiList*]] -->
-
-                <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_1.inc.html" -->
-                <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
-
-                <!-- BEGIN: [[*COMPONENT::LabeledPhotoEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html" -->
-                <!-- END: [[*COMPONENT::LabeledPhotoEffectList*]] -->
-
-                <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
-                <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_2.inc.html" -->
-                <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
-
-                <!-- BEGIN: [[*EffectExamples*]] -->
-                <div class="spaced-v-3x">
-                    <div class="centered">
-
-                        <div class="spaced-v-3x">
-                            <p class="font-3x bold spaced-below-1x">Tech Sticker Maker</p>
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/img/tech-sticker-logo-effect.png" alt="Abstract Text Effect">
-                        </div>
-
-                        <div class="spaced-v-3x">
-                            <p class="font-3x bold spaced-below-1x">Transparent Tech Sticker Maker</p>
-                            <img class="lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/img/transparent-tech-sticker-logo-effect.png" alt="Abstract Text Effect">
-                        </div>
-
-                    </div>
-                </div>
-                <!-- END: [[*EffectExamples*]] -->
-
-                <!-- BEGIN: [[*EffectExamples*]] -->
-                <div class="spaced-v-3x">
-                    <p class="font-3x bold centered spaced-below-1x">Art Photo Frame Maker</p>
-
-                    <div class="centered">
+                    <!-- BEGIN: [[*EffectEnum-Types*]] -->
+                    <div class="centered limiter-1x spaced-v-3x">
                         <div>
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/img/art-photo-frame-1.jpg" alt="Abstract Text Effect" />
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Realistic 3D Text Logo Generators</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/professional_special_material_text_effects.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                It's the most complete collection of free professional realistic 3D text logo creators
+                                ever published online. There are
+                                <strong>more than 1350 first class text logo makers</strong> covering more than 35
+                                themes. These great online text generators render astonishingly realistic graphics and
+                                all of them have the option to create 3D text effects with transparent backgrounds, so
+                                they can be used to make any composition you can imagine. You can see a list of all text
+                                logo themes at the
+                                <a href="/link-target.html" class="color-link">Realistic 3D Text Logo Generators</a>
+                                index page.
+                            </p>
                         </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
 
                         <div>
-                            <img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg"
-                                data-src="/img/art-photo-frame-2.jpg" alt="Abstract Text Effect" />
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html"
+                                    >Realistic Carved Text Effect Generators</a
+                                >
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/realistic_engraved_text_effect_1.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                It's the biggest and best set of free realistic carved text effect makers ever released
+                                online. Here you have for free <strong>more than 940 world class text effects</strong>.
+                                All these advanced text renderers can, among many other features, make text effects with
+                                transparent background (it's specially useful when selecting rounded corners), so they
+                                are perfect to create images ready for any composition you can need. You can see a
+                                complete list of all text effect themes at the
+                                <a href="/link-target.html" class="color-link"
+                                    >Realistic Carved Text Effect Generators</a
+                                >
+                                index page.
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <!-- END: [[*EffectExamples*]] -->
 
-                <!-- BEGIN: [[*EffectExamples*]] -->
-                <div class="spaced-v-3x">
-                    <div class="centered">
-                        <div class="spaced-v-2x">
-                            <p class="font-3x bold spaced-below-1x">Long Shadow Text Effect Logo</p>
-                            <img class="lazyload" src="/ui/img/loader-100px.svg" data-src="/img/3000-1000-result.png" />
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Bevel Text Effect Logo Makers</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/realistic-bevel-text-effect-logo-1.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                Use the
+                                <a href="/link-target.html" class="color-link">Beveled Text Effect Creators</a> to
+                                generate the best bevel text logos with customized design and transparent background.
+                            </p>
                         </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">3D Graffiti Text Effect Creator</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/graffiti_text1.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                The most professional software ever created to generate graffiti texts. You can get
+                                astonishing realistic results: it's like if you had really painted the images on that
+                                walls in real life. Come to get the more impressive graffiti effects by using our
+                                <a href="/link-target.html" class="color-link">3D Graffiti Text Effect Creator</a>.
+                            </p>
+                        </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Long Shadow Text Logo Creator</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/long-shadow-text-effect-logo.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                This
+                                <a href="/link-target.html" class="color-link">Long Shadow Text Effect Designer</a> can
+                                create several styles of long shadow text logos very easily.
+                            </p>
+                        </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Glitter Text Effect Generators</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/3d-glitter-text-effect-logo.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                This
+                                <a href="/link-target.html" class="color-link">Glitter Text Effect Logo Maker</a> app
+                                creates the best glitter text effects for you easily. You don't need to have design
+                                skills.
+                            </p>
+                        </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Sci-Fi Text Effect Logo Generator</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/futuristic-sci-fi-text-logo-effect.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                Sci-Fi Text Effect Generator app to create cool shiny high-tech logos that look
+                                realistic and can have a transparent background.
+                            </p>
+                        </div>
+
+                        <div class="spaced-v-3x">&nbsp;</div>
+
+                        <div>
+                            <p class="font-4x">
+                                <a class="color-default" href="/link-target.html">Hair Text Logo Effect Generators</a>
+                            </p>
+
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-v-2x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/img/realistic-hair-text-logo-effect.jpg"
+                                />
+                            </a>
+
+                            <p class="justified">
+                                Use our <a href="/link-target.html" class="color-link">Hair Text Effect Creators</a>
+                                to design top realistic hair logos, words, names, letters or whatever you need.
+                            </p>
+                        </div>
+
+                        <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
                     </div>
-                </div>
-                <!-- END: [[*EffectExamples*]] -->
+                    <!-- END: [[*EffectEnum-Types*]] -->
 
-                <!-- BEGIN: [[*EffectConfiguration*]] -->
-                <div class="box shaded padded-2x">
+                    <!-- BEGIN: [[*EffectEnum-Groups*]] -->
+                    <div class="centered spaced-v-3x">
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/splash001_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Splash</p>
+                            </a>
+                        </div>
 
-                    <form name="FormMain" action="/result.html" method="POST">
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/abstract001_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Abstract</p>
+                            </a>
+                        </div>
 
-                        <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_1). -->
-                        <input type="hidden" name="SelectedTextEffect1" id="idSelectedTextEffect1" value="" />
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/geometric001_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Geometric</p>
+                            </a>
+                        </div>
 
-                        <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_2). -->
-                        <input type="hidden" name="SelectedTextEffect2" id="idSelectedTextEffect2" value="" />
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/painted001_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Painted</p>
+                            </a>
+                        </div>
 
-                        <!-- Lista de efeitos de foto selecionaveis acima (photo_effect_multilist). -->
-                        <input type="hidden" name="SelectedPhotoEffect" id="idSelectedPhotoEffect" value="" />
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/decorated001_tlb_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Decorated</p>
+                            </a>
+                        </div>
 
-                        <!-- Lista de efeitos de foto selecionaveis acima (labeled_photo_effect_list). -->
-                        <input type="hidden" name="SelectedEffect" id="idSelectedEffect" value="" />
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/floral001_text_effect.jpg"
+                                />
+                                <p class="font-3x color-default">Floral</p>
+                            </a>
+                        </div>
 
+                        <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
+                    </div>
+                    <!-- END: [[*EffectEnum-Groups*]] -->
+
+                    <!-- BEGIN: [[*EffectEnum-Styles*]] -->
+                    <div class="centered spaced-v-3x">
                         <div class="title-bar-closed padded-2x centered">
-                            <span class="font-3x">Configuration</span>
+                            <span class="font-3x">Abstract Text Logo Generators</span>
                         </div>
 
-                        <div class="spaced-v-3x">
-                            <p class="font-3x spaced-below-1x">General:</p>
-
-                            <label for="idTextToRender1">Text Input 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender1" name="TextToRender1"
-                                placeholder="Your Text">
-
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic001_text_effect.jpg"
+                                />
+                            </a>
                         </div>
 
-                        <div class="spaced-v-3x">
-
-                            <label for="idFontSize">Font Size :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select id="idFontSize" name="FontSize">
-                                <option value="28">Small</option>
-                                <option value="35" selected>Normal</option>
-                                <option value="42">Big</option>
-                            </select>
-
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic002_text_effect.jpg"
+                                />
+                            </a>
                         </div>
 
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Shadow</p>
-
-                                <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true"
-                                    value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic003_text_effect.jpg"
+                                />
+                            </a>
                         </div>
 
-                        <div class="spaced-v-3x">
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic004_text_effect.jpg"
+                                />
+                            </a>
+                        </div>
 
-                            <label for="idBackColor">Background Color :</label><br>
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic005_text_effect.jpg"
+                                />
+                            </a>
+                        </div>
 
-                            <div class="spaced-below-1x"></div>
+                        <div class="in-block-display padded-2x">
+                            <a href="/link-target.html">
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/ui/comp/img/metallic006_text_effect.jpg"
+                                />
+                            </a>
+                        </div>
 
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idBackColor" name="BackColor"
-                                    value="000000">&nbsp;&nbsp;
+                        <!--#include VIRTUAL="/inc/btn_show_more_show_all.inc.html" -->
+                    </div>
+                    <!-- END: [[*EffectEnum-Styles*]] -->
 
-                                <i id="idBackColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idBackColor')" title="Color Picker">
-                                </i>
+                    <!-- BEGIN: [[*COMPONENT::PhotoEffectMultiList*]] -->
+                    <!--#include VIRTUAL="/ui/comp/photo_effect_multilist.inc.html" -->
+                    <!--#include VIRTUAL="/inc/btn_show_all_hide_all.inc.html" -->
+                    <!-- END: [[*COMPONENT::PhotoEffectMultiList*]] -->
+
+                    <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
+                    <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_1.inc.html" -->
+                    <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
+
+                    <!-- BEGIN: [[*COMPONENT::LabeledPhotoEffectList*]] -->
+                    <!--#include VIRTUAL="/ui/comp/labeled_photo_effect_list.inc.html" -->
+                    <!-- END: [[*COMPONENT::LabeledPhotoEffectList*]] -->
+
+                    <!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
+                    <!--#include VIRTUAL="/ui/comp/labeled_text_effect_list_2.inc.html" -->
+                    <!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
+
+                    <!-- BEGIN: [[*EffectExamples*]] -->
+                    <div class="spaced-v-3x">
+                        <div class="centered">
+                            <div class="spaced-v-3x">
+                                <p class="font-3x bold spaced-below-1x">Tech Sticker Maker</p>
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/img/tech-sticker-logo-effect.png"
+                                    alt="Abstract Text Effect"
+                                />
                             </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine1">Text Line 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine1" name="TextLine1" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextToRender2">Text Input 2 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender2" name="TextToRender2"
-                                placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idMargin">Margin :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idMargin" name="Margin">
-                                <option value="0">1</option>
-                                <option value="1">2</option>
-                                <option value="2">3</option>
-                                <option value="3">4</option>
-                                <option value="4">5</option>
-                                <option value="5">6</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextColor">Text Color :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idTextColor" name="TextColor"
-                                    value="000000">&nbsp;&nbsp;
-
-                                <i id="idTextColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idTextColor')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Left Shadow</p>
-
-                                <input id="idDrawLeftShadow" type="checkbox" name="DrawLeftShadow" checked="true"
-                                    value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine1">Text Line 2 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine2" name="TextLine2" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Right Shadow</p>
-
-                                <input id="idDrawRightShadow" type="checkbox" name="DrawRightShadow" checked="true"
-                                    value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowPosition">Shadow Position :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowPosition" name="ShadowPosition">
-                                <option value="0">Top</option>
-                                <option value="1">Bottom</option>
-                                <option value="2">Left</option>
-                                <option value="3">Right</option>
-                                <option value="4">Top-left</option>
-                                <option value="5">Top-right</option>
-                                <option value="6">Bottom-left</option>
-                                <option value="7">Bottom-right</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idColorImprovement">Color Improvement :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idColorImprovement" name="ColorImprovement">
-                                <option value="0" selected>None</option>
-                                <option value="1">Strong</option>
-                                <option value="2">Privilege Bright</option>
-                                <option value="3">Privilege Dark</option>
-                                <option value="4">Smart</option>
-                                <option value="5">Smart Channels</option>
-                                <option value="6">Hot Colors</option>
-                                <option value="7">Smart Hot</option>
-                                <option value="8">Pastel</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idLogoColor1">Logo Color 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idLogoColor1" name="LogoColor1"
-                                    value="000000">&nbsp;&nbsp;
-
-                                <i id="idLogoColor1Picker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idLogoColor1')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idContourColor">Contour Color :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idContourColor"
-                                    name="ContourColor" value="000000">&nbsp;&nbsp;
-
-                                <i id="idContourColorPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idContourColor')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextToRender3">Text Input 3 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender3" name="TextToRender3"
-                                placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Bottom-left Shadow</p>
-
-                                <input id="idDrawBottomLeftShadow" type="checkbox" name="DrawBottomLeftShadow"
-                                    checked="true" value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Paper Fold</p>
-
-                                <input id="idDrawFold" type="checkbox" name="DrawFold" checked="true" value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowDistance">Shadow Distance :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowDistance" name="ShadowDistance">
-                                <option value="0">Low</option>
-                                <option value="1">Normal</option>
-                                <option value="2">High</option>
-                                <option value="3">Very High</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine3">Text Line 3 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine3" name="TextLine3" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idFoldColor">Fold Color :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idFoldColor" name="FoldColor"
-                                    value="000000">&nbsp;&nbsp;
-
-                                <i id="idFoldColorrPicker" class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idFoldColor')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowDispersion">Shadow Dispersion :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowDispersion" name="ShadowDispersion">
-                                <option value="0">Low</option>
-                                <option value="1">Normal</option>
-                                <option value="2">High</option>
-                                <option value="3">Very High</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Draw Bottom-right Shadow</p>
-
-                                <input id="idDrawBottomRightShadow" type="checkbox" name="DrawBottomRightShadow"
-                                    checked="true" value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idTextLine4">Text Line 4 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine4" name="TextLine4" placeholder="Your Text">
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idGradientColor1">Gradient Color 1 :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <div class="flex-between">
-                                <input class="uppercase" type="text" maxlength="6" id="idGradientColor1"
-                                    name="GradientColor1" value="000000">&nbsp;&nbsp;
-
-                                <i id="idGradientColor1Picker"
-                                    class="pointer fas fa-palette font-4x color-1st animate-1"
-                                    onclick="ColorTable.set('idGradientColor1')" title="Color Picker">
-                                </i>
-                            </div>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Make Spatial Fit</p>
-
-                                <input id="idUseDisplace" type="checkbox" name="UseDisplace" checked="true"
-                                    value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label for="idShadowFade">Shadow Fade :</label><br>
-
-                            <div class="spaced-below-1x"></div>
-
-                            <select class="spaced-1x" id="idShadowFade" name="ShadowFade">
-                                <option value="0" selected>None</option>
-                                <option value="10">Very low</option>
-                                <option value="15">Low</option>
-                                <option value="20">Normal</option>
-                                <option value="30">High</option>
-                                <option value="40">Very high</option>
-                            </select>
-
-                        </div>
-
-                        <div class="spaced-v-3x">
-
-                            <label class="check-box">
-
-                                <p>Get as a transparent PNG file</p>
-
-                                <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked">
-
-                                <span class="checkmark"></span>
-
-                            </label>
-
-                        </div>
-
-                        <!-- BEGIN: [[*COMPONENT::FontList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::FontList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::FontList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/wall_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::FontList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::3DModelList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::3DTextStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::3DTextStyleList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::3DIconModelList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::3DIconModelList*]] -->
-
-                        <!-- /image_utilities/photo-text-caption/add-text-caption-to-photo -->
-                        <!-- BEGIN: [[*COMPONENT::TextLayoutStyleList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::TextLayoutStyleList*]] -->
-
-                        <!-- BEGIN: [[*COMPONENT::TextureList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::TextureList*]] -->
-
-                        <!-- /sticker-creator/ -->
-                        <!-- BEGIN: [[*COMPONENT::StickerShapeList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html" -->
-                        <!-- END: [[*COMPONENT::StickerShapeList*]] -->
-
-                        <!-- /sticker-creator/art-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
-                        <div>
-                            <p class="font-3x spaced-below-1x">Corner Ornament :</p>
-                            <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_1.inc.html" -->
 
                             <div class="spaced-v-3x">
+                                <p class="font-3x bold spaced-below-1x">Transparent Tech Sticker Maker</p>
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/img/transparent-tech-sticker-logo-effect.png"
+                                    alt="Abstract Text Effect"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: [[*EffectExamples*]] -->
 
-                                <label for="idCornerRotation">Corner Rotation :</label><br>
+                    <!-- BEGIN: [[*EffectExamples*]] -->
+                    <div class="spaced-v-3x">
+                        <p class="font-3x bold centered spaced-below-1x">Art Photo Frame Maker</p>
+
+                        <div class="centered">
+                            <div>
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/img/art-photo-frame-1.jpg"
+                                    alt="Abstract Text Effect"
+                                />
+                            </div>
+
+                            <div>
+                                <img
+                                    class="spaced-below-1x lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/img/art-photo-frame-2.jpg"
+                                    alt="Abstract Text Effect"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: [[*EffectExamples*]] -->
+
+                    <!-- BEGIN: [[*EffectExamples*]] -->
+                    <div class="spaced-v-3x">
+                        <div class="centered">
+                            <div class="spaced-v-2x">
+                                <p class="font-3x bold spaced-below-1x">Long Shadow Text Effect Logo</p>
+                                <img
+                                    class="lazyload"
+                                    src="/ui/img/loader-100px.svg"
+                                    data-src="/img/3000-1000-result.png"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: [[*EffectExamples*]] -->
+
+                    <!-- BEGIN: [[*EffectConfiguration*]] -->
+                    <div class="box shaded padded-2x">
+                        <form
+                            id="idFormMain"
+                            name="FormMain"
+                            enctype="multipart/form-data"
+                            method="POST"
+                            action="/result.html"
+                        >
+                            <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_1). -->
+                            <input type="hidden" name="SelectedTextEffect1" id="idSelectedTextEffect1" value="" />
+
+                            <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_2). -->
+                            <input type="hidden" name="SelectedTextEffect2" id="idSelectedTextEffect2" value="" />
+
+                            <!-- Lista de efeitos de foto selecionaveis acima (photo_effect_multilist). -->
+                            <input type="hidden" name="SelectedPhotoEffect" id="idSelectedPhotoEffect" value="" />
+
+                            <!-- Lista de efeitos de foto selecionaveis acima (labeled_photo_effect_list). -->
+                            <input type="hidden" name="SelectedEffect" id="idSelectedEffect" value="" />
+
+                            <div class="title-bar-closed padded-2x centered">
+                                <span class="font-3x">Configuration</span>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <p class="font-3x spaced-below-1x">General:</p>
+
+                                <label for="idTextToRender1">Text Input 1 :</label><br />
 
                                 <div class="spaced-below-1x"></div>
 
-                                <select class="spaced-1x" id="idCornerRotation" name="CornerRotation">
-                                    <option value="-165">-165</option>
-                                    <option value="-150">-150</option>
-                                    <option value="-135">-135</option>
-                                    <option value="-120">-120</option>
-                                    <option value="-105">-105</option>
-                                    <option value="-90">-90</option>
-                                    <option value="-75">-75</option>
-                                    <option value="-60">-60</option>
-                                    <option value="-45">-45</option>
-                                    <option value="-30">-30</option>
-                                    <option value="-15">-15</option>
-                                    <option value="0" selected>0</option>
-                                    <option value="15">15</option>
-                                    <option value="30">30</option>
-                                    <option value="45">45</option>
-                                    <option value="60">60</option>
-                                    <option value="75">75</option>
-                                    <option value="90">90</option>
-                                    <option value="105">105</option>
-                                    <option value="120">120</option>
-                                    <option value="135">135</option>
-                                    <option value="150">150</option>
-                                    <option value="165">165</option>
-                                    <option value="180">180</option>
-                                </select>
-
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextToRender1"
+                                    name="TextToRender1"
+                                    placeholder="Your Text"
+                                />
                             </div>
 
-                            <div class="spaced-below-1x">&nbsp;</div>
-                        </div>
-
-                        <div>
-                            <p class="font-3x spaced-below-1x">Ornament 1:</p>
-                            <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_2.inc.html" -->
-
                             <div class="spaced-v-3x">
-
-                                <label for="idOrnamentRotation1">Ornament 1 Rotation :</label><br>
+                                <label for="idFontSize">Font Size :</label><br />
 
                                 <div class="spaced-below-1x"></div>
 
-                                <select class="spaced-1x" id="idOrnamentRotation1" name="OrnamentRotation1">
-                                    <option value="-165">-165</option>
-                                    <option value="-150">-150</option>
-                                    <option value="-135">-135</option>
-                                    <option value="-120">-120</option>
-                                    <option value="-105">-105</option>
-                                    <option value="-90">-90</option>
-                                    <option value="-75">-75</option>
-                                    <option value="-60">-60</option>
-                                    <option value="-45">-45</option>
-                                    <option value="-30">-30</option>
-                                    <option value="-15">-15</option>
-                                    <option value="0" selected>0</option>
-                                    <option value="15">15</option>
-                                    <option value="30">30</option>
-                                    <option value="45">45</option>
-                                    <option value="60">60</option>
-                                    <option value="75">75</option>
-                                    <option value="90">90</option>
-                                    <option value="105">105</option>
-                                    <option value="120">120</option>
-                                    <option value="135">135</option>
-                                    <option value="150">150</option>
-                                    <option value="165">165</option>
-                                    <option value="180">180</option>
+                                <select id="idFontSize" name="FontSize">
+                                    <option value="28">Small</option>
+                                    <option value="35" selected>Normal</option>
+                                    <option value="42">Big</option>
                                 </select>
-
                             </div>
 
-                            <div class="spaced-below-1x">&nbsp;</div>
-                        </div>
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Shadow</p>
 
-                        <div>
-                            <p class="font-3x spaced-below-1x">Ornament 2:</p>
-                            <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_3.inc.html" -->
+                                    <input
+                                        id="idDrawShadow"
+                                        type="checkbox"
+                                        name="DrawShadow"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
                             <div class="spaced-v-3x">
-
-                                <label for="idOrnamentRotation2">Ornament 2 Rotation :</label><br>
+                                <label for="idBackColor">Background Color :</label><br />
 
                                 <div class="spaced-below-1x"></div>
 
-                                <select class="spaced-1x" id="idOrnamentRotation2" name="OrnamentRotation2">
-                                    <option value="-165">-165</option>
-                                    <option value="-150">-150</option>
-                                    <option value="-135">-135</option>
-                                    <option value="-120">-120</option>
-                                    <option value="-105">-105</option>
-                                    <option value="-90">-90</option>
-                                    <option value="-75">-75</option>
-                                    <option value="-60">-60</option>
-                                    <option value="-45">-45</option>
-                                    <option value="-30">-30</option>
-                                    <option value="-15">-15</option>
-                                    <option value="0" selected>0</option>
-                                    <option value="15">15</option>
-                                    <option value="30">30</option>
-                                    <option value="45">45</option>
-                                    <option value="60">60</option>
-                                    <option value="75">75</option>
-                                    <option value="90">90</option>
-                                    <option value="105">105</option>
-                                    <option value="120">120</option>
-                                    <option value="135">135</option>
-                                    <option value="150">150</option>
-                                    <option value="165">165</option>
-                                    <option value="180">180</option>
-                                </select>
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idBackColor"
+                                        name="BackColor"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
 
+                                    <i
+                                        id="idBackColorPicker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idBackColor')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
                             </div>
 
-                            <div class="spaced-below-1x">&nbsp;</div>
-                        </div>
-
-                        <div>
-                            <p class="font-3x spaced-below-1x">Ornament 3:</p>
-                            <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_4.inc.html" -->
-
                             <div class="spaced-v-3x">
-
-                                <label for="idOrnamentRotation3">Ornament 3 Rotation :</label><br>
+                                <label for="idTextLine1">Text Line 1 :</label><br />
 
                                 <div class="spaced-below-1x"></div>
 
-                                <select class="spaced-1x" id="idOrnamentRotation3" name="OrnamentRotation3">
-                                    <option value="-165">-165</option>
-                                    <option value="-150">-150</option>
-                                    <option value="-135">-135</option>
-                                    <option value="-120">-120</option>
-                                    <option value="-105">-105</option>
-                                    <option value="-90">-90</option>
-                                    <option value="-75">-75</option>
-                                    <option value="-60">-60</option>
-                                    <option value="-45">-45</option>
-                                    <option value="-30">-30</option>
-                                    <option value="-15">-15</option>
-                                    <option value="0" selected>0</option>
-                                    <option value="15">15</option>
-                                    <option value="30">30</option>
-                                    <option value="45">45</option>
-                                    <option value="60">60</option>
-                                    <option value="75">75</option>
-                                    <option value="90">90</option>
-                                    <option value="105">105</option>
-                                    <option value="120">120</option>
-                                    <option value="135">135</option>
-                                    <option value="150">150</option>
-                                    <option value="165">165</option>
-                                    <option value="180">180</option>
-                                </select>
-
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextLine1"
+                                    name="TextLine1"
+                                    placeholder="Your Text"
+                                />
                             </div>
-                        </div>
-                        <!-- END: [[*COMPONENT::ArtStickerList*]] -->
 
-                        <!-- /sticker-creator/love-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::LoveStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_love_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::LoveStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label for="idTextToRender2">Text Input 2 :</label><br />
 
-                        <!-- /sticker-creator/business-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::BusinessStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_business_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::BusinessStickerList*]] -->
+                                <div class="spaced-below-1x"></div>
 
-                        <!-- /sticker-creator/stickers-christmas-maker -->
-                        <!-- BEGIN: [[*COMPONENT::ChristmasStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_christmass_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::ChristmasStickerList*]] -->
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextToRender2"
+                                    name="TextToRender2"
+                                    placeholder="Your Text"
+                                />
+                            </div>
 
-                        <!-- /sticker-creator/social-media-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::SocialMediaStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_social_media_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::SocialMediaStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label for="idMargin">Margin :</label><br />
 
-                        <!-- /sticker-creator/female-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::FemaleStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_female_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::FemaleStickerList*]] -->
+                                <div class="spaced-below-1x"></div>
 
-                        <!-- /sticker-creator/male-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::MaleStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_male_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::MaleStickerList*]] -->
+                                <select class="spaced-1x" id="idMargin" name="Margin">
+                                    <option value="0">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="3">4</option>
+                                    <option value="4">5</option>
+                                    <option value="5">6</option>
+                                </select>
+                            </div>
 
-                        <!-- /sticker-creator/horror-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::HorrorStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_horror_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::HorrorStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label for="idTextColor">Text Color :</label><br />
 
-                        <!-- /sticker-creator/kid-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::KidStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_kid_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::KidStickerList*]] -->
+                                <div class="spaced-below-1x"></div>
 
-                        <!-- /sticker-creator/game-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::GameStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_game_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::GameStickerList*]] -->
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idTextColor"
+                                        name="TextColor"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
 
-                        <!-- /sticker-creator/sport-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::SportsStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_sport_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::SportsStickerList*]] -->
+                                    <i
+                                        id="idTextColorPicker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idTextColor')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
 
-                        <!-- /sticker-creator/food-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::FoodStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_food_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::FoodStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Left Shadow</p>
 
-                        <!-- /sticker-creator/fashion-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::FashionStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_fashion_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::FashionStickerList*]] -->
+                                    <input
+                                        id="idDrawLeftShadow"
+                                        type="checkbox"
+                                        name="DrawLeftShadow"
+                                        checked="true"
+                                        value="checked"
+                                    />
 
-                        <!-- /sticker-creator/music-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::MusicStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_music_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::MusicStickerList*]] -->
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
-                        <!-- /sticker-creator/animal-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::AnimalStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_animal_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::AnimalStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label for="idTextLine1">Text Line 2 :</label><br />
 
-                        <!-- /sticker-creator/science-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::ScienceStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_science_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::ScienceStickerList*]] -->
+                                <div class="spaced-below-1x"></div>
 
-                        <!-- /sticker-creator/flower-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::FlowerStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_flower_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::FlowerStickerList*]] -->
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextLine2"
+                                    name="TextLine2"
+                                    placeholder="Your Text"
+                                />
+                            </div>
 
-                        <!-- /sticker-creator/transport-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::TransportStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_transport_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::TransportStickerList*]] -->
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Right Shadow</p>
 
-                        <!-- /sticker-creator/weather-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::WeatherStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_weather_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::WeatherStickerList*]] -->
+                                    <input
+                                        id="idDrawRightShadow"
+                                        type="checkbox"
+                                        name="DrawRightShadow"
+                                        checked="true"
+                                        value="checked"
+                                    />
 
-                        <!-- /sticker-creator/zodiac-sticker-maker -->
-                        <!-- BEGIN: [[*COMPONENT::ZodiacStickerList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/sticker_list_zodiac_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::ZodiacStickerList*]] -->
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
-                        <!-- /photo-frame/decorated-photo-frame-generator -->
-                        <!-- BEGIN: [[*COMPONENT::AbstractSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::AbstractSymbolList*]] -->
+                            <div class="spaced-v-3x">
+                                <label for="idShadowPosition">Shadow Position :</label><br />
 
-                        <!-- /photo-frame/star-photo-frame-generator -->
-                        <!-- BEGIN: [[*COMPONENT::StarSymbolList*]] -->
-                        <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html<<<disabled>>>" -->
-                        <!-- END: [[*COMPONENT::StarSymbolList*]] -->
+                                <div class="spaced-below-1x"></div>
 
-                        <!-- BEGIN: [[*ImageInput*]] -->
-                        <!--#include VIRTUAL="/inc/image_input.inc.html" -->
-                        <!-- END: [[*ImageInput*]] -->
+                                <select class="spaced-1x" id="idShadowPosition" name="ShadowPosition">
+                                    <option value="0">Top</option>
+                                    <option value="1">Bottom</option>
+                                    <option value="2">Left</option>
+                                    <option value="3">Right</option>
+                                    <option value="4">Top-left</option>
+                                    <option value="5">Top-right</option>
+                                    <option value="6">Bottom-left</option>
+                                    <option value="7">Bottom-right</option>
+                                </select>
+                            </div>
 
-                        <!-- BEGIN: [[*GenerateButton*]] -->
-                        <!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
-                        <!-- END: [[*GenerateButton*]] -->
-                    </form>
+                            <div class="spaced-v-3x">
+                                <label for="idColorImprovement">Color Improvement :</label><br />
 
+                                <div class="spaced-below-1x"></div>
+
+                                <select class="spaced-1x" id="idColorImprovement" name="ColorImprovement">
+                                    <option value="0" selected>None</option>
+                                    <option value="1">Strong</option>
+                                    <option value="2">Privilege Bright</option>
+                                    <option value="3">Privilege Dark</option>
+                                    <option value="4">Smart</option>
+                                    <option value="5">Smart Channels</option>
+                                    <option value="6">Hot Colors</option>
+                                    <option value="7">Smart Hot</option>
+                                    <option value="8">Pastel</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idLogoColor1">Logo Color 1 :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idLogoColor1"
+                                        name="LogoColor1"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
+
+                                    <i
+                                        id="idLogoColor1Picker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idLogoColor1')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idContourColor">Contour Color :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idContourColor"
+                                        name="ContourColor"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
+
+                                    <i
+                                        id="idContourColorPicker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idContourColor')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idTextToRender3">Text Input 3 :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextToRender3"
+                                    name="TextToRender3"
+                                    placeholder="Your Text"
+                                />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Bottom-left Shadow</p>
+
+                                    <input
+                                        id="idDrawBottomLeftShadow"
+                                        type="checkbox"
+                                        name="DrawBottomLeftShadow"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Paper Fold</p>
+
+                                    <input
+                                        id="idDrawFold"
+                                        type="checkbox"
+                                        name="DrawFold"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idShadowDistance">Shadow Distance :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select class="spaced-1x" id="idShadowDistance" name="ShadowDistance">
+                                    <option value="0">Low</option>
+                                    <option value="1">Normal</option>
+                                    <option value="2">High</option>
+                                    <option value="3">Very High</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idTextLine3">Text Line 3 :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextLine3"
+                                    name="TextLine3"
+                                    placeholder="Your Text"
+                                />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idFoldColor">Fold Color :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idFoldColor"
+                                        name="FoldColor"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
+
+                                    <i
+                                        id="idFoldColorrPicker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idFoldColor')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idShadowDispersion">Shadow Dispersion :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select class="spaced-1x" id="idShadowDispersion" name="ShadowDispersion">
+                                    <option value="0">Low</option>
+                                    <option value="1">Normal</option>
+                                    <option value="2">High</option>
+                                    <option value="3">Very High</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Bottom-right Shadow</p>
+
+                                    <input
+                                        id="idDrawBottomRightShadow"
+                                        type="checkbox"
+                                        name="DrawBottomRightShadow"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idTextLine4">Text Line 4 :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <input
+                                    type="text"
+                                    maxlength="25"
+                                    id="idTextLine4"
+                                    name="TextLine4"
+                                    placeholder="Your Text"
+                                />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idGradientColor1">Gradient Color 1 :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <div class="flex-between">
+                                    <input
+                                        class="uppercase"
+                                        type="text"
+                                        maxlength="6"
+                                        id="idGradientColor1"
+                                        name="GradientColor1"
+                                        value="000000"
+                                    />&nbsp;&nbsp;
+
+                                    <i
+                                        id="idGradientColor1Picker"
+                                        class="pointer fas fa-palette font-4x color-1st animate-1"
+                                        onclick="ColorTable.set('idGradientColor1')"
+                                        title="Color Picker"
+                                    >
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Make Spatial Fit</p>
+
+                                    <input
+                                        id="idUseDisplace"
+                                        type="checkbox"
+                                        name="UseDisplace"
+                                        checked="true"
+                                        value="checked"
+                                    />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idShadowFade">Shadow Fade :</label><br />
+
+                                <div class="spaced-below-1x"></div>
+
+                                <select class="spaced-1x" id="idShadowFade" name="ShadowFade">
+                                    <option value="0" selected>None</option>
+                                    <option value="10">Very low</option>
+                                    <option value="15">Low</option>
+                                    <option value="20">Normal</option>
+                                    <option value="30">High</option>
+                                    <option value="40">Very high</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Get as a transparent PNG file</p>
+
+                                    <input id="idGetAsPng" type="checkbox" name="GetAsPng" value="checked" />
+
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/wall_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::RenderingStyleList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/rendering_style_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::RenderingStyleList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::3DModelList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/3d_model_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::3DModelList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::3DTextStyleList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/3d_text_style_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::3DTextStyleList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::3DIconModelList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/3d_icon_model_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::3DIconModelList*]] -->
+
+                            <!-- /image_utilities/photo-text-caption/add-text-caption-to-photo -->
+                            <!-- BEGIN: [[*COMPONENT::TextLayoutStyleList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/text_layout_style_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::TextLayoutStyleList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::TextureList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/texture_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::TextureList*]] -->
+
+                            <!-- /sticker-creator/ -->
+                            <!-- BEGIN: [[*COMPONENT::StickerShapeList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_shape_list_component.inc.html" -->
+                            <!-- END: [[*COMPONENT::StickerShapeList*]] -->
+
+                            <!-- /sticker-creator/art-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
+                            <div>
+                                <p class="font-3x spaced-below-1x">Corner Ornament :</p>
+                                <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_1.inc.html" -->
+
+                                <div class="spaced-v-3x">
+                                    <label for="idCornerRotation">Corner Rotation :</label><br />
+
+                                    <div class="spaced-below-1x"></div>
+
+                                    <select class="spaced-1x" id="idCornerRotation" name="CornerRotation">
+                                        <option value="-165">-165</option>
+                                        <option value="-150">-150</option>
+                                        <option value="-135">-135</option>
+                                        <option value="-120">-120</option>
+                                        <option value="-105">-105</option>
+                                        <option value="-90">-90</option>
+                                        <option value="-75">-75</option>
+                                        <option value="-60">-60</option>
+                                        <option value="-45">-45</option>
+                                        <option value="-30">-30</option>
+                                        <option value="-15">-15</option>
+                                        <option value="0" selected>0</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                        <option value="60">60</option>
+                                        <option value="75">75</option>
+                                        <option value="90">90</option>
+                                        <option value="105">105</option>
+                                        <option value="120">120</option>
+                                        <option value="135">135</option>
+                                        <option value="150">150</option>
+                                        <option value="165">165</option>
+                                        <option value="180">180</option>
+                                    </select>
+                                </div>
+
+                                <div class="spaced-below-1x">&nbsp;</div>
+                            </div>
+
+                            <div>
+                                <p class="font-3x spaced-below-1x">Ornament 1:</p>
+                                <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_2.inc.html" -->
+
+                                <div class="spaced-v-3x">
+                                    <label for="idOrnamentRotation1">Ornament 1 Rotation :</label><br />
+
+                                    <div class="spaced-below-1x"></div>
+
+                                    <select class="spaced-1x" id="idOrnamentRotation1" name="OrnamentRotation1">
+                                        <option value="-165">-165</option>
+                                        <option value="-150">-150</option>
+                                        <option value="-135">-135</option>
+                                        <option value="-120">-120</option>
+                                        <option value="-105">-105</option>
+                                        <option value="-90">-90</option>
+                                        <option value="-75">-75</option>
+                                        <option value="-60">-60</option>
+                                        <option value="-45">-45</option>
+                                        <option value="-30">-30</option>
+                                        <option value="-15">-15</option>
+                                        <option value="0" selected>0</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                        <option value="60">60</option>
+                                        <option value="75">75</option>
+                                        <option value="90">90</option>
+                                        <option value="105">105</option>
+                                        <option value="120">120</option>
+                                        <option value="135">135</option>
+                                        <option value="150">150</option>
+                                        <option value="165">165</option>
+                                        <option value="180">180</option>
+                                    </select>
+                                </div>
+
+                                <div class="spaced-below-1x">&nbsp;</div>
+                            </div>
+
+                            <div>
+                                <p class="font-3x spaced-below-1x">Ornament 2:</p>
+                                <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_3.inc.html" -->
+
+                                <div class="spaced-v-3x">
+                                    <label for="idOrnamentRotation2">Ornament 2 Rotation :</label><br />
+
+                                    <div class="spaced-below-1x"></div>
+
+                                    <select class="spaced-1x" id="idOrnamentRotation2" name="OrnamentRotation2">
+                                        <option value="-165">-165</option>
+                                        <option value="-150">-150</option>
+                                        <option value="-135">-135</option>
+                                        <option value="-120">-120</option>
+                                        <option value="-105">-105</option>
+                                        <option value="-90">-90</option>
+                                        <option value="-75">-75</option>
+                                        <option value="-60">-60</option>
+                                        <option value="-45">-45</option>
+                                        <option value="-30">-30</option>
+                                        <option value="-15">-15</option>
+                                        <option value="0" selected>0</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                        <option value="60">60</option>
+                                        <option value="75">75</option>
+                                        <option value="90">90</option>
+                                        <option value="105">105</option>
+                                        <option value="120">120</option>
+                                        <option value="135">135</option>
+                                        <option value="150">150</option>
+                                        <option value="165">165</option>
+                                        <option value="180">180</option>
+                                    </select>
+                                </div>
+
+                                <div class="spaced-below-1x">&nbsp;</div>
+                            </div>
+
+                            <div>
+                                <p class="font-3x spaced-below-1x">Ornament 3:</p>
+                                <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_4.inc.html" -->
+
+                                <div class="spaced-v-3x">
+                                    <label for="idOrnamentRotation3">Ornament 3 Rotation :</label><br />
+
+                                    <div class="spaced-below-1x"></div>
+
+                                    <select class="spaced-1x" id="idOrnamentRotation3" name="OrnamentRotation3">
+                                        <option value="-165">-165</option>
+                                        <option value="-150">-150</option>
+                                        <option value="-135">-135</option>
+                                        <option value="-120">-120</option>
+                                        <option value="-105">-105</option>
+                                        <option value="-90">-90</option>
+                                        <option value="-75">-75</option>
+                                        <option value="-60">-60</option>
+                                        <option value="-45">-45</option>
+                                        <option value="-30">-30</option>
+                                        <option value="-15">-15</option>
+                                        <option value="0" selected>0</option>
+                                        <option value="15">15</option>
+                                        <option value="30">30</option>
+                                        <option value="45">45</option>
+                                        <option value="60">60</option>
+                                        <option value="75">75</option>
+                                        <option value="90">90</option>
+                                        <option value="105">105</option>
+                                        <option value="120">120</option>
+                                        <option value="135">135</option>
+                                        <option value="150">150</option>
+                                        <option value="165">165</option>
+                                        <option value="180">180</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- END: [[*COMPONENT::ArtStickerList*]] -->
+
+                            <!-- /sticker-creator/love-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::LoveStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_love_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::LoveStickerList*]] -->
+
+                            <!-- /sticker-creator/business-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::BusinessStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_business_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::BusinessStickerList*]] -->
+
+                            <!-- /sticker-creator/stickers-christmas-maker -->
+                            <!-- BEGIN: [[*COMPONENT::ChristmasStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_christmass_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::ChristmasStickerList*]] -->
+
+                            <!-- /sticker-creator/social-media-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::SocialMediaStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_social_media_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::SocialMediaStickerList*]] -->
+
+                            <!-- /sticker-creator/female-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::FemaleStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_female_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FemaleStickerList*]] -->
+
+                            <!-- /sticker-creator/male-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::MaleStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_male_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::MaleStickerList*]] -->
+
+                            <!-- /sticker-creator/horror-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::HorrorStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_horror_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::HorrorStickerList*]] -->
+
+                            <!-- /sticker-creator/kid-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::KidStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_kid_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::KidStickerList*]] -->
+
+                            <!-- /sticker-creator/game-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::GameStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_game_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::GameStickerList*]] -->
+
+                            <!-- /sticker-creator/sport-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::SportsStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_sport_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::SportsStickerList*]] -->
+
+                            <!-- /sticker-creator/food-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::FoodStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_food_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FoodStickerList*]] -->
+
+                            <!-- /sticker-creator/fashion-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::FashionStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_fashion_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FashionStickerList*]] -->
+
+                            <!-- /sticker-creator/music-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::MusicStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_music_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::MusicStickerList*]] -->
+
+                            <!-- /sticker-creator/animal-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::AnimalStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_animal_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::AnimalStickerList*]] -->
+
+                            <!-- /sticker-creator/science-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::ScienceStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_science_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::ScienceStickerList*]] -->
+
+                            <!-- /sticker-creator/flower-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::FlowerStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_flower_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FlowerStickerList*]] -->
+
+                            <!-- /sticker-creator/transport-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::TransportStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_transport_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::TransportStickerList*]] -->
+
+                            <!-- /sticker-creator/weather-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::WeatherStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_weather_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::WeatherStickerList*]] -->
+
+                            <!-- /sticker-creator/zodiac-sticker-maker -->
+                            <!-- BEGIN: [[*COMPONENT::ZodiacStickerList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/sticker_list_zodiac_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::ZodiacStickerList*]] -->
+
+                            <!-- /photo-frame/decorated-photo-frame-generator -->
+                            <!-- BEGIN: [[*COMPONENT::AbstractSymbolList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/abstract_symbol_list_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::AbstractSymbolList*]] -->
+
+                            <!-- /photo-frame/star-photo-frame-generator -->
+                            <!-- BEGIN: [[*COMPONENT::StarSymbolList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/star_symbol_list_component.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::StarSymbolList*]] -->
+
+                            <!-- BEGIN: [[*ImageInput*]] -->
+                            <!--#include VIRTUAL="/inc/image_input.inc.html" -->
+                            <!-- END: [[*ImageInput*]] -->
+
+                            <!-- BEGIN: [[*GenerateButton*]] -->
+                            <!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+                            <!-- END: [[*GenerateButton*]] -->
+                        </form>
+                    </div>
+                    <!-- END: [[*EffectConfiguration*]] -->
                 </div>
-                <!-- END: [[*EffectConfiguration*]] -->
+                <!-- END: [[*MainColumn*]] -->
 
-            </div>
-            <!-- END: [[*MainColumn*]] -->
+                <!-- BEGIN: [[*SecondColumn*]] -->
+                <div class="column-2nd padded-h-1x spaced-below-3x">
+                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                    <div class="centered spaced-below-3x">
+                        <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
+                        <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    </div>
+                    <!-- END: [[*PopularGraphicDesignApps*]] -->
 
-            <!-- BEGIN: [[*SecondColumn*]] -->
-            <div class="column-2nd padded-h-1x spaced-below-3x">
-                <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
-                <div class="centered spaced-below-3x">
-                    <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
-                    <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    <!-- BEGIN: [[*RecommendedEffects*]] -->
+                    <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+                    <!-- END: [[*RecommendedEffects*]] -->
                 </div>
-                <!-- END: [[*PopularGraphicDesignApps*]] -->
-
-                <!-- BEGIN: [[*RecommendedEffects*]] -->
-                <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
-                <!-- END: [[*RecommendedEffects*]] -->
+                <!-- END: [[*SecondColumn*]] -->
             </div>
-            <!-- END: [[*SecondColumn*]] -->
-        </div>
-    </main>
+        </main>
 
-    <!-- BEGIN: [[*Footer*]] -->
-    <!--#include VIRTUAL="/inc/footer.inc.html" -->
-    <!-- END: [[*Footer*]] -->
+        <!-- BEGIN: [[*Footer*]] -->
+        <!--#include VIRTUAL="/inc/footer.inc.html" -->
+        <!-- END: [[*Footer*]] -->
 
-    <!-- BEGIN: [[*SCRIPT::External*]] -->
-    <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
-    <!-- END: [[*SCRIPT::External*]] -->
+        <!-- BEGIN: [[*SCRIPT::External*]] -->
+        <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
+        <!-- END: [[*SCRIPT::External*]] -->
 
-    <!-- BEGIN: [[*SCRIPT::Internal*]] -->
-    <!--#include VIRTUAL="/inc/script_main.inc.html" -->
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+        <!--#include VIRTUAL="/inc/script_main.inc.html" -->
 
-    <script>
-        try {
-            // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
-            // Default para f3 (writing) = 'Brushed'.
-            // Default para f4 (graffiti) = 'Jungle LIFE'.
-            // Default para f5 (horror) = 'Creepsville'.
-            var initialFontName = 'Arial';
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = 'Arial';
 
-            // Para as telas que usam simbolos.
-            var initialSymbol1 = 'kids_003',
-                initialSymbol2 = 'kids_004',
-                initialSymbol3 = 'kids_007',
-                initialSymbol4 = 'kids_005';
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = 'kids_003',
+                    initialSymbol2 = 'kids_004',
+                    initialSymbol3 = 'kids_007',
+                    initialSymbol4 = 'kids_005';
 
-            // Para as telas que usam lista de efeito de texto com nome.
-            var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
-                initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg(
+                    'idOverlayModalMsg',
+                    'idModalMsgText',
+                    e.message ? e.message : e,
+                    'idModalMsgTitle',
+                    'Error'
+                );
+            }
+        </script>
 
-        } catch (e) {
-            showModalMsg('idOverlayModalMsg', 'idModalMsgText', e.message ? e.message : e, 'idModalMsgTitle',
-                'Error')
-        }
-    </script>
+        <!--#include VIRTUAL="/inc/script_init.inc.html" -->
+        <!-- END: [[*SCRIPT::Internal*]] -->
 
-    <!--#include VIRTUAL="/inc/script_init.inc.html" -->
-    <!-- END: [[*SCRIPT::Internal*]] -->
-
-    <!-- BEGIN: [[*SCRIPT::Ads*]] -->
-    <!-- END: [[*SCRIPT::Ads*]] -->
-</body>
-
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
 </html>

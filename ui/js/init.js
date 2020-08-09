@@ -234,18 +234,22 @@ function defInit() {
 
 function defSubmit() {
     show(['idOverlayPreloader']);
-    //var _submit = function () {document.FormMain.submit();}
-    //window.setTimeout(_submit, 1500);
-    document.FormMain.submit();
+    var _submit = function () {document.FormMain.submit();}
+    window.setTimeout(_submit, 1500);
+
+    // A linha abaixo esta comentada apenas para testar o preloader. Se em producao, descomentar.
+    //document.FormMain.submit();
 }
 
 function resultPageSubmit() {
     var changeVisibility = function () {
-        toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['css-hide']);
+        toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['hide-element']);
     }
     // Torna o botao invisivel e a mensagem visivel.
     changeVisibility();
     // Vai tornar o botao visivel de novo e a mensagem invisivel em 60 segundos.
-    window.setTimeout(changeVisibility, 60000);
-    document.FormMain.submit();
+    window.setTimeout(changeVisibility, 6000);
+
+    // Se em producao, descomentar a linha abaixo.
+    //document.FormMain.submit();
 }

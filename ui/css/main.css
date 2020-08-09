@@ -23,16 +23,12 @@ li {
 a {
     text-decoration: none;
     /* EQUALS .color-link */
-    color: #00528C;
+    color: #00528c;
 }
 
 img {
     max-width: 100%;
 }
-
-
-
-
 
 /* ----- Side Nav ----- */
 
@@ -55,7 +51,7 @@ img {
     top: 0;
     right: 0;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     overflow-x: hidden;
     animation-name: right-to-initial;
     animation-duration: 0.5s;
@@ -64,7 +60,7 @@ img {
 /* Hover para itens do menu lateral */
 .sidenav-content p:hover {
     /* EQUALS .bg-color-2nd */
-    background-color: #F8F0E8;
+    background-color: #f8f0e8;
 }
 
 .sidenav-header {
@@ -74,12 +70,8 @@ img {
     padding-left: 20px;
     padding-right: 20px;
     /* EQUALS .color-1st */
-    background-color: #FF8000;
+    background-color: #ff8000;
 }
-
-
-
-
 
 /* ----- Modal Box ----- */
 
@@ -105,14 +97,10 @@ img {
     animation-name: top-to-initial;
     animation-duration: 0.4s;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* EQUALS .color-4th */
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
 }
-
-
-
-
 
 /* ----- Color Picker ----- */
 
@@ -128,13 +116,9 @@ img {
     height: 35px;
     border: solid 4px;
     /* EQUALS .color-inv */
-    border-color: #FFFFFF;
+    border-color: #ffffff;
     cursor: pointer;
 }
-
-
-
-
 
 /* ----- Menu ----- */
 
@@ -144,24 +128,20 @@ img {
 
 .menu-button {
     /* EQUALS .color-inv */
-    border: solid 1px #FFFFFF;
+    border: solid 1px #ffffff;
     border-radius: 5px;
     background-color: transparent;
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 5px 10px;
 }
 
 .menu-button:hover {
     /* EQUALS .color-1st */
-    color: #FF8000;
+    color: #ff8000;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
-
-
-
-
 
 /* ----- Content ----- */
 
@@ -189,17 +169,17 @@ img {
     overflow-y: auto;
     text-align: center;
     /* EQUALS .color-4th */
-    border: solid 1px #CCCCCC;
+    border: solid 1px #cccccc;
     border-radius: 5px;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* Impede que o container crie espaçamento entre rows */
     font-size: 0px;
 }
 
 .comp-scroll img {
     /* EQUALS .color-inv */
-    border: solid 5px #FFFFFF;
+    border: solid 5px #ffffff;
     max-width: 200px;
 }
 
@@ -218,11 +198,11 @@ img {
     width: 100%;
     text-align: center;
     /* EQUALS .color-1st */
-    border: solid 1px #FF8000;
+    border: solid 1px #ff8000;
     /* Bordas inferiores arredondadas */
     border-radius: 0 0 10px 10px;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
@@ -230,7 +210,7 @@ img {
     /* Height baseado no total de celulas do componente */
     height: 50px;
     /* EQUALS .color-inv */
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
 }
 
 /* Tamanho das celulas da tabela dos componentes de listas */
@@ -238,7 +218,7 @@ img {
     /* Height baseado no total de celulas do componente */
     height: 125px;
     /* EQUALS .color-inv */
-    border: 3px solid #FFFFFF;
+    border: 3px solid #ffffff;
 }
 
 /* Para componentes de lista que contem imagens (diferente de .comp-scroll img) ex: sWall */
@@ -250,36 +230,36 @@ img {
 /* Selecao de item de componente com imagens */
 .sel-item {
     /* EQUALS .color-2nd */
-    background-color: #A62900;
+    background-color: #a62900;
 }
 
 /* Altera a cor do label do item de componente selecionado */
 .sel-item p {
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 /* Selecao de item de componente com tabela */
 .sel-list-item {
     /* EQUALS .color-2nd */
-    border-color: #A62900 !important;
+    border-color: #a62900 !important;
 }
 
 /* Barra de titulo para componentes em estado fechado e sessão de configuracao de efeito */
 .title-bar-closed {
     /* EQUALS .color-1st */
-    background-color: #FF8000;
+    background-color: #ff8000;
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 10px;
 }
 
 /* Title bar sem border-bottom-radius para componentes em estado aberto */
 .title-bar-opened {
     /* EQUALS .color-1st */
-    background-color: #FF8000;
+    background-color: #ff8000;
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
     /* Bordas superiores arredondadas */
     border-radius: 10px 10px 0 0;
 }
@@ -313,75 +293,73 @@ img {
 /* Classe para estilizar elemento hr */
 .ruler {
     /* EQUALS .color-3rd */
-    border: 1px solid #E9C4A9;
+    border: 1px solid #e9c4a9;
     /* EQUALS .color-3rd */
-    background-color: #E9C4A9;
+    background-color: #e9c4a9;
 }
 
 .box {
     /* EQUALS .bg-color-3rd */
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border-radius: 5px;
     overflow-x: hidden;
 }
 
 /* Tamanho usado principalmente em modal-box */
 .btn-1x {
+    display: inline-block;
     width: 120px;
     /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
+    border: solid 1px #a62900;
     border-radius: 5px;
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
     /* EQUALS .color-2nd */
-    background-color: #A62900;
+    background-color: #a62900;
     padding: 15px;
 }
 
 /* Tamanho padrão para botoes */
 .btn-2x {
+    display: inline-block;
     width: 180px;
     border-radius: 5px;
     padding: 15px;
     /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
+    border: solid 1px #a62900;
     /* EQUALS .color-2nd */
-    background-color: #A62900;
+    background-color: #a62900;
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .btn-1x:hover,
 .btn-2x:hover {
     /* EQUALS .color-1st */
-    border-color: #FF8000;
+    border-color: #ff8000;
     /* EQUALS .color-1st */
-    background-color: #FF8000;
+    background-color: #ff8000;
     cursor: pointer;
 }
 
-
-
-
-
 /* ----- Form ---- */
 
-input[type=text],
-input[type=search],
+input[type='text'],
+input[type='search'],
 select {
     text-align: left;
     width: 100%;
     padding: 15px 15px;
     display: inline-block;
     /* EQUALS .color-4th */
-    border: 1px solid #CCCCCC;
+    border: 1px solid #cccccc;
     border-radius: 5px;
 }
 
 input:focus,
 select:focus {
     /* EQUALS .color-1st */
-    outline-color: #FF8000;
+    outline-color: #ff8000;
 }
 
 .check-box {
@@ -407,28 +385,28 @@ select:focus {
     height: 20px;
     width: 20px;
     /* EQUALS .color-inv */
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* EQUALS .color-4th */
-    border: solid 1px #CCCCCC;
+    border: solid 1px #cccccc;
 }
 
-.check-box:hover input~.checkmark {
+.check-box:hover input ~ .checkmark {
     /* EQUALS .color-4th */
-    background-color: #CCCCCC;
+    background-color: #cccccc;
 }
 
-.check-box input:checked~.checkmark {
+.check-box input:checked ~ .checkmark {
     /* EQUALS .color-1st */
-    background-color: #FF8000;
+    background-color: #ff8000;
 }
 
 .checkmark:after {
-    content: "";
+    content: '';
     position: absolute;
     display: none;
 }
 
-.check-box input:checked~.checkmark:after {
+.check-box input:checked ~ .checkmark:after {
     display: block;
 }
 
@@ -438,16 +416,12 @@ select:focus {
     width: 5px;
     height: 10px;
     /* EQUALS .color-inv */
-    border: solid #FFFFFF;
+    border: solid #ffffff;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-
-
-
 
 /* ----- Colors -----*/
 
@@ -458,29 +432,29 @@ select:focus {
 
 /* Cor utilizada principalmente para textos em fundo escuro */
 .color-inv {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 /* Cor principal da pagina, utilizada para compor o tema do layout */
 .color-1st {
-    color: #FF8000;
+    color: #ff8000;
 }
 
 /* Cor secundaria da pagina, utilizada tanto no tema quanto para chamar
 a atencao do usuario para um elemento importante */
 .color-2nd {
-    color: #A62900;
+    color: #a62900;
 }
 
 /* Esta cor pode ser utilizada para criar uma sobreposicao sutil com
 o fundo #FF8000 ou #A62900 */
 .color-3rd {
-    color: #E9C4A9;
+    color: #e9c4a9;
 }
 
 /* Cor utilizada principalmente para border-color em um fundo cinza (#F5F5F5) */
 .color-4th {
-    color: #CCCCCC;
+    color: #cccccc;
 }
 
 /* Cor utilizada para textos com menos destaque */
@@ -490,40 +464,40 @@ o fundo #FF8000 ou #A62900 */
 
 /*Cor utilizada para destacar links */
 .color-link {
-    color: #00528C;
+    color: #00528c;
 }
 
 /* Cor utilizada para compor um background-color de destaque */
 .bg-color-1st {
-    background-color: #FF8000;
+    background-color: #ff8000;
 }
 
 /* Variacao da cor principal (#FF8000) para compor um background-color de um elemento
 sobreposto a um elemento de cor clara */
 .bg-color-2nd {
-    background-color: #F8F0E8;
+    background-color: #f8f0e8;
 }
 
 /* Cor utilizada para compor um background-color de um elemento sobreposto
 a um elemento de cor clara */
 .bg-color-3rd {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
 /* Necessario para elementos que exigem um background-color em estado hover */
 .hoverable-bg-4th:hover {
     /* EQUALS .color-4th */
-    background-color: #CCCCCC;
+    background-color: #cccccc;
 }
 
 .hoverable-inv:hover {
     /* EQUALS .color-inv */
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .hoverable-2nd:hover {
     /* EQUALS .color-2nd */
-    color: #A62900;
+    color: #a62900;
 }
 
 .shaded {
@@ -546,10 +520,6 @@ a um elemento de cor clara */
     /* EQUALS .color-default + alpha-transparency */
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
-
-
-
-
 
 /* ----- Font ----- */
 
@@ -593,10 +563,6 @@ a um elemento de cor clara */
 .uppercase {
     text-transform: uppercase;
 }
-
-
-
-
 
 /* ----- Helpers ----- */
 
@@ -720,10 +686,6 @@ a um elemento de cor clara */
     cursor: pointer;
 }
 
-
-
-
-
 /* ----- Display Helpers ----- */
 
 /* Container com display flex para espacamento homogeneo entre os elementos */
@@ -769,10 +731,6 @@ a um elemento de cor clara */
     right: 0;
 }
 
-
-
-
-
 /* ----- Animations ----- */
 
 .animate-1:hover {
@@ -786,8 +744,8 @@ a um elemento de cor clara */
 }
 
 .animate-3:hover {
-    -webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    -webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes heartbeat {
@@ -969,35 +927,30 @@ a um elemento de cor clara */
 @keyframes top-to-initial {
     from {
         top: -300px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
         top: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes right-to-initial {
     from {
         right: -300px;
-        opacity: 0
+        opacity: 0;
     }
 
     to {
         right: 0;
-        opacity: 1
+        opacity: 1;
     }
 }
-
-
-
-
 
 /* ----- Media Queries ----- */
 
 @media (max-width: 1100px) {
-
     .modal-content {
         /* width range para manter a boa estetica da modal */
         min-width: 350px;
@@ -1024,7 +977,6 @@ a um elemento de cor clara */
 }
 
 @media (max-width: 500px) {
-
     .color-table {
         border-spacing: 2px;
     }
@@ -1033,7 +985,7 @@ a um elemento de cor clara */
         width: 30px;
         height: 30px;
         /* EQUALS .color-inv */
-        border: solid 3px #FFFFFF;
+        border: solid 3px #ffffff;
     }
 
     .modal-content {
@@ -1049,7 +1001,7 @@ a um elemento de cor clara */
 
     .menu-button:hover {
         /* EQUALS .color-inv */
-        color: #FFFFFF;
+        color: #ffffff;
         background-color: transparent;
     }
 

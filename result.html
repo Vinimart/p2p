@@ -8,7 +8,11 @@
         <title>Picture to People - Effect Result</title>
     </head>
 
-    <body>
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+        <!-- BEGIN: [[*Preloader*]] -->
+        <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+        <!-- END: [[*Preloader*]] -->
+
         <!-- BEGIN: [[*Modal*]] -->
         <!--#include VIRTUAL="/inc/modal.inc.html" -->
         <!-- END: [[*Modal*]] -->
@@ -52,15 +56,24 @@
                 </div>
 
                 <div class="spaced-v-3x">
-                    <button class="btn-2x spaced-around-2x">
-                        <i class="fas fa-file-download">&nbsp;</i>
-                        <span>Download</span>
-                    </button>
+                    <form name="FormMain" id="idFormMain" method="post" action="/p2p/result.p2p/download-file">
+                        <input type="hidden" name="ResultFile" id="idResultFile" value="[[---RESULT_FILE---]]" />
+                        <input type="hidden" name="RefTS" id="idRefTS" value="[[---REFERENCE_TIMESTAMP---]]" />
 
-                    <button class="btn-2x" onclick="window.history.go(-1);">
-                        <i class="fas fa-undo-alt">&nbsp;</i>
-                        <span>Back</span>
-                    </button>
+                        <div id="idDownloadMessage" class="hide-element spaced-around-2x">
+                            <span>Your download should start shortly. Please wait.</span>
+                        </div>
+
+                        <div id="idDonwloadButton" class="btn-2x" onclick="resultPageSubmit();">
+                            <i class="fas fa-file-download">&nbsp;</i>
+                            <span>Download</span>
+                        </div>
+
+                        <div id="idBackButton" class="btn-2x spaced-around-2x" onclick="window.history.go(-1);">
+                            <i class="fas fa-undo-alt">&nbsp;</i>
+                            <span>Back</span>
+                        </div>
+                    </form>
                 </div>
             </div>
 
