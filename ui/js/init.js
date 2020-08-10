@@ -1,5 +1,7 @@
 function getFontListNum() {
-    return getElemPropertyValue('idFontListNumber', 'value');
+    var fontListNumber = document.getElementsByName('FontListNumber')[0];
+    var fontListValue = fontListNumber ? fontListNumber.value : undefined;
+    return fontListValue;
 }
 
 // Preenche a lista dinamica de apps populares.
@@ -141,7 +143,7 @@ function defInit() {
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
-    SelLists.newList('f1', 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName);
+    SelLists.newList('f' + getFontListNum(), 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
     // -------------------------
 
 
