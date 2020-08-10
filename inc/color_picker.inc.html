@@ -1,5 +1,5 @@
-<div id="idColorTableContainer" class="modal-overlay flex-center hide-element">
-        <div class="modal-content rounded-1x">
+<div id="idColorTableContainer" class="modal-overlay flex-center hide-element" onclick="hide(['idColorTableContainer']);">
+        <div class="modal-content rounded-1x" onclick="stopProp(event);">
             <div class="flex-between bg-color-3rd padded-2x spaced-below-1x">
                 <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
                 <span onclick="hide(['idColorTableContainer']);"><i
@@ -364,10 +364,10 @@
                             style="background-color: #ffc0ff;" title="FFC0FF"></td>
                     </tr>
                 </table>
-            </div>
 
-            <div class="spaced-below-2x" title="Hexadecimal Color Value">
-                <p id="idHexDisplay" class="padded-2x spaced-around-1x box">000000</p>
+                <div class="spaced-below-2x" title="Hexadecimal Color Value">
+                    <p id="idHexDisplay" class="padded-2x spaced-around-1x box">000000</p>
+                </div>
             </div>
 
             <div class="centered spaced-v-1x">
