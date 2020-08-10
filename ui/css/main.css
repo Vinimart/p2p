@@ -536,10 +536,14 @@ a um elemento de cor clara */
 }
 
 .font-4x {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .font-5x {
+    font-size: 35px;
+}
+
+.font-6x {
     font-size: 60px;
 }
 
