@@ -273,8 +273,8 @@
                                 <span class="font-3x">Configuration</span>
                             </div>
 
-                            <!-- BEGIN: [[*COMPONENT::FontList*]] -->
-                            <!--#include VIRTUAL="/ui/comp/font_list_component.inc.html" -->
+                            <!-- BEGIN: [[*COMPONENT::GeneralFontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component_general.inc.html<<<disabled>>>" -->
                             <!-- END: [[*COMPONENT::FontList*]] -->
 
                             <div class="spaced-v-3x">
@@ -756,6 +756,22 @@
                                 </label>
                             </div>
 
+                            <!-- BEGIN: [[*COMPONENT::TypographyFontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component_typography.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::WritingFontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component_writing.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::GraffitiFontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component_graffiti.inc.html" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
+                            <!-- BEGIN: [[*COMPONENT::HorrorFontList*]] -->
+                            <!--#include VIRTUAL="/ui/comp/font_list_component_horror.inc.html<<<disabled>>>" -->
+                            <!-- END: [[*COMPONENT::FontList*]] -->
+
                             <!-- BEGIN: [[*COMPONENT::WalltList*]] -->
                             <!--#include VIRTUAL="/ui/comp/wall_list_component.inc.html" -->
                             <!-- END: [[*COMPONENT::WalltList*]] -->
@@ -1103,7 +1119,7 @@
                 // Default para f3 (writing) = 'Brushed'.
                 // Default para f4 (graffiti) = 'Jungle LIFE'.
                 // Default para f5 (horror) = 'Creepsville'.
-                var initialFontName = 'Arial';
+                var initialFontName = 'Jungle LIFE';
 
                 // Para as telas que usam simbolos.
                 var initialSymbol1 = 'kids_003',
