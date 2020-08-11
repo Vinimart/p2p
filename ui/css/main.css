@@ -297,6 +297,13 @@ img {
     background-color: #e9c4a9;
 }
 
+.config-ruler {
+    border: 2px solid #ff8000;
+    background-color: #ff8000;
+    position: relative;
+    top: 12px;
+}
+
 .box {
     /* EQUALS .bg-color-3rd */
     background-color: #f5f5f5;
@@ -389,12 +396,12 @@ select:focus {
     border: solid 1px #cccccc;
 }
 
-.check-box:hover input ~ .checkmark {
+.check-box:hover input~.checkmark {
     /* EQUALS .color-4th */
     background-color: #cccccc;
 }
 
-.check-box input:checked ~ .checkmark {
+.check-box input:checked~.checkmark {
     /* EQUALS .color-1st */
     background-color: #ff8000;
 }
@@ -405,7 +412,7 @@ select:focus {
     display: none;
 }
 
-.check-box input:checked ~ .checkmark:after {
+.check-box input:checked~.checkmark:after {
     display: block;
 }
 
