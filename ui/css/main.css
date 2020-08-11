@@ -490,6 +490,10 @@ a um elemento de cor clara */
     background-color: #f5f5f5;
 }
 
+.bg-color-5th {
+    background-color: #555555;
+}
+
 /* Necessario para elementos que exigem um background-color em estado hover */
 .hoverable-bg-4th:hover {
     /* EQUALS .color-4th */
