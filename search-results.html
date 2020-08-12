@@ -1,135 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- BEGIN: [[*HeadCommons*]] -->
-        <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
-        <!-- END: [[*HeadCommons*]] -->
-        <meta content="Picture to People Site Search Results." name="description" />
-        <title>Picture to People - Search Results</title>
-    </head>
 
-    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
-        <!-- BEGIN: [[*Preloader*]] -->
-        <!--#include VIRTUAL="/inc/preloader.inc.html" -->
-        <!-- END: [[*Preloader*]] -->
+<head>
+    <!-- BEGIN: [[*HeadCommons*]] -->
+    <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+    <!-- END: [[*HeadCommons*]] -->
+    <meta content="Picture to People Site Search Results." name="description" />
+    <title>Picture to People - Search Results</title>
+</head>
 
-        <!-- BEGIN: [[*Modal*]] -->
-        <!--#include VIRTUAL="/inc/modal.inc.html" -->
-        <!-- END: [[*Modal*]] -->
+<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+    <!-- BEGIN: [[*Preloader*]] -->
+    <!--#include VIRTUAL="/inc/preloader.inc.html" -->
+    <!-- END: [[*Preloader*]] -->
 
-        <!-- BEGIN: [[*SearchModal*]] -->
-        <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
-        <!-- END: [[*SearchModal*]] -->
+    <!-- BEGIN: [[*Modal*]] -->
+    <!--#include VIRTUAL="/inc/modal.inc.html" -->
+    <!-- END: [[*Modal*]] -->
 
-        <!-- BEGIN: [[*SideNav*]] -->
-        <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
-        <!-- END: [[*SideNav*]] -->
+    <!-- BEGIN: [[*SearchModal*]] -->
+    <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+    <!-- END: [[*SearchModal*]] -->
 
-        <!-- BEGIN: [[*Menu*]] -->
-        <!--#include VIRTUAL="/inc/menu.inc.html" -->
-        <!-- END: [[*Menu*]] -->
+    <!-- BEGIN: [[*SideNav*]] -->
+    <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+    <!-- END: [[*SideNav*]] -->
 
-        <!-- BEGIN: [[*Header*]] -->
-        <header class="padded-h-2x">
-            <div class="centered spaced-below-3x">
-                <h1 class="font-5x bold spaced-below-1x">Search Results</h1>
-                <p class="font-3x">
-                    See below the result of your search on Picture to People
-                </p>
+    <!-- BEGIN: [[*Menu*]] -->
+    <!--#include VIRTUAL="/inc/menu.inc.html" -->
+    <!-- END: [[*Menu*]] -->
+
+    <!-- BEGIN: [[*Header*]] -->
+    <header class="padded-h-2x">
+        <div class="centered spaced-below-3x">
+            <h1 class="font-5x bold spaced-below-1x">Search Results</h1>
+            <h2 class="font-3x">
+                See below the result of your search on Picture to People
+            </h2>
+        </div>
+
+        <hr class="ruler limiter-2x" />
+
+        <div class="spaced-below-3x"></div>
+    </header>
+    <!-- END: [[*Header*]] -->
+
+    <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png);">
+        <!-- Container Principal (max-width: 1600px) -->
+        <div class="flex-around limiter-2x">
+            <!-- BEGIN: [[*MainColumn*]] -->
+            <div class="column-main padded-h-2x spaced-below-3x">
+                <!-- BEGIN: [[*SearchResults*]] -->
+                <gcse:searchresults-only></gcse:searchresults-only>
+                <!-- END: [[*SearchResults*]] -->
             </div>
+            <!-- END: [[*MainColumn*]] -->
 
-            <hr class="ruler limiter-2x" />
-
-            <div class="spaced-below-3x"></div>
-        </header>
-        <!-- END: [[*Header*]] -->
-
-        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png);">
-            <!-- Container Principal (max-width: 1600px) -->
-            <div class="flex-around limiter-2x">
-                <!-- BEGIN: [[*MainColumn*]] -->
-                <div class="column-main padded-h-2x spaced-below-3x">
-                    <!-- BEGIN: [[*SearchResults*]] -->
-                    <gcse:searchresults-only></gcse:searchresults-only>
-                    <!-- END: [[*SearchResults*]] -->
+            <!-- BEGIN: [[*SecondColumn*]] -->
+            <div class="column-2nd padded-h-1x spaced-below-3x">
+                <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                <div class="centered spaced-below-3x">
+                    <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
+                    <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
                 </div>
-                <!-- END: [[*MainColumn*]] -->
+                <!-- END: [[*PopularGraphicDesignApps*]] -->
 
-                <!-- BEGIN: [[*SecondColumn*]] -->
-                <div class="column-2nd padded-h-1x spaced-below-3x">
-                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
-                    <div class="centered spaced-below-3x">
-                        <p class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</p>
-                        <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
-                    </div>
-                    <!-- END: [[*PopularGraphicDesignApps*]] -->
-
-                    <!-- BEGIN: [[*RecommendedEffects*]] -->
-                    <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
-                    <!-- END: [[*RecommendedEffects*]] -->
-                </div>
-                <!-- END: [[*SecondColumn*]] -->
+                <!-- BEGIN: [[*RecommendedEffects*]] -->
+                <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+                <!-- END: [[*RecommendedEffects*]] -->
             </div>
-        </main>
+            <!-- END: [[*SecondColumn*]] -->
+        </div>
+    </main>
 
-        <!-- BEGIN: [[*Footer*]] -->
-        <!--#include VIRTUAL="/inc/footer.inc.html" -->
-        <!-- END: [[*Footer*]] -->
+    <!-- BEGIN: [[*Footer*]] -->
+    <!--#include VIRTUAL="/inc/footer.inc.html" -->
+    <!-- END: [[*Footer*]] -->
 
-        <!-- BEGIN: [[*SCRIPT::External*]] -->
-        <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
-        <!-- END: [[*SCRIPT::External*]] -->
+    <!-- BEGIN: [[*SCRIPT::External*]] -->
+    <!--#include VIRTUAL="/inc/script_lazysizes.inc.html" -->
+    <!-- END: [[*SCRIPT::External*]] -->
 
-        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
-        <!--#include VIRTUAL="/inc/script_main.inc.html" -->
+    <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+    <!--#include VIRTUAL="/inc/script_main.inc.html" -->
 
-        <script>
-            try {
-                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
-                // Default para f3 (writing) = 'Brushed'.
-                // Default para f4 (graffiti) = 'Jungle LIFE'.
-                // Default para f5 (horror) = 'Creepsville'.
-                var initialFontName = 'Arial';
+    <script>
+        try {
+            // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+            // Default para f3 (writing) = 'Brushed'.
+            // Default para f4 (graffiti) = 'Jungle LIFE'.
+            // Default para f5 (horror) = 'Creepsville'.
+            var initialFontName = 'Arial';
 
-                // Para as telas que usam simbolos.
-                var initialSymbol1 = 'kids_003',
-                    initialSymbol2 = 'kids_004',
-                    initialSymbol3 = 'kids_007',
-                    initialSymbol4 = 'kids_005';
+            // Para as telas que usam simbolos.
+            var initialSymbol1 = 'kids_003',
+                initialSymbol2 = 'kids_004',
+                initialSymbol3 = 'kids_007',
+                initialSymbol4 = 'kids_005';
 
-                // Para as telas que usam lista de efeito de texto com nome.
-                var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
-                    initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
-            } catch (e) {
-                showModalMsg(
-                    'idOverlayModalMsg',
-                    'idModalMsgText',
-                    e.message ? e.message : e,
-                    'idModalMsgTitle',
-                    'Error'
-                );
-            }
-        </script>
+            // Para as telas que usam lista de efeito de texto com nome.
+            var initialNamedTextEffect1 = 'abstract083', // Valor para a lista de efeitos 3d.
+                initialNamedTextEffect2 = '3d_blue'; // Valor para a lista de efeitos classicos.
+        } catch (e) {
+            showModalMsg(
+                'idOverlayModalMsg',
+                'idModalMsgText',
+                e.message ? e.message : e,
+                'idModalMsgTitle',
+                'Error'
+            );
+        }
+    </script>
 
-        <script>
-            (function () {
-                var cx = '012767771235851979987:mibnmo_6wgw';
-                var gcse = document.createElement('script');
-                gcse.type = 'text/javascript';
-                gcse.async = true;
-                gcse.src =
-                    (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                    '//www.google.com/cse/cse.js?cx=' +
-                    cx;
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(gcse, s);
-            })();
-        </script>
+    <script>
+        (function () {
+            var cx = '012767771235851979987:mibnmo_6wgw';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src =
+                (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' +
+                cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
 
-        <!--#include VIRTUAL="/inc/script_init.inc.html" -->
-        <!-- END: [[*SCRIPT::Internal*]] -->
+    <!--#include VIRTUAL="/inc/script_init.inc.html" -->
+    <!-- END: [[*SCRIPT::Internal*]] -->
 
-        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
-        <!-- END: [[*SCRIPT::Ads*]] -->
-    </body>
+    <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+    <!-- END: [[*SCRIPT::Ads*]] -->
+</body>
+
 </html>
