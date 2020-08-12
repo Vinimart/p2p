@@ -298,8 +298,8 @@ img {
 }
 
 .config-ruler {
-    border: 2px solid #ff8000;
-    background-color: #ff8000;
+    border: 2px solid #555555;
+    background-color: #555555;
     position: relative;
     top: 12px;
 }
