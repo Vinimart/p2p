@@ -298,7 +298,7 @@ img {
 }
 
 .config-ruler {
-    border: 2px solid #555555;
+    border: 1px solid #555555;
     background-color: #555555;
     position: relative;
     top: 12px;
@@ -685,7 +685,7 @@ a um elemento de cor clara */
 }
 
 .rounded-1x {
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .rounded-2x {
