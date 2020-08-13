@@ -583,12 +583,12 @@
                         <!-- END: [[*COMPONENT::GeneralFontList*]] -->
 
                         <div class="spaced-v-3x">
-                            <label for="idTextToRender1">Text Input 1 :</label><br />
+                            <label for="idTextToRender1">Text (max 25) :</label><br />
 
                             <div class="spaced-below-1x"></div>
 
-                            <input type="text" maxlength="25" id="idTextToRender1" name="TextToRender1"
-                                placeholder="Your Text" />
+                            <input type="text" maxlength="25" id="idTextToRender" name="TextToRender"
+                                placeholder="Your Text" value="" />
                         </div>
 
                         <div class="spaced-v-3x">
@@ -629,7 +629,10 @@
                             </div>
                         </div>
 
-                        <p class="font-3x">Back drawing :</p>
+                        <div>
+                            <div>&nbsp;</div>
+                            <p class="font-3x">Back drawing :</p>
+                        </div>
 
                         <div class="spaced-v-3x">
                             <label for="idTextLine1">Text Line 1 :</label><br />
@@ -637,16 +640,7 @@
                             <div class="spaced-below-1x"></div>
 
                             <input type="text" maxlength="25" id="idTextLine1" name="TextLine1"
-                                placeholder="Your Text" />
-                        </div>
-
-                        <div class="spaced-v-3x">
-                            <label for="idTextToRender2">Text Input 2 :</label><br />
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender2" name="TextToRender2"
-                                placeholder="Your Text" />
+                                placeholder="Your Text" value="" />
                         </div>
 
                         <div class="spaced-v-3x">
@@ -679,7 +673,10 @@
                             </div>
                         </div>
 
-                        <p class="font-3x">Middle drawing :</p>
+                        <div>
+                            <div>&nbsp;</div>
+                            <p class="font-3x">Middle drawing :</p>
+                        </div>
 
                         <div class="spaced-v-3x">
                             <label class="check-box">
@@ -690,15 +687,6 @@
 
                                 <span class="checkmark"></span>
                             </label>
-                        </div>
-
-                        <div class="spaced-v-3x">
-                            <label for="idTextLine1">Text Line 2 :</label><br />
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine2" name="TextLine2"
-                                placeholder="Your Text" />
                         </div>
 
                         <div class="spaced-v-3x">
@@ -729,7 +717,10 @@
                             </select>
                         </div>
 
-                        <p class="font-3x">Text drawing :</p>
+                        <div>
+                            <div>&nbsp;</div>
+                            <p class="font-3x">Text drawing :</p>
+                        </div>
 
                         <div class="spaced-v-3x">
                             <label for="idColorImprovement">Color Improvement :</label><br />
@@ -780,15 +771,6 @@
                         </div>
 
                         <div class="spaced-v-3x">
-                            <label for="idTextToRender3">Text Input 3 :</label><br />
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextToRender3" name="TextToRender3"
-                                placeholder="Your Text" />
-                        </div>
-
-                        <div class="spaced-v-3x">
                             <label class="check-box">
                                 <p>Draw Bottom-left Shadow</p>
 
@@ -820,15 +802,6 @@
                                 <option value="2">High</option>
                                 <option value="3">Very High</option>
                             </select>
-                        </div>
-
-                        <div class="spaced-v-3x">
-                            <label for="idTextLine3">Text Line 3 :</label><br />
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine3" name="TextLine3"
-                                placeholder="Your Text" />
                         </div>
 
                         <div class="spaced-v-3x">
@@ -868,15 +841,6 @@
 
                                 <span class="checkmark"></span>
                             </label>
-                        </div>
-
-                        <div class="spaced-v-3x">
-                            <label for="idTextLine4">Text Line 4 :</label><br />
-
-                            <div class="spaced-below-1x"></div>
-
-                            <input type="text" maxlength="25" id="idTextLine4" name="TextLine4"
-                                placeholder="Your Text" />
                         </div>
 
                         <div class="spaced-v-3x">
@@ -984,9 +948,11 @@
                         <!-- /sticker-creator/art-sticker-maker -->
                         <!-- BEGIN: [[*COMPONENT::ArtStickerList*]] -->
                         <div>
-                            <p class="font-3x spaced-below-1x">Corner Ornament :</p>
+                            <div>
+                                <div class="spaced-below-1x">&nbsp;</div>
+                                <h3 class="font-3x">Corner Ornament :</h3>
+                            </div>
                             <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_1.inc.html" -->
-
                             <div class="spaced-v-3x">
                                 <label for="idCornerRotation">Corner Rotation :</label><br />
 
@@ -1019,12 +985,13 @@
                                     <option value="180">180</option>
                                 </select>
                             </div>
-
-                            <div class="spaced-below-1x">&nbsp;</div>
                         </div>
 
                         <div>
-                            <p class="font-3x spaced-below-1x">Ornament 1:</p>
+                            <div>
+                                <div class="spaced-below-1x">&nbsp;</div>
+                                <h3 class="font-3x">Ornament 1 :</h3>
+                            </div>
                             <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_2.inc.html" -->
 
                             <div class="spaced-v-3x">
@@ -1059,12 +1026,13 @@
                                     <option value="180">180</option>
                                 </select>
                             </div>
-
-                            <div class="spaced-below-1x">&nbsp;</div>
                         </div>
 
                         <div>
-                            <p class="font-3x spaced-below-1x">Ornament 2:</p>
+                            <div>
+                                <div class="spaced-below-1x">&nbsp;</div>
+                                <h3 class="font-3x">Ornament 2 :</h3>
+                            </div>
                             <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_3.inc.html" -->
 
                             <div class="spaced-v-3x">
@@ -1099,12 +1067,13 @@
                                     <option value="180">180</option>
                                 </select>
                             </div>
-
-                            <div class="spaced-below-1x">&nbsp;</div>
                         </div>
 
                         <div>
-                            <p class="font-3x spaced-below-1x">Ornament 3:</p>
+                            <div>
+                                <div class="spaced-below-1x">&nbsp;</div>
+                                <h3 class="font-3x">Ornament 3 :</h3>
+                            </div>
                             <!--#include VIRTUAL="/ui/comp/sticker_list_art_component_4.inc.html" -->
 
                             <div class="spaced-v-3x">
