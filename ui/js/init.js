@@ -106,12 +106,6 @@ function defInit() {
     // So cria a lista de apps populares se o container existir.
     defPopDesignApps('idPopEffectsContainer');
 
-    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker (Vinícius)
-    // Lista de cores do Color Picker (mostrada com modal).
-    // -------------------------
-    SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
-    // -------------------------
-
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
@@ -152,14 +146,15 @@ function defInit() {
     // Lista usada nas paginas dos textos 3D texturizados.
     SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1');
     // Lista usada nas paginas dos textos de luz e neon.
-    //SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
+    SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01');
     // -------------------------
 
 
     // Listas de imagens pequenas.
     // -------------------------
     //SelLists.newList('sChalk', 'idImageName', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');	
-    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], 'idViewImageName', 'Selected Image : &nbsp;&nbsp; <<0>>', 'wall_001_tlb');
+    // O componente sWall deixou de ser um componente de celulas de tabela para se tornar um componente como os demais abaixo.
+    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], '', '', 'wall_001_tlb');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
@@ -169,6 +164,11 @@ function defInit() {
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['sel-list-item'], '', '', initialSymbol4);
     // -------------------------
 
+    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
+    // Lista de cores do Color Picker (mostrada com modal).
+    // -------------------------
+    SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
+    // -------------------------
 
     // Listas que crescem.
     // -------------------------
@@ -236,7 +236,9 @@ function defInit() {
 
 function defSubmit() {
     show(['idOverlayPreloader']);
-    var _submit = function () {document.FormMain.submit();}
+    var _submit = function () {
+        document.FormMain.submit();
+    }
     window.setTimeout(_submit, 1500);
 
     // A linha abaixo esta comentada apenas para testar o preloader. Se em producao, descomentar.
