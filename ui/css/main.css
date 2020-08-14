@@ -965,7 +965,7 @@ a um elemento de cor clara */
 /* ----- Media Queries ----- */
 
 @media (max-width: 1100px) {
-    .menu-main p {
+    .menu-main h3 {
         display: none;
     }
 
