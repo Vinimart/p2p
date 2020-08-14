@@ -5,10 +5,10 @@ http://www.picturetopeople.org/3d-photo-effect-generators.html
 http://www.picturetopeople.org/3d-text-writing-image-editor.html
 http://www.picturetopeople.org/about.html
 http://www.picturetopeople.org/advertise.html
-http://www.picturetopeople.org/color_converter.html
-http://www.picturetopeople.org/color_converter_result.html
-http://www.picturetopeople.org/color_palette_generator.html
-http://www.picturetopeople.org/color_palette_generator_result.html
+*http://www.picturetopeople.org/color_converter.html
+*http://www.picturetopeople.org/color_converter_result.html
+*http://www.picturetopeople.org/color_palette_generator.html
+*http://www.picturetopeople.org/color_palette_generator_result.html
 http://www.picturetopeople.org/cooltext.html
 http://www.picturetopeople.org/credits.html
 http://www.picturetopeople.org/custom-avatar-image-generator.html
@@ -38,7 +38,7 @@ http://www.picturetopeople.org/online-text-logo-design-generators.html
 http://www.picturetopeople.org/pattern_effects.html
 http://www.picturetopeople.org/photo-frame-maker.html
 http://www.picturetopeople.org/photo-to-cartoon-effect-editors.html
-http://www.picturetopeople.org/photo_effects.html
+*http://www.picturetopeople.org/photo_effects.html
 http://www.picturetopeople.org/photo_light.html
 http://www.picturetopeople.org/photo_stone.html
 http://www.picturetopeople.org/premium-text-effect-logo-generators.html
