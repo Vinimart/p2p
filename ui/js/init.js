@@ -106,6 +106,8 @@ function defInit() {
     // So cria a lista de apps populares se o container existir.
     defPopDesignApps('idPopEffectsContainer');
 
+
+
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
@@ -121,6 +123,7 @@ function defInit() {
     // -------------------------
 
 
+
     // Listas de imagens que sao mostradas com tabelas.
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
@@ -133,12 +136,14 @@ function defInit() {
     // -------------------------
 
 
+
     // Lista de fontes (mostrada com tabela).
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
     SelLists.newList('f' + getFontListNum(), 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
     // -------------------------
+
 
 
     // Listas de imagens.
@@ -148,6 +153,7 @@ function defInit() {
     // Lista usada nas paginas dos textos de luz e neon.
     SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01');
     // -------------------------
+
 
 
     // Listas de imagens pequenas.
@@ -164,11 +170,15 @@ function defInit() {
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['sel-list-item'], '', '', initialSymbol4);
     // -------------------------
 
-    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
+
+    
     // Lista de cores do Color Picker (mostrada com modal).
+    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
     // -------------------------
     SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
     // -------------------------
+
+
 
     // Listas que crescem.
     // -------------------------
