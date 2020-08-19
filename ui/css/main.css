@@ -12,7 +12,8 @@ body {
 }
 
 p,
-ul {
+ul,
+h3 {
     line-height: 150%;
 }
 
