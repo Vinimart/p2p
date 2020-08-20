@@ -234,7 +234,7 @@ img {
 }
 
 /* Altera a cor do label do item de componente selecionado */
-.sel-item p {
+.sel-item h3 {
     /* EQUALS .color-inv */
     color: #ffffff;
 }
