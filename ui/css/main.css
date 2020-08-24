@@ -84,6 +84,7 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
     overflow: auto;
     /* EQUALS .color-default + alpha-transparency */
     background-color: rgba(32, 32, 32, 0.7);
@@ -190,7 +191,6 @@ img {
     background-size: contain;
     border-collapse: separate;
     width: 100%;
-    min-width: 300px;
 }
 
 /* Container para componentes sem altura fixa e barra de rolagem */
@@ -995,10 +995,6 @@ a um elemento de cor clara */
         height: 30px;
         /* EQUALS .color-inv */
         border: solid 3px #ffffff;
-    }
-
-    .modal-content {
-        width: 350px;
     }
 
     .menu-button {
