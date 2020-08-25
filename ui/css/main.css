@@ -84,7 +84,6 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 10px;
     overflow: auto;
     /* EQUALS .color-default + alpha-transparency */
     background-color: rgba(32, 32, 32, 0.7);
@@ -115,15 +114,14 @@ img {
 .color-table td {
     width: 35px;
     height: 35px;
-    border: solid 4px;
     /* EQUALS .color-inv */
-    border-color: #ffffff;
+    border: solid 4px #ffffff;
     cursor: pointer;
 }
 
 /* Campo no color picker que exibe o valor da cor selecionada */
 .color-value-display {
-    border: solid 8px #FFFFFF;
+    margin: 2px 8px 8px 8px;
 }
 
 /* ----- Menu ----- */
@@ -172,7 +170,7 @@ img {
 .comp-scroll {
     width: 100%;
     max-height: 250px;
-    overflow-y: auto;
+    overflow: auto;
     text-align: center;
     /* EQUALS .color-4th */
     border: solid 1px #cccccc;
@@ -195,6 +193,7 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     border-collapse: separate;
+    overflow: visible;
     width: 100%;
 }
 
@@ -986,15 +985,24 @@ a um elemento de cor clara */
 
 @media (max-width: 500px) {
     .color-table {
-        border-spacing: 3px;
+        border-spacing: 5px;
     }
 
-    /*.color-table td {
+    .color-table td {
         width: 30px;
         height: 30px;
-        /* EQUALS .color-inv 
+        /* EQUALS .color-inv */
         border: solid 3px #ffffff;
-    }*/
+    }
+
+    .modal-content {
+        width: 350px;
+    }
+
+    /* Campo no color picker que exibe o valor da cor selecionada */
+    .color-value-display {
+        margin: 2px 8px 2px 8px;
+    }
 
     .menu-button {
         border: none;
