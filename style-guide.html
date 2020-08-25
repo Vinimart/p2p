@@ -1,277 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- BEGIN: [[*HeadCommons*]] -->
+        <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+        <!-- END: [[*HeadCommons*]] -->
+        <title>P2P - Style Guide</title>
+    </head>
 
-<head>
-    <!-- BEGIN: [[*HeadCommons*]] -->
-    <!--#include VIRTUAL="/inc/head_commons.inc.html" -->
-    <!-- END: [[*HeadCommons*]] -->
-    <title>P2P - Style Guide</title>
-</head>
+    <style>
+        .color-circle {
+            width: 80px;
+            height: 80px;
+            border: solid 1px #ffffff;
+            border-radius: 100%;
+        }
+    </style>
 
-<style>
-    .color-circle {
-        width: 80px;
-        height: 80px;
-        border: solid 1px #FFFFFF;
-        border-radius: 100%;
-    }
-</style>
+    <body>
+        <header class="bg-color-1st spaced-below-2x">
+            <h1 class="centered font-5x color-inv padded-3x italic">
+                Picture to People Style Guide
+            </h1>
+        </header>
 
-<body>
-    <header class="bg-color-1st spaced-below-2x">
-        <h1 class="centered font-5x color-inv padded-3x italic">
-            Picture to People Style Guide
-        </h1>
-    </header>
+        <main class="padded-3x limiter-2x">
+            <div>
+                <h2 class="font-4x spaced-below-3x">
+                    Paleta de Cores
+                    <hr style="opacity: 70%;" />
+                </h2>
 
-    <main class="padded-3x limiter-2x">
-        <div>
-            <h2 class="font-4x spaced-below-3x">
-                Paleta de Cores
-                <hr style="opacity: 70%;">
-            </h2>
+                <h3 class="font-3x bold spaced-below-2x">
+                    Cores Principais:
+                </h3>
 
-            <h3 class="font-3x bold spaced-below-2x centered">
-                Cores Principais:
-            </h3>
+                <div class="flex-around spaced-v-3x">
+                    <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
+                        <p>.color-1st</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #ff8000;"></div>
+                        <p class="bold">#FF8000</p>
+                        <p class="color-5th">
+                            Esta é a cor principal do layout do site, ela está presente em todas as páginas e é
+                            utilizada apenas nos elementos de interface, ela nunca deverá ser utilizada como cor de
+                            texto. Seu uso se limita à apenas elementos como barras de título de componentes, background
+                            de headers, ícones e botões em estado hover.
+                        </p>
+                    </div>
 
-            <div class="flex-around spaced-v-3x">
-                <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
-                    <p>.color-1st</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #ff8000;"></div>
-                    <p class="bold">#FF8000</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
+                    <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
+                        <p>.color-2nd</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #a62900;"></div>
+                        <p class="bold">#A62900</p>
+                        <p class="color-5th">
+                            Esta é a cor secundária do layout do site, além de compor o tema principal do site em
+                            conjunto com a cor principal. Seu papel é destacar os elementos de interface como ícones,
+                            botões e componentes, para a seleção dos componentes é exclusivamente utilizado a cor
+                            secundária. Além de compor elementos de interface essa cor é utilizada nos links em estado
+                            hover.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
+                        <p>.color-dark</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #202020;"></div>
+                        <p class="bold">#202020</p>
+                        <p class="color-5th">
+                            Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para
+                            as sombras e overlays (.color-default + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou
+                            #202020B3 - O valor de transparencia pode variar no caso das sombras conforme necessário,
+                            porém o valor para overlays é sempre 0.7. Nota: Por uma questão de compatibilidade entre
+                            browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente
+                            implementado pelos browsers).
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
+                        <p>.color-bright</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #ffffff;"></div>
+                        <p class="bold">#FFFFFF</p>
+                        <p class="color-5th">
+                            Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do
+                            container principal das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones
+                            e bordas de elementos que utilizam no background: .color-1st, .color-2nd e .color-5th. Pode
+                            ser utilizada também no estado hover de alguns elelentos de interface como o botão Design
+                            Tools e nos itens do Footer.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
-                    <p>.color-2nd</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #a62900;"></div>
-                    <p class="bold">#A62900</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
+                <div class="spaced-v-2x">&nbsp;</div>
+
+                <h3 class="font-3x bold spaced-below-2x">
+                    Cores Adicionais:
+                </h3>
+
+                <div class="flex-around spaced-v-3x">
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.color-3rd</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #e9c4a9;"></div>
+                        <p class="bold">#E9C4A9</p>
+                        <p class="color-5th">
+                            Esta cor é uma variação mais clara da cor principal do site. É utilizada na cor da fonte dos
+                            itens do Footer e também é a cor do elemento hr (Ruler).
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.color-4th</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #f8f0e8;"></div>
+                        <p class="bold">#F8F0E8</p>
+                        <p class="color-5th">
+                            Esta cor é uma variação mais clara da cor .color-5th. É utilizada para compor elementos de
+                            interface como background de elementos box [[*Suggestions*]] e background em estado hover
+                            dos itens do menu Design Tools.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x centered">
+                        <p>.color-link</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #00528c;"></div>
+                        <p class="bold">#00528C</p>
+                        <p class="color-5th">
+                            Esta é a cor padrão dos elementos âncora da página. É utilizada na maioria dos links e deve
+                            ser sempre acompanhado da cor secundária da página em estado hover.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
-                    <p>.color-default</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #202020;"></div>
-                    <p class="bold">#202020</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
+                <div class="flex-around spaced-v-3x">
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.color-bright-grey</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #f5f5f5;"></div>
+                        <p class="bold">#F5F5F5</p>
+                        <p class="color-5th">
+                            Esta cor é o cinza mais claro da escala de cinza da página. Seu uso se restringe à compor o
+                            background dos elementos "box" que servem para destacar um container de um background de cor
+                            .color-bright. Alguns exemplos são: Container de configuração de efeito, background da
+                            sessão Popular Graphic Design Apps na Landing Page e nas páginas auxiliares, e também compõe
+                            o background color do header das modais.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.color-gray</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #cccccc;"></div>
+                        <p class="bold">#CCCCCC</p>
+                        <p class="color-5th">
+                            Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de
+                            diversos elementos da página, como os componentes que ficam no formulário porém essa cor
+                            também é utilizada como hover das imagens de componente de Wallpaper Generator, 3D Banner
+                            Maker e Photo Effect Multilist.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.color-dark-grey</p>
+                        <div class="color-circle in-block-display spaced-v-1x" style="background-color: #555555;"></div>
+                        <p class="bold">#555555</p>
+                        <p class="color-5th">
+                            Esta cor é o cinza mais escuro da escala de cinza da página. O principal uso desta cor são
+                            os textos com fonte mais clara, ideal para parágrafos e subtítulos. Também é utilizada para
+                            compor a cor da barra de título do container de configuração de efeitos.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="spaced-h-1x spaced-below-3x centered bg-color-3rd padded-2x rounded-1x">
-                    <p>.color-inv</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #FFFFFF;"></div>
-                    <p class="bold">#FFFFFF</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
-                </div>
+                <div class="spaced-v-2x">&nbsp;</div>
             </div>
 
-            <div class="spaced-v-2x">&nbsp;</div>
+            <div>
+                <h2 class="font-4x spaced-below-3x">
+                    Fonte
+                    <hr style="opacity: 70%;" />
+                </h2>
 
-            <h3 class="font-3x bold spaced-below-2x centered">
-                Cores Adicionais:
-            </h3>
+                <h3 class="font-3x bold spaced-below-2x centered">
+                    Tamanho de Fonte:
+                </h3>
 
-            <div class="flex-around spaced-v-3x">
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.color-3rd</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #E9C4A9;"></div>
-                    <p class="bold">#E9C4A9</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
+                <div class="spaced-v-3x">
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-1x</p>
+                        <p class="font-1x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-2x</p>
+                        <p class="font-2x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-3x</p>
+                        <p class="font-3x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.color-4th</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #CCCCCC;"></div>
-                    <p class="bold">#CCCCCC</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
+                <div class="spaced-v-3x">
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-4x</p>
+                        <p class="font-4x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-5x</p>
+                        <p class="font-5x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.font-6x</p>
+                        <p class="font-6x spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.color-5th</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #555555;"></div>
-                    <p class="bold">#555555</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
-                </div>
-            </div>
+                <div class="spaced-v-2x">&nbsp;</div>
 
-            <div class="flex-around spaced-v-3x">
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.color-6th</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #F8F0E8;"></div>
-                    <p class="bold">#F8F0E8</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
-                </div>
+                <h3 class="font-3x bold spaced-below-2x centered">
+                    Auxiliares de Fonte:
+                </h3>
 
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.color-7th</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #F5F5F5;"></div>
-                    <p class="bold">#F5F5F5</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
-                </div>
+                <div class="flex-around spaced-v-3x padded-3x box">
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.bold</p>
+                        <p class="bold spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
 
-                <div class="spaced-h-2x centered">
-                    <p>.color-link</p>
-                    <div class="color-circle in-block-display spaced-v-1x" style="background-color: #00528C;"></div>
-                    <p class="bold">#00528C</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis nemo eaque ipsum
-                        numquam, temporibus, possimus ad libero, illo atque quam? Accusamus, deserunt ipsum iusto
-                        perspiciatis tempora magni rem quo?
-                    </p>
-                </div>
-            </div>
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.italic</p>
+                        <p class="italic spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
 
-            <div class="spaced-v-2x">&nbsp;</div>
-        </div>
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.centered</p>
+                        <p class="centered spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
 
-        <div>
-            <h2 class="font-4x spaced-below-3x">
-                Fonte
-                <hr style="opacity: 70%;">
-            </h2>
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.justified</p>
+                        <p class="spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
 
-
-            <h3 class="font-3x bold spaced-below-2x centered">
-                Tamanho de Fonte:
-            </h3>
-
-            <div class="spaced-v-3x">
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-1x</p>
-                    <p class="font-1x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-2x</p>
-                    <p class="font-2x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-3x</p>
-                    <p class="font-3x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
+                    <div class="spaced-h-2x spaced-below-3x centered">
+                        <p>.uppercase</p>
+                        <p class="uppercase spaced-v-1x">Sample</p>
+                        <p class="color-5th">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <div class="spaced-v-3x">
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-4x</p>
-                    <p class="font-4x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-5x</p>
-                    <p class="font-5x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.font-6x</p>
-                    <p class="font-6x spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>
-
-            <div class="spaced-v-2x">&nbsp;</div>
-
-            <h3 class="font-3x bold spaced-below-2x centered">
-                Auxiliares de Fonte:
-            </h3>
-
-            <div class="flex-around spaced-v-3x padded-3x box">
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.bold</p>
-                    <p class="bold spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.italic</p>
-                    <p class="italic spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.centered</p>
-                    <p class="centered spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.justified</p>
-                    <p class="spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <div class="spaced-h-2x spaced-below-3x centered">
-                    <p>.uppercase</p>
-                    <p class="uppercase spaced-v-1x">Sample</p>
-                    <p class="color-5th">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
-
+        </main>
+    </body>
 </html>
