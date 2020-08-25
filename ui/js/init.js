@@ -157,10 +157,10 @@ function defInit() {
 
 
     // Listas de imagens pequenas.
-    // -------------------------
-    //SelLists.newList('sChalk', 'idImageName', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');	
-    // O componente sWall deixou de ser um componente de celulas de tabela para se tornar um componente como os demais abaixo.
-    SelLists.newList('sWall', 'idImageName', ['sel-list-item'], '', '', 'wall_001_tlb');
+    // -------------------------	
+    // Os componentes sWall e sChalk deixaram de ser componentes de tabela para se tornarem componentes como os demais abaixo.
+    SelLists.newList('sChalk', 'idSelectedChalkboard', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
+    SelLists.newList('sWall', 'idSelectedWall', ['sel-list-item'], '', '', 'wall_002_tlb');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001');
