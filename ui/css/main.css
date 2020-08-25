@@ -121,6 +121,11 @@ img {
     cursor: pointer;
 }
 
+/* Campo no color picker que exibe o valor da cor selecionada */
+.color-value-display {
+    border: solid 8px #FFFFFF;
+}
+
 /* ----- Menu ----- */
 
 .menu-main {
@@ -981,15 +986,15 @@ a um elemento de cor clara */
 
 @media (max-width: 500px) {
     .color-table {
-        border-spacing: 5px;
+        border-spacing: 3px;
     }
 
-    .color-table td {
+    /*.color-table td {
         width: 30px;
         height: 30px;
-        /* EQUALS .color-inv */
+        /* EQUALS .color-inv 
         border: solid 3px #ffffff;
-    }
+    }*/
 
     .menu-button {
         border: none;
