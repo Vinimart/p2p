@@ -167,7 +167,8 @@ img {
 }
 
 /* Container para componentes que necessitam de barra de rolagem e altura fixa */
-.comp-scroll {
+.comp-scroll,
+.comp-scroll-table-list {
     width: 100%;
     max-height: 250px;
     overflow: auto;
@@ -181,6 +182,10 @@ img {
     font-size: 0px;
 }
 
+.comp-scroll-table-list {
+    max-height: 325px;
+}
+
 .comp-scroll img {
     /* EQUALS .color-inv */
     border: solid 5px #ffffff;
@@ -188,12 +193,11 @@ img {
 }
 
 /* Componentes de listas */
-.comp-scroll table {
+.comp-scroll-table-list table {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
     border-collapse: separate;
-    overflow: visible;
     width: 100%;
 }
 
