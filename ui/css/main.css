@@ -363,12 +363,6 @@ select {
     border-radius: 5px;
 }
 
-input:focus,
-select:focus {
-    /* EQUALS .color-1st */
-    outline-color: #ff8000;
-}
-
 .check-box {
     display: block;
     position: relative;
