@@ -60,7 +60,7 @@ img {
 
 /* Hover para itens do menu lateral */
 .sidenav-content p:hover {
-    /* EQUALS .bg-color-2nd */
+    /* EQUALS .color-4th */
     background-color: #f8f0e8;
 }
 
@@ -449,7 +449,7 @@ pelos browsers). */
 
 /* Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do container principal
 das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones e bordas de elementos que utilizam no 
-background: .color-1st, .color-2nd e .color-5th. Pode ser utilizada também no estado hover de alguns elelentos de 
+background: .color-1st, .color-2nd e .color-dark-grey. Pode ser utilizada também no estado hover de alguns elelentos de 
 interface como o botão Design Tools e nos itens do Footer. */
 .color-bright {
     color: #FFFFFF;
@@ -476,6 +476,20 @@ também é a cor do elemento hr (Ruler). */
     color: #E9C4A9;
 }
 
+/* Esta cor é uma variação mais clara da cor .color-3rd. É utilizada para compor elementos de interface como background
+de elementos box [[*Suggestions*]] e background em estado hover dos itens do menu Design Tools. */
+.color-4th {
+    color: #F8F0E8;
+}
+
+/* Esta cor é o cinza mais claro da escala de cinza da página. Seu uso se restringe à compor o background dos elementos 
+"box" que servem para destacar um container de um background de cor .color-bright. Alguns exemplos são: Container de 
+configuração de efeito, background da sessão Popular Graphic Design Apps na Landing Page e nas páginas auxiliares, e 
+também compõe o background color do header das modais. */
+.color-bright-grey {
+    color: #F5F5F5;
+}
+
 /* Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de diversos elementos da página, 
 como os componentes que ficam no formulário porém essa cor também é utilizada como hover das imagens de componente de 
 Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
@@ -483,29 +497,74 @@ Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
     color: #CCCCCC;
 }
 
-.color-5th {
+/* Esta cor é o cinza mais escuro da escala de cinza da página. O principal uso desta cor são os textos com fonte mais 
+clara, ideal para parágrafos e subtítulos. Também é utilizada para compor a cor da barra de título do container de 
+configuração de efeitos.*/
+.color-dark-grey {
     color: #555555;
 }
 
+/* Esta é a cor padrão dos elementos âncora da página. É utilizada na maioria dos links e deve ser sempre acompanhado da 
+cor secundária da página em estado hover. */
 .color-link {
-    color: #00528c;
+    color: #00528C;
 }
 
 /* ------ BGs ------ */
 
-.bg-color-1st {
-    background-color: #ff8000;
-}
-
-.bg-color-2nd {
-    background-color: #f8f0e8;
-}
 
 .bg-color-3rd {
     background-color: #f5f5f5;
 }
 
 .bg-color-5th {
+    background-color: #555555;
+}
+
+/* ---------------------------- */
+
+.bg-color-dark {
+    /* EQUALS .color-dark */
+    background-color: #202020;
+}
+
+.bg-color-bright {
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+}
+
+.bg-color-1st {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.bg-color-2nd {
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+}
+
+.bg-color-3rd {
+    /* EQUALS .color-3rd */
+    background-color: #E9C4A9;
+}
+
+.bg-color-4th {
+    /* EQUALS .color-4th */
+    background-color: #F8F0E8;
+}
+
+.bg-color-bright-grey {
+    /* EQUALS .color-bright-grey */
+    background-color: #F5F5F5;
+}
+
+.bg-color-grey {
+    /* EQUALS .color-grey */
+    background-color: #CCCCCC;
+}
+
+.bg-color-dark-grey {
+    /* EQUALS .color-dark-grey */
     background-color: #555555;
 }
 
