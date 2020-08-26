@@ -438,61 +438,53 @@ select {
 
 /* ----- Colors -----*/
 
-/* Cor padrao de texto da pagina */
-.color-default {
+/* Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para as sombras e overlays 
+(.color-default + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
+no caso das sombras conforme necessário, porém o valor para overlays é sempre 0.7. Nota: Por uma questão de 
+compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente implementado 
+pelos browsers). */
+.color-dark {
     color: #202020;
 }
 
-/* Cor utilizada principalmente para textos em fundo escuro */
 .color-inv {
     color: #ffffff;
 }
 
-/* Cor principal da pagina, utilizada para compor o tema do layout */
 .color-1st {
     color: #ff8000;
 }
 
-/* Cor secundaria da pagina, utilizada tanto no tema quanto para chamar
-a atencao do usuario para um elemento importante */
 .color-2nd {
     color: #a62900;
 }
 
-/* Esta cor pode ser utilizada para criar uma sobreposicao sutil com
-o fundo #FF8000 ou #A62900 */
 .color-3rd {
     color: #e9c4a9;
 }
 
-/* Cor utilizada principalmente para border-color em um fundo cinza (#F5F5F5) */
 .color-4th {
     color: #cccccc;
 }
 
-/* Cor utilizada para textos com menos destaque */
 .color-5th {
     color: #555555;
 }
 
-/*Cor utilizada para destacar links */
 .color-link {
     color: #00528c;
 }
 
-/* Cor utilizada para compor um background-color de destaque */
+/* ------ BGs ------ */
+
 .bg-color-1st {
     background-color: #ff8000;
 }
 
-/* Variacao da cor principal (#FF8000) para compor um background-color de um elemento
-sobreposto a um elemento de cor clara */
 .bg-color-2nd {
     background-color: #f8f0e8;
 }
 
-/* Cor utilizada para compor um background-color de um elemento sobreposto
-a um elemento de cor clara */
 .bg-color-3rd {
     background-color: #f5f5f5;
 }
@@ -500,6 +492,8 @@ a um elemento de cor clara */
 .bg-color-5th {
     background-color: #555555;
 }
+
+/* ------ Hoverables ------ */
 
 /* Necessario para elementos que exigem um background-color em estado hover */
 .hoverable-bg-4th:hover {
