@@ -147,6 +147,10 @@ img {
     background-color: #ffffff;
 }
 
+/*.index-header {
+    text-align: center;
+}*/
+
 /* ----- Content ----- */
 
 /* Coluna principal */
@@ -1006,6 +1010,15 @@ a um elemento de cor clara */
     /* Campo no color picker que exibe o valor da cor selecionada */
     .color-value-display {
         margin: 2px 8px 2px 8px;
+    }
+
+    .index-header img {
+       /*width: 25%;*/
+       display: none;
+    }
+
+    .index-header h1 {
+        font-size: 45px;
     }
 
     .menu-button {
