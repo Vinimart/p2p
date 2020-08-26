@@ -97,7 +97,7 @@ img {
     animation-duration: 0.4s;
     /* EQUALS .color-bright */
     background-color: #ffffff;
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     border: 1px solid #cccccc;
 }
 
@@ -177,7 +177,7 @@ img {
     max-height: 250px;
     overflow: auto;
     text-align: center;
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     border: solid 1px #cccccc;
     border-radius: 5px;
     /* EQUALS .color-bright */
@@ -370,7 +370,7 @@ select {
     width: 100%;
     padding: 15px 15px;
     display: inline-block;
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
@@ -399,12 +399,12 @@ select {
     width: 20px;
     /* EQUALS .color-bright */
     background-color: #ffffff;
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     border: solid 1px #cccccc;
 }
 
 .check-box:hover input~.checkmark {
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     background-color: #cccccc;
 }
 
@@ -455,20 +455,32 @@ interface como o botão Design Tools e nos itens do Footer. */
     color: #FFFFFF;
 }
 
+/* Esta é a cor principal do layout do site, ela está presente em todas as páginas e é utilizada apenas nos elementos
+de interface, ela nunca deverá ser utilizada como cor de texto. Seu uso se limita à apenas elementos como barras de
+título de componentes, background de headers, ícones e botões em estado hover. */
 .color-1st {
-    color: #ff8000;
+    color: #FF8000;
 }
 
+/* Esta é a cor secundária do layout do site, além de compor o tema principal do site em conjunto com a cor principal. 
+Seu papel é destacar os elementos de interface como ícones, botões e componentes, para a seleção dos componentes é 
+exclusivamente utilizado a cor secundária. Além de compor elementos de interface essa cor é utilizada nos links em 
+estado hover. */
 .color-2nd {
-    color: #a62900;
+    color: #A62900;
 }
 
+/* Esta cor é uma variação mais clara da cor principal do site. É utilizada na cor da fonte dos itens do Footer e 
+também é a cor do elemento hr (Ruler). */
 .color-3rd {
-    color: #e9c4a9;
+    color: #E9C4A9;
 }
 
-.color-4th {
-    color: #cccccc;
+/* Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de diversos elementos da página, 
+como os componentes que ficam no formulário porém essa cor também é utilizada como hover das imagens de componente de 
+Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
+.color-grey {
+    color: #CCCCCC;
 }
 
 .color-5th {
@@ -501,7 +513,7 @@ interface como o botão Design Tools e nos itens do Footer. */
 
 /* Necessario para elementos que exigem um background-color em estado hover */
 .hoverable-bg-4th:hover {
-    /* EQUALS .color-4th */
+    /* EQUALS .color-grey */
     background-color: #cccccc;
 }
 
@@ -1011,8 +1023,8 @@ interface como o botão Design Tools e nos itens do Footer. */
     }
 
     .index-header img {
-       /*width: 25%;*/
-       display: none;
+        /*width: 25%;*/
+        display: none;
     }
 
     .index-header h1 {
