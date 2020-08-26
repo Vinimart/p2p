@@ -33,13 +33,240 @@ img {
     max-width: 100%;
 }
 
+/* ---------- */
+
+
+
+
+
+/* ----- Colors -----*/
+
+/* Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para as sombras e overlays 
+(.color-dark + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
+no caso das sombras conforme necessário, porém o valor para overlays é sempre 0.7. Nota: Por uma questão de 
+compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente implementado 
+pelos browsers). */
+.color-dark {
+    color: #202020;
+}
+
+/* Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do container principal
+das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones e bordas de elementos que utilizam no 
+background: .color-1st, .color-2nd e .color-dark-grey. Pode ser utilizada também no estado hover de alguns elelentos de 
+interface como o botão Design Tools e nos itens do Footer. */
+.color-bright {
+    color: #FFFFFF;
+}
+
+/* Esta é a cor principal do layout do site, ela está presente em todas as páginas e é utilizada apenas nos elementos
+de interface, ela nunca deverá ser utilizada como cor de texto. Seu uso se limita à apenas elementos como barras de
+título de componentes, background de headers, ícones e botões em estado hover. */
+.color-1st {
+    color: #FF8000;
+}
+
+/* Esta é a cor secundária do layout do site, além de compor o tema principal do site em conjunto com a cor principal. 
+Seu papel é destacar os elementos de interface como ícones, botões e componentes, para a seleção dos componentes é 
+exclusivamente utilizado a cor secundária. Além de compor elementos de interface essa cor é utilizada nos links em 
+estado hover. */
+.color-2nd {
+    color: #A62900;
+}
+
+/* Esta cor é uma variação mais clara da cor principal do site. É utilizada na cor da fonte dos itens do Footer e 
+também é a cor do elemento hr (Ruler). */
+.color-3rd {
+    color: #E9C4A9;
+}
+
+/* Esta cor é uma variação mais clara da cor .color-3rd. É utilizada para compor elementos de interface como background
+de elementos box [[*Suggestions*]] e background em estado hover dos itens do menu Design Tools. */
+.color-4th {
+    color: #F8F0E8;
+}
+
+/* Esta cor é o cinza mais claro da escala de cinza da página. Seu uso se restringe à compor o background dos elementos 
+"box" que servem para destacar um container de um background de cor .color-bright. Alguns exemplos são: Container de 
+configuração de efeito, background da sessão Popular Graphic Design Apps na Landing Page e nas páginas auxiliares, e 
+também compõe o background color do header das modais. */
+.color-bright-grey {
+    color: #F5F5F5;
+}
+
+/* Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de diversos elementos da página, 
+como os componentes que ficam no formulário porém essa cor também é utilizada como hover das imagens de componente de 
+Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
+.color-grey {
+    color: #CCCCCC;
+}
+
+/* Esta cor é o cinza mais escuro da escala de cinza da página. O principal uso desta cor são os textos com fonte mais 
+clara, ideal para parágrafos e subtítulos. Também é utilizada para compor a cor da barra de título do container de 
+configuração de efeitos.*/
+.color-dark-grey {
+    color: #555555;
+}
+
+/* Esta é a cor padrão dos elementos âncora da página. É utilizada na maioria dos links e deve ser sempre acompanhado da 
+cor secundária da página em estado hover. */
+.color-link {
+    color: #00528C;
+}
+
+
+/* Background Colors */
+
+.bg-color-dark {
+    /* EQUALS .color-dark */
+    background-color: #202020;
+}
+
+.bg-color-bright {
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+}
+
+.bg-color-1st {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.bg-color-2nd {
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+}
+
+.bg-color-3rd {
+    /* EQUALS .color-3rd */
+    background-color: #E9C4A9;
+}
+
+.bg-color-4th {
+    /* EQUALS .color-4th */
+    background-color: #F8F0E8;
+}
+
+.bg-color-bright-grey {
+    /* EQUALS .color-bright-grey */
+    background-color: #F5F5F5;
+}
+
+.bg-color-grey {
+    /* EQUALS .color-grey */
+    background-color: #CCCCCC;
+}
+
+.bg-color-dark-grey {
+    /* EQUALS .color-dark-grey */
+    background-color: #555555;
+}
+
+
+/* Hoverables */
+
+.hover-color-dark:hover {
+    /* EQUALS .color-dark */
+    color: #202020;
+}
+
+.hover-color-bright:hover {
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+}
+
+/* Classe hover obrigatória para botões */
+.hover-color-1st:hover {
+    /* EQUALS .color-1st */
+    color: #FF8000;
+}
+
+/* Classe hover obrigatória para links que utilizam a cor .color-link */
+.hover-color-2nd:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+}
+
+.hover-color-3rd:hover {
+    /* EQUALS .color-3rd */
+    color: #E9C4A9;
+}
+
+.hover-color-4th:hover {
+    /* EQUALS .color-4th */
+    color: #F8F0E8;
+}
+
+.hover-color-bright-grey:hover {
+    /* EQUALS .color-bright-grey */
+    color: #F5F5F5;
+}
+
+.hover-color-grey:hover {
+    /* EQUALS .color-grey */
+    color: #CCCCCC;
+}
+
+.hover-color-dark-grey:hover {
+    /* EQUALS .color-dark-grey */
+    color: #555555;
+}
+
+
+/* Background Hoverables */
+
+.hover-bg-color-dark:hover {
+    /* EQUALS .color-dark */
+    background-color: #202020;
+}
+
+.hover-bg-color-bright:hover {
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+}
+
+.hover-bg-color-1st:hover {
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+.hover-bg-color-2nd:hover {
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+}
+
+.hover-bg-color-3rd:hover {
+    /* EQUALS .color-3rd */
+    background-color: #E9C4A9;
+}
+
+.hover-bg-color-4th:hover {
+    /* EQUALS .color-4th */
+    background-color: #F8F0E8;
+}
+
+.hover-bg-color-bright-grey:hover {
+    /* EQUALS .color-bright-grey */
+    background-color: #F5F5F5;
+}
+
+.hover-bg-color-grey:hover {
+    /* EQUALS .color-grey */
+    background-color: #CCCCCC;
+}
+
+.hover-bg-color-dark-grey:hover {
+    /* EQUALS .color-dark-grey */
+    background-color: #555555;
+}
+
+/* ---------- */
 
 
 
 
 /* ----- Side Nav ----- */
 
-/* Overlay para o side nav, ocupa 100% da pagina */
+/* Overlay para o sidenav (Design Tools Menu), ocupa 100% da pagina */
 .sidenav-overlay {
     position: fixed;
     z-index: 20;
@@ -50,7 +277,6 @@ img {
     background-color: rgba(32, 32, 32, 0.7);
 }
 
-/* Conteudo do sidenav em si */
 .sidenav-content {
     height: 100%;
     width: 250px;
@@ -74,6 +300,11 @@ img {
     background-color: #FF8000;
 }
 
+/* ---------- */
+
+
+
+
 /* ----- Modal Box ----- */
 
 /* Overlay para o modal box, ocupa 100% da pagina */
@@ -89,7 +320,6 @@ img {
     background-color: rgba(32, 32, 32, 0.7);
 }
 
-/* Conteudo do modal box */
 .modal-content {
     position: relative;
     width: 400px;
@@ -100,6 +330,12 @@ img {
     /* EQUALS .color-grey */
     border: 1px solid #CCCCCC;
 }
+
+/* ---------- */
+
+
+
+
 
 /* ----- Color Picker ----- */
 
@@ -124,6 +360,12 @@ img {
     margin: 2px 8px 8px 8px;
 }
 
+/* ---------- */
+
+
+
+
+
 /* ----- Menu ----- */
 
 .menu-main {
@@ -147,11 +389,25 @@ img {
     background-color: #FFFFFF;
 }
 
-/*.index-header {
-    text-align: center;
-}*/
+.index-header {
+    height: 430px;
+}
 
-/* ----- Content ----- */
+.index-header img {
+    margin-bottom: 50px;
+}
+
+.index-header h1 {
+    margin-bottom: 15px;
+}
+
+/* ---------- */
+
+
+
+
+
+/* ----- Layout Structure ----- */
 
 /* Coluna principal */
 .column-main {
@@ -163,12 +419,112 @@ img {
     width: 400px;
 }
 
+/* Limita a largura do container e o centraliza na tela */
+.limiter-2x {
+    max-width: 1600px;
+    margin: auto;
+}
+
+/* Limita a largura do container e o centraliza na tela (ex: EffectEnum-Types) */
+.limiter-1x {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Posicionamento inferior para background-image */
+.bg-bottom {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Posicionamento inferior direito para background-image */
+.bg-right-bottom {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ---------- */
+
+
+
+
+
+/* ----- Interface Elements ----- */
+
+/* Tamanho usado principalmente em modal-box */
+.btn-1x {
+    display: inline-block;
+    width: 120px;
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    border-radius: 5px;
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    padding: 15px;
+}
+
+/* Tamanho padrão para botoes */
+.btn-2x {
+    display: inline-block;
+    width: 180px;
+    border-radius: 5px;
+    padding: 15px;
+    /* EQUALS .color-2nd */
+    border: solid 1px #A62900;
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+}
+
+.btn-1x:hover,
+.btn-2x:hover {
+    /* EQUALS .color-1st */
+    border-color: #FF8000;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+    cursor: pointer;
+}
+
+/* Classe para estilizar elemento hr */
+.ruler {
+    /* EQUALS .color-3rd */
+    border: 1px solid #E9C4A9;
+    /* EQUALS .color-3rd */
+    background-color: #E9C4A9;
+}
+
+/* Faz parte da barra de título do formulário de configuração de efeitos */
+.config-ruler {
+    /* EQUALS .color-dark-grey */
+    border: 1px solid #555555;
+    /* EQUALS .color-dark-grey */
+    background-color: #555555;
+    position: relative;
+    top: 12px;
+}
+
+.box {
+    /* EQUALS .color-bright-grey */
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
 /* Container recommended effects */
 .round-container {
     border-radius: 100%;
     width: 200px;
     height: 200px;
 }
+
+/* ---------- */
+
+/* ----- Components ----- */
 
 /* Container para componentes que necessitam de barra de rolagem e altura fixa */
 .comp-scroll,
@@ -276,92 +632,11 @@ img {
     border-radius: 10px 10px 0 0;
 }
 
-/* Limita a largura do container e o centraliza na tela */
-.limiter-2x {
-    max-width: 1600px;
-    margin: auto;
-}
+/* ---------- */
 
-/* Limita a largura do container e o centraliza na tela (ex: EffectEnum-Types) */
-.limiter-1x {
-    max-width: 800px;
-    margin: auto;
-}
 
-/* Posicionamento inferior para background-image */
-.bg-bottom {
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
-/* Posicionamento inferior direito para background-image */
-.bg-right-bottom {
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
-/* Classe para estilizar elemento hr */
-.ruler {
-    /* EQUALS .color-3rd */
-    border: 1px solid #E9C4A9;
-    /* EQUALS .color-3rd */
-    background-color: #E9C4A9;
-}
-
-.config-ruler {
-    /* EQUALS .color-dark-grey */
-    border: 1px solid #555555;
-    /* EQUALS .color-dark-grey */
-    background-color: #555555;
-    position: relative;
-    top: 12px;
-}
-
-.box {
-    /* EQUALS .color-bright-grey */
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    overflow-x: hidden;
-}
-
-/* Tamanho usado principalmente em modal-box */
-.btn-1x {
-    display: inline-block;
-    width: 120px;
-    /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
-    border-radius: 5px;
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-    padding: 15px;
-}
-
-/* Tamanho padrão para botoes */
-.btn-2x {
-    display: inline-block;
-    width: 180px;
-    border-radius: 5px;
-    padding: 15px;
-    /* EQUALS .color-2nd */
-    border: solid 1px #A62900;
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-}
-
-.btn-1x:hover,
-.btn-2x:hover {
-    /* EQUALS .color-1st */
-    border-color: #FF8000;
-    /* EQUALS .color-1st */
-    background-color: #FF8000;
-    cursor: pointer;
-}
 
 /* ----- Form ---- */
 
@@ -438,151 +713,13 @@ select {
     transform: rotate(45deg);
 }
 
-/* ----- Colors -----*/
+/* ---------- */
 
-/* Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para as sombras e overlays 
-(.color-dark + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
-no caso das sombras conforme necessário, porém o valor para overlays é sempre 0.7. Nota: Por uma questão de 
-compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente implementado 
-pelos browsers). */
-.color-dark {
-    color: #202020;
-}
 
-/* Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do container principal
-das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones e bordas de elementos que utilizam no 
-background: .color-1st, .color-2nd e .color-dark-grey. Pode ser utilizada também no estado hover de alguns elelentos de 
-interface como o botão Design Tools e nos itens do Footer. */
-.color-bright {
-    color: #FFFFFF;
-}
 
-/* Esta é a cor principal do layout do site, ela está presente em todas as páginas e é utilizada apenas nos elementos
-de interface, ela nunca deverá ser utilizada como cor de texto. Seu uso se limita à apenas elementos como barras de
-título de componentes, background de headers, ícones e botões em estado hover. */
-.color-1st {
-    color: #FF8000;
-}
 
-/* Esta é a cor secundária do layout do site, além de compor o tema principal do site em conjunto com a cor principal. 
-Seu papel é destacar os elementos de interface como ícones, botões e componentes, para a seleção dos componentes é 
-exclusivamente utilizado a cor secundária. Além de compor elementos de interface essa cor é utilizada nos links em 
-estado hover. */
-.color-2nd {
-    color: #A62900;
-}
 
-/* Esta cor é uma variação mais clara da cor principal do site. É utilizada na cor da fonte dos itens do Footer e 
-também é a cor do elemento hr (Ruler). */
-.color-3rd {
-    color: #E9C4A9;
-}
-
-/* Esta cor é uma variação mais clara da cor .color-3rd. É utilizada para compor elementos de interface como background
-de elementos box [[*Suggestions*]] e background em estado hover dos itens do menu Design Tools. */
-.color-4th {
-    color: #F8F0E8;
-}
-
-/* Esta cor é o cinza mais claro da escala de cinza da página. Seu uso se restringe à compor o background dos elementos 
-"box" que servem para destacar um container de um background de cor .color-bright. Alguns exemplos são: Container de 
-configuração de efeito, background da sessão Popular Graphic Design Apps na Landing Page e nas páginas auxiliares, e 
-também compõe o background color do header das modais. */
-.color-bright-grey {
-    color: #F5F5F5;
-}
-
-/* Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de diversos elementos da página, 
-como os componentes que ficam no formulário porém essa cor também é utilizada como hover das imagens de componente de 
-Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
-.color-grey {
-    color: #CCCCCC;
-}
-
-/* Esta cor é o cinza mais escuro da escala de cinza da página. O principal uso desta cor são os textos com fonte mais 
-clara, ideal para parágrafos e subtítulos. Também é utilizada para compor a cor da barra de título do container de 
-configuração de efeitos.*/
-.color-dark-grey {
-    color: #555555;
-}
-
-/* Esta é a cor padrão dos elementos âncora da página. É utilizada na maioria dos links e deve ser sempre acompanhado da 
-cor secundária da página em estado hover. */
-.color-link {
-    color: #00528C;
-}
-
-/* ------ BGs ------ */
-
-.bg-color-dark {
-    /* EQUALS .color-dark */
-    background-color: #202020;
-}
-
-.bg-color-bright {
-    /* EQUALS .color-bright */
-    background-color: #FFFFFF;
-}
-
-.bg-color-1st {
-    /* EQUALS .color-1st */
-    background-color: #FF8000;
-}
-
-.bg-color-2nd {
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-}
-
-.bg-color-3rd {
-    /* EQUALS .color-3rd */
-    background-color: #E9C4A9;
-}
-
-.bg-color-4th {
-    /* EQUALS .color-4th */
-    background-color: #F8F0E8;
-}
-
-.bg-color-bright-grey {
-    /* EQUALS .color-bright-grey */
-    background-color: #F5F5F5;
-}
-
-.bg-color-grey {
-    /* EQUALS .color-grey */
-    background-color: #CCCCCC;
-}
-
-.bg-color-dark-grey {
-    /* EQUALS .color-dark-grey */
-    background-color: #555555;
-}
-
-/* ------ Hoverables ------ */
-
-/* Necessario para elementos que exigem um background-color em estado hover como os componentes de Photo Editor e os itens
-de navegação do menu design tools */
-.hover-bg-color-grey:hover {
-    /* EQUALS .color-grey */
-    background-color: #CCCCCC;
-}
-
-.hover-bg-color-4th:hover {
-    /* EQUALS .color-4th */
-    background-color: #F8F0E8;
-}
-
-.hover-color-bright:hover {
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-}
-
-/* Classe hover obrigatória para links que utilizam a cor .color-link */
-.hover-color-2nd:hover {
-    /* EQUALS .color-2nd */
-    color: #A62900;
-}
+/* ----- Shadows ----- */
 
 .hover-shaded-1x:hover {
     /* EQUALS .color-dark + alpha-transparency */
@@ -603,6 +740,11 @@ de navegação do menu design tools */
     /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
 }
+
+/* ---------- */
+
+
+
 
 
 /* ----- Font ----- */
@@ -652,7 +794,13 @@ de navegação do menu design tools */
     text-transform: uppercase;
 }
 
-/* ----- Helpers ----- */
+/* ---------- */
+
+
+
+
+
+/* ----- Layout Helpers ----- */
 
 .padded-1x {
     padding: 5px;
@@ -774,6 +922,12 @@ de navegação do menu design tools */
     cursor: pointer;
 }
 
+/* ---------- */
+
+
+
+
+
 /* ----- Display Helpers ----- */
 
 /* Container com display flex para espacamento homogeneo entre os elementos */
@@ -818,6 +972,12 @@ de navegação do menu design tools */
     top: 0;
     right: 0;
 }
+
+/* ---------- */
+
+
+
+
 
 /* ----- Animations ----- */
 
@@ -1036,11 +1196,30 @@ de navegação do menu design tools */
     }
 }
 
+/* ---------- */
+
+
+
+
+
 /* ----- Media Queries ----- */
 
 @media (max-width: 1100px) {
     .menu-main h3 {
         display: none;
+    }
+
+    .index-header {
+        height: initial;
+    }
+
+    .index-header img {
+        margin-bottom: 30px;
+    }
+
+    .index-header h1 {
+        font-size: 55px;
+        margin-bottom: 10px;
     }
 
     /* Altera os elementos que utilizam .flex-around dentro de main para apenas uma coluna */
@@ -1080,12 +1259,13 @@ de navegação do menu design tools */
     }
 
     .index-header img {
-        /*width: 25%;*/
-        display: none;
+        width: 75px;
+        margin-bottom: 25px;
     }
 
     .index-header h1 {
         font-size: 45px;
+
     }
 
     .menu-button {
@@ -1114,3 +1294,5 @@ de navegação do menu design tools */
         margin-bottom: 40px;
     }
 }
+
+/* ---------- */
