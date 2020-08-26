@@ -1,4 +1,4 @@
-/* ----- Tags ----- */
+/* ----- HTML Tags ----- */
 
 * {
     box-sizing: border-box;
@@ -27,9 +27,15 @@ a {
     color: #00528c;
 }
 
+/* Pode parecer redundante, mas é necessário para que as imagens gerais (/img) não causem barra de rolagem 
+horizontal na página */
 img {
     max-width: 100%;
 }
+
+
+
+
 
 /* ----- Side Nav ----- */
 
@@ -56,12 +62,6 @@ img {
     overflow-x: hidden;
     animation-name: right-to-initial;
     animation-duration: 0.5s;
-}
-
-/* Hover para itens do menu lateral */
-.sidenav-content p:hover {
-    /* EQUALS .color-4th */
-    background-color: #F8F0E8;
 }
 
 .sidenav-header {
@@ -568,6 +568,11 @@ de navegação do menu design tools */
     background-color: #CCCCCC;
 }
 
+.hover-bg-color-4th:hover {
+    /* EQUALS .color-4th */
+    background-color: #F8F0E8;
+}
+
 .hover-color-bright:hover {
     /* EQUALS .color-bright */
     color: #FFFFFF;
@@ -589,7 +594,7 @@ de navegação do menu design tools */
     box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
 }
 
-.text-shaded:hover {
+.hover-shaded-text:hover {
     /* EQUALS .color-dark + alpha-transparency */
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
