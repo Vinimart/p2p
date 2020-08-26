@@ -318,7 +318,7 @@ img {
 }
 
 .box {
-    /* EQUALS .bg-color-3rd */
+    /* EQUALS .color-bright-grey */
     background-color: #f5f5f5;
     border-radius: 5px;
     overflow-x: hidden;
@@ -512,10 +512,6 @@ cor secundária da página em estado hover. */
 
 /* ------ BGs ------ */
 
-
-.bg-color-3rd {
-    background-color: #f5f5f5;
-}
 
 .bg-color-5th {
     background-color: #555555;
