@@ -7,7 +7,7 @@
 body {
     font-family: 'ABeeZee', sans-serif;
     font-size: 16px;
-    /* EQUALS .color-default */
+    /* EQUALS .color-dark */
     color: #202020;
 }
 
@@ -40,7 +40,7 @@ img {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     background-color: rgba(32, 32, 32, 0.7);
 }
 
@@ -51,7 +51,7 @@ img {
     position: fixed;
     top: 0;
     right: 0;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
     overflow-x: hidden;
     animation-name: right-to-initial;
@@ -85,7 +85,7 @@ img {
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     background-color: rgba(32, 32, 32, 0.7);
 }
 
@@ -95,7 +95,7 @@ img {
     width: 400px;
     animation-name: top-to-initial;
     animation-duration: 0.4s;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
     /* EQUALS .color-4th */
     border: 1px solid #cccccc;
@@ -114,7 +114,7 @@ img {
 .color-table td {
     width: 35px;
     height: 35px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: solid 4px #ffffff;
     cursor: pointer;
 }
@@ -131,11 +131,11 @@ img {
 }
 
 .menu-button {
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: solid 1px #ffffff;
     border-radius: 5px;
     background-color: transparent;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
     padding: 5px 10px;
 }
@@ -143,7 +143,7 @@ img {
 .menu-button:hover {
     /* EQUALS .color-1st */
     color: #ff8000;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
 }
 
@@ -180,7 +180,7 @@ img {
     /* EQUALS .color-4th */
     border: solid 1px #cccccc;
     border-radius: 5px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
     /* Impede que o container crie espaçamento entre rows */
     font-size: 0px;
@@ -191,7 +191,7 @@ img {
 }
 
 .comp-scroll img {
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: solid 5px #ffffff;
     max-width: 200px;
 }
@@ -213,7 +213,7 @@ img {
     border: solid 1px #ff8000;
     /* Bordas inferiores arredondadas */
     border-radius: 0 0 10px 10px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
 }
 
@@ -221,7 +221,7 @@ img {
 .list-comp-1x {
     /* Height baseado no total de celulas do componente */
     height: 50px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: 3px solid #ffffff;
 }
 
@@ -229,7 +229,7 @@ img {
 .list-comp-2x {
     /* Height baseado no total de celulas do componente */
     height: 125px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: 3px solid #ffffff;
 }
 
@@ -247,7 +247,7 @@ img {
 
 /* Altera a cor do label do item de componente selecionado */
 .sel-item h3 {
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
 }
 
@@ -261,7 +261,7 @@ img {
 .title-bar-closed {
     /* EQUALS .color-1st */
     background-color: #ff8000;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
     border-radius: 10px;
 }
@@ -270,7 +270,7 @@ img {
 .title-bar-opened {
     /* EQUALS .color-1st */
     background-color: #ff8000;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
     /* Bordas superiores arredondadas */
     border-radius: 10px 10px 0 0;
@@ -331,7 +331,7 @@ img {
     /* EQUALS .color-2nd */
     border: solid 1px #a62900;
     border-radius: 5px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
     /* EQUALS .color-2nd */
     background-color: #a62900;
@@ -348,7 +348,7 @@ img {
     border: solid 1px #a62900;
     /* EQUALS .color-2nd */
     background-color: #a62900;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
 }
 
@@ -397,7 +397,7 @@ select {
     left: 0;
     height: 20px;
     width: 20px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     background-color: #ffffff;
     /* EQUALS .color-4th */
     border: solid 1px #cccccc;
@@ -428,7 +428,7 @@ select {
     top: 1px;
     width: 5px;
     height: 10px;
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     border: solid #ffffff;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -439,7 +439,7 @@ select {
 /* ----- Colors -----*/
 
 /* Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para as sombras e overlays 
-(.color-default + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
+(.color-dark + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
 no caso das sombras conforme necessário, porém o valor para overlays é sempre 0.7. Nota: Por uma questão de 
 compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente implementado 
 pelos browsers). */
@@ -447,8 +447,12 @@ pelos browsers). */
     color: #202020;
 }
 
-.color-inv {
-    color: #ffffff;
+/* Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do container principal
+das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones e bordas de elementos que utilizam no 
+background: .color-1st, .color-2nd e .color-5th. Pode ser utilizada também no estado hover de alguns elelentos de 
+interface como o botão Design Tools e nos itens do Footer. */
+.color-bright {
+    color: #FFFFFF;
 }
 
 .color-1st {
@@ -502,7 +506,7 @@ pelos browsers). */
 }
 
 .hoverable-inv:hover {
-    /* EQUALS .color-inv */
+    /* EQUALS .color-bright */
     color: #ffffff;
 }
 
@@ -512,23 +516,23 @@ pelos browsers). */
 }
 
 .shaded {
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
 }
 
 /* Hoverable para box-shadow */
 .hoverable-shaded-1x:hover {
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
 }
 
 .hoverable-shaded-2x:hover {
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
 }
 
 .text-shaded:hover {
-    /* EQUALS .color-default + alpha-transparency */
+    /* EQUALS .color-dark + alpha-transparency */
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
 
@@ -993,7 +997,7 @@ pelos browsers). */
     .color-table td {
         width: 30px;
         height: 30px;
-        /* EQUALS .color-inv */
+        /* EQUALS .color-bright */
         border: solid 3px #ffffff;
     }
 
@@ -1021,7 +1025,7 @@ pelos browsers). */
     }
 
     .menu-button:hover {
-        /* EQUALS .color-inv */
+        /* EQUALS .color-bright */
         color: #ffffff;
         background-color: transparent;
     }
