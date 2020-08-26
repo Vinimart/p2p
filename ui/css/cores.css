@@ -116,3 +116,20 @@ configuração de efeitos.*/
     /* EQUALS .color-dark-grey */
     background-color: #555555;
 }
+
+/* ---------- */
+
+.hover-bg-color-grey:hover {
+    /* EQUALS .color-grey */
+    background-color: #CCCCCC;
+}
+
+.hover-color-bright:hover {
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+}
+
+.hover-color-2nd:hover {
+    /* EQUALS .color-2nd */
+    color: #A62900;
+}
