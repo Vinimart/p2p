@@ -579,13 +579,12 @@ de navegação do menu design tools */
     color: #A62900;
 }
 
-/* Hoverable para box-shadow */
 .hover-shaded-1x:hover {
     /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
 }
 
-.hoverable-shaded-2x:hover {
+.hover-shaded-2x:hover {
     /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0 2px 8px 0 rgba(32, 32, 32, 0.45), 0 2px 20px 0 rgba(32, 32, 32, 0.3);
 }
