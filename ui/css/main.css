@@ -579,13 +579,8 @@ de navegação do menu design tools */
     color: #A62900;
 }
 
-.shaded {
-    /* EQUALS .color-dark + alpha-transparency */
-    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
-}
-
 /* Hoverable para box-shadow */
-.hoverable-shaded-1x:hover {
+.hover-shaded-1x:hover {
     /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0px 0px 4px 1px rgba(32, 32, 32, 0.5);
 }
@@ -599,6 +594,12 @@ de navegação do menu design tools */
     /* EQUALS .color-dark + alpha-transparency */
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
+
+.shaded {
+    /* EQUALS .color-dark + alpha-transparency */
+    box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
+}
+
 
 /* ----- Font ----- */
 
