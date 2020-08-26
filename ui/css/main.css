@@ -562,7 +562,7 @@ cor secundária da página em estado hover. */
 /* ------ Hoverables ------ */
 
 /* Necessario para elementos que exigem um background-color em estado hover */
-.hoverable-bg-4th:hover {
+.hover-bg-color-grey:hover {
     /* EQUALS .color-grey */
     background-color: #CCCCCC;
 }
