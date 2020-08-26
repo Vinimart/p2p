@@ -561,24 +561,8 @@ cor secundária da página em estado hover. */
 
 /* ------ Hoverables ------ */
 
-/* Necessario para elementos que exigem um background-color em estado hover */
-.hover-bg-color-grey:hover {
-    /* EQUALS .color-grey */
-    background-color: #CCCCCC;
-}
-
-.hoverable-inv:hover {
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-}
-
-.hoverable-2nd:hover {
-    /* EQUALS .color-2nd */
-    color: #A62900;
-}
-
-/* ---- */
-
+/* Necessario para elementos que exigem um background-color em estado hover como os componentes de Photo Editor e os itens
+de navegação do menu design tools */
 .hover-bg-color-grey:hover {
     /* EQUALS .color-grey */
     background-color: #CCCCCC;
@@ -589,13 +573,11 @@ cor secundária da página em estado hover. */
     color: #FFFFFF;
 }
 
+/* Classe hover obrigatória para links que utilizam a cor .color-link */
 .hover-color-2nd:hover {
     /* EQUALS .color-2nd */
     color: #A62900;
 }
-
-
-
 
 .shaded {
     /* EQUALS .color-dark + alpha-transparency */
