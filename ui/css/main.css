@@ -366,13 +366,6 @@ cor secundaria da pagina em estado hover. */
     top: 12px;
 }
 
-.box {
-    /* EQUALS .color-bright-grey */
-    background-color: #F5F5F5;
-    border-radius: 5px;
-    overflow-x: hidden;
-}
-
 /* Container recommended effects */
 .round-container {
     border-radius: 100%;
