@@ -17,7 +17,7 @@ h3 {
     line-height: 150%;
 }
 
-/* Recuo para os bullet points */ 
+/* Recuo para os bullet points */
 li {
     margin-left: 30px;
 }
@@ -489,6 +489,50 @@ cor secundaria da pagina em estado hover. */
 
 
 
+/* ----- Menu ----- */
+
+.menu-main {
+    height: 60px;
+}
+
+.menu-button {
+    /* EQUALS .color-bright */
+    border: solid 1px #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+.menu-button:hover {
+    /* EQUALS .color-1st */
+    color: #FF8000;
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+}
+
+/* Jumbotron da Landing Page */
+.index-header {
+    height: 430px;
+}
+
+/* Logotipo Picture to People */
+.index-header img {
+    margin-bottom: 50px;
+}
+
+/* Titulo Picture to People */
+.index-header h1 {
+    margin-bottom: 15px;
+}
+
+/* ---------- */
+
+
+
+
+
 /* ----- Side Nav ----- */
 
 /* Overlay para o sidenav (Design Tools Menu), ocupa 100% da pagina */
@@ -584,50 +628,6 @@ cor secundaria da pagina em estado hover. */
 /* Campo no color picker que exibe o valor da cor selecionada */
 .color-value-display {
     margin: 2px 8px 8px 8px;
-}
-
-/* ---------- */
-
-
-
-
-
-/* ----- Menu ----- */
-
-.menu-main {
-    height: 60px;
-}
-
-.menu-button {
-    /* EQUALS .color-bright */
-    border: solid 1px #FFFFFF;
-    border-radius: 5px;
-    background-color: transparent;
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-    padding: 5px 10px;
-}
-
-.menu-button:hover {
-    /* EQUALS .color-1st */
-    color: #FF8000;
-    /* EQUALS .color-bright */
-    background-color: #FFFFFF;
-}
-
-/* Jumbotron da Landing Page */
-.index-header {
-    height: 430px;
-}
-
-/* Logotipo Picture to People */
-.index-header img {
-    margin-bottom: 50px;
-}
-
-/* Titulo Picture to People */
-.index-header h1 {
-    margin-bottom: 15px;
 }
 
 /* ---------- */
