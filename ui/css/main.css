@@ -658,7 +658,7 @@ select {
     border-radius: 5px;
 }
 
-/* Check box personalizado */ 
+/* Check box personalizado */
 .check-box {
     display: block;
     position: relative;
@@ -1124,6 +1124,28 @@ select {
 /* ----- Media Queries ----- */
 
 @media (max-width: 1100px) {
+
+    /* ----- Layout Structure ---- */
+
+    /* Os elementos que utilizam .flex-around dentro de container main ficam em apenas uma coluna */
+    main .flex-around {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .column-main {
+        width: 100%;
+    }
+
+    .column-2nd {
+        width: 100%;
+    }
+
+    /* ---------- */
+
+
+    /* ----- Menu ----- */
+
     .menu-main h3 {
         display: none;
     }
@@ -1141,41 +1163,28 @@ select {
         margin-bottom: 10px;
     }
 
-    /* Altera os elementos que utilizam .flex-around dentro de main para apenas uma coluna */
-    main .flex-around {
+    /* ---------- */
+}
+
+@media (max-width: 500px) {
+
+    /* ----- Layout Structure ---- */
+
+    /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
+    .footer-nav,
+    .column-main .flex-center {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .column-main {
-        width: 100%;
+    .footer-nav div {
+        margin-bottom: 40px;
     }
 
-    .column-2nd {
-        width: 100%;
-    }
-}
+    /* ---------- */
 
-@media (max-width: 500px) {
-    .color-table {
-        border-spacing: 5px;
-    }
 
-    .color-table td {
-        width: 30px;
-        height: 30px;
-        /* EQUALS .color-bright */
-        border: solid 3px #FFFFFF;
-    }
-
-    .modal-content {
-        width: 350px;
-    }
-
-    /* Campo no color picker que exibe o valor da cor selecionada */
-    .color-value-display {
-        margin: 2px 8px 2px 8px;
-    }
+    /* ----- Menu ----- */
 
     .index-header img {
         width: 75px;
@@ -1202,16 +1211,36 @@ select {
         display: none;
     }
 
-    /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
-    .footer-nav,
-    .column-main .flex-center {
-        flex-direction: column;
-        flex-wrap: wrap;
+    /* ---------- */
+
+
+    /* ----- Color Picker ----- */
+
+    .color-table {
+        border-spacing: 5px;
     }
 
-    .footer-nav div {
-        margin-bottom: 40px;
+    .color-table td {
+        width: 30px;
+        height: 30px;
+        /* EQUALS .color-bright */
+        border: solid 3px #FFFFFF;
     }
+
+    /* Campo no color picker que exibe o valor da cor selecionada */
+    .color-value-display {
+        margin: 2px 8px 2px 8px;
+    }
+
+    /* ---------- */
+
+
+    /* ----- Modal Box ---- */
+
+    .modal-content {
+        width: 350px;
+    }
+
+    /* ---------- */
 }
-
 /* ---------- */
