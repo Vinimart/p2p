@@ -264,148 +264,6 @@ cor secundária da página em estado hover. */
 
 
 
-/* ----- Side Nav ----- */
-
-/* Overlay para o sidenav (Design Tools Menu), ocupa 100% da pagina */
-.sidenav-overlay {
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* EQUALS .color-dark + alpha-transparency */
-    background-color: rgba(32, 32, 32, 0.7);
-}
-
-.sidenav-content {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    /* EQUALS .color-bright */
-    background-color: #FFFFFF;
-    overflow-x: hidden;
-    animation-name: right-to-initial;
-    animation-duration: 0.5s;
-}
-
-.sidenav-header {
-    /* Mesma altura da barra de menu principal */
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* EQUALS .color-1st */
-    background-color: #FF8000;
-}
-
-/* ---------- */
-
-
-
-
-/* ----- Modal Box ----- */
-
-/* Overlay para o modal box, ocupa 100% da pagina */
-.modal-overlay {
-    position: fixed;
-    z-index: 40;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* EQUALS .color-dark + alpha-transparency */
-    background-color: rgba(32, 32, 32, 0.7);
-}
-
-.modal-content {
-    position: relative;
-    width: 400px;
-    animation-name: top-to-initial;
-    animation-duration: 0.4s;
-    /* EQUALS .color-bright */
-    background-color: #FFFFFF;
-    /* EQUALS .color-grey */
-    border: 1px solid #CCCCCC;
-}
-
-/* ---------- */
-
-
-
-
-
-/* ----- Color Picker ----- */
-
-.color-table {
-    /* Espacamento ideal entre as celulas do color picker */
-    border-spacing: 5px;
-    border-collapse: separate;
-    margin: auto;
-}
-
-/* Celula de cor do color picker */
-.color-table td {
-    width: 35px;
-    height: 35px;
-    /* EQUALS .color-bright */
-    border: solid 4px #FFFFFF;
-    cursor: pointer;
-}
-
-/* Campo no color picker que exibe o valor da cor selecionada */
-.color-value-display {
-    margin: 2px 8px 8px 8px;
-}
-
-/* ---------- */
-
-
-
-
-
-/* ----- Menu ----- */
-
-.menu-main {
-    height: 60px;
-}
-
-.menu-button {
-    /* EQUALS .color-bright */
-    border: solid 1px #FFFFFF;
-    border-radius: 5px;
-    background-color: transparent;
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-    padding: 5px 10px;
-}
-
-.menu-button:hover {
-    /* EQUALS .color-1st */
-    color: #FF8000;
-    /* EQUALS .color-bright */
-    background-color: #FFFFFF;
-}
-
-.index-header {
-    height: 430px;
-}
-
-.index-header img {
-    margin-bottom: 50px;
-}
-
-.index-header h1 {
-    margin-bottom: 15px;
-}
-
-/* ---------- */
-
-
-
-
 
 /* ----- Layout Structure ----- */
 
@@ -420,14 +278,13 @@ cor secundária da página em estado hover. */
 }
 
 /* Limita a largura do container e o centraliza na tela */
-.limiter-2x {
-    max-width: 1600px;
+.limiter-1x {
+    max-width: 800px;
     margin: auto;
 }
 
-/* Limita a largura do container e o centraliza na tela (ex: EffectEnum-Types) */
-.limiter-1x {
-    max-width: 800px;
+.limiter-2x {
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -523,6 +380,10 @@ cor secundária da página em estado hover. */
 }
 
 /* ---------- */
+
+
+
+
 
 /* ----- Components ----- */
 
@@ -638,6 +499,151 @@ cor secundária da página em estado hover. */
 
 
 
+/* ----- Side Nav ----- */
+
+/* Overlay para o sidenav (Design Tools Menu), ocupa 100% da pagina */
+.sidenav-overlay {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* EQUALS .color-dark + alpha-transparency */
+    background-color: rgba(32, 32, 32, 0.7);
+}
+
+.sidenav-content {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    animation-name: right-to-initial;
+    animation-duration: 0.5s;
+}
+
+.sidenav-header {
+    /* Mesma altura da barra de menu principal */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* EQUALS .color-1st */
+    background-color: #FF8000;
+}
+
+/* ---------- */
+
+
+
+
+
+/* ----- Modal Box ----- */
+
+/* Overlay para o modal box, ocupa 100% da pagina */
+.modal-overlay {
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* EQUALS .color-dark + alpha-transparency */
+    background-color: rgba(32, 32, 32, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    width: 400px;
+    animation-name: top-to-initial;
+    animation-duration: 0.4s;
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+    /* EQUALS .color-grey */
+    border: 1px solid #CCCCCC;
+}
+
+/* ---------- */
+
+
+
+
+
+/* ----- Color Picker ----- */
+
+.color-table {
+    /* Espacamento ideal entre as celulas do color picker */
+    border-spacing: 5px;
+    border-collapse: separate;
+    margin: auto;
+}
+
+/* Celula de cor do color picker */
+.color-table td {
+    width: 35px;
+    height: 35px;
+    /* EQUALS .color-bright */
+    border: solid 4px #FFFFFF;
+    cursor: pointer;
+}
+
+/* Campo no color picker que exibe o valor da cor selecionada */
+.color-value-display {
+    margin: 2px 8px 8px 8px;
+}
+
+/* ---------- */
+
+
+
+
+
+/* ----- Menu ----- */
+
+.menu-main {
+    height: 60px;
+}
+
+.menu-button {
+    /* EQUALS .color-bright */
+    border: solid 1px #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+    padding: 5px 10px;
+}
+
+.menu-button:hover {
+    /* EQUALS .color-1st */
+    color: #FF8000;
+    /* EQUALS .color-bright */
+    background-color: #FFFFFF;
+}
+
+/* Jumbotron da Landing Page */
+.index-header {
+    height: 430px;
+}
+
+.index-header img {
+    margin-bottom: 50px;
+}
+
+.index-header h1 {
+    margin-bottom: 15px;
+}
+
+/* ---------- */
+
+
+
+
+
 /* ----- Form ---- */
 
 input[type='text'],
@@ -652,6 +658,7 @@ select {
     border-radius: 5px;
 }
 
+/* Check box personalizado */ 
 .check-box {
     display: block;
     position: relative;
@@ -667,7 +674,6 @@ select {
     width: 0;
 }
 
-/* Marcador da caixa checkbox */
 .checkmark {
     position: absolute;
     top: 0;
@@ -894,6 +900,10 @@ select {
     margin: 20px;
 }
 
+.spaced-around-3x {
+    margin: 30px;
+}
+
 .img-1x {
     width: 40px;
 }
@@ -930,20 +940,20 @@ select {
 
 /* ----- Display Helpers ----- */
 
-/* Container com display flex para espacamento homogeneo entre os elementos */
+/* Container com display flex - espacamento identico entre os elementos */
 .flex-around {
     display: flex;
     justify-content: space-around;
 }
 
-/* Container com display flex espaco entre os elementos */
+/* Container com display flex  - elementos espacados entre si */
 .flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Container com display flex para elementos centralizados */
+/* Container com display flex - elementos centralizados verticalmente e horizontalmente */
 .flex-center {
     display: flex;
     align-items: center;
@@ -982,57 +992,15 @@ select {
 /* ----- Animations ----- */
 
 .animate-1:hover {
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .animate-2:hover {
-    -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
 }
 
 .animate-3:hover {
-    -webkit-animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
-@-webkit-keyframes heartbeat {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transform-origin: center center;
-        transform-origin: center center;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        -webkit-transform: scale(0.91);
-        transform: scale(0.91);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        -webkit-transform: scale(0.87);
-        transform: scale(0.87);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
 }
 
 @keyframes heartbeat {
@@ -1074,43 +1042,6 @@ select {
     }
 }
 
-@-webkit-keyframes jello-horizontal {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-
-    30% {
-        -webkit-transform: scale3d(1.25, 0.75, 1);
-        transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40% {
-        -webkit-transform: scale3d(0.75, 1.25, 1);
-        transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-        -webkit-transform: scale3d(1.15, 0.85, 1);
-        transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65% {
-        -webkit-transform: scale3d(0.95, 1.05, 1);
-        transform: scale3d(0.95, 1.05, 1);
-    }
-
-    75% {
-        -webkit-transform: scale3d(1.05, 0.95, 1);
-        transform: scale3d(1.05, 0.95, 1);
-    }
-
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-
 @keyframes jello-horizontal {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -1145,18 +1076,6 @@ select {
     100% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
-    }
-}
-
-@-webkit-keyframes flip-vertical-right {
-    0% {
-        -webkit-transform: rotateY(0);
-        transform: rotateY(0);
-    }
-
-    100% {
-        -webkit-transform: rotateY(360deg);
-        transform: rotateY(360deg);
     }
 }
 
