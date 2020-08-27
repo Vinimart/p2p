@@ -17,6 +17,7 @@ h3 {
     line-height: 150%;
 }
 
+/* Recuo para os bullet points */ 
 li {
     margin-left: 30px;
 }
@@ -27,8 +28,8 @@ a {
     color: #00528c;
 }
 
-/* Pode parecer redundante, mas é necessário para que as imagens gerais (/img) não causem barra de rolagem 
-horizontal na página */
+/* Pode parecer redundante, mas e necessario para que as imagens gerais (/img) nao causem barra de rolagem 
+horizontal na pagina */
 img {
     max-width: 100%;
 }
@@ -41,74 +42,74 @@ img {
 
 /* ----- Colors -----*/
 
-/* Este é o preto padrão do site, é a cor padrão dos textos do site e também é a cor base para as sombras e overlays 
+/* Este e o preto padrao do site, e a cor padrao dos textos do site e tambem e a cor base para as sombras e overlays 
 (.color-dark + alpha transparency) Ex: rgba(32, 32, 32, 0.7) ou #202020B3 - O valor de transparencia pode variar 
-no caso das sombras conforme necessário, porém o valor para overlays é sempre 0.7. Nota: Por uma questão de 
-compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha não é amplamente implementado 
+no caso das sombras conforme necessario, porem o valor para overlays e sempre 0.7. Nota: Por uma questao de 
+compatibilidade entre browsers foi escolhido o formato RGBA pois o formato Hex + Alpha nao e amplamente implementado 
 pelos browsers). */
 .color-dark {
     color: #202020;
 }
 
-/* Esta é a cor branca padrão do site, seu uso no layout do site se restringe ao background do container principal
-das páginas. Porém seu uso mais recorrente é na cor da fonte, dos ícones e bordas de elementos que utilizam no 
-background: .color-1st, .color-2nd e .color-dark-grey. Pode ser utilizada também no estado hover de alguns elelentos de 
-interface como o botão Design Tools e nos itens do Footer. */
+/* Esta e a cor branca padrao do site, seu uso no layout do site se restringe ao background do container principal
+das paginas. Poram seu uso mais recorrente e na cor da fonte, dos icones e bordas de elementos que utilizam no 
+background: .color-1st, .color-2nd e .color-dark-grey. Pode ser utilizada tambem no estado hover de alguns elementos de 
+interface como o botao Design Tools e nos itens do Footer. */
 .color-bright {
     color: #FFFFFF;
 }
 
-/* Esta é a cor principal do layout do site, ela está presente em todas as páginas e é utilizada apenas nos elementos
-de interface, ela nunca deverá ser utilizada como cor de texto. Seu uso se limita à apenas elementos como barras de
-título de componentes, background de headers, ícones e botões em estado hover. */
+/* Esta e a cor principal do layout do site, ela esta presente em todas as paginas e e utilizada apenas nos elementos
+de interface, ela nunca devera ser utilizada como cor de texto. Seu uso se limita a apenas elementos como barras de
+titulo de componentes, background de headers, icones e botoes em estado hover. */
 .color-1st {
     color: #FF8000;
 }
 
-/* Esta é a cor secundária do layout do site, além de compor o tema principal do site em conjunto com a cor principal. 
-Seu papel é destacar os elementos de interface como ícones, botões e componentes, para a seleção dos componentes é 
-exclusivamente utilizado a cor secundária. Além de compor elementos de interface essa cor é utilizada nos links em 
+/* Esta e a cor secundaria do layout do site, alem de compor o tema principal do site em conjunto com a cor principal. 
+Seu papel e destacar os elementos de interface como icones, botoes e componentes, para a selecao dos componentes e 
+exclusivamente utilizado a cor secundaria. Alem de compor elementos de interface essa cor e utilizada nos links em 
 estado hover. */
 .color-2nd {
     color: #A62900;
 }
 
-/* Esta cor é uma variação mais clara da cor principal do site. É utilizada na cor da fonte dos itens do Footer e 
-também é a cor do elemento hr (Ruler). */
+/* Esta cor e uma variacao mais clara da cor principal do site. E utilizada na cor da fonte dos itens do Footer e 
+tambem e a cor do elemento hr (Ruler). */
 .color-3rd {
     color: #E9C4A9;
 }
 
-/* Esta cor é uma variação mais clara da cor .color-3rd. É utilizada para compor elementos de interface como background
+/* Esta cor e uma variacao mais clara da cor .color-3rd. E utilizada para compor elementos de interface como background
 de elementos box [[*Suggestions*]] e background em estado hover dos itens do menu Design Tools. */
 .color-4th {
     color: #F8F0E8;
 }
 
-/* Esta cor é o cinza mais claro da escala de cinza da página. Seu uso se restringe à compor o background dos elementos 
-"box" que servem para destacar um container de um background de cor .color-bright. Alguns exemplos são: Container de 
-configuração de efeito, background da sessão Popular Graphic Design Apps na Landing Page e nas páginas auxiliares, e 
-também compõe o background color do header das modais. */
+/* Esta cor e o cinza mais claro da escala de cinza da pagina. Seu uso se restringe a compor o background dos elementos 
+"box" que servem para destacar um container de um background de cor .color-bright. Alguns exemplos sao: Container de 
+configuracao de efeito, background da sessao Popular Graphic Design Apps na Landing Page e nas paginas auxiliares, e 
+tambem compoe o background color do header das modais. */
 .color-bright-grey {
     color: #F5F5F5;
 }
 
-/* Esta cor é o cinza médio da página. Seu uso é quase exclusivo para cores de bordas de diversos elementos da página, 
-como os componentes que ficam no formulário porém essa cor também é utilizada como hover das imagens de componente de 
+/* Esta cor e o cinza medio da pagina. Seu uso e quase exclusivo para cores de bordas de diversos elementos da pagina, 
+como os componentes que ficam no formulario porem essa cor tambem e utilizada como hover das imagens de componente de 
 Wallpaper Generator, 3D Banner Maker e Photo Effect Multilist. */
 .color-grey {
     color: #CCCCCC;
 }
 
-/* Esta cor é o cinza mais escuro da escala de cinza da página. O principal uso desta cor são os textos com fonte mais 
-clara, ideal para parágrafos e subtítulos. Também é utilizada para compor a cor da barra de título do container de 
-configuração de efeitos.*/
+/* Esta cor e o cinza mais escuro da escala de cinza da pagina. O principal uso desta cor sao os textos com fonte mais 
+clara, ideal para paragrafos e subtitulos. Tambem e utilizada para compor a cor da barra de titulo do container de 
+configuraaoo de efeitos.*/
 .color-dark-grey {
     color: #555555;
 }
 
-/* Esta é a cor padrão dos elementos âncora da página. É utilizada na maioria dos links e deve ser sempre acompanhado da 
-cor secundária da página em estado hover. */
+/* Esta e a cor padrao dos elementos ancora da pagina. E utilizada na maioria dos links e deve ser sempre acompanhado da 
+cor secundaria da pagina em estado hover. */
 .color-link {
     color: #00528C;
 }
@@ -174,13 +175,13 @@ cor secundária da página em estado hover. */
     color: #FFFFFF;
 }
 
-/* Classe hover obrigatória para botões */
+/* Classe hover obrigatória para botoes */
 .hover-color-1st:hover {
     /* EQUALS .color-1st */
     color: #FF8000;
 }
 
-/* Classe hover obrigatória para links que utilizam a cor .color-link */
+/* Classe hover obrigatoria para links que utilizam a cor .color-link */
 .hover-color-2nd:hover {
     /* EQUALS .color-2nd */
     color: #A62900;
@@ -288,14 +289,14 @@ cor secundária da página em estado hover. */
     margin: auto;
 }
 
-/* Posicionamento inferior para background-image */
+/* Posicionamento para background-image inferior */
 .bg-bottom {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-/* Posicionamento inferior direito para background-image */
+/* Posicionamento para background-image inferior direito */
 .bg-right-bottom {
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -310,7 +311,7 @@ cor secundária da página em estado hover. */
 
 /* ----- Interface Elements ----- */
 
-/* Tamanho usado principalmente em modal-box */
+/* Tamanho de botao usado principalmente em modal-box */
 .btn-1x {
     display: inline-block;
     width: 120px;
@@ -324,7 +325,7 @@ cor secundária da página em estado hover. */
     padding: 15px;
 }
 
-/* Tamanho padrão para botoes */
+/* Tamanho padrao para botoes */
 .btn-2x {
     display: inline-block;
     width: 180px;
@@ -347,7 +348,7 @@ cor secundária da página em estado hover. */
     cursor: pointer;
 }
 
-/* Classe para estilizar elemento hr */
+/* Elemento hr */
 .ruler {
     /* EQUALS .color-3rd */
     border: 1px solid #E9C4A9;
@@ -355,7 +356,7 @@ cor secundária da página em estado hover. */
     background-color: #E9C4A9;
 }
 
-/* Faz parte da barra de título do formulário de configuração de efeitos */
+/* Linha horizontal que faz parte da barra de titulo do formulario de configuracao de efeitos */
 .config-ruler {
     /* EQUALS .color-dark-grey */
     border: 1px solid #555555;
@@ -399,21 +400,23 @@ cor secundária da página em estado hover. */
     border-radius: 5px;
     /* EQUALS .color-bright */
     background-color: #FFFFFF;
-    /* Impede que o container crie espaçamento entre rows */
+    /* Impede que o container crie espacamento entre rows */
     font-size: 0px;
 }
 
+/* Componente de tabela */
 .comp-scroll-table-list {
     max-height: 325px;
 }
 
+/* Imagens que ficam dentro dos componentes */
 .comp-scroll img {
     /* EQUALS .color-bright */
     border: solid 5px #FFFFFF;
     max-width: 200px;
 }
 
-/* Componentes de listas */
+/* Configuracao do background-image dos componentes de tabelas */
 .comp-scroll-table-list table {
     background-position: center top;
     background-repeat: no-repeat;
@@ -422,7 +425,41 @@ cor secundária da página em estado hover. */
     width: 100%;
 }
 
-/* Container para componentes sem altura fixa e barra de rolagem */
+/* Tamanho das celulas da tabela dos componentes .comp-scroll-table-list  */
+.list-comp-1x {
+    /* Height baseado no total de celulas do componente */
+    height: 50px;
+    /* EQUALS .color-bright */
+    border: 3px solid #FFFFFF;
+}
+
+/* Tamanho das celulas da tabela dos componentes .comp-scroll-table-list */
+.list-comp-2x {
+    /* Height baseado no total de celulas do componente */
+    height: 125px;
+    /* EQUALS .color-bright */
+    border: 3px solid #FFFFFF;
+}
+
+/* Selecao de item de componente com imagens .comp-scroll */
+.sel-item {
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+}
+
+/* Cor do label do item de componente selecionado */
+.sel-item h3 {
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+}
+
+/* Selecao de item de dos componentes .comp-scroll-table-list */
+.sel-list-item {
+    /* EQUALS .color-2nd */
+    border-color: #A62900 !important;
+}
+
+/* Componentes com container sem altura fixa e sem barra de rolagem */
 .comp-show-all {
     width: 100%;
     text-align: center;
@@ -434,47 +471,7 @@ cor secundária da página em estado hover. */
     background-color: #FFFFFF;
 }
 
-/* Tamanho das celulas da tabela dos componentes de listas */
-.list-comp-1x {
-    /* Height baseado no total de celulas do componente */
-    height: 50px;
-    /* EQUALS .color-bright */
-    border: 3px solid #FFFFFF;
-}
-
-/* Tamanho das celulas da tabela dos componentes de listas */
-.list-comp-2x {
-    /* Height baseado no total de celulas do componente */
-    height: 125px;
-    /* EQUALS .color-bright */
-    border: 3px solid #FFFFFF;
-}
-
-/* Para componentes de lista que contem imagens (diferente de .comp-scroll img) ex: sWall */
-.list-comp-1x img {
-    max-width: none;
-    border: none;
-}
-
-/* Selecao de item de componente com imagens */
-.sel-item {
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-}
-
-/* Altera a cor do label do item de componente selecionado */
-.sel-item h3 {
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-}
-
-/* Selecao de item de componente com tabela */
-.sel-list-item {
-    /* EQUALS .color-2nd */
-    border-color: #A62900 !important;
-}
-
-/* Barra de titulo para componentes em estado fechado e sessão de configuracao de efeito */
+/* Barra de titulo para componentes .comp-show-all em estado fechado */
 .title-bar-closed {
     /* EQUALS .color-1st */
     background-color: #FF8000;
@@ -483,7 +480,7 @@ cor secundária da página em estado hover. */
     border-radius: 10px;
 }
 
-/* Title bar sem border-bottom-radius para componentes em estado aberto */
+/* Barra de titulo sem border-bottom-radius para componentes .comp-show-all em estado aberto */
 .title-bar-opened {
     /* EQUALS .color-1st */
     background-color: #FF8000;
@@ -543,7 +540,7 @@ cor secundária da página em estado hover. */
 
 /* ----- Modal Box ----- */
 
-/* Overlay para o modal box, ocupa 100% da pagina */
+/* Overlay para a modal box, ocupa 100% da pagina */
 .modal-overlay {
     position: fixed;
     z-index: 40;
@@ -630,10 +627,12 @@ cor secundária da página em estado hover. */
     height: 430px;
 }
 
+/* Logotipo Picture to People */
 .index-header img {
     margin-bottom: 50px;
 }
 
+/* Titulo Picture to People */
 .index-header h1 {
     margin-bottom: 15px;
 }
@@ -742,6 +741,7 @@ select {
     text-shadow: 2px 2px 1px rgba(32, 32, 32, 0.7);
 }
 
+/* Sombra padrao */
 .shaded {
     /* EQUALS .color-dark + alpha-transparency */
     box-shadow: 0 2px 4px 0 rgba(32, 32, 32, 0.15), 0 2px 10px 0 rgba(32, 32, 32, 0.12);
@@ -759,7 +759,7 @@ select {
     font-size: 13px;
 }
 
-/* Tamanho de fonte padrão */
+/* Tamanho de fonte padrao */
 .font-2x {
     font-size: 16px;
 }
@@ -1127,16 +1127,18 @@ select {
 
     /* ----- Layout Structure ---- */
 
-    /* Os elementos que utilizam .flex-around dentro de container main ficam em apenas uma coluna */
+    /* Os elementos que utilizam .flex-around dentro do container main ficam em apenas uma coluna */
     main .flex-around {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    /* Coluna principal ocupa toda largura (coluna unica) */
     .column-main {
         width: 100%;
     }
 
+    /* Coluna secundaria ocupa toda largura (coluna unica) */
     .column-2nd {
         width: 100%;
     }
@@ -1146,21 +1148,25 @@ select {
 
     /* ----- Menu ----- */
 
-    .menu-main h3 {
-        display: none;
-    }
-
+    /* Jumbotron com altura suficiente apenas para acomodar os containers internos tornando-o menor */
     .index-header {
         height: initial;
     }
 
+    /* Logotipo Picture to People */
     .index-header img {
         margin-bottom: 30px;
     }
 
+    /* Titulo Picture to People */
     .index-header h1 {
         font-size: 55px;
         margin-bottom: 10px;
+    }
+
+    /* Slogan do site na barra de menu */
+    .menu-main h3 {
+        display: none;
     }
 
     /* ---------- */
@@ -1170,13 +1176,14 @@ select {
 
     /* ----- Layout Structure ---- */
 
-    /* Altera todos os elementos que utilizam a classe para apenas uma coluna */
+    /* Todos os elementos que utilizam a classe ocupam apenas uma coluna */
     .footer-nav,
     .column-main .flex-center {
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    /* Espacamento entre o container dos itens de navegacao do footer e o paragrafo do footer */
     .footer-nav div {
         margin-bottom: 40px;
     }
@@ -1186,16 +1193,19 @@ select {
 
     /* ----- Menu ----- */
 
+    /* Logotipo Picture to People */
     .index-header img {
         width: 75px;
         margin-bottom: 25px;
     }
 
+    /* Titulo Picture to People */
     .index-header h1 {
         font-size: 45px;
 
     }
 
+    /* Botao Design Tools passa a ser apenas um icone de menu */
     .menu-button {
         border: none;
         padding: 0;
@@ -1207,6 +1217,7 @@ select {
         background-color: transparent;
     }
 
+    /* Design Tools */
     .menu-button span {
         display: none;
     }
@@ -1220,6 +1231,7 @@ select {
         border-spacing: 5px;
     }
 
+    /* Celula de cor do color picker */
     .color-table td {
         width: 30px;
         height: 30px;
@@ -1243,4 +1255,5 @@ select {
 
     /* ---------- */
 }
+
 /* ---------- */
