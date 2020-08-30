@@ -111,15 +111,15 @@ function defInit() {
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
-    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'color_improvement_effect_001');
+    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hover-bg-color-grey', 'sel-item'], '', '', 'color_improvement_effect_001');
 
     // Lista de efeitos de texto que fica fora do formulario.
-    SelLists.newList('te1', 'idSelectedTextEffect1', ['hoverable-bg-4th', 'sel-item'], '', '', initialNamedTextEffect1);
-    SelLists.newList('te2', 'idSelectedTextEffect2', ['hoverable-bg-4th', 'sel-item'], '', '', initialNamedTextEffect2);
+    SelLists.newList('te1', 'idSelectedTextEffect1', ['hover-bg-color-grey', 'sel-item'], '', '', initialNamedTextEffect1);
+    SelLists.newList('te2', 'idSelectedTextEffect2', ['hover-bg-color-grey', 'sel-item'], '', '', initialNamedTextEffect2);
 
     // dpe = "downloadable photo effects" = lista de efeitos distribuida em varias janelas na tela, sendo que as 
     //        imagens da maioria das janelas nao sao carregadas de antemao -> usado no simple photo editor.
-    SelLists.newList('dpe1', 'idSelectedEffect', ['hoverable-bg-4th', 'sel-item'], '', '', 'no_effect');
+    SelLists.newList('dpe1', 'idSelectedEffect', ['hover-bg-color-grey', 'sel-item'], '', '', 'no_effect');
     // -------------------------
 
 
