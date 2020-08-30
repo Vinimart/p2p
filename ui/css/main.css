@@ -650,6 +650,14 @@ select {
     border-radius: 5px;
 }
 
+/* Nao causara overflow caso o rotulo "nenhum arquivo selecionado" seja maior que a largura da pagina. */
+input[type='file'] {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* Check box personalizado */
 .check-box {
     display: block;
