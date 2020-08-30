@@ -175,7 +175,7 @@ function defInit() {
     // Lista de cores do Color Picker (mostrada com modal).
     // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
     // -------------------------
-    SelLists.newList('cp1', 'idColor', ['hoverable-sh-1x', 'sel-list-item'], '', '', '001');
+    SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'sel-list-item'], '', '', '001');
     // -------------------------
 
 
