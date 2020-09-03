@@ -382,8 +382,8 @@ cor secundaria da pagina em estado hover. */
 /* ----- Components ----- */
 
 /* Container para componentes que necessitam de barra de rolagem e altura fixa */
-.comp-scroll,
-.comp-scroll-table-list {
+.list-comp,
+.table-list-comp {
     width: 100%;
     max-height: 250px;
     overflow: auto;
@@ -398,62 +398,12 @@ cor secundaria da pagina em estado hover. */
 }
 
 /* Componente de tabela */
-.comp-scroll-table-list {
+.table-list-comp {
     max-height: 325px;
 }
 
-/* Imagens que ficam dentro dos componentes */
-.comp-scroll img {
-    /* EQUALS .color-bright */
-    border: solid 5px #FFFFFF;
-    max-width: 200px;
-}
-
-/* Configuracao do background-image dos componentes de tabelas */
-.comp-scroll-table-list table {
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-collapse: separate;
-    width: 100%;
-}
-
-/* Tamanho das celulas da tabela dos componentes .comp-scroll-table-list  */
-.list-comp-1x {
-    /* Height baseado no total de celulas do componente */
-    height: 50px;
-    /* EQUALS .color-bright */
-    border: 3px solid #FFFFFF;
-}
-
-/* Tamanho das celulas da tabela dos componentes .comp-scroll-table-list */
-.list-comp-2x {
-    /* Height baseado no total de celulas do componente */
-    height: 125px;
-    /* EQUALS .color-bright */
-    border: 3px solid #FFFFFF;
-}
-
-/* Selecao de item de componente com imagens .comp-scroll */
-.sel-item {
-    /* EQUALS .color-2nd */
-    background-color: #A62900;
-}
-
-/* Cor do label do item de componente selecionado */
-.sel-item h3 {
-    /* EQUALS .color-bright */
-    color: #FFFFFF;
-}
-
-/* Selecao de item de dos componentes .comp-scroll-table-list */
-.sel-list-item {
-    /* EQUALS .color-2nd */
-    border-color: #A62900 !important;
-}
-
-/* Componentes com container sem altura fixa e sem barra de rolagem */
-.comp-show-all {
+/* Componentes de container sem altura fixa, sem barra de rolagem e com barra de titulo */
+.label-list-comp {
     width: 100%;
     text-align: center;
     /* EQUALS .color-1st */
@@ -464,7 +414,57 @@ cor secundaria da pagina em estado hover. */
     background-color: #FFFFFF;
 }
 
-/* Barra de titulo para componentes .comp-show-all em estado fechado */
+/* Imagens que ficam dentro dos componentes */
+.list-comp img {
+    /* EQUALS .color-bright */
+    border: solid 5px #FFFFFF;
+    max-width: 200px;
+}
+
+/* Configuracao do background-image dos componentes de tabelas */
+.table-list-comp table {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-collapse: separate;
+    width: 100%;
+}
+
+/* Tamanho das celulas da tabela dos componentes .table-list-comp  */
+.table-list-comp-cell-1x {
+    /* Height baseado no total de celulas do componente */
+    height: 50px;
+    /* EQUALS .color-bright */
+    border: 3px solid #FFFFFF;
+}
+
+/* Tamanho das celulas da tabela dos componentes .table-list-comp */
+.table-list-comp-cell-2x {
+    /* Height baseado no total de celulas do componente */
+    height: 125px;
+    /* EQUALS .color-bright */
+    border: 3px solid #FFFFFF;
+}
+
+/* Selecao de item de componente com imagens .list-comp */
+.label-list-comp-sel {
+    /* EQUALS .color-2nd */
+    background-color: #A62900;
+}
+
+/* Cor do label do item de componente selecionado */
+.label-list-comp-sel h3 {
+    /* EQUALS .color-bright */
+    color: #FFFFFF;
+}
+
+/* Selecao de item de dos componentes .table-list-comp */
+.list-comp-sel {
+    /* EQUALS .color-2nd */
+    border-color: #A62900 !important;
+}
+
+/* Barra de titulo para componentes .label-list-comp em estado fechado */
 .title-bar-closed {
     /* EQUALS .color-1st */
     background-color: #FF8000;
@@ -473,7 +473,7 @@ cor secundaria da pagina em estado hover. */
     border-radius: 10px;
 }
 
-/* Barra de titulo sem border-bottom-radius para componentes .comp-show-all em estado aberto */
+/* Barra de titulo sem border-bottom-radius para componentes .label-list-comp em estado aberto */
 .title-bar-opened {
     /* EQUALS .color-1st */
     background-color: #FF8000;

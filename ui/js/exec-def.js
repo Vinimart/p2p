@@ -114,15 +114,15 @@ function defInit() {
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
-    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hover-bg-color-grey', 'sel-item'], '', '', 'color_improvement_effect_001');
+    SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', 'color_improvement_effect_001');
 
     // Lista de efeitos de texto que fica fora do formulario.
-    SelLists.newList('te1', 'idSelectedTextEffect1', ['hover-bg-color-grey', 'sel-item'], '', '', initialNamedTextEffect1);
-    SelLists.newList('te2', 'idSelectedTextEffect2', ['hover-bg-color-grey', 'sel-item'], '', '', initialNamedTextEffect2);
+    SelLists.newList('te1', 'idSelectedTextEffect1', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', initialNamedTextEffect1);
+    SelLists.newList('te2', 'idSelectedTextEffect2', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', initialNamedTextEffect2);
 
     // dpe = "downloadable photo effects" = lista de efeitos distribuida em varias janelas na tela, sendo que as 
     //        imagens da maioria das janelas nao sao carregadas de antemao -> usado no simple photo editor.
-    SelLists.newList('dpe1', 'idSelectedEffect', ['hover-bg-color-grey', 'sel-item'], '', '', 'no_effect');
+    SelLists.newList('dpe1', 'idSelectedEffect', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', 'no_effect');
     // -------------------------
 
     
@@ -130,9 +130,9 @@ function defInit() {
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
+    SelLists.newList('rendStyle3d', 'idRenderingStyle', ['list-comp-sel'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1', 'idHasMergedImageTable3dTextModel');
+    SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '1', 'idHasMergedImageTable3dTextModel');
     // -------------------------
 
     
@@ -140,44 +140,44 @@ function defInit() {
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
-    SelLists.newList('f' + getFontListNum(), 'idFontName', ['sel-list-item'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
+    SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
     // -------------------------
 
     
     // Listas de imagens.
     // -------------------------
     // Lista usada nas paginas dos textos 3D texturizados.
-    SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1', 'idHasImageList3dTextStyle');
+    SelLists.newList('textStyle3d', 'idTextStyle3DName', ['list-comp-sel'], '', '', '3d_text_style1', 'idHasImageList3dTextStyle');
     // Lista usada nas paginas dos textos de luz e neon.
-    SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
+    SelLists.newList('textStyleLight', 'idTextStyleLightName', ['list-comp-sel'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
 
     // Os componentes textLayout, sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable) para se tornarem componentes formados por imagens.
     // Lista usada em Image Caption Generator
-    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasImageListTextLayout');
+    SelLists.newList('textLayout', 'idTextLayoutStyle', ['list-comp-sel'], '', '', 'text-layout-style-00', 'idHasImageListTextLayout');
     // Lista usada nos efeitos de Chalk Text Effect
-    SelLists.newList('sChalk', 'idSelectedChalkboard', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
+    SelLists.newList('sChalk', 'idSelectedChalkboard', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
     // Lista usada nos efeitos de Graffiti
-    SelLists.newList('sWall', 'idSelectedWall', ['sel-list-item'], '', '', 'wall_002_tlb', 'idHasImageListWall');
+    SelLists.newList('sWall', 'idSelectedWall', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     // -------------------------
 
     
     // Listas de imagens pequenas.
     // -------------------------	
-    SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
-    SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
-    SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
-    SelLists.newList('sSocial', 'idSelectedIcon', ['sel-list-item'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');
-    SelLists.newList('sSymbol1', 'idSelectedSymbol1', ['sel-list-item'], '', '', initialSymbol1, 'idHasSmallImageListSymbol1');
-    SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['sel-list-item'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
-    SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['sel-list-item'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
-    SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['sel-list-item'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
+    SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
+    SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['list-comp-sel'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
+    SelLists.newList('sSticker', 'idSelectedStickerShape', ['list-comp-sel'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
+    SelLists.newList('sSocial', 'idSelectedIcon', ['list-comp-sel'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');
+    SelLists.newList('sSymbol1', 'idSelectedSymbol1', ['list-comp-sel'], '', '', initialSymbol1, 'idHasSmallImageListSymbol1');
+    SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['list-comp-sel'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
+    SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
+    SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
     // -------------------------
 
 
     // Lista de cores do Color Picker (mostrada com modal).
     // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
     // -------------------------
-    SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'sel-list-item'], '', '', '001');
+    SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'list-comp-sel'], '', '', '001');
     // -------------------------
 
     
