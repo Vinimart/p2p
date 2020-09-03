@@ -133,8 +133,6 @@ function defInit() {
     SelLists.newList('rendStyle3d', 'idRenderingStyle', ['sel-list-item'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
     // Lista usada na pagina de texto 3D classico.
     SelLists.newList('textModel3d', 'idModel3D', ['sel-list-item'], '', '', '1', 'idHasMergedImageTable3dTextModel');
-    // Lista usada na pagina que desenha texto em foto.
-    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasMergedImageTableTextLayout');
     // -------------------------
 
     
@@ -152,14 +150,19 @@ function defInit() {
     SelLists.newList('textStyle3d', 'idTextStyle3DName', ['sel-list-item'], '', '', '3d_text_style1', 'idHasImageList3dTextStyle');
     // Lista usada nas paginas dos textos de luz e neon.
     SelLists.newList('textStyleLight', 'idTextStyleLightName', ['sel-list-item'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
+
+    // Os componentes textLayout, sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable) para se tornarem componentes formados por imagens.
+    // Lista usada em Image Caption Generator
+    SelLists.newList('textLayout', 'idTextLayoutStyle', ['sel-list-item'], '', '', 'text-layout-style-00', 'idHasImageListTextLayout');
+    // Lista usada nos efeitos de Chalk Text Effect
+    SelLists.newList('sChalk', 'idSelectedChalkboard', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
+    // Lista usada nos efeitos de Graffiti
+    SelLists.newList('sWall', 'idSelectedWall', ['sel-list-item'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     // -------------------------
 
     
     // Listas de imagens pequenas.
     // -------------------------	
-    // Os componentes sWall e sChalk deixaram de ser componentes de tabela para se tornarem componentes formados por imagens.
-    SelLists.newList('sChalk', 'idSelectedChalkboard', ['sel-list-item'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
-    SelLists.newList('sWall', 'idSelectedWall', ['sel-list-item'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['sel-list-item'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['sel-list-item'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['sel-list-item'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
@@ -174,7 +177,7 @@ function defInit() {
     // Lista de cores do Color Picker (mostrada com modal).
     // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
     // -------------------------
-    SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'sel-list-item'], '', '', '001', 'idHasColorPickerCellsSelection');
+    SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'sel-list-item'], '', '', '001');
     // -------------------------
 
     
