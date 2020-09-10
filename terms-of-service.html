@@ -26,6 +26,10 @@
     <!--#include VIRTUAL="/inc/search_modal.inc.html" -->
     <!-- END: [[*SearchModal*]] -->
 
+    <!-- BEGIN: [[*ColorPicker*]] -->
+    <!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+    <!-- END: [[*ColorPicker*]] -->
+
     <!-- BEGIN: [[*SideNav*]] -->
     <!--#include VIRTUAL="/inc/sidenav.inc.html" -->
     <!-- END: [[*SideNav*]] -->
@@ -46,112 +50,125 @@
     </header>
     <!-- END: [[*Header*]] -->
 
-    <main>
-        <div class="limiter-2x padded-h-2x">
-            <!-- BEGIN: [[*InitialText*]] -->
-            <div class="spaced-v-3x">
-                <div id="acceptance-of-terms" class="spaced-v-3x">
-                    <h2 class="spaced-below-2x font-3x">
-                        Acceptance of Terms
-                    </h2>
+    <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png);">
+        <!-- Container Principal (max-width: 1600px) -->
+        <div class="flex-around limiter-2x">
+            <!-- BEGIN: [[*MainColumn*]] -->
+            <div class="column-main padded-h-2x spaced-below-3x">
+                <!-- BEGIN: [[*InitialText*]] -->
+                <div>
+                    <div id="acceptance-of-terms" class="spaced-below-3x">
+                        <h2 class="spaced-below-2x font-3x">
+                            Acceptance of Terms
+                        </h2>
 
-                    <p class="justified spaced-below-1x">
-                        The service that Picture to People provides to you (also referred just as "the service"),
-                        whether as a guest or a registered user, is subject to the following Terms of Service (also
-                        referred as "TOS"). By using Picture to People site, www.picturetopeople.org, (also referred
-                        as "the site", "this site" or "our site"), you indicate that you accept the TOS and that you
-                        agree to be ruled by them.
-                    </p>
-
-                    <p class="justified">
-                        If you do not agree to the TOS, you are not allowed to use Picture to People site. The
-                        Picture to People project developers (also referred just as "the developers", "our team" or
-                        "we") can update the TOS at any time without notice.
-                    </p>
-
-                    <div class="spaced-below-2x">&nbsp;</div>
-                </div>
-
-                <div id="use-licenses" class="spaced-v-3x">
-                    <h2 class="spaced-below-2x font-3x">
-                        Use Licenses
-                    </h2>
-
-                    <p class="justified">
-                        All resources (images, files, informations, etc) generated or modified by Picture to People
-                        site can only be used according to the licenses and conditions described at the
-                        <a href="/use-licenses.html">Use Licenses</a> page.
-                    </p>
-
-                    <div class="spaced-below-2x">&nbsp;</div>
-                </div>
-
-                <div id="prohibited-activities" class="spaced-v-3x">
-                    <h2 class="spaced-below-2x font-3x">
-                        Prohibited Activities
-                    </h2>
-
-                    <p class="spaced-below-1x">
-                        You agree not to engage in any of the following prohibited activities:
-                    </p>
-
-                    <ul>
-                        <li class="spaced-below-1x">
-                            downloading or using, in disagreement with the licenses and conditions described at the
-                            <a href="/use-licenses.html">Use Licenses</a> page, any resource (image, file,
-                            information, etc) generated or modified by Picture to People site;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            blocking the site ads or impairing the behavior of any ad displayed at the site;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            uploading or sending to the site any invalid data, corrupted files, viruses, worms, or other
-                            software agents;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            uploading or sending to the site any ilegal, forbidden or pirate content of any kind;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            using Picture to People software to produce any kind of ilegal content;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            sharing your Picture to People account and/or password;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            using anyone else's account at any time;
-                        </li>
-
-                        <li class="spaced-below-1x">
-                            any act or omission, not limited to the activities described by these Terms of Service, that
-                            can
-                            harm or cause any loss to Picture to People, the developers or other users.
-                        </li>
+                        <p class="justified spaced-below-1x">
+                            The service that Picture to People provides to you (also referred just as "the service"),
+                            whether as a guest or a registered user, is subject to the following Terms of Service (also
+                            referred as "TOS"). By using Picture to People site, www.picturetopeople.org, (also referred
+                            as "the site", "this site" or "our site"), you indicate that you accept the TOS and that you
+                            agree to be ruled by them.
+                        </p>
 
                         <p class="justified">
-                            Any user involved in any forbidden activity can have his account summarily terminated
-                            without notice, at
-                            the developers discretion.
+                            If you do not agree to the TOS, you are not allowed to use Picture to People site. The
+                            Picture to People project developers (also referred just as "the developers", "our team" or
+                            "we") can update the TOS at any time without notice.
                         </p>
-                    </ul>
-                </div>
-            </div>
-            <!-- END: [[*InitialText*]] -->
-        </div>
 
-        <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
-        <div class="centered padded-2x bg-color-bright-grey">
-            <div class="limiter-2x spaced-below-3x">
-                <h2 class="font-5x padded-v-3x">Popular Graphic Design Apps</h2>
-                <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                        <div class="spaced-below-2x">&nbsp;</div>
+                    </div>
+
+                    <div id="use-licenses" class="spaced-v-3x">
+                        <h2 class="spaced-below-2x font-3x">
+                            Use Licenses
+                        </h2>
+
+                        <p class="justified">
+                            All resources (images, files, informations, etc) generated or modified by Picture to People
+                            site can only be used according to the licenses and conditions described at the
+                            <a href="/use-licenses.html">Use Licenses</a> page.
+                        </p>
+
+                        <div class="spaced-below-2x">&nbsp;</div>
+                    </div>
+
+                    <div id="prohibited-activities" class="spaced-v-3x">
+                        <h2 class="spaced-below-2x font-3x">
+                            Prohibited Activities
+                        </h2>
+
+                        <p class="spaced-below-1x">
+                            You agree not to engage in any of the following prohibited activities:
+                        </p>
+
+                        <ul>
+                            <li class="spaced-below-1x">
+                                downloading or using, in disagreement with the licenses and conditions described at the
+                                <a href="/use-licenses.html">Use Licenses</a> page, any resource (image, file,
+                                information, etc) generated or modified by Picture to People site;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                blocking the site ads or impairing the behavior of any ad displayed at the site;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                uploading or sending to the site any invalid data, corrupted files, viruses, worms, or
+                                other
+                                software agents;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                uploading or sending to the site any ilegal, forbidden or pirate content of any kind;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                using Picture to People software to produce any kind of ilegal content;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                sharing your Picture to People account and/or password;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                using anyone else's account at any time;
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                any act or omission, not limited to the activities described by these Terms of Service,
+                                that
+                                can
+                                harm or cause any loss to Picture to People, the developers or other users.
+                            </li>
+
+                            <p class="justified">
+                                Any user involved in any forbidden activity can have his account summarily terminated
+                                without notice, at
+                                the developers discretion.
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: [[*InitialText*]] -->
             </div>
+            <!-- END: [[*MainColumn*]] -->
+
+            <!-- BEGIN: [[*SecondColumn*]] -->
+            <div class="column-2nd padded-h-1x spaced-below-3x">
+                <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                <div class="centered spaced-below-3x">
+                    <h3 class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</h3>
+                    <!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                </div>
+                <!-- END: [[*PopularGraphicDesignApps*]] -->
+
+                <!-- BEGIN: [[*RecommendedEffects*]] -->
+                <!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+                <!-- END: [[*RecommendedEffects*]] -->
+            </div>
+            <!-- END: [[*SecondColumn*]] -->
         </div>
-        <!-- END: [[*PopularGraphicDesignApps*]] -->
     </main>
 
     <!-- BEGIN: [[*Footer*]] -->
