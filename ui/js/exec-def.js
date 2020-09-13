@@ -155,9 +155,9 @@ function defInit() {
     // Lista usada em Image Caption Generator
     SelLists.newList('textLayout', 'idTextLayoutStyle', ['list-comp-sel'], '', '', 'text-layout-style-00', 'idHasImageListTextLayout');
     // Lista usada nos efeitos de Chalk Text Effect
-    SelLists.newList('sChalk', 'idSelectedChalkboard', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
+    SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
     // Lista usada nos efeitos de Graffiti
-    SelLists.newList('sWall', 'idSelectedWall', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
+    SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     // -------------------------
 
     
