@@ -1,0 +1,23 @@
+├───doc  (armazena toda a documentação avulsa do projeto P2P)
+├───img
+│   ├───frame
+│   ├───logo
+│   ├───photo
+│   ├───sticker
+│   ├───text
+│   │   ├───beveled
+│   │   ├───embossed
+│   │   ├───engraved
+│   │   ├───extra
+│   │   ├───textured
+│   │   └───type
+│   └───working
+├───inc
+├───symbol
+└───ui
+    ├───comp
+    │   └───img
+    ├───css
+    │   └───fontawesome
+    ├───img
+    └───js

@@ -110,7 +110,7 @@ function defInit() {
     // Lista de efeitos de foto que fica fora do formulario.
     SelLists.newList('pe1', 'idSelectedPhotoEffect', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', 'color_improvement_effect_001');
 
-    // Lista de efeitos de texto que fica fora do formulario.
+    // Lista de efeitos de texto que ficam fora do formulario.
     SelLists.newList('te1', 'idSelectedTextEffect1', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', initialNamedTextEffect1);
     SelLists.newList('te2', 'idSelectedTextEffect2', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', initialNamedTextEffect2);
 
@@ -151,9 +151,6 @@ function defInit() {
 
     // Listas de imagens pequenas.
     // -------------------------
-    // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable) para se tornarem componentes formados por imagens.
-    SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
-    SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['list-comp-sel'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['list-comp-sel'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
@@ -162,11 +159,15 @@ function defInit() {
     SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['list-comp-sel'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
+    // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable).
+    // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que são listas de imagens pequenas.
+    SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
+    SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');
     // -------------------------
 
 
     // Lista de cores do Color Picker (mostrada com modal).
-    // Esta lista não existe no script de inicializacao original, foi instanciada para atender o novo Color Picker
+    // Esta lista nao existe no script de inicializacao original, foi instanciada para atender o novo Color Picker.
     // -------------------------
     SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'list-comp-sel'], '', '', '001');
     // -------------------------
@@ -184,11 +185,11 @@ function defInit() {
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
 
-    // Lista para o  EffectEnum Styles 3D Abstract Text Effect no /template.html (Botões Show More / Show All).
+    // Lista para o  EffectEnum Styles 3D Abstract Text Effect no /template.html (Botoes Show More / Show All).
     GrowLists.newList('g1', 'idGrowList1', '7-86', 6,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
-        '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/abstract<<0>>_text_effect.jpg">' +
+        '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/working/abstract<<0>>_text_effect.jpg">' +
         '</a>' +
         '</div>',
         '0', 3, ['idGrowList1ButtonContainer']);
@@ -198,7 +199,7 @@ function defInit() {
     // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
     var itemsToGrow = randomSlice(
         [
-            '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
+            '/www/list.html ## floral001_text_effect.jpg ## Floral Text Effect',
             '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
             '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
             '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',

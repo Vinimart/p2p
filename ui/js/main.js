@@ -738,13 +738,12 @@ var ColorTable = new(function () {
 
 	this.applyColor = () => {
 		// Valor padrao inicial
-		this.initialValue = '000000';
-		this.selectedColor = this.selectedColor ? this.selectedColor : this.initialValue;
+		//this.initialValue = '000000';
+		this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
 		this.target.value = this.selectedColor;
 		toggleHide([this.container.id]);
 	};
 
 	return this;
-
 })();
 /* --------------- END: COLOR TABLE --------------- */
