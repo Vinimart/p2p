@@ -1,13 +1,5 @@
-// Pega o valor da flag contida no componente que informa o tipo de lista de fonte presente na pagina - f1, f2, f3, f4 ou f5
-// Original:
-/*function getFontListNum() {
-    return getElemPropertyValue('idFontListNumber', 'value');
-}*/
-// Alterado por Vinicius:
 function getFontListNum() {
-    var fontListNumber = document.getElementsByName('FontListNumber')[0];
-    var fontListValue = fontListNumber ? fontListNumber.value : undefined;
-    return fontListValue;
+    return getElemPropertyValue('idFontListNumber', 'value');
 }
 
 // Preenche a lista dinamica de apps populares.
@@ -19,7 +11,7 @@ function defPopDesignApps(containerId) {
     // A chamada a "GrowLists.newList" abaixo nao cria a lista se o container nao existir, mas fazendo este teste
     // aqui eu evito a criacao de "itemsToGrow", que inclusive tem o overhead do sorteio dos itens aleatorios.
     if (container) {
-    
+
         // Cria uma lista com todas as possibilidades e escolhe 6 aleatoriamente para mostrar.
         // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
         // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
@@ -84,33 +76,35 @@ function defPopDesignApps(containerId) {
                 ['/image_effects/photo-lego-toy/lego-toy-photo-effect-editor.html', 'lego-photo-effect.jpg', 'Lego Effect'],
                 ['/image_effects/photo_graffiti/photo_graffiti_effect_generator.html', 'graffiti-photo-effect.jpg', 'Photo Graffiti']
             ], 6);
-    
+
         var images = [],
             links = [],
             labels = [],
             chosenPopEffect;
-        
+
         for (var i = 0; i < chosenPopEffects.length; i++) {
             chosenPopEffect = chosenPopEffects[i];
             links[i] = chosenPopEffect[0];
             images[i] = chosenPopEffect[1];
             labels[i] = chosenPopEffect[2];
         }
-        
+
         // function PreloadImageList(startNumber, imageElemName, imagePath, images, linkElemName, linkPath, links, labelElemName, labels, callbackAfterLoadAll) {
-        var preloadList = new PreloadImageList(1, 'PopEffectsImg', '/ui/images/popular-design-app/', images, 'PopEffectsLink', '', links, 'PopEffectsLabel', labels, function() {show([containerId]);} );
-        preloadList.loadAll();			
+        var preloadList = new PreloadImageList(1, 'PopEffectsImg', '/ui/images/popular-design-app/', images, 'PopEffectsLink', '', links, 'PopEffectsLabel', labels, function () {
+            show([containerId]);
+        });
+        preloadList.loadAll();
     }
 }
 
 function defInit() {
 
     hide(['idOverlayPreloader']);
-    
+
     // So cria a lista de apps populares se o container existir.
     defPopDesignApps('idPopEffectsContainer');
 
-    
+
     // Listas de efeitos em que e mostrado um nome para cada um.
     // -------------------------
     // Lista de efeitos de foto que fica fora do formulario.
@@ -125,7 +119,7 @@ function defInit() {
     SelLists.newList('dpe1', 'idSelectedEffect', ['hover-bg-color-grey', 'label-list-comp-sel'], '', '', 'no_effect');
     // -------------------------
 
-    
+
     // Listas de imagens que sao mostradas com tabelas.
     // So sao criadas aquelas cujo elemento que mantem a selecao da lista existir.
     // -------------------------
@@ -135,7 +129,7 @@ function defInit() {
     SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '1', 'idHasMergedImageTable3dTextModel');
     // -------------------------
 
-    
+
     // Lista de fontes (mostrada com tabela).
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
@@ -143,26 +137,23 @@ function defInit() {
     SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
     // -------------------------
 
-    
+
     // Listas de imagens.
     // -------------------------
     // Lista usada nas paginas dos textos 3D texturizados.
     SelLists.newList('textStyle3d', 'idTextStyle3DName', ['list-comp-sel'], '', '', '3d_text_style1', 'idHasImageList3dTextStyle');
     // Lista usada nas paginas dos textos de luz e neon.
     SelLists.newList('textStyleLight', 'idTextStyleLightName', ['list-comp-sel'], '', '', 'light_text_style_01', 'idHasImageListLightTextStyle');
-
-    // Os componentes textLayout, sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable) para se tornarem componentes formados por imagens.
-    // Lista usada em Image Caption Generator
+    // Lista usada em Image Caption Generator.
     SelLists.newList('textLayout', 'idTextLayoutStyle', ['list-comp-sel'], '', '', 'text-layout-style-00', 'idHasImageListTextLayout');
-    // Lista usada nos efeitos de Chalk Text Effect
-    SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
-    // Lista usada nos efeitos de Graffiti
-    SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     // -------------------------
 
-    
+
     // Listas de imagens pequenas.
-    // -------------------------	
+    // -------------------------
+    // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable) para se tornarem componentes formados por imagens.
+    SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasImageListChalkboard');
+    SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasImageListWall');
     SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['list-comp-sel'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['list-comp-sel'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
@@ -180,7 +171,7 @@ function defInit() {
     SelLists.newList('cp1', 'idColor', ['hover-shaded-1x', 'list-comp-sel'], '', '', '001');
     // -------------------------
 
-    
+
     // Listas que crescem.
     // -------------------------
     // this.newList = function (listName, containerId, itemsToAdd, addSlice, itemMask, padChar, itemsSizeWithPad, idElemsToHideWhenAddAll, callbackWhenAddAll) {
@@ -193,7 +184,7 @@ function defInit() {
                     '0', 3, ['idGrowList1ButtonContainer']);
     */
 
-    // Lista para o prototipo da pagina /text_generator/others/3d/realistic/3d_abstract_text_effect.html (EffectEnumStyles Show More / Show All)
+    // Lista para o  EffectEnum Styles 3D Abstract Text Effect no /template.html (Botões Show More / Show All).
     GrowLists.newList('g1', 'idGrowList1', '7-86', 6,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
@@ -201,25 +192,25 @@ function defInit() {
         '</a>' +
         '</div>',
         '0', 3, ['idGrowList1ButtonContainer']);
-    
+
     // Cria uma lista com todas as possibilidades e escolhe 5 aleatoriamente para mostrar.
     // Com esse passo a mais, eu consigo usar uma GrowList para mostrar um subconjunto aleatorio de itens.
     // A GrowList e mais complexa, pois cada item tem 3 subitens para substituicao na string de mascara.
     var itemsToGrow = randomSlice(
-                    [
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
-                        '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
-                        '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
-                        '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
-                        '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
-                    ], 5);
+        [
+            '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect',
+            '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect',
+            '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect',
+            '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect',
+            '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 2',
+            '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 2',
+            '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 2',
+            '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 2',
+            '/www/list.html ## floral001_text_effect.jpg ## Floral Text EFfect 3',
+            '/www/list2.html ## pen-ink-engraved-drawing-photo-effect-1.jpg ## Ink Engraved Photo Effect 3',
+            '/www/list3.html ## glitter001_text_effect.jpg ## Glitter Text Effect 3',
+            '/www/notfound.html ## cracked001_text_effect.jpg ## Cracked Text Effect 3',
+        ], 5);
     /*GrowLists.newList('g1', 'idGrowList1', itemsToGrow, 2, 
                     '<div class="css-block-center pad-small">' +
                         '<a href="<<0>>">' +
@@ -229,7 +220,7 @@ function defInit() {
                     '</div>',
                     '0', 3, ['idGrowList1ButtonContainer']);*/
     // -------------------------
-                    
+
 
     // Verificacoes de dados.
     // -------------------------
@@ -242,7 +233,7 @@ function defInit() {
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
     // -------------------------
-    
+
 }
 
 function defSubmit() {
