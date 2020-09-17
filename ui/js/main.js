@@ -725,8 +725,10 @@ var ColorTable = new(function () {
 	this.target;
 	this.container = document.getElementById('idColorTableContainer');
 	this.hexDisplay = document.getElementById('idHexDisplay');
+	// Valor padrao inicial
+	this.selectedColor = '000000'
 
-	this.set = function (id) {
+	this.openColorPicker = function (id) {
 		this.target = document.getElementById(id);
 		toggleHide([this.container.id]);
 	};
@@ -736,10 +738,7 @@ var ColorTable = new(function () {
 		this.hexDisplay.textContent = this.selectedColor;
 	};
 
-	this.applyColor = () => {
-		// Valor padrao inicial
-		//this.initialValue = '000000';
-		this.selectedColor = this.selectedColor ? this.selectedColor : '000000';
+	this.applyColor = function () {
 		this.target.value = this.selectedColor;
 		toggleHide([this.container.id]);
 	};
