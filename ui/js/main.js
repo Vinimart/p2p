@@ -722,22 +722,34 @@ function PreloadImageList(namesStartNumber, imageElemName, imagePath, images, li
 /* --------------- BEGIN: COLOR TABLE --------------- */
 var ColorTable = new(function () {
 
+	// Elemento input do form de configuracao referente a uma instancia do Color Picker.
 	this.target;
+	// Valor inicial.
+	this.selectedColor = '000000';
+	// Container do Color Picker.
 	this.container = document.getElementById('idColorTableContainer');
+	// Elemento responsavel por exibir o valor da cor selecionada em hexadecimal.
 	this.hexDisplay = document.getElementById('idHexDisplay');
-	// Valor padrao inicial
-	this.selectedColor = '000000'
 
+	// Identifica o elemento input do form de configuracao (target) e abre a instancia do Color Picker.
+	// Este metodo sera chamado a partir do clique no icone do color picker no form,
+	// passando como parametro o id do target.
 	this.openColorPicker = function (id) {
 		this.target = document.getElementById(id);
 		toggleHide([this.container.id]);
 	};
 
+	// Armazena o valor da cor selecionada e exibe o valor em hexadecimal atraves do elemento hexDisplay.
+	// Este metodo sera chamado sempre que o usuario alternar entre as celulas de cor no Color Picker.
+	// Neste momento o value da cor selecionada ainda nao sobrescrevera o value do target. 
 	this.setColor = function (color) {
 		this.selectedColor = color;
 		this.hexDisplay.textContent = this.selectedColor;
 	};
 
+	// Aplica o valor da cor selecionada no value do target.
+	// Este metodo sera chamado quando o usuario clicar no botao "OK" do Color Picker.
+	// Caso o metodo setColor nao seja executado, o valor selecionado sera o valor padrao.
 	this.applyColor = function () {
 		this.target.value = this.selectedColor;
 		toggleHide([this.container.id]);
