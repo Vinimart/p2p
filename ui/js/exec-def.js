@@ -250,7 +250,7 @@ function defSubmit() {
 
 function resultPageSubmit() {
     var changeVisibility = function () {
-        toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['hide-element']);
+        toggleCss(['idDownloadMessage', 'idDonwloadButton'], ['hide-elem']);
     }
     // Torna o botao invisivel e a mensagem visivel.
     changeVisibility();

@@ -223,15 +223,15 @@ function toggleCss(ids, cssClasses) {
 }
 
 function show(ids) {
-	removeCss(ids, ["hide-element"]);
+	removeCss(ids, ["hide-elem"]);
 }
 
 function hide(ids) {
-	addCss(ids, ["hide-element"]);
+	addCss(ids, ["hide-elem"]);
 }
 
 function toggleHide(ids) {
-	toggleCss(ids, ["hide-element"]);
+	toggleCss(ids, ["hide-elem"]);
 }
 
 function setInnerImagesSrc(outerId, path, files) {
