@@ -11,6 +11,10 @@
             <!-- input necessario para mostrar a selecao da celula de cor -->
             <input type="hidden" name="Color" id="idColor" value="001" />
 
+            <!-- Este componente utiliza dois metodos de classes diferentes:
+                 O metodo SelList.change responsavel pela selecao visual dos itens do componente (o value nao vai no request);
+                 O metodo ColorTable.setColor responsavel por enviar o valor de title para o campo input
+                 que instanciou o color picker (o valor do title vai no request). -->
             <table id="idColorTable" class="color-table">
                 <tr>
                     <td id="cp1.001" class="hover-shaded-1x"
@@ -367,7 +371,7 @@
             </table>
 
             <div class="spaced-below-1x" title="Hexadecimal Color Value">
-                <p id="idHexDisplay" class="color-value-display padded-2x bg-color-bright-grey rounded-1x">000000</p>
+                <p id="idHexDisplay" class="color-value-display padded-2x bg-color-bright-grey rounded-1x"></p>
             </div>
         </div>
 
