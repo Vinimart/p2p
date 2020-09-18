@@ -28,7 +28,7 @@ a {
     color: #00528c;
 }
 
-/* Pode parecer redundante, mas e necessario para que as imagens gerais (/img) nao causem barra de rolagem 
+/* Pode parecer redundante, mas necessario para que as imagens sejam responsivas e nao causem barra de rolagem 
 horizontal na pagina */
 img {
     max-width: 100%;
