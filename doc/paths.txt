@@ -1,0 +1,27 @@
+Diretórios principais do protótipo Picture to People:
+
+Caminho:                 Descrição:
+
+├───doc                 (armazena toda a documentação avulsa do projeto P2P)
+├───img                 (armazena as imagens gerais de exemplos de efeitos)
+│   ├───frame           (imagens dos efeitos para Photo Frames)
+│   ├───logo            (imagens dos efeitos para Image Logos)
+│   ├───photo           (imagens dos efeitos para Photo Effects)
+│   ├───sticker         (imagens dos efeitos para Sticker Makers)
+│   ├───text            (agrupado de pastas para as imagens dos efeitos Text Logos)
+│   │   ├───beveled     (imagens dos efeitos de texto Bevel Text Effect)
+│   │   ├───embossed    (imagens dos efeitos de texto Carved: embossed text effect)
+│   │   ├───engraved    (imagens dos efeitos de texto Carved: engraved text effect)
+│   │   ├───extra       (imagens dos efeitos de texto diversos que não são: beveled, embossed, engraved, textured e type)
+│   │   ├───textured    (imagens dos efeitos de texto texturizados. Ex: Realistic 3D Text Logo Generators) 
+│   │   └───type        (imagens dos efeitos de texto Typography)
+│   └───working         (armazena as imagens gerais de exemplo utilizadas no template)
+├───inc                 (contém todos os includes SSI para gerar o layout das páginas)
+├───symbol              (armazena as imagens dos componentes com imagens do tipo ".symbol.gif")
+└───ui                  (este diretório armazena os arquivos CSS, JS e arquivos de componentes)
+    ├───comp            (todos os includes SSI de componentes ficam nesta pasta)
+    │   └──img          (armazena as imagens de componentes com exceção das imagens do tipo ".symbol.gif")
+    ├───css             (esta pasta armazena os arquivos de estilo da página)
+    │   └──fontawesome  (arquivos de estilo para os ícones fontawesome)
+    ├───img             (contém imagens que compõem o layout da página, como imagem de logo)
+    └───js              (armazena arquivos javascript internos e externos)
