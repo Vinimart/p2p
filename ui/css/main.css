@@ -366,18 +366,19 @@ cor secundaria da pagina em estado hover. */
     top: 12px;
 }
 
+.dash-divider {
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    /* Cor provisoria */
+    background-color: #FFC080;
+}
+
 /* Container recommended effects */
 .round-container {
     border-radius: 100%;
     width: 200px;
     height: 200px;
-}
-
-.dash {
-    display: inline-block;
-    width: 40px;
-    height: 10px;
-    background-color: #ffc080;
 }
 
 /* ---------- */
@@ -976,6 +977,14 @@ input[type='file'] {
     justify-content: center;
 }
 
+.flex-equal {
+    display: flex;
+}
+
+.flex-equal div {
+    flex: 1;
+}
+
 .in-block-display {
     display: inline-block;
 }
@@ -1144,7 +1153,7 @@ input[type='file'] {
     /* ----- Layout Structure ---- */
 
     /* Os elementos que utilizam .flex-around dentro do container main ficam em apenas uma coluna */
-    main .flex-around {
+    main .flex-around, main .flex-equal {
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -1194,7 +1203,7 @@ input[type='file'] {
 
     /* Todos os elementos que utilizam a classe ocupam apenas uma coluna */
     .footer-nav,
-    .column-main .flex-center {
+    .column-main .flex-center, .column-main .flex-equal {
         flex-direction: column;
         flex-wrap: wrap;
     }
