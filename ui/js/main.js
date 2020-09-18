@@ -721,6 +721,10 @@ function PreloadImageList(namesStartNumber, imageElemName, imagePath, images, li
 
 /* --------------- BEGIN: COLOR TABLE --------------- */
 var ColorTable = new(function () {
+	// O estado do Color Picker e gerenciado por duas classes, SelLists e ColorTable:
+	// SelLists.change: Responsavel por exibir para o usuario a selecao das celulas do componente,
+	// o value armazenado em "idColor" nao vai no request.
+	// ColorTable.setColor: Sua funcao e armazenar na variavel this.selectedColor o value da cor selecionada pelo usuario.
 
 	// Elemento input do form de configuracao referente a uma instancia do Color Picker.
 	this.target;
