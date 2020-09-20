@@ -278,18 +278,18 @@ cor secundaria da pagina em estado hover. */
     width: 400px;
 }
 
-/* Limita a largura do container e o centraliza na tela */
+/* Limita a largura do container e o centraliza no container pai */
 .limiter-1x {
     max-width: 800px;
     margin: auto;
 }
 
-.limiter-2-5x {
+.limiter-2x {
     max-width: 1200px;
     margin: auto;
 }
 
-.limiter-2x {
+.limiter-3x {
     max-width: 1600px;
     margin: auto;
 }
