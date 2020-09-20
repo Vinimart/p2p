@@ -6,9 +6,9 @@
     <!--#include VIRTUAL="/inc/head_no_index.inc.html" -->
     <!-- END: [[*HeadNoIndex*]] -->
 
-<link rel="stylesheet" href="/ui/css/normalize.css" />
-<link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
-<link rel="stylesheet" href="/ui/css/main.css" />
+    <link rel="stylesheet" href="/ui/css/normalize.css" />
+    <link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/ui/css/main.css" />
 
     <title>Picture to People - Effect Result</title>
 </head>
@@ -60,7 +60,8 @@
             <!-- END: [[*InitialText*]] -->
 
             <div class="spaced-below-2x">
-                <img src="/img/working/3000-1000-result.png" alt="Result Image Preview" />
+                <img class="lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/working/3000-1000-result.png"
+                    alt="Result Image Preview">
             </div>
 
             <div class="spaced-below-3x">
@@ -72,13 +73,14 @@
                         <div id="idDownloadMessage" class="spaced-below-2x hide-elem">
                             <span>Your download should start shortly. Please wait.</span>
                         </div>
-                        
+
                         <div id="idDonwloadButton" class="btn-2x spaced-below-1x" onclick="resultPageSubmit();">
                             <i class="fas fa-file-download">&nbsp;</i>
                             <span>Download</span>
                         </div>
-    
-                        <div id="idBackButton" class="btn-2x spaced-below-1x spaced-h-1x" onclick="window.history.go(-1);">
+
+                        <div id="idBackButton" class="btn-2x spaced-below-1x spaced-h-1x"
+                            onclick="window.history.go(-1);">
                             <i class="fas fa-undo-alt">&nbsp;</i>
                             <span>Back</span>
                         </div>
@@ -103,11 +105,11 @@
     <!-- END: [[*Footer*]] -->
 
     <!-- BEGIN: [[*SCRIPT::External*]] -->
-<script src="/ui/js/lazysizes.min.js"></script>
+    <script src="/ui/js/lazysizes.min.js"></script>
     <!-- END: [[*SCRIPT::External*]] -->
 
     <!-- BEGIN: [[*SCRIPT::Internal*]] -->
-<script src="/ui/js/main.js"></script>
+    <script src="/ui/js/main.js"></script>
 
     <script>
         try {
@@ -137,7 +139,7 @@
         }
     </script>
 
-<script src="/ui/js/exec-def.js"></script>
+    <script src="/ui/js/exec-def.js"></script>
     <!-- END: [[*SCRIPT::Internal*]] -->
 
     <!-- BEGIN: [[*SCRIPT::Ads*]] -->
