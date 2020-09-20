@@ -284,9 +284,19 @@ cor secundaria da pagina em estado hover. */
     margin: auto;
 }
 
+.limiter-2-5x {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .limiter-2x {
     max-width: 1600px;
     margin: auto;
+}
+
+.index-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 /* Posicionamento para background-image inferior */
@@ -364,14 +374,6 @@ cor secundaria da pagina em estado hover. */
     background-color: #555555;
     position: relative;
     top: 12px;
-}
-
-.dash-divider {
-    display: inline-block;
-    width: 40px;
-    height: 10px;
-    /* Cor provisoria */
-    background-color: #FFC080;
 }
 
 /* Container recommended effects */
@@ -977,10 +979,12 @@ input[type='file'] {
     justify-content: center;
 }
 
+/* Container com display flex - elementos centralizados com mesmo heigh e weight */
 .flex-equal {
     display: flex;
 }
 
+/* Container filho para display-equals, obrigatorio para display-equals funcionar corretamente */
 .flex-equal div {
     flex: 1;
 }
@@ -1206,6 +1210,11 @@ input[type='file'] {
     .column-main .flex-center, .column-main .flex-equal {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .index-section {
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     /* Espacamento entre o container dos itens de navegacao do footer e o paragrafo do footer */
