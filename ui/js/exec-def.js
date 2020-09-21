@@ -189,7 +189,7 @@ function defInit() {
     GrowLists.newList('g1', 'idGrowList1', '7-86', 6,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
-        '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/working/abstract<<0>>_text_effect.jpg">' +
+        '<img class="spaced-below-1x lazyload" alt="abstract <<0>> text effect" src="/ui/img/loader-100x100.svg" data-src="/img/working/abstract<<0>>_text_effect.jpg">' +
         '</a>' +
         '</div>',
         '0', 3, ['idGrowList1ButtonContainer']);
