@@ -1,0 +1,9 @@
+/error_page.html
+/index.html
+/notfound.html
+/result.html
+/search-results.html
+/template.html
+/terms-of-service.html
+/text_generator/others/graffiti/graffiti_text.html
+/photo-frame/art-photo-frame-generator.html
