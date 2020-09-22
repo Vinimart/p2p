@@ -160,7 +160,7 @@ function defInit() {
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
     // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable).
-    // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que são listas de imagens pequenas.
+    // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que sao listas de imagens pequenas.
     SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
     SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');
     // -------------------------
