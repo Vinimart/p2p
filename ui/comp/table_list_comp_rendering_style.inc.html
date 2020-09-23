@@ -1,46 +1,20 @@
 <div class="spaced-v-3x">
-    <input type="hidden" name="RenderingStyle" id="idRenderingStyle" value="" />
+	<input type="hidden" name="RenderingStyle" id="idRenderingStyle" value="" />
 
-    <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
-    <input type="hidden" name="HasMergedImageTable3dRenderingStyle" id="idHasMergedImageTable3dRenderingStyle"
-        value="yes" />
+	<!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+	<input type="hidden" name="HasMergedImageTable3dRenderingStyle" id="idHasMergedImageTable3dRenderingStyle" value="yes" />
 
-    <p class="spaced-below-1x">Choose a rendering style :</p>
+	<p class="spaced-below-1x">Choose a rendering style :</p>
 
-    <!-- Dependendo do rendering style selecionado, sao mostradas apenas as opcoes de configuracao pertinentes ao rendering style escolhido -->
-    <div class="table-list-comp">
-        <table style="background-image: url(/ui/comp/img/merged_image_render_engine.gif);" cellpadding="0"
-            cellspacing="0">
-            <tbody>
-                <tr>
-                    <td id="rendStyle3d.1"
-                        onclick="SelLists.change(this.id); show(['idLineColorContainer']); hide(['idFrontFaceColorContainer', 'idDepthColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']);"
-                        class="table-list-comp-cell-2x">
-                        &nbsp;
-                    </td>
-                </tr>
-                <tr>
-                    <td id="rendStyle3d.2"
-                        onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idLineColorContainer', 'idDepthColorContainer']); hide(['idDepthDarkColorContainer', 'idDepthBrightColorContainer']);"
-                        class="table-list-comp-cell-2x">
-                        &nbsp;
-                    </td>
-                </tr>
-                <tr>
-                    <td id="rendStyle3d.3"
-                        onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']); hide(['idLineColorContainer', 'idDepthColorContainer']);"
-                        class="table-list-comp-cell-2x">
-                        &nbsp;
-                    </td>
-                </tr>
-                <tr>
-                    <td id="rendStyle3d.4"
-                        onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']); hide(['idLineColorContainer', 'idDepthColorContainer']);"
-                        class="table-list-comp-cell-2x">
-                        &nbsp;
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+	<!-- Dependendo do rendering style selecionado, sao mostradas apenas as opcoes de configuracao pertinentes ao rendering style escolhido -->
+	<div class="table-list-comp">
+		<table style="background-image: url(/ui/comp/img/merged_image_render_engine.gif)" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr><td id="rendStyle3d.1" onclick="SelLists.change(this.id); show(['idLineColorContainer']); hide(['idFrontFaceColorContainer', 'idDepthColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']);" class="table-list-comp-cell-2x">&nbsp;</td></tr>
+				<tr><td id="rendStyle3d.2" onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idLineColorContainer', 'idDepthColorContainer']); hide(['idDepthDarkColorContainer', 'idDepthBrightColorContainer']);" class="table-list-comp-cell-2x">&nbsp;</td></tr>
+				<tr><td id="rendStyle3d.3" onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']); hide(['idLineColorContainer', 'idDepthColorContainer']);" class="table-list-comp-cell-2x">&nbsp;</td></tr>
+				<tr><td id="rendStyle3d.4" onclick="SelLists.change(this.id); show(['idFrontFaceColorContainer', 'idDepthDarkColorContainer', 'idDepthBrightColorContainer']); hide(['idLineColorContainer', 'idDepthColorContainer']);" class="table-list-comp-cell-2x">&nbsp;</td></tr>
+			</tbody>
+		</table>
+	</div>
 </div>
