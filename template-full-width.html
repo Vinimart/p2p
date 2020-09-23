@@ -49,8 +49,95 @@
 		<main>
 			<!-- BEGIN: [[*MainContent-FullWidth*]] -->
 			<div class="limiter-3x centered padded-h-2x">
-				<!-- BEGIN: [[*InitialText*]] -->
-				<!-- END: [[*InitialText*]] -->
+				<div class="spaced-v-3x">
+					<!-- BEGIN: [[*MainContent-FullWidth*]] -->
+					<div class="limiter-3x centered padded-h-2x">
+						<div class="limiter-3x centered padded-h-2x spaced-below-3x">
+							<div class="spaced-below-2x">
+								<img class="lazyload" src="/ui/img/loader-100x100.svg" data-src="/ui/img/404-error.png" alt="404 Page Not Found Error Illustration" />
+							</div>
+			
+							<a href="/">
+								<div class="btn-2x spaced-below-1x spaced-h-1x">
+									<i class="fas fa-home">&nbsp;</i>
+									<span>Home</span>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- END: [[*MainContent-FullWidth*]] -->
+				</div>
+
+				<div class="spaced-v-3x">
+					<!-- BEGIN: [[*MainContent-FullWidth*]] -->
+					<div class="limiter-3x centered padded-h-2x">
+						<!-- BEGIN: [[*InitialText*]] -->
+						<div class="spaced-below-2x">
+							<p class="limiter-1x">
+								You can use the buttons below. This image file expires in a few minutes. If the image is big, it
+								can be shown reduced here.
+							</p>
+						</div>
+						<!-- END: [[*InitialText*]] -->
+
+						<div class="spaced-below-2x">
+							<img class="lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/working/3000-1000-result.png" alt="Result Image Preview" />
+						</div>
+
+						<div class="spaced-below-3x">
+							<form name="FormMain" id="idFormMain" method="post" action="/p2p/result.p2p/download-file">
+								<input type="hidden" name="ResultFile" id="idResultFile" value="[[---RESULT_FILE---]]" />
+								<input type="hidden" name="RefTS" id="idRefTS" value="[[---REFERENCE_TIMESTAMP---]]" />
+
+								<div>
+									<div id="idDownloadMessage" class="spaced-below-2x hide-elem">
+										<span>Your download should start shortly. Please wait.</span>
+									</div>
+
+									<div id="idDonwloadButton" class="btn-2x spaced-below-1x" onclick="resultPageSubmit();">
+										<i class="fas fa-file-download">&nbsp;</i>
+										<span>Download</span>
+									</div>
+
+									<div id="idBackButton" class="btn-2x spaced-below-1x spaced-h-1x" onclick="window.history.go(-1);">
+										<i class="fas fa-undo-alt">&nbsp;</i>
+										<span>Back</span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					</div>
+					<!-- END: [[*MainContent-FullWidth*]] -->
+				</div>
+
+				<div class="spaced-v-3x">
+					<!-- BEGIN: [[*MainContent-FullWidth*]] -->
+					<div class="limiter-3x centered padded-h-2x">
+						<div class="limiter-3x centered padded-h-2x spaced-below-3x">
+							<!-- BEGIN: [[*InitialText*]] -->
+							<div id="dialog" class="limiter-1x spaced-below-2x">
+<!--[error_message]-->
+								<!-- Preview da mensagem de erro AdBlock: -->
+								<p>
+									<strong>BLOCKING ADS FROM THIS SITE CONFIGURES PIRACY.</strong><br />
+									Picture to People site doesn't work with any active ad blocker. According to our terms of
+									service, it's absolutely forbidden to block the ads from our site. Using a software without
+									respecting its terms of use and without accepting its counterpart conditions is piracy.
+									Please disable your ad blocker or configure it to not block on any URL from
+									"picturetopeople.org".
+								</p>
+							</div>
+							<!-- END: [[*InitialText*]] -->
+			
+							<div id="idBackButton" class="btn-2x spaced-below-1x spaced-h-1x" onclick="window.history.go(-1);">
+								<i class="fas fa-undo-alt">&nbsp;</i>
+								<span>Back</span>
+							</div>
+						</div>
+					</div>
+					<!-- END: [[*MainContent-FullWidth*]] -->
+				</div>
 			</div>
 			<!-- END: [[*MainContent-FullWidth*]] -->
 
