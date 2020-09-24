@@ -884,6 +884,11 @@ input[type='file'] {
     margin-bottom: 30px;
 }
 
+.spaced-v-4x {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .spaced-h-1x {
     margin-left: 10px;
     margin-right: 10px;
@@ -909,6 +914,18 @@ input[type='file'] {
 
 .spaced-below-3x {
     margin-bottom: 30px;
+}
+
+.spaced-above-1x {
+    margin-top: 10px;
+}
+
+.spaced-above-2x {
+    margin-top: 20px;
+}
+
+.spaced-above-3x {
+    margin-top: 30px;
 }
 
 .spaced-around-1x {
