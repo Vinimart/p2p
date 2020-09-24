@@ -175,7 +175,7 @@ cor secundaria da pagina em estado hover. */
     color: #FFFFFF;
 }
 
-/* Classe hover obrigatória para botoes */
+/* Classe hover obrigatoria para botoes */
 .hover-color-1st:hover {
     /* EQUALS .color-1st */
     color: #FF8000;
