@@ -432,6 +432,12 @@ Apagar quando for gerada a imagem do componente mais estreita.*/
     background-color: #FFFFFF;
 }
 
+/* Tamanho minimo das imagens dos componentes com label para evitar que o label seja maior que a largura da imagem
+e cause problemas de layout, deixando a area vermelha de selecao mais larga que o estabelecido. */
+.label-list-comp img {
+    min-width: 130px;
+}
+
 /* Imagens que ficam dentro dos componentes */
 .list-comp img {
     /* EQUALS .color-bright */
@@ -775,7 +781,7 @@ input[type='file'] {
 /* ----- Font ----- */
 
 .font-1x {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* Tamanho de fonte padrao */
