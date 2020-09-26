@@ -260,6 +260,12 @@ cor secundaria da pagina em estado hover. */
     background-color: #555555;
 }
 
+.border-color-grey {
+    /* EQUALS .color-bright-grey */
+    border: solid 1px;
+    border-color: #CCCCCC;
+}
+
 /* ---------- */
 
 
