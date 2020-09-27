@@ -389,6 +389,12 @@ cor secundaria da pagina em estado hover. */
     height: 200px;
 }
 
+/* As sublistas tem o bullet point branco com borda preta e contam com recuo de linha */
+.sublist li {
+    list-style: circle;
+    margin-left: 45px;
+}
+
 /* ---------- */
 
 
