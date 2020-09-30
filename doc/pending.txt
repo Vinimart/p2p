@@ -6,4 +6,6 @@
 
 4) link para o container circular "Know our most used free 3D effect apps";
 
-5) Remover o "min-width" e "overflow-y: auto" dos componentes de fonte classe CSS ".font-list-width".
+5) Remover o "min-width" e "overflow-y: auto" dos componentes de fonte classe CSS ".font-list-width";
+
+6) usaremos "Configuraiton" em todas as páginas de efeitos, mas pergunte-me de novo quando for fazer cada página que estiver diferente disso em produção.

@@ -126,7 +126,7 @@ function defInit() {
     // Lista usada na pagina de texto 3D classico.
     SelLists.newList('rendStyle3d', 'idRenderingStyle', ['list-comp-sel'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '1', 'idHasMergedImageTable3dTextModel');
+    SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '2', 'idHasMergedImageTable3dTextModel');
     // -------------------------
 
 
