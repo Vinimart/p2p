@@ -4,4 +4,6 @@
 
 3) Conteúdo textual do terms of service;
 
-4) link para o container circular "Know our most used free 3D effect apps".
+4) link para o container circular "Know our most used free 3D effect apps";
+
+5) Remover o "min-width" e "overflow-y: auto" dos componentes de fonte classe CSS ".font-list-width".
