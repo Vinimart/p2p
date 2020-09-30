@@ -7,3 +7,4 @@ https://vinimartdev.com/template.html
 https://vinimartdev.com/template-full-width.html
 https://vinimartdev.com/photo-frame/art-photo-frame-generator.html
 https://vinimartdev.com/image_effects/photo-polaroid/polaroid-effect-photo-editor.html
+https://vinimartdev.com/text_generator/others/graffiti/graffiti_text.html
