@@ -734,8 +734,6 @@ var ColorTable = new(function () {
 	this.container = document.getElementById('idColorTableContainer');
 	// Elemento responsavel por exibir o valor da cor selecionada em hexadecimal.
 	this.hexDisplay = document.getElementById('idHexDisplay');
-	// Exibe o valor inicial ao abrir o Color Picker.
-	this.hexDisplay.textContent = this.selectedColor;
 
 	// Identifica o elemento input do form de configuracao (target) e abre a instancia do Color Picker.
 	// Este metodo sera chamado a partir do clique no icone do color picker no form,

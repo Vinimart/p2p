@@ -126,7 +126,7 @@ function defInit() {
     // Lista usada na pagina de texto 3D classico.
     SelLists.newList('rendStyle3d', 'idRenderingStyle', ['list-comp-sel'], '', '', '2', 'idHasMergedImageTable3dRenderingStyle');
     // Lista usada na pagina de texto 3D classico.
-    SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '1', 'idHasMergedImageTable3dTextModel');
+    SelLists.newList('textModel3d', 'idModel3D', ['list-comp-sel'], '', '', '2', 'idHasMergedImageTable3dTextModel');
     // -------------------------
 
 
@@ -160,7 +160,7 @@ function defInit() {
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
     // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable).
-    // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que são listas de imagens pequenas.
+    // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que sao listas de imagens pequenas.
     SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
     SelLists.newList('sWall', 'idImageName', ['list-comp-sel'], '', '', 'wall_002_tlb', 'idHasSmallImageListWall');
     // -------------------------
@@ -189,7 +189,7 @@ function defInit() {
     GrowLists.newList('g1', 'idGrowList1', '7-86', 6,
         '<div class="in-block-display padded-2x">' +
         '<a href="/text_generator/others/3d/realistic/3d_abstract_text_effect.html#abstract<<0>>">' +
-        '<img class="spaced-below-1x lazyload" src="/ui/img/loader-100px.svg" data-src="/img/working/abstract<<0>>_text_effect.jpg">' +
+        '<img class="spaced-below-1x lazyload" alt="abstract <<0>> text effect" src="/ui/img/loader-100x100.svg" data-src="/img/working/abstract<<0>>_text_effect.jpg">' +
         '</a>' +
         '</div>',
         '0', 3, ['idGrowList1ButtonContainer']);

@@ -175,7 +175,7 @@ cor secundaria da pagina em estado hover. */
     color: #FFFFFF;
 }
 
-/* Classe hover obrigatória para botoes */
+/* Classe hover obrigatoria para botoes */
 .hover-color-1st:hover {
     /* EQUALS .color-1st */
     color: #FF8000;
@@ -260,6 +260,12 @@ cor secundaria da pagina em estado hover. */
     background-color: #555555;
 }
 
+.border-color-grey {
+    /* EQUALS .color-bright-grey */
+    border: solid 1px;
+    border-color: #CCCCCC;
+}
+
 /* ---------- */
 
 
@@ -278,15 +284,25 @@ cor secundaria da pagina em estado hover. */
     width: 400px;
 }
 
-/* Limita a largura do container e o centraliza na tela */
+/* Limita a largura do container e o centraliza no container pai */
 .limiter-1x {
     max-width: 800px;
     margin: auto;
 }
 
 .limiter-2x {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.limiter-3x {
     max-width: 1600px;
     margin: auto;
+}
+
+.index-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 /* Posicionamento para background-image inferior */
@@ -366,19 +382,16 @@ cor secundaria da pagina em estado hover. */
     top: 12px;
 }
 
-.dash-divider {
-    display: inline-block;
-    width: 40px;
-    height: 10px;
-    /* Cor provisoria */
-    background-color: #FFC080;
-}
-
 /* Container recommended effects */
 .round-container {
     border-radius: 100%;
     width: 200px;
     height: 200px;
+}
+
+/* As sublistas tem o bullet point branco com borda preta e contam com recuo de linha */
+.sublist li {
+    list-style: circle;
 }
 
 /* ---------- */
@@ -414,7 +427,7 @@ cor secundaria da pagina em estado hover. */
 Solucao provisoria para contornar o problema de layout em que o componente table_list_comp_font_general 
 quebra quando tem a largura maior que a largura do container nas telas com menos de 360px de largura. 
 Apagar quando for gerada a imagem do componente mais estreita.*/
-#idFontGeneral {
+.font-list-width  {
     min-width: 305px;
 }
 
@@ -428,6 +441,12 @@ Apagar quando for gerada a imagem do componente mais estreita.*/
     border-radius: 0 0 10px 10px;
     /* EQUALS .color-bright */
     background-color: #FFFFFF;
+}
+
+/* Tamanho minimo das imagens dos componentes com label para evitar que o label seja maior que a largura da imagem
+e cause problemas de layout, deixando a area vermelha de selecao mais larga que o estabelecido. */
+.label-list-comp img {
+    min-width: 130px;
 }
 
 /* Imagens que ficam dentro dos componentes */
@@ -773,7 +792,7 @@ input[type='file'] {
 /* ----- Font ----- */
 
 .font-1x {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* Tamanho de fonte padrao */
@@ -882,6 +901,11 @@ input[type='file'] {
     margin-bottom: 30px;
 }
 
+.spaced-v-4x {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .spaced-h-1x {
     margin-left: 10px;
     margin-right: 10px;
@@ -907,6 +931,18 @@ input[type='file'] {
 
 .spaced-below-3x {
     margin-bottom: 30px;
+}
+
+.spaced-above-1x {
+    margin-top: 10px;
+}
+
+.spaced-above-2x {
+    margin-top: 20px;
+}
+
+.spaced-above-3x {
+    margin-top: 30px;
 }
 
 .spaced-around-1x {
@@ -977,10 +1013,12 @@ input[type='file'] {
     justify-content: center;
 }
 
+/* Container com display flex - elementos centralizados com mesmo heigh e weight */
 .flex-equal {
     display: flex;
 }
 
+/* Container filho para display-equals, obrigatorio para display-equals funcionar corretamente */
 .flex-equal div {
     flex: 1;
 }
@@ -1206,6 +1244,11 @@ input[type='file'] {
     .column-main .flex-center, .column-main .flex-equal {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .index-section {
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     /* Espacamento entre o container dos itens de navegacao do footer e o paragrafo do footer */
