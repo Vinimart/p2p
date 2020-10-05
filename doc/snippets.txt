@@ -7,6 +7,9 @@
 	// JSON formatter made with: "https://www.freeformatter.com/json-escape.html".
 
 	// Picture to People Template code snippets:
+
+	// Basic UI Structure
+
 	"P2P Template": {
 		"prefix": "p2p-template",
 		"body": [
@@ -55,6 +58,9 @@
 		"description": "P2P Default Tips Region"
 	},
 
+
+	// Effect Examples
+
 	"P2P Effect Example Single": {
 		"prefix": "p2p-example-single",
 		"body": [
@@ -70,6 +76,52 @@
 		],
 		"description": "P2P Shared Title Effect Examples"
 	},
+
+
+	// Effect Grouping (EffectEnum)
+
+	"P2P Effect Enum Showcase": {
+		"prefix": "p2p-enum-showcase",
+		"body": [
+			"<!-- BEGIN: [[*EffectEnum-Showcase*]] -->\r\n<div class=\"spaced-v-3x centered\">\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<img class=\"spaced-below-1x lazyload\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" alt=\"\" \/>\r\n\t\t<img class=\"spaced-below-1x lazyload\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" alt=\"\" \/>\r\n\t<\/div>\r\n\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<img class=\"spaced-below-1x lazyload\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" alt=\"\" \/>\r\n\t\t<img class=\"spaced-below-1x lazyload\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" alt=\"\" \/>\r\n\t<\/div>\r\n<\/div>\r\n<!-- END: [[*EffectEnum-Showcase*]] -->"
+		],
+		"description": "P2P Effect Enum Showcase Template"
+	},
+
+	"P2P Effect Enum Types": {
+		"prefix": "p2p-enum-types",
+		"body": [
+			"<!-- BEGIN: [[*EffectEnum-Types*]] -->\r\n<div class=\"centered limiter-1x spaced-below-3x\">\r\n\t<div>\r\n\t\t<h2 class=\"font-3x bold\">\r\n\t\t\t<a class=\"color-dark\" href=\"\/\">Title<\/a>\r\n\t\t<\/h2>\r\n\r\n\t\t<div class=\"spaced-v-2x\">\r\n\t\t\t<a href=\"\/\">\r\n\t\t\t\t<img class=\"lazyload\" alt=\"\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" \/>\r\n\t\t\t\t<h3 class=\"color-dark-grey\">Subtitle<\/h3>\r\n\t\t\t<\/a>\r\n\t\t<\/div>\r\n\r\n\t\t<p class=\"justified\">Paragraph<\/p>\r\n\t<\/div>\r\n\r\n\t<div class=\"spaced-v-1x\">&nbsp;<\/div>\r\n<\/div>\r\n<!-- END: [[*EffectEnum-Types*]] -->"
+		],
+		"description": "P2P Effect Enum Types Template"
+	},
+
+	"P2P Effect Enum Groups": {
+		"prefix": "p2p-enum-groups",
+		"body": [
+			"<!-- BEGIN: [[*EffectEnum-Groups*]] -->\r\n<div class=\"centered spaced-below-3x\">\r\n\t<h2 class=\"font-4x spaced-below-2x\">Title<\/h2>\r\n\r\n\t<div class=\"in-block-display padded-2x\">\r\n\t\t<a href=\"\/\">\r\n\t\t\t<img class=\"lazyload\" alt=\"\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" \/>\r\n\t\t\t<h3 class=\"font-3x color-dark-grey\">Subtitle<\/h3>\r\n\t\t<\/a>\r\n\t<\/div>\r\n\r\n\t<div class=\"spaced-below-2x\">&nbsp;<\/div>\r\n<\/div>\r\n<!-- END: [[*EffectEnum-Groups*]] -->"
+		],
+		"description": "P2P Effect Enum Groups Template"
+	},
+
+	"P2P Effect Enum Styles": {
+		"prefix": "p2p-enum-styles",
+		"body": [
+			"<!-- BEGIN: [[*EffectEnum-Styles*]] -->\r\n<div class=\"centered spaced-below-3x\">\r\n\t<h3 class=\"font-3x bold spaced-below-1x\">Title<\/h3>\r\n\r\n\t<div class=\"in-block-display padded-2x\">\r\n\t\t<a href=\"\/\">\r\n\t\t\t<img class=\"spaced-below-1x lazyload\" alt=\"\" src=\"\/ui\/img\/loader-100x100.svg\" data-src=\"\/img\/\" \/>\r\n\t\t<\/a>\r\n\t<\/div>\r\n<\/div>\r\n<!-- END: [[*EffectEnum-Styles*]] -->"
+		],
+		"description": "P2P Effect Enum Styles Template"
+	},
+
+
+	// Configuration Form Basic Structures
+
+	"P2P Form Subtitle": {
+		"prefix": "p2p-form-subtitle",
+		"body": [
+			"<div>\r\n\t<div>&nbsp;<\/div>\r\n\t<p class=\"font-3x\">Subtitle :<\/p>\r\n<\/div>"
+		],
+		"description": ""
+	},	
 
 	"P2P Form Text Input": {
 		"prefix": "p2p-form-text",
@@ -99,6 +151,14 @@
 		"prefix": "p2p-form-color",
 		"body": [
 			"<div class=\"spaced-v-3x\">\r\n\t<label for=\"idBackColor\">Background Color :<\/label><br \/>\r\n\r\n\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t<div class=\"flex-between\">\r\n\t\t<input class=\"uppercase\" type=\"text\" maxlength=\"6\" id=\"idBackColor\" name=\"BackColor\" value=\"000000\" \/>&nbsp;&nbsp;\r\n\r\n\t\t<i id=\"idBackColorPicker\" class=\"pointer fas fa-palette font-5x color-1st animate-1\" onclick=\"ColorTable.openColorPicker('idBackColor')\" title=\"Color Picker\"> <\/i>\r\n\t<\/div>\r\n<\/div>"
+		],
+		"description": ""
+	},
+
+	"P2P Form Frame Corners Config": {
+		"prefix": "p2p-form-frame",
+		"body": [
+			"<!-- BEGIN: [[*COMPONENT::ComponentName*]] -->\r\n<div>\r\n\t<div>\r\n\t\t<div class=\"spaced-below-1x\">&nbsp;<\/div>\r\n\t\t<h4 class=\"font-3x\">Corner Ornament :<\/h4>\r\n\t<\/div>\r\n<!--#include VIRTUAL=\"\/ui\/comp\/symbol_list_comp_name_4.inc.html\" -->\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<label for=\"idCornerRotation\">Corner Rotation :<\/label><br \/>\r\n\r\n\t\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t\t<select class=\"spaced-1x\" id=\"idCornerRotation\" name=\"CornerRotation\">\r\n\t\t\t<option value=\"-165\">-165<\/option>\r\n\t\t\t<option value=\"-150\">-150<\/option>\r\n\t\t\t<option value=\"-135\">-135<\/option>\r\n\t\t\t<option value=\"-120\">-120<\/option>\r\n\t\t\t<option value=\"-105\">-105<\/option>\r\n\t\t\t<option value=\"-90\">-90<\/option>\r\n\t\t\t<option value=\"-75\">-75<\/option>\r\n\t\t\t<option value=\"-60\">-60<\/option>\r\n\t\t\t<option value=\"-45\">-45<\/option>\r\n\t\t\t<option value=\"-30\">-30<\/option>\r\n\t\t\t<option value=\"-15\">-15<\/option>\r\n\t\t\t<option value=\"0\" selected>0<\/option>\r\n\t\t\t<option value=\"15\">15<\/option>\r\n\t\t\t<option value=\"30\">30<\/option>\r\n\t\t\t<option value=\"45\">45<\/option>\r\n\t\t\t<option value=\"60\">60<\/option>\r\n\t\t\t<option value=\"75\">75<\/option>\r\n\t\t\t<option value=\"90\">90<\/option>\r\n\t\t\t<option value=\"105\">105<\/option>\r\n\t\t\t<option value=\"120\">120<\/option>\r\n\t\t\t<option value=\"135\">135<\/option>\r\n\t\t\t<option value=\"150\">150<\/option>\r\n\t\t\t<option value=\"165\">165<\/option>\r\n\t\t\t<option value=\"180\">180<\/option>\r\n\t\t<\/select>\r\n\t<\/div>\r\n<\/div>\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div class=\"spaced-below-1x\">&nbsp;<\/div>\r\n\t\t<h4 class=\"font-3x\">Ornament 1 :<\/h4>\r\n\t<\/div>\r\n<!--#include VIRTUAL=\"\/ui\/comp\/symbol_list_comp_name_1.inc.html\" -->\r\n\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<label for=\"idOrnamentRotation1\">Ornament 1 Rotation :<\/label><br \/>\r\n\r\n\t\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t\t<select class=\"spaced-1x\" id=\"idOrnamentRotation1\" name=\"OrnamentRotation1\">\r\n\t\t\t<option value=\"-165\">-165<\/option>\r\n\t\t\t<option value=\"-150\">-150<\/option>\r\n\t\t\t<option value=\"-135\">-135<\/option>\r\n\t\t\t<option value=\"-120\">-120<\/option>\r\n\t\t\t<option value=\"-105\">-105<\/option>\r\n\t\t\t<option value=\"-90\">-90<\/option>\r\n\t\t\t<option value=\"-75\">-75<\/option>\r\n\t\t\t<option value=\"-60\">-60<\/option>\r\n\t\t\t<option value=\"-45\">-45<\/option>\r\n\t\t\t<option value=\"-30\">-30<\/option>\r\n\t\t\t<option value=\"-15\">-15<\/option>\r\n\t\t\t<option value=\"0\" selected>0<\/option>\r\n\t\t\t<option value=\"15\">15<\/option>\r\n\t\t\t<option value=\"30\">30<\/option>\r\n\t\t\t<option value=\"45\">45<\/option>\r\n\t\t\t<option value=\"60\">60<\/option>\r\n\t\t\t<option value=\"75\">75<\/option>\r\n\t\t\t<option value=\"90\">90<\/option>\r\n\t\t\t<option value=\"105\">105<\/option>\r\n\t\t\t<option value=\"120\">120<\/option>\r\n\t\t\t<option value=\"135\">135<\/option>\r\n\t\t\t<option value=\"150\">150<\/option>\r\n\t\t\t<option value=\"165\">165<\/option>\r\n\t\t\t<option value=\"180\">180<\/option>\r\n\t\t<\/select>\r\n\t<\/div>\r\n<\/div>\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div class=\"spaced-below-1x\">&nbsp;<\/div>\r\n\t\t<h4 class=\"font-3x\">Ornament 2 :<\/h4>\r\n\t<\/div>\r\n<!--#include VIRTUAL=\"\/ui\/comp\/symbol_list_comp_name_2.inc.html\" -->\r\n\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<label for=\"idOrnamentRotation2\">Ornament 2 Rotation :<\/label><br \/>\r\n\r\n\t\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t\t<select class=\"spaced-1x\" id=\"idOrnamentRotation2\" name=\"OrnamentRotation2\">\r\n\t\t\t<option value=\"-165\">-165<\/option>\r\n\t\t\t<option value=\"-150\">-150<\/option>\r\n\t\t\t<option value=\"-135\">-135<\/option>\r\n\t\t\t<option value=\"-120\">-120<\/option>\r\n\t\t\t<option value=\"-105\">-105<\/option>\r\n\t\t\t<option value=\"-90\">-90<\/option>\r\n\t\t\t<option value=\"-75\">-75<\/option>\r\n\t\t\t<option value=\"-60\">-60<\/option>\r\n\t\t\t<option value=\"-45\">-45<\/option>\r\n\t\t\t<option value=\"-30\">-30<\/option>\r\n\t\t\t<option value=\"-15\">-15<\/option>\r\n\t\t\t<option value=\"0\" selected>0<\/option>\r\n\t\t\t<option value=\"15\">15<\/option>\r\n\t\t\t<option value=\"30\">30<\/option>\r\n\t\t\t<option value=\"45\">45<\/option>\r\n\t\t\t<option value=\"60\">60<\/option>\r\n\t\t\t<option value=\"75\">75<\/option>\r\n\t\t\t<option value=\"90\">90<\/option>\r\n\t\t\t<option value=\"105\">105<\/option>\r\n\t\t\t<option value=\"120\">120<\/option>\r\n\t\t\t<option value=\"135\">135<\/option>\r\n\t\t\t<option value=\"150\">150<\/option>\r\n\t\t\t<option value=\"165\">165<\/option>\r\n\t\t\t<option value=\"180\">180<\/option>\r\n\t\t<\/select>\r\n\t<\/div>\r\n<\/div>\r\n\r\n<div>\r\n\t<div>\r\n\t\t<div class=\"spaced-below-1x\">&nbsp;<\/div>\r\n\t\t<h4 class=\"font-3x\">Ornament 3 :<\/h4>\r\n\t<\/div>\r\n<!--#include VIRTUAL=\"\/ui\/comp\/symbol_list_comp_name_3.inc.html\" -->\r\n\r\n\t<div class=\"spaced-v-3x\">\r\n\t\t<label for=\"idOrnamentRotation3\">Ornament 3 Rotation :<\/label><br \/>\r\n\r\n\t\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t\t<select class=\"spaced-1x\" id=\"idOrnamentRotation3\" name=\"OrnamentRotation3\">\r\n\t\t\t<option value=\"-165\">-165<\/option>\r\n\t\t\t<option value=\"-150\">-150<\/option>\r\n\t\t\t<option value=\"-135\">-135<\/option>\r\n\t\t\t<option value=\"-120\">-120<\/option>\r\n\t\t\t<option value=\"-105\">-105<\/option>\r\n\t\t\t<option value=\"-90\">-90<\/option>\r\n\t\t\t<option value=\"-75\">-75<\/option>\r\n\t\t\t<option value=\"-60\">-60<\/option>\r\n\t\t\t<option value=\"-45\">-45<\/option>\r\n\t\t\t<option value=\"-30\">-30<\/option>\r\n\t\t\t<option value=\"-15\">-15<\/option>\r\n\t\t\t<option value=\"0\" selected>0<\/option>\r\n\t\t\t<option value=\"15\">15<\/option>\r\n\t\t\t<option value=\"30\">30<\/option>\r\n\t\t\t<option value=\"45\">45<\/option>\r\n\t\t\t<option value=\"60\">60<\/option>\r\n\t\t\t<option value=\"75\">75<\/option>\r\n\t\t\t<option value=\"90\">90<\/option>\r\n\t\t\t<option value=\"105\">105<\/option>\r\n\t\t\t<option value=\"120\">120<\/option>\r\n\t\t\t<option value=\"135\">135<\/option>\r\n\t\t\t<option value=\"150\">150<\/option>\r\n\t\t\t<option value=\"165\">165<\/option>\r\n\t\t\t<option value=\"180\">180<\/option>\r\n\t\t<\/select>\r\n\t<\/div>\r\n<\/div>\r\n<!-- END: [[*COMPONENT::ComponentName*]] -->"
 		],
 		"description": ""
 	},
