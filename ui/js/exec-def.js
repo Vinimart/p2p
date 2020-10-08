@@ -235,12 +235,7 @@ function defInit() {
     DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
-
-
     // -------------------------
-
-    // -------------------------
-
 }
 
 function defSubmit() {
