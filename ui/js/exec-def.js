@@ -159,6 +159,8 @@ function defInit() {
     SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['list-comp-sel'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
+
+
     // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable).
     // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que sao listas de imagens pequenas.
     SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
@@ -233,6 +235,10 @@ function defInit() {
     DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
+
+
+    // -------------------------
+
     // -------------------------
 
 }
