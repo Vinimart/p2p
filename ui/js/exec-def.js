@@ -237,6 +237,7 @@ function defInit() {
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
     // -------------------------
 
+    
     // Verificador de dados do tipo "blank" para os campos de Color Value da pagina: "/color_converter.html".
     DataChecker.newCheck('idcolor_channel1', 'value', 'Color Value 1', 'blk');
     DataChecker.newCheck('idcolor_channel2', 'value', 'Color Value 2', 'blk');
