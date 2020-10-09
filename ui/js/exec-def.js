@@ -231,8 +231,8 @@ function defInit() {
     DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
     DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
     DataChecker.newCheck('idTextLine1', 'value', 'Text line', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
+    DataChecker.newCheck('idImageInput', 'value', 'Input Image', 'blk');
+    DataChecker.newCheck('idImageInput', 'value', 'Input Image', 'ext', ['.jpg', '.png', '.gif']);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
     // -------------------------
