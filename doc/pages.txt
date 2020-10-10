@@ -7,8 +7,8 @@ https://vinimartdev.com/template.html
 https://vinimartdev.com/template-full-width.html
 
 
-+https://vinimartdev.com/how_to_use.html
-+https://vinimartdev.com/easy-online-photo-editor.html
+https://vinimartdev.com/how_to_use.html
+https://vinimartdev.com/easy-online-photo-editor.html
 https://vinimartdev.com/color_converter_result.html
 https://vinimartdev.com/color_converter.html
 https://vinimartdev.com/custom-wallpaper-design-generator.html
@@ -20,3 +20,7 @@ https://vinimartdev.com/text_generator/others/3d/realistic/professional_text_eff
 https://vinimartdev.com/text_generator/others/3d/realistic/professional_abstract_text_effects.html
 https://vinimartdev.com/text_generator/others/3d/3d_text.html
 https://vinimartdev.com/text_generator/others/graffiti/graffiti_text.html
+https://vinimartdev.com/text_generator/others/typography/typography_effects.html
+https://vinimartdev.com/text_generator/others/3d/horror/3d-horror-text-effect-logo-generator.html
+https://vinimartdev.com/text_generator/others/carved/online_carved_text_effects.html
+https://vinimartdev.com/text_generator/others/3d/beveled-text-effect/wood-bevel-text-effect-generators.html
