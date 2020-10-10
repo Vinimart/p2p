@@ -126,7 +126,7 @@
 	"P2P Form Text Input": {
 		"prefix": "p2p-form-text",
 		"body": [
-			"<div class=\"spaced-v-3x\">\r\n\t<label for=\"idTextToRender1\">Text (Max 25) :<\/label><br \/>\r\n\r\n\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t<input type=\"text\" maxlength=\"25\" id=\"idTextToRender\" name=\"TextToRender\" placeholder=\"Your Text\" value=\"sample\" \/>\r\n<\/div>"
+			"<div class=\"spaced-v-3x\">\r\n\t<label for=\"idTextToRender\">Text (Max 25) :<\/label><br \/>\r\n\r\n\t<div class=\"spaced-below-1x\"><\/div>\r\n\r\n\t<input type=\"text\" maxlength=\"25\" id=\"idTextToRender\" name=\"TextToRender\" value=\"sample\" \/>\r\n<\/div>"
 		],
 		"description": ""
 	},

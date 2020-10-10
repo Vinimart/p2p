@@ -134,7 +134,7 @@ function defInit() {
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
-    SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
+    SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <strong><<0>></strong>', initialFontName, 'idFontListNumber');
     // -------------------------
 
 
