@@ -151,7 +151,7 @@ function defInit() {
 
     // Listas de imagens pequenas.
     // -------------------------
-    SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
+    SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'bamboo002_tlb', 'idHasSmallImageListTexture');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['list-comp-sel'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['list-comp-sel'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
     SelLists.newList('sSocial', 'idSelectedIcon', ['list-comp-sel'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');

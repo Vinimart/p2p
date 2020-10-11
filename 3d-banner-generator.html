@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- BEGIN: [[*HeadCommons*]] -->
+<!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+<!-- END: [[*HeadCommons*]] -->
+
+<link rel="stylesheet" href="/ui/css/normalize.css" />
+<link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/ui/css/main.css" />
+
+        <!-- BEGIN: [[*SEOMetaTags*]] -->
+        <meta content="banner, banner maker, banner creator, 3d banner design, online banner, 3d banner, 3d banner maker, 3d text banner, 3d logo banner, transparent banner, text banner designer, design banner online, 3d banner creator, banner with 3d text, 3d name banner, banner with your name, banner with 3d effect, banner with text effect, best 3d banner creator, create 3d banner online, create banner with your name, create banner with 3d logo" name="keywords" />
+	    <meta content="Free Online 3D Banner Generator. Create beautiful banners with realistic 3D text effects easily." name="description" />
+        <!-- END: [[*SEOMetaTags*]] -->
+
+        <title>3D Banner Generator - Design top banners using the best 3D text effects online</title>
+    </head>
+
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+<!-- BEGIN: [[*Preloader*]] -->
+<!--#include VIRTUAL="/inc/preloader.inc.html" -->
+<!-- END: [[*Preloader*]] -->
+
+<!-- BEGIN: [[*Modal*]] -->
+<!--#include VIRTUAL="/inc/modal.inc.html" -->
+<!-- END: [[*Modal*]] -->
+
+<!-- BEGIN: [[*SearchModal*]] -->
+<!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+<!-- END: [[*SearchModal*]] -->
+
+<!-- BEGIN: [[*ColorPicker*]] -->
+<!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+<!-- END: [[*ColorPicker*]] -->
+
+<!-- BEGIN: [[*SideNav*]] -->
+<!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+<!-- END: [[*SideNav*]] -->
+
+<!-- BEGIN: [[*Menu*]] -->
+<!--#include VIRTUAL="/inc/menu.inc.html" -->
+<!-- END: [[*Menu*]] -->
+
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-5x bold spaced-below-1x">Online 3D Banner Maker</h1>
+                <p class="font-3x">Choose among more than 450 cool and artistic font faces to produce a professional 3D banner</p>
+            </div>
+
+            <hr class="ruler limiter-3x" />
+
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
+
+        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png)">
+            <!-- Container Principal (max-width: 1600px) -->
+            <div class="flex-around limiter-3x">
+                <!-- BEGIN: [[*MainColumn*]] -->
+                <div class="column-main padded-h-2x spaced-below-3x">
+                    <!-- BEGIN: [[*InitialText*]] -->
+                    <div class="spaced-below-3x justified">
+                        <p class="spaced-below-1x">
+                            By using this free 3D banner creator, you have, in <strong>a unique dashbord</strong>, a big list of professional 3D text effects that 
+						    can create top banner logos very easily (you don't even need to have design skills).
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            It's <strong>very easy to use</strong>, you just need to follow some simple steps: click a 3D text design style to select the related 
+                            text effect to create. After, in page bottom, configure which font your text logo should use and some more graphic effect elements.
+                            Click the "View Banner Result" or "Download Result" button and you get your banner design image for free.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            Choose among <strong>more than 450 cool and artistic font faces</strong> to produce a professional 3D banner with your name, message, 
+                            slogan, or any 3D words or letters you need to your software interface, header, title, cover, page, blog, site, app, game, party, event, 
+                            Facebook, Twitter, social image, graphic design, image composition or whatever you want.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            You can even optionally create <strong>3D text banner effects with transparent background</strong> as semi-transparent PNG images. In fact, 
+                            this free 3D banner maker offers you total control of your banner background: it can be a plain color, one of our beautiful patterns 
+                            or background images, your own customized and exclusive image or even an anti-aliased transparent background. If you decide to design 
+                            a transparent banner, the selected background color or background texture image will be ignored.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            If you didn't find here the text effect creator you want, look at our huge list of high quality 
+                            <a class="hover-color-2nd" href="/online-text-logo-design-generators.html">Free Online Text Logo Generators</a>. We offer <strong>thousands of free online text
+                            generators</strong> that can produce realistic text effects, so you can create cool creative 3D banner designs.
+                        </p>
+                    
+                        <p>
+                            If you have doubts about how to use any of our softwares, please read our 
+						    <a class="hover-color-2nd" href="/how_to_use.html">How To Use</a> page.
+                        </p>
+                    </div>
+                    <!-- END: [[*InitialText*]] -->
+
+<!-- BEGIN: [[*COMPONENT::LabeledTextEffectList*]] -->
+<!--#include VIRTUAL="/ui/comp/label_list_comp_text_effect_1.inc.html" -->
+<!-- END: [[*COMPONENT::LabeledTextEffectList*]] -->
+
+                    <!-- BEGIN: [[*EffectConfiguration*]] -->
+                    <div class="bg-color-bright-grey rounded-1x shaded padded-2x spaced-below-3x">
+                        <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
+<!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
+
+                            <!-- Lista de efeitos de texto selecionaveis acima (labeled_text_effect_list_1). -->
+                            <input type="hidden" name="SelectedTextEffect1" id="idSelectedTextEffect1" value="" />
+                            
+                            <div class="spaced-v-3x">
+                                <label for="idTextStyle3DName">3D Style :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idTextStyle3DName" name="TextStyle3DName">
+                                    <option value="3d_textured2" selected>1</option>
+                                    <option value="3d_textured5">2</option>
+                                    <option value="3d_textured6">3</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idTextToRender">Text (Max 25) :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <input type="text" maxlength="25" id="idTextToRender" name="TextToRender" value="Banner Text" />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idMargin">Margin :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idMargin" name="Margin">
+                                    <option value="5">1</option>
+                                    <option value="10">2</option>
+                                    <option value="15" selected>3</option>
+                                    <option value="20">4</option>
+                                    <option value="25">5</option>
+                                    <option value="30">6</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idFontSize">Font Size :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idFontSize" name="FontSize">
+                                    <option value="120">Small</option>
+                                    <option value="135" selected>Average</option>
+                                    <option value="150">Big</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Draw Text Shadow</p>
+                            
+                                    <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true" value="checked" />
+                            
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idShadowPosition">Shadow Position :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idShadowPosition" name="ShadowPosition">
+                                    <option value="top">Top</option>
+                                    <option value="bottom">Bottom</option>
+                                    <option value="left">Left</option>
+                                    <option value="right">Right</option>
+                                    <option value="top-left">Top-left</option>
+                                    <option value="top-right">Top-right</option>
+                                    <option value="bottom-left" selected>Bottom-left</option>
+                                    <option value="bottom-right">Bottom-right</option>
+                                </select>
+                            </div>
+
+<!-- BEGIN: [[*COMPONENT::GeneralFontList*]] -->
+<!--#include VIRTUAL="/ui/comp/table_list_comp_font_general.inc.html" -->
+<!-- END: [[*COMPONENT::GeneralFontList*]] -->
+
+                            <div class="spaced-v-3x">
+                                <label for="idBackStyle">Background Style :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idBackStyle" name="BackStyle">
+                                    <option value="1" selected>Plain color</option>
+                                    <option value="2">Texture from list</option>
+                                    <option value="3">Uploaded image</option>
+                                    <option value="4">Transparent PNG file</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idBackColor">Background Color :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <div class="flex-between">
+                                    <input class="uppercase" type="text" maxlength="6" id="idBackColor" name="BackColor" value="FFFFFF" />&nbsp;&nbsp;
+                            
+                                    <i id="idBackColorPicker" class="pointer fas fa-palette font-5x color-1st animate-1" onclick="ColorTable.openColorPicker('idBackColor')" title="Color Picker"> </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idBackFit">Background Fit :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idBackFit" name="BackFit">
+                                    <option value="6" selected>Resize if smaller</option>
+								    <option value="2">Repeat (for tileable images)</option>
+                                </select>
+                            </div>
+
+<!-- BEGIN: [[*COMPONENT::TextureList*]] -->
+<!--#include VIRTUAL="/ui/comp/list_comp_texture.inc.html" -->
+<!-- END: [[*COMPONENT::TextureList*]] -->
+
+<!-- BEGIN: [[*ImageInput*]] -->
+<!--#include VIRTUAL="/inc/image_input.inc.html" -->
+<!-- END: [[*ImageInput*]] -->
+                    
+<!-- BEGIN: [[*GenerateButton*]] -->
+<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+<!-- END: [[*GenerateButton*]] -->
+                        </form>
+                    </div>
+                    <!-- END: [[*EffectConfiguration*]] -->
+                    
+                </div>
+                <!-- END: [[*MainColumn*]] -->
+
+                <!-- BEGIN: [[*SecondColumn*]] -->
+                <div class="column-2nd padded-h-1x spaced-below-3x">
+                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                    <div class="centered spaced-below-3x">
+                        <h3 class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</h3>
+<!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    </div>
+                    <!-- END: [[*PopularGraphicDesignApps*]] -->
+
+<!-- BEGIN: [[*RecommendedEffects*]] -->
+<!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+<!-- END: [[*RecommendedEffects*]] -->
+                </div>
+                <!-- END: [[*SecondColumn*]] -->
+            </div>
+        </main>
+
+<!-- BEGIN: [[*Footer*]] -->
+<!--#include VIRTUAL="/inc/footer.inc.html" -->
+<!-- END: [[*Footer*]] -->
+
+<!-- BEGIN: [[*SCRIPT::External*]] -->
+<script src="/ui/js/lazysizes.min.js"></script>
+<!-- END: [[*SCRIPT::External*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+<script src="/ui/js/main.js"></script>
+
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = "11S01 Black Tuesday";
+
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = "kids_003",
+                    initialSymbol2 = "kids_004",
+                    initialSymbol3 = "kids_007",
+                    initialSymbol4 = "kids_005";
+
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = "brick004", // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = "3d_blue"; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg("idOverlayModalMsg", "idModalMsgText", e.message ? e.message : e, "idModalMsgTitle", "Error");
+            }
+        </script>
+
+<script src="/ui/js/exec-def.js"></script>
+        <!-- END: [[*SCRIPT::Internal*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
+</html>
