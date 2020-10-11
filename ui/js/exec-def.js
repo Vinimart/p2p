@@ -237,15 +237,18 @@ function defInit() {
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
     // -------------------------
 
-    
+    // Verificacoes de dados novas inseridas por Vinicius.
+    // -------------------------
+    // Inserido por Vinicius em 2020-10-08.
     // Verificador de dados do tipo "blank" para os campos de Color Value da pagina: "/color_converter.html".
     DataChecker.newCheck('idcolor_channel1', 'value', 'Color Value 1', 'blk');
     DataChecker.newCheck('idcolor_channel2', 'value', 'Color Value 2', 'blk');
     DataChecker.newCheck('idcolor_channel3', 'value', 'Color Value 3', 'blk');
 
+    // Inserido por Vinicius em 2020-10-08.
     // Verificador de dados do tipo "range" para os campos de Width e Height da pagina: "/custom-wallpaper-design-generator.html".
-    DataChecker.newCheck('idWidth', 'value', 'Width', 'rng', [300, 2600]);
-    DataChecker.newCheck('idHeight', 'value', 'Height', 'rng', [300, 2600]);
+    //DataChecker.newCheck('idWidth', 'value', 'Width', 'rng', [300, 2600]);
+    //DataChecker.newCheck('idHeight', 'value', 'Height', 'rng', [300, 2600]);
     // -------------------------
 }
 
