@@ -933,6 +933,10 @@ input[type='file'] {
     margin-bottom: 30px;
 }
 
+.spaced-below-4x {
+    margin-bottom: 40px;
+}
+
 .spaced-above-1x {
     margin-top: 10px;
 }

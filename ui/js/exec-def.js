@@ -134,7 +134,7 @@ function defInit() {
     // -------------------------
     // Se a funcao "getFontListNum" retornar undefined, significa que o elemento "idFontListNumber"
     // nao existe, entao a lista nao sera criada e nao havera problema.
-    SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <<0>>', initialFontName, 'idFontListNumber');
+    SelLists.newList('f' + getFontListNum(), 'idFontName', ['list-comp-sel'], 'idViewFontName', 'Font name : &nbsp;&nbsp; <strong><<0>></strong>', initialFontName, 'idFontListNumber');
     // -------------------------
 
 
@@ -151,7 +151,7 @@ function defInit() {
 
     // Listas de imagens pequenas.
     // -------------------------
-    SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'abstract084_tlb', 'idHasSmallImageListTexture');
+    SelLists.newList('sTex', 'idSelectedSmallImage', ['list-comp-sel'], '', '', 'bamboo002_tlb', 'idHasSmallImageListTexture');
     SelLists.newList('sModel3d', 'idSelectedIcon3dModel', ['list-comp-sel'], '', '', 'icon_3d_model_01', 'idHasSmallImageList3dModel');
     SelLists.newList('sSticker', 'idSelectedStickerShape', ['list-comp-sel'], '', '', 'sticker_001', 'idHasSmallImageListSticker');
     SelLists.newList('sSocial', 'idSelectedIcon', ['list-comp-sel'], '', '', 'apple_1', 'idHasSmallImageListSocialLogo');
@@ -159,6 +159,8 @@ function defInit() {
     SelLists.newList('sSymbol2', 'idSelectedSymbol2', ['list-comp-sel'], '', '', initialSymbol2, 'idHasSmallImageListSymbol2');
     SelLists.newList('sSymbol3', 'idSelectedSymbol3', ['list-comp-sel'], '', '', initialSymbol3, 'idHasSmallImageListSymbol3');
     SelLists.newList('sSymbol4', 'idSelectedSymbol4', ['list-comp-sel'], '', '', initialSymbol4, 'idHasSmallImageListSymbol4');
+
+
     // Os componentes sWall e sChalk deixaram de ser componentes de tabela (MergedImageTable).
     // Os componentes abaixo têm imagens larguras maiores que os demais small componentes acima, mas considera-se que sao listas de imagens pequenas.
     SelLists.newList('sChalk', 'idImageName', ['list-comp-sel'], '', '', 'chalkboard_003', 'idHasSmallImageListChalkboard');
@@ -229,12 +231,25 @@ function defInit() {
     DataChecker.newCheck('blabla', 'value', 'Text', 'blk'); // Teste: o elemento deste check nao existe.
     DataChecker.newCheck('idTextToRender', 'value', 'Text', 'blk');
     DataChecker.newCheck('idTextLine1', 'value', 'Text line', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'blk');
-    DataChecker.newCheck('idImageInput', 'value', 'Input image', 'ext', ['.jpg', '.png', '.gif']);
+    DataChecker.newCheck('idImageInput', 'value', 'Input Image', 'blk');
+    DataChecker.newCheck('idImageInput', 'value', 'Input Image', 'ext', ['.jpg', '.png', '.gif']);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 30]);
     DataChecker.newCheck('idValueOne', 'value', 'Value one', 'rng', [20, 22], 'idMargin', 'value', '>', '15');
     // -------------------------
 
+    // Verificacoes de dados novas inseridas por Vinicius.
+    // -------------------------
+    // Inserido por Vinicius em 2020-10-08.
+    // Verificador de dados do tipo "blank" para os campos de Color Value da pagina: "/color_converter.html".
+    DataChecker.newCheck('idcolor_channel1', 'value', 'Color Value 1', 'blk');
+    DataChecker.newCheck('idcolor_channel2', 'value', 'Color Value 2', 'blk');
+    DataChecker.newCheck('idcolor_channel3', 'value', 'Color Value 3', 'blk');
+
+    // Inserido por Vinicius em 2020-10-08.
+    // Verificador de dados do tipo "range" para os campos de Width e Height da pagina: "/custom-wallpaper-design-generator.html".
+    //DataChecker.newCheck('idWidth', 'value', 'Width', 'rng', [300, 2600]);
+    //DataChecker.newCheck('idHeight', 'value', 'Height', 'rng', [300, 2600]);
+    // -------------------------
 }
 
 function defSubmit() {

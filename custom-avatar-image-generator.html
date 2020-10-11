@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- BEGIN: [[*HeadCommons*]] -->
+<!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+<!-- END: [[*HeadCommons*]] -->
+
+<link rel="stylesheet" href="/ui/css/normalize.css" />
+<link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/ui/css/main.css" />
+
+        <!-- BEGIN: [[*SEOMetaTags*]] -->
+        <meta content="avatar, avatar image, custom avatar, customized avatar, custom avatar image, avatar generator, avatar design, avatar editor, custom avatar generator, avatar from photo, turn photo into avatar, create your own avatar" name="keywords" />
+	    <meta content="The Best Free Custom Avatar Design Creator. Generate a beautiful customized avatar online." name="description" />
+        <!-- END: [[*SEOMetaTags*]] -->
+
+        <title>Custom Avatar Design Generator - Make creative avatar image with your photo</title>
+    </head>
+
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+<!-- BEGIN: [[*Preloader*]] -->
+<!--#include VIRTUAL="/inc/preloader.inc.html" -->
+<!-- END: [[*Preloader*]] -->
+
+<!-- BEGIN: [[*Modal*]] -->
+<!--#include VIRTUAL="/inc/modal.inc.html" -->
+<!-- END: [[*Modal*]] -->
+
+<!-- BEGIN: [[*SearchModal*]] -->
+<!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+<!-- END: [[*SearchModal*]] -->
+
+<!-- BEGIN: [[*ColorPicker*]] -->
+<!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+<!-- END: [[*ColorPicker*]] -->
+
+<!-- BEGIN: [[*SideNav*]] -->
+<!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+<!-- END: [[*SideNav*]] -->
+
+<!-- BEGIN: [[*Menu*]] -->
+<!--#include VIRTUAL="/inc/menu.inc.html" -->
+<!-- END: [[*Menu*]] -->
+
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-5x bold spaced-below-1x">Custom Avatar Design Generator</h1>
+                <p class="font-3x">Here you create a customized avatar very easily</p>
+            </div>
+
+            <hr class="ruler limiter-3x" />
+
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
+
+        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png)">
+            <!-- Container Principal (max-width: 1600px) -->
+            <div class="flex-around limiter-3x">
+                <!-- BEGIN: [[*MainColumn*]] -->
+                <div class="column-main padded-h-2x spaced-below-3x">
+                    <!-- BEGIN: [[*InitialText*]] -->
+                    <div class="spaced-below-3x justified">
+                        <p class="spaced-below-1x">
+                            Here you <strong>create a customized avatar very easily</strong>: click an image to select the effect, set some useful parameters 
+						    in the page bottom if needed, choose your input photo, click the "Generate" button and you are done.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            It's <strong>totally free</strong>: you can use these high quality image effects to generate any avatar for any purpose.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            It offers many <strong>exclusive top photo effects and filters</strong>: we are professional computer graphics developers and make 
+                            all our graphic libraries from scratch. Many image effects you see here were researched exclusively for these online photo effect 
+                            generators and can't be found in any other graphic software.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            We have the most <strong>versatile online image editors</strong>: if you need a more customizable photo effect, just click the 
+                            small icon near the effect name to open, in a new page, a related configurable free photo effect designer (but not related to
+                            creation of custom avatars).
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            You could also like to know our huge list of high quality 
+						    <a class="hover-color-2nd" href="/online-text-logo-design-generators.html">Online Text Logo Design Generators</a>.
+                        </p>
+                    
+                        <p>
+                            If you have doubts about how to use any of our softwares, please read our 
+						    <a class="hover-color-2nd" href="/how_to_use.html">How To Use</a> page.
+                        </p>
+                    </div>
+                    <!-- END: [[*InitialText*]] -->
+
+<!-- BEGIN: [[*COMPONENT::LabeledPhotoEffectList*]] -->
+<!--#include VIRTUAL="/ui/comp/label_list_comp_photo_effect.inc.html" -->
+<!-- END: [[*COMPONENT::LabeledPhotoEffectList*]] -->
+
+                    <!-- BEGIN: [[*EffectConfiguration*]] -->
+                    <div class="bg-color-bright-grey rounded-1x shaded padded-2x spaced-below-3x">
+                        <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
+<!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
+                            
+                            <!-- Lista de efeitos de foto selecionaveis acima (labeled_photo_effect_list). -->
+                            <input type="hidden" name="SelectedEffect" id="idSelectedEffect" value="" />
+
+                            <input type="hidden" name="SocialImageType" id="idSocialImageType" value="avatar" />
+
+                            <div class="spaced-v-3x">
+                                <label for="idHowToFitHoriz">Horizontal Image Fit :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idHowToFitHoriz" name="HowToFitHoriz">
+                                    <option value="0" selected>Resize</option>
+                                    <option value="1">Use center part</option>
+                                    <option value="2">Use left part</option>
+                                    <option value="3">Use right part</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idHowToFitVert">Vertical Image Fit :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idHowToFitVert" name="HowToFitVert">
+                                    <option value="0" selected>Resize</option>
+                                    <option value="1">Use center part</option>
+                                    <option value="2">Use top part</option>
+                                    <option value="3">Use bottom part</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idWidth">Width (50 to 600) :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <input type="text" maxlength="3" id="idWidth" name="Width" value="250" />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idHeight">Height (50 to 600) :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <input type="text" maxlength="3" id="idHeight" name="Height" value="250" />
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idAvatarBorderSize">Border Size :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                                <!-- Colocando "avatar" no nome, evita uma possivel colisao com os parametros do efeito que serao carregados no servidor. -->
+                                <select id="idAvatarBorderSize" name="AvatarBorderSize">
+                                    <option value="0" selected>0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label for="idAvatarBorderColor">Border Color :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <div class="flex-between">
+                                    <input class="uppercase" type="text" maxlength="6" id="idAvatarBorderColor" name="AvatarBorderColor" value="000000" />&nbsp;&nbsp;
+                            
+                                    <i id="idAvatarBorderColorPicker" class="pointer fas fa-palette font-5x color-1st animate-1" onclick="ColorTable.openColorPicker('idAvatarBorderColor')" title="Color Picker"> </i>
+                                </div>
+                            </div>
+                    
+<!-- BEGIN: [[*ImageInput*]] -->
+<!--#include VIRTUAL="/inc/image_input.inc.html" -->
+<!-- END: [[*ImageInput*]] -->
+
+<!-- BEGIN: [[*GenerateButton*]] -->
+<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+<!-- END: [[*GenerateButton*]] -->
+                        </form>
+                    </div>
+                    <!-- END: [[*EffectConfiguration*]] -->
+                </div>
+                <!-- END: [[*MainColumn*]] -->
+
+                <!-- BEGIN: [[*SecondColumn*]] -->
+                <div class="column-2nd padded-h-1x spaced-below-3x">
+                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                    <div class="centered spaced-below-3x">
+                        <h3 class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</h3>
+<!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    </div>
+                    <!-- END: [[*PopularGraphicDesignApps*]] -->
+
+<!-- BEGIN: [[*RecommendedEffects*]] -->
+<!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+<!-- END: [[*RecommendedEffects*]] -->
+                </div>
+                <!-- END: [[*SecondColumn*]] -->
+            </div>
+        </main>
+
+<!-- BEGIN: [[*Footer*]] -->
+<!--#include VIRTUAL="/inc/footer.inc.html" -->
+<!-- END: [[*Footer*]] -->
+
+<!-- BEGIN: [[*SCRIPT::External*]] -->
+<script src="/ui/js/lazysizes.min.js"></script>
+<!-- END: [[*SCRIPT::External*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+<script src="/ui/js/main.js"></script>
+
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = "Arial";
+
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = "kids_003",
+                    initialSymbol2 = "kids_004",
+                    initialSymbol3 = "kids_007",
+                    initialSymbol4 = "kids_005";
+
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = "abstract083", // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = "3d_blue"; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg("idOverlayModalMsg", "idModalMsgText", e.message ? e.message : e, "idModalMsgTitle", "Error");
+            }
+        </script>
+
+<script src="/ui/js/exec-def.js"></script>
+        <!-- END: [[*SCRIPT::Internal*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
+</html>

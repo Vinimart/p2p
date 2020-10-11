@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- BEGIN: [[*HeadCommons*]] -->
+<!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+<!-- END: [[*HeadCommons*]] -->
+
+<link rel="stylesheet" href="/ui/css/normalize.css" />
+<link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/ui/css/main.css" />
+
+        <!-- BEGIN: [[*SEOMetaTags*]] -->
+        <meta content="photo editor, fast photo editor, image editor, photo effect, photo filter, image effect, effect creator, photo effect designer, online photo effect generator, online photo effects, online photo filters, online image effects, online picture effects, free photo effects, professional photo effects, best photo effects creator, best image effect maker" name="keywords" />
+	    <meta content="Free Online Photo Editor. Edit your photos online with professional effects and filters for free." name="description" />
+        <!-- END: [[*SEOMetaTags*]] -->
+
+        <title>Online Photo Editor</title>
+    </head>
+
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+<!-- BEGIN: [[*Preloader*]] -->
+<!--#include VIRTUAL="/inc/preloader.inc.html" -->
+<!-- END: [[*Preloader*]] -->
+
+<!-- BEGIN: [[*Modal*]] -->
+<!--#include VIRTUAL="/inc/modal.inc.html" -->
+<!-- END: [[*Modal*]] -->
+
+<!-- BEGIN: [[*SearchModal*]] -->
+<!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+<!-- END: [[*SearchModal*]] -->
+
+<!-- BEGIN: [[*ColorPicker*]] -->
+<!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+<!-- END: [[*ColorPicker*]] -->
+
+<!-- BEGIN: [[*SideNav*]] -->
+<!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+<!-- END: [[*SideNav*]] -->
+
+<!-- BEGIN: [[*Menu*]] -->
+<!--#include VIRTUAL="/inc/menu.inc.html" -->
+<!-- END: [[*Menu*]] -->
+
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-5x bold spaced-below-1x">Easy Online Photo Editor</h1>
+                <p class="font-3x">It offers many exclusive top photo effects and filters</p>
+            </div>
+
+            <hr class="ruler limiter-3x" />
+
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
+
+        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png)">
+            <!-- Container Principal (max-width: 1600px) -->
+            <div class="flex-around limiter-3x">
+                <!-- BEGIN: [[*MainColumn*]] -->
+                <div class="column-main padded-h-2x spaced-below-3x">
+                    <!-- BEGIN: [[*InitialText*]] -->
+                    <div class="spaced-below-3x justified">
+                        <p class="spaced-below-1x">
+                            Here you edit a photo <strong>as easy as three clicks</strong>: click an image to select the effect, choose your input photo in the 
+						    page bottom, click the "Generate" button and you are done.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            It's <strong>totally free</strong>: you can use these high quality image effects in any work you want, free or commercial.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            It offers many <strong>exclusive top photo effects and filters</strong>: we are professional computer graphics developers and make 
+						    all our graphic libraries from scratch. Many image effects you see here were researched exclusively for these online photo effect 
+						    generators and can't be found in any other graphic software.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            We have the most <strong>versatile online image editors</strong>: if you need a more customizable photo effect, just click the 
+                            small icon near the effect name to open, in a new page, a related configurable free photo effect designer. Alternatively, you
+                            can visit a page that shows most of our <a class="hover-color-2nd" href="/online-photo-effects-and-filters.html">Free Online Image Effects and Filters</a> 
+                            with photo edition examples.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            To make sure all users can use our professional photo effects smoothly, the maximum upload image size is 5 megabytes.
+                            This ensures many people can use our service simultaneously. If your photos are very big, please reduce them before sending
+                            them to our server, or they can be refused.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            Important update: since we have a huge number of top photo effects to offer and we want a <strong>photo editor with a fast load</strong>, 
+                            now most photo manipulation samples don't load automatically. You still can read the effects names and load just the photo filter 
+                            examples you are interested in. If you are an advanced user and already know how the online image effects look like, you usually 
+                            don't need to load the photo transformation samples at all. If you prefer to use the original easy online image editor, you can
+                            find it <a class="hover-color-2nd" href="/full-online-photo-editor.html">here</a>.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            You could also like to know our huge list of high quality 
+						    <a class="hover-color-2nd" href="/online-text-logo-design-generators.html">Online Text Logo Design Generators</a>.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            If you have doubts about how to use any of our softwares, please read our 
+						    <a class="hover-color-2nd" href="/how_to_use.html">How To Use</a> page.
+                        </p>
+                    
+                        <p>
+                            We also have a version of this free online image editor in Portuguese: 
+                            <a class="hover-color-2nd" href="/lang/pt/editor-de-fotos-online.html">Editor de Fotos Online</a>. If you can be a volunteer to translate this page to 
+                            your native language, so people from your country can use the effects more easily, please contact us at 
+                            picturetopeople[at]gmail[dot]com.
+                        </p>
+                    </div>
+                    <!-- END: [[*InitialText*]] -->
+
+<!-- BEGIN: [[*COMPONENT::PhotoEffectMultiList*]] -->
+<!--#include VIRTUAL="/ui/comp/label_list_comp_photo_effect_multilist.inc.html" -->
+<!--#include VIRTUAL="/inc/btn_show_all_hide_all.inc.html" -->
+<!-- END: [[*COMPONENT::PhotoEffectMultiList*]] -->
+
+                    <!-- BEGIN: [[*EffectConfiguration*]] -->
+                    <div class="bg-color-bright-grey rounded-1x shaded padded-2x spaced-below-3x">
+                        <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
+<!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
+
+                            <!-- Lista de efeitos de foto selecionaveis acima (photo_effect_multilist). -->
+                            <input type="hidden" name="SelectedPhotoEffect" id="idSelectedPhotoEffect" value="" />
+                    
+<!-- BEGIN: [[*ImageInput*]] -->
+<!--#include VIRTUAL="/inc/image_input.inc.html" -->
+<!-- END: [[*ImageInput*]] -->
+
+<!-- BEGIN: [[*GenerateButton*]] -->
+<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+<!-- END: [[*GenerateButton*]] -->
+                        </form>
+                    </div>
+                    <!-- END: [[*EffectConfiguration*]] -->
+                </div>
+                <!-- END: [[*MainColumn*]] -->
+
+                <!-- BEGIN: [[*SecondColumn*]] -->
+                <div class="column-2nd padded-h-1x spaced-below-3x">
+                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                    <div class="centered spaced-below-3x">
+                        <h3 class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</h3>
+<!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    </div>
+                    <!-- END: [[*PopularGraphicDesignApps*]] -->
+
+<!-- BEGIN: [[*RecommendedEffects*]] -->
+<!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+<!-- END: [[*RecommendedEffects*]] -->
+                </div>
+                <!-- END: [[*SecondColumn*]] -->
+            </div>
+        </main>
+
+<!-- BEGIN: [[*Footer*]] -->
+<!--#include VIRTUAL="/inc/footer.inc.html" -->
+<!-- END: [[*Footer*]] -->
+
+<!-- BEGIN: [[*SCRIPT::External*]] -->
+<script src="/ui/js/lazysizes.min.js"></script>
+<!-- END: [[*SCRIPT::External*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+<script src="/ui/js/main.js"></script>
+
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = "Arial";
+
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = "kids_003",
+                    initialSymbol2 = "kids_004",
+                    initialSymbol3 = "kids_007",
+                    initialSymbol4 = "kids_005";
+
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = "abstract083", // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = "3d_blue"; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg("idOverlayModalMsg", "idModalMsgText", e.message ? e.message : e, "idModalMsgTitle", "Error");
+            }
+        </script>
+
+<script src="/ui/js/exec-def.js"></script>
+        <!-- END: [[*SCRIPT::Internal*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
+</html>
