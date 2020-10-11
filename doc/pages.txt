@@ -11,7 +11,6 @@ https://vinimartdev.com/how_to_use.html
 https://vinimartdev.com/easy-online-photo-editor.html
 https://vinimartdev.com/color_converter_result.html
 https://vinimartdev.com/color_converter.html
-https://vinimartdev.com/custom-wallpaper-design-generator.html
 https://vinimartdev.com/online-text-logo-design-generators.html
 https://vinimartdev.com/image_effects/photo-polaroid/polaroid-effect-photo-editor.html
 https://vinimartdev.com/photo_sketch/photo_sketch_gallery.html
@@ -24,9 +23,9 @@ https://vinimartdev.com/text_generator/others/typography/typography_effects.html
 https://vinimartdev.com/text_generator/others/3d/horror/3d-horror-text-effect-logo-generator.html
 https://vinimartdev.com/text_generator/others/carved/online_carved_text_effects.html
 https://vinimartdev.com/text_generator/others/3d/beveled-text-effect/wood-bevel-text-effect-generators.html
-
 https://vinimartdev.com/facebook-cover-design-generator.html
 https://vinimartdev.com/twitter-header-design-generator.html
 https://vinimartdev.com/custom-avatar-image-generator.html
-/3d-banner-generator.html
-/online-banner-generator.html
+https://vinimartdev.com/custom-wallpaper-design-generator.html
+https://vinimartdev.com/3d-banner-generator.html
+https://vinimartdev.com/online-banner-generator.html
