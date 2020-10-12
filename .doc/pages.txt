@@ -28,3 +28,6 @@ https://vinimartdev.com/text_generator/others/3d/realistic/professional_text_eff
 https://vinimartdev.com/text_generator/others/carved/online_carved_text_effects.html
 https://vinimartdev.com/text_generator/others/graffiti/graffiti_text.html
 https://vinimartdev.com/text_generator/others/typography/typography_effects.html
+
+https://vinimartdev.com/image_utilities/image_converter.html
+https://vinimartdev.com/logos/realistic/3d-logo-renderer.html#abstract001_logo_effect
