@@ -23,3 +23,25 @@ porém utilizam ranges diferentes.
 e além disso só se torna obrigatório seu preenchimento quando o usuário seleciona a opção “Uploaded image” do campo “Background Style”.
 O id é o mesmo de casos que utilizam outra verificação, impossibilitando até onde eu sei, um possível “by-pass” na regra 
 de verificação de dados do tipo “blank” para este caso específico (que não requer verificação).
+
+9) A classe ColorTable em "/ui/js/main.js" referente ao Color Picker deve ser refatorada ou refeita dependendo da necessidade.
+
+10) Verificar se o título do componente "label_list_comp_text_effect_1" atende de forma satisfatória todas as páginas que utilizam esse componente.
+
+11) Sobre a página "/image_utilities/image_converter.html": O input para imagens desta página utiliza o mesmo id dos inputs para imagens das demais páginas,
+porém utiliza uma verificação de extensão de arquivos mais ampla, ou seja, diferente da regra geral (jpg, gif e png) portanto impossibilita uma verificação de dados
+específica para este caso.
+
+12) Ainda sobre a página "/image_utilities/image_converter.html": Ao gerar o efeito (clique no botão "Generate") não existe redirecionamento para a página 
+de resultado "/result.html". O que acontece é que a div de dialogo (A mesma que aparece quando o efeito está sendo carregado, como um pre loader) surge tomando toda a página
+enquanto o resultado é baixado pelo usuário. Para que o usuário retorne a página de configuração é necessário recarregar a página.
+
+13) Algumas páginas em produção como a "/logos/realistic/3d-logo-renderer.html#abstract001_logo_effect" são renderizadas dinamicamente e são acessadas à partir de uma âncora na URL,
+caso o usuário tente acessar a página "raíz" o javascript renderiza a página default. Essa implementação não existe atualmente no protótipo, então ao menos por enquanto
+essa página foi gerada estaticamente.
+
+14) Verificar se os links da section "We Offer Much More" em "/index.html" estão corretos.
+
+15) Implementar as funcionalidades responsáveis por gerar dinamicamente os itens da região "Popular Graphic Design Apps" em "/inc/popular_graphic_design_apps.inc.html".
+
+16) Finalizar o desenvolvimento das páginas de teste listadas em "/doc/test-pages.txt" à fim de testar a robustez do Template.
