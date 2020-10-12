@@ -17,6 +17,7 @@
         <title>Online 3D Logo Renderer</title>
     </head>
 
+    <!-- Anchor determinado de forma estatica e manual, em producao esse anchor e gerado dinamicamente -->
     <body id="#abstract001_logo_effect" onload="defInit();" onunload="hide(['idOverlayPreloader']);">
 <!-- BEGIN: [[*Preloader*]] -->
 <!--#include VIRTUAL="/inc/preloader.inc.html" -->
@@ -125,6 +126,7 @@
                     <!-- END: [[*Tips*]] -->
 
                     <!-- BEGIN: [[*EffectExamples*]] -->
+                    <!-- A imagem de exemplo desta pagina foi determinada de forma manual e estatica, em producao o caminho dessa imagem e gerado de forma dinamica pela funcao "setImageSrcWithElementValue"  -->
                     <div class="spaced-v-4x">
                         <h3 class="font-3x bold centered spaced-around-1x">Example</h3>
                     
@@ -142,6 +144,7 @@
                         <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
 <!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
 
+                            <!-- O value deste input foi determinado de forma manual e estatica, em producao esse value e gerado de forma dinamica pela funcao "setElementWithUrlAnchor"  -->
                             <input type="hidden" name="EffectName" id="idEffectName" value="abstract001_logo_effect" />
 
                             <div class="spaced-v-3x">
