@@ -142,118 +142,120 @@
                         <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
 <!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
 
-                    <div class="spaced-v-3x">
-                        <label for="idMargin">Extra Margin :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <select id="idMargin" name="Margin">
-                            <option value="0" selected>0</option>
-							<option value="5">5</option>
-							<option value="10">10</option>
-							<option value="15">15</option>
-							<option value="20">20</option>
-							<option value="25">25</option>
-							<option value="30">30</option>
-                        </select>
-                    </div>
-                    
-                    <div class="spaced-v-3x">
-                        <label class="check-box">
-                            <p>Smooth input logo image</p>
-                    
-                            <input id="idUseSmooth" type="checkbox" name="UseSmooth" value="checked" />
-                    
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                            <input type="hidden" name="EffectName" id="idEffectName" value="abstract001_logo_effect" />
 
-                    <div class="spaced-v-3x">
-                        <label for="idSmoothLevel">Smoothness Level :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <select id="idSmoothLevel" name="SmoothLevel">
-                            <option value="1" selected>1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-                        </select>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idMargin">Extra Margin :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idMargin" name="Margin">
+                                    <option value="0" selected>0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </div>
+                            
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Smooth input logo image</p>
+                            
+                                    <input id="idUseSmooth" type="checkbox" name="UseSmooth" value="checked" />
+                            
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label class="check-box">
-                            <p>Customize Shadow</p>
-                    
-                            <input id="idCustomizeShadow" type="checkbox" name="CustomizeShadow" value="checked" />
-                    
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idSmoothLevel">Smoothness Level :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idSmoothLevel" name="SmoothLevel">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label for="idShadowPosition">Shadow Position :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <select id="idShadowPosition" name="ShadowPosition">
-                            <option value="top">Top</option>
-							<option value="bottom">Bottom</option>
-							<option value="left">Left</option>
-							<option value="right">Right</option>
-							<option value="top-left">Top-left</option>
-							<option value="top-right">Top-right</option>
-							<option value="bottom-left">Bottom-left</option>
-							<option value="bottom-right" selected>Bottom-right</option>
-                        </select>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Customize Shadow</p>
+                            
+                                    <input id="idCustomizeShadow" type="checkbox" name="CustomizeShadow" value="checked" />
+                            
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label for="idShadowDistance">Shadow Distance :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <select id="idShadowDistance" name="ShadowDistance">
-                            <option value="1">Low</option>
-							<option value="2" selected>Normal</option>
-							<option value="3">High</option>
-							<option value="4">Very high</option>
-                        </select>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idShadowPosition">Shadow Position :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idShadowPosition" name="ShadowPosition">
+                                    <option value="top">Top</option>
+                                    <option value="bottom">Bottom</option>
+                                    <option value="left">Left</option>
+                                    <option value="right">Right</option>
+                                    <option value="top-left">Top-left</option>
+                                    <option value="top-right">Top-right</option>
+                                    <option value="bottom-left">Bottom-left</option>
+                                    <option value="bottom-right" selected>Bottom-right</option>
+                                </select>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label for="idShadowDispersion">Shadow Dispersion :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <select id="idShadowDispersion" name="ShadowDispersion">
-                            <option value="1">Low</option>
-							<option value="2" selected>Normal</option>
-							<option value="3">High</option>
-							<option value="4">Very high</option>
-                        </select>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idShadowDistance">Shadow Distance :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idShadowDistance" name="ShadowDistance">
+                                    <option value="1">Low</option>
+                                    <option value="2" selected>Normal</option>
+                                    <option value="3">High</option>
+                                    <option value="4">Very high</option>
+                                </select>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label for="idBackColor">Background Color :</label><br />
-                    
-                        <div class="spaced-below-1x"></div>
-                    
-                        <div class="flex-between">
-                            <input class="uppercase" type="text" maxlength="6" id="idBackColor" name="BackColor" value="FFFFFF" />&nbsp;&nbsp;
-                    
-                            <i id="idBackColorPicker" class="pointer fas fa-palette font-5x color-1st animate-1" onclick="ColorTable.openColorPicker('idBackColor')" title="Color Picker"> </i>
-                        </div>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idShadowDispersion">Shadow Dispersion :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <select id="idShadowDispersion" name="ShadowDispersion">
+                                    <option value="1">Low</option>
+                                    <option value="2" selected>Normal</option>
+                                    <option value="3">High</option>
+                                    <option value="4">Very high</option>
+                                </select>
+                            </div>
 
-                    <div class="spaced-v-3x">
-                        <label class="check-box">
-                            <p>Get a transparent logo (PNG file)</p>
-                    
-                            <input id="idGetAsTranspPng" type="checkbox" name="GetAsTranspPng" value="checked" />
-                    
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
+                            <div class="spaced-v-3x">
+                                <label for="idBackColor">Background Color :</label><br />
+                            
+                                <div class="spaced-below-1x"></div>
+                            
+                                <div class="flex-between">
+                                    <input class="uppercase" type="text" maxlength="6" id="idBackColor" name="BackColor" value="FFFFFF" />&nbsp;&nbsp;
+                            
+                                    <i id="idBackColorPicker" class="pointer fas fa-palette font-5x color-1st animate-1" onclick="ColorTable.openColorPicker('idBackColor')" title="Color Picker"> </i>
+                                </div>
+                            </div>
+
+                            <div class="spaced-v-3x">
+                                <label class="check-box">
+                                    <p>Get a transparent logo (PNG file)</p>
+                            
+                                    <input id="idGetAsTranspPng" type="checkbox" name="GetAsTranspPng" value="checked" />
+                            
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
 
 <!-- BEGIN: [[*ImageInput*]] -->
 <!--#include VIRTUAL="/inc/image_input.inc.html" -->
