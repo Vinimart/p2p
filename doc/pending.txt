@@ -1,11 +1,25 @@
-1) Links do footer;
+1) Os itens de menu do footer devem ser atualizados, pois ainda não são definitivos;
 
-2) Atualizar o parágrafo do footer;
+2) O texto do footer deve ser atualizado, pois este ainda não é definitivo;
 
-3) Conteúdo textual do terms of service;
+3) O conteúdo textual da página "/terms-of-service" deve ser alterado pois o site não terá sistema de assinaturas pagas;
 
-4) link para o container circular "Know our most used free 3D effect apps";
+4) Link do container circular laranja "Know our most used free 3D effect apps" é provisório, o mesmo deve ser atualizado 
+pois possivelmente será criada uma nova página de agrupamento de efeitos para atende-lo;
 
-5) Remover o "min-width" e "overflow-y: auto" dos componentes de fonte classe CSS ".font-list-width";
+5) Remover a classe ".min-width" dos componentes de fonte (table_list_comp_font) e do arquivo "/ui/css/main.css". 
+Está é uma solucao provisória para contornar o problema de layout em que o componente table_list_comp_font_general 
+quebra quando tem a largura maior que a largura do container nas telas com menos de 360px de largura. 
+Remover quando for gerada as imagens mais estreitas para os componentes. (Esta classe está marcada com "to delete").
 
-6) usaremos "Configuraiton" em todas as páginas de efeitos, mas pergunte-me de novo quando for fazer cada página que estiver diferente disso em produção.
+6) Por enquanto o título do formulário será "Configuration" em todas as páginas de efeitos. Mas é necessário perguntar ao Léo sempre 
+que for desenvolver uma página que usa um título de formulário diferente em produção.
+
+7) Sobre as páginas "/custom-wallpaper-design-generator.html" e "/custom-avatar-image-generator.html": Ambas utilizam verificação de dados 
+do tipo “range” em dois inputs de texto, idWidth e idHeight, o problema é que em ambas as páginas esses inputs têm o mesmo id, 
+porém utilizam ranges diferentes.
+
+8) Sobre a página "/3d-banner-generator.html": Essa página tem um “Input Image” com label diferente das demais, 
+e além disso só se torna obrigatório seu preenchimento quando o usuário seleciona a opção “Uploaded image” do campo “Background Style”.
+O id é o mesmo de casos que utilizam outra verificação, impossibilitando até onde eu sei, um possível “by-pass” na regra 
+de verificação de dados do tipo “blank” para este caso específico (que não requer verificação).
