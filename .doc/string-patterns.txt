@@ -1,0 +1,278 @@
+String Patterns para desenvolvimento das páginas do Picture to People.
+
+Todas as estruturas abaixo devem ser atualizadas conforme alteração no template.
+
+------------------------------------------------------------------------------
+
+
+1 - Basic UI Structure
+
+1.1 - P2P Configuration Form:
+
+Obs.: O atributo "enctype" do elemento form deve ser alterado conforme uso,
+caso exista input para imagem usar: multipart/form-data.
+Se não, usar: application/x-www-form-urlencoded (ou omitir o atributo).
+
+<!-- BEGIN: [[*EffectConfiguration*]] -->
+<div class="bg-color-bright-grey rounded-1x shaded padded-2x spaced-below-3x">
+    <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
+<!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
+
+<!-- BEGIN: [[*ImageInput*]] -->
+<!--#include VIRTUAL="/inc/image_input.inc.html" -->
+<!-- END: [[*ImageInput*]] -->
+
+<!-- BEGIN: [[*GenerateButton*]] -->
+<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+<!-- END: [[*GenerateButton*]] -->
+    </form>
+</div>
+<!-- END: [[*EffectConfiguration*]] -->
+
+------------------------------------------------------------------------------
+
+1.2 - P2P Initial Text:
+
+<!-- BEGIN: [[*InitialText*]] -->
+<div class="spaced-below-3x justified">
+    <p class="spaced-below-1x">
+
+    </p>
+
+    <ul class="spaced-v-2x">
+        <li class="spaced-below-1x">
+
+        </li>
+    </ul>
+
+    <p>
+        
+    </p>
+</div>
+<!-- END: [[*InitialText*]] -->
+
+------------------------------------------------------------------------------
+
+1.3 - P2P Suggestions:
+
+<!-- BEGIN: [[*Suggestions*]] -->
+<div class="bg-color-4th rounded-2x padded-3x">
+    <p class="spaced-below-2x justified">
+
+    </p>
+
+    <ul>
+        <li class="spaced-below-1x"><a class="hover-color-2nd" href="/"></a>;</li>
+    </ul>
+
+    <p class="spaced-above-2x justified">
+        
+    </p>
+</div>
+<!-- END: [[*Suggestions*]] -->
+
+------------------------------------------------------------------------------
+
+1.4 - P2P Important Tips:
+
+<!-- BEGIN: [[*Tips*]] -->
+<div class="spaced-v-3x justified">
+    <h3 class="font-3x">Important Tips :</h3>
+
+    <div class="spaced-below-1x"></div>
+
+    <ul>
+        <li class="spaced-below-1x">
+            
+        </li>
+    </ul>
+</div>
+
+<hr class="ruler" />
+<!-- END: [[*Tips*]] -->
+
+------------------------------------------------------------------------------
+
+
+2 - Effect Examples
+
+2.1 - P2P Effect Examples Unique Title
+
+<!-- BEGIN: [[*EffectExamples*]] -->
+<div class="spaced-v-4x">
+    <h3 class="font-3x bold centered spaced-around-1x">Title</h3>
+
+    <div class="centered">
+        <div>
+            <img class="spaced-below-1x lazyload" alt="Example" src="/ui/img/loader-100x100.svg" data-src="/img/" />
+        </div>
+    </div>
+</div>
+<div>&nbsp;</div>
+<!-- END: [[*EffectExamples*]] -->
+
+------------------------------------------------------------------------------
+
+2.2 - P2P Effect Examples Multiple Titles
+
+<!-- BEGIN: [[*EffectExamples*]] -->
+<div class="spaced-v-4x">
+    <div class="centered">
+        <div class="spaced-v-4x">
+            <h3 class="font-3x bold spaced-around-1x">Title</h3>
+            <img class="lazyload" alt="Example" src="/ui/img/loader-100x100.svg" data-src="/img/" />
+        </div>
+
+        <div class="spaced-v-4x">
+            <h3 class="font-3x bold spaced-around-1x">Title</h3>
+            <img class="lazyload" alt="Example" src="/ui/img/loader-100x100.svg" data-src="/img/" />
+        </div>
+    </div>
+</div>
+<div>&nbsp;</div>
+<!-- END: [[*EffectExamples*]] -->
+
+------------------------------------------------------------------------------
+
+
+3 - Effect Grouping (EffectEnum)
+
+3.1 - Effect Enum Types
+
+<!-- BEGIN: [[*EffectEnum-Types*]] -->
+<div class="centered limiter-1x spaced-below-3x">
+    <div class="spaced-v-4x">
+        <h2 class="font-3x bold">Title</h2>
+
+        <div class="spaced-v-2x">
+            <a href="/">
+                <img class="lazyload" alt="" src="/ui/img/loader-100x100.svg" data-src="/img" />
+                <h3 class="color-dark-grey">Subtitle</h3>
+            </a>
+        </div>
+
+        <p class="justified">
+            Paragraph
+        </p>
+    </div>
+</div>
+<!-- END: [[*EffectEnum-Types*]] -->
+
+------------------------------------------------------------------------------
+
+3.2 - Effect Enum Groups
+
+<!-- BEGIN: [[*EffectEnum-Groups*]] -->
+<div class="centered spaced-v-4x">
+    <h2 class="font-4x spaced-below-1x">Title</h2>
+
+    <div class="in-block-display padded-2x">
+        <a href="/">
+            <img class="lazyload" alt="" src="/ui/img/loader-100x100.svg" data-src="/img" />
+            <h3 class="font-3x color-dark-grey">Subtitle</h3>
+        </a>
+    </div>
+</div>
+<!-- END: [[*EffectEnum-Groups*]] -->
+
+------------------------------------------------------------------------------
+
+3.3 - Effect Enum Styles
+
+<!-- BEGIN: [[*EffectEnum-Styles*]] -->
+<div class="centered spaced-v-3x">
+    <h3 class="font-3x bold spaced-below-1x">Title</h3>
+
+    <div class="in-block-display padded-2x"><a href="/"><img class="spaced-below-1x lazyload" alt="" src="/ui/img/loader-100x100.svg" data-src="/img/"></a></div>
+</div>
+<!-- END: [[*EffectEnum-Styles*]] -->
+
+------------------------------------------------------------------------------
+
+3.4 - Effect Enum Showcase
+
+<!-- BEGIN: [[*EffectEnum-Showcase*]] -->
+<div class="spaced-v-3x centered">
+    <div class="spaced-v-3x">
+        <img class="spaced-below-1x lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/" alt="" />
+        <img class="spaced-below-1x lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/" alt="" />
+    </div>
+
+    <div class="spaced-v-3x">
+        <img class="spaced-below-1x lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/" alt="" />
+        <img class="spaced-below-1x lazyload" src="/ui/img/loader-100x100.svg" data-src="/img/" alt="" />
+    </div>
+</div>
+<!-- END: [[*EffectEnum-Showcase*]] -->
+
+------------------------------------------------------------------------------
+
+
+4 - Configuration Form Basic Structures
+
+4.1 - Form Subtitle
+
+<div>
+    <div>&nbsp;</div>
+    <p class="font-3x">Subtitle :</p>
+</div>
+
+------------------------------------------------------------------------------
+
+4.2 - Form Text input
+
+<div class="spaced-v-3x">
+    <label for="idTextToRender">Text (Max 25) :</label><br />
+
+    <div class="spaced-below-1x"></div>
+
+    <input type="text" maxlength="25" id="idTextToRender" name="TextToRender" value="sample" />
+</div>
+
+------------------------------------------------------------------------------
+
+4.3 - Form Combo-box
+
+<div class="spaced-v-3x">
+    <label for="idFontSize">Font Size :</label><br />
+
+    <div class="spaced-below-1x"></div>
+
+    <select id="idFontSize" name="FontSize">
+        <option value="28">Small</option>
+        <option value="35" selected>Normal</option>
+        <option value="42">Big</option>
+    </select>
+</div>
+
+------------------------------------------------------------------------------
+
+4.4 - Form Check-box
+
+<div class="spaced-v-3x">
+    <label class="check-box">
+        <p>Draw Shadow</p>
+
+        <input id="idDrawShadow" type="checkbox" name="DrawShadow" checked="true" value="checked" />
+
+        <span class="checkmark"></span>
+    </label>
+</div>
+
+------------------------------------------------------------------------------
+
+4.5 - Form Color Picker
+
+<div class="spaced-v-3x">
+    <label for="idBackColor">Background Color :</label><br />
+
+    <div class="spaced-below-1x"></div>
+
+    <div class="flex-between">
+        <input class="uppercase" type="text" maxlength="6" id="idBackColor" name="BackColor" value="000000" />&nbsp;&nbsp;
+
+        <i id="idBackColorPicker" class="pointer fas fa-palette font-5x color-1st animate-1" onclick="ColorTable.openColorPicker('idBackColor')" title="Color Picker"> </i>
+    </div>
+</div>
+
+------------------------------------------------------------------------------

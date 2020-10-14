@@ -11,10 +11,13 @@ body {
     color: #202020;
 }
 
-p,
 ul,
 h3 {
     line-height: 150%;
+}
+
+p {
+    line-height: 170%;
 }
 
 /* Recuo para os bullet points */
@@ -427,7 +430,7 @@ cor secundaria da pagina em estado hover. */
 Solucao provisoria para contornar o problema de layout em que o componente table_list_comp_font_general 
 quebra quando tem a largura maior que a largura do container nas telas com menos de 360px de largura. 
 Apagar quando for gerada a imagem do componente mais estreita.*/
-.font-list-width  {
+.min-width  {
     min-width: 305px;
 }
 

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<!-- BEGIN: [[*HeadCommons*]] -->
+<!--#include VIRTUAL="/inc/head_commons.inc.html" -->
+<!-- END: [[*HeadCommons*]] -->
+
+<link rel="stylesheet" href="/ui/css/normalize.css" />
+<link rel="stylesheet" href="/ui/css/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="/ui/css/main.css" />
+
+        <!-- BEGIN: [[*SEOMetaTags*]] -->
+        <meta content="free online image converter, convert images online, change image format online" name="keywords" />
+	    <meta content="Online Image Converter. Convert among many image file formats for free." name="description" />
+        <!-- END: [[*SEOMetaTags*]] -->
+
+        <title>Image Converter</title>
+    </head>
+
+    <body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+<!-- BEGIN: [[*Preloader*]] -->
+<!--#include VIRTUAL="/inc/preloader.inc.html" -->
+<!-- END: [[*Preloader*]] -->
+
+<!-- BEGIN: [[*Modal*]] -->
+<!--#include VIRTUAL="/inc/modal.inc.html" -->
+<!-- END: [[*Modal*]] -->
+
+<!-- BEGIN: [[*SearchModal*]] -->
+<!--#include VIRTUAL="/inc/search_modal.inc.html" -->
+<!-- END: [[*SearchModal*]] -->
+
+<!-- BEGIN: [[*ColorPicker*]] -->
+<!--#include VIRTUAL="/inc/color_picker.inc.html" -->
+<!-- END: [[*ColorPicker*]] -->
+
+<!-- BEGIN: [[*SideNav*]] -->
+<!--#include VIRTUAL="/inc/sidenav.inc.html" -->
+<!-- END: [[*SideNav*]] -->
+
+<!-- BEGIN: [[*Menu*]] -->
+<!--#include VIRTUAL="/inc/menu.inc.html" -->
+<!-- END: [[*Menu*]] -->
+
+        <!-- BEGIN: [[*Header*]] -->
+        <header class="padded-h-2x">
+            <div class="centered spaced-below-3x">
+                <h1 class="font-5x bold spaced-below-1x">Image Converter</h1>
+                <p class="font-3x">It's a powerful tool to convert your images among many file formats</p>
+            </div>
+
+            <hr class="ruler limiter-3x" />
+
+            <div class="spaced-below-3x"></div>
+        </header>
+        <!-- END: [[*Header*]] -->
+
+        <main class="bg-bottom" style="background-image: url(/ui/img/main-bg.png)">
+            <!-- Container Principal (max-width: 1600px) -->
+            <div class="flex-around limiter-3x">
+                <!-- BEGIN: [[*MainColumn*]] -->
+                <div class="column-main padded-h-2x spaced-below-3x">
+                    <!-- BEGIN: [[*InitialText*]] -->
+                    <div class="spaced-below-3x justified">
+                        <p class="spaced-below-1x">
+                            It's a powerful tool to convert your images among many file formats. It supports more than 40 of the most important formats you can find in the market. Read the tips carefully and enjoy.
+                        </p>
+
+                        <p class="spaced-below-1x">
+                            The accepted image formats (for both input and output) and its respective file extensions are listed below:
+                        </p>
+                    
+                        <ul class="spaced-v-2x">
+                            <li class="spaced-below-1x"><strong>AVS</strong> - AVS X Image;</li>
+                            <li class="spaced-below-1x"><strong>BMP</strong> - Windows Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>CIN</strong> - Kodak Cineon Image;</li>
+                            <li class="spaced-below-1x"><strong>DCX</strong> - ZSoft Paintbrush Image;</li>
+                            <li class="spaced-below-1x"><strong>DIB</strong> - Device Independent Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>EPDF</strong> - Encapsulated Portable Document;</li>
+                            <li class="spaced-below-1x"><strong>FITS</strong> - Flexible Image Transport System;</li>
+                            <li class="spaced-below-1x"><strong>GIF</strong> - Graphics Interchange Format;</li>
+                            <li class="spaced-below-1x"><strong>HRZ</strong> - Slow Scane TeleVision;</li>
+                            <li class="spaced-below-1x"><strong>JNG</strong> - Multiple-image Network Graphics;</li>
+                            <li class="spaced-below-1x"><strong>JP2</strong> - JPEG-2000 JP2;</li>
+                            <li class="spaced-below-1x"><strong>JPC</strong> - JPEG-2000 Code Stream;</li>
+                            <li class="spaced-below-1x"><strong>JPG</strong> - JPEG Format (JFIF);</li>
+                            <li class="spaced-below-1x"><strong>MNG</strong> - Multiple-image Network Graphics;</li>
+                            <li class="spaced-below-1x"><strong>MTV</strong> - MTV Raytracing Image;</li>
+                            <li class="spaced-below-1x"><strong>OTB</strong> - On The Air Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>PALM</strong> - Palm Pixmap;</li>
+                            <li class="spaced-below-1x"><strong>PBM</strong> - Portable Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>PCX</strong> - ZSoft Paintbrush Image;</li>
+                            <li class="spaced-below-1x"><strong>PDB</strong> - Palm Database ImageViewer;</li>
+                            <li class="spaced-below-1x"><strong>PFM</strong> - Portable Floatmap;</li>
+                            <li class="spaced-below-1x"><strong>PGM</strong> - Portable Graymap;</li>
+                            <li class="spaced-below-1x"><strong>PICON</strong> - Personal Icon;</li>
+                            <li class="spaced-below-1x"><strong>PICT</strong> - Mac QuickDraw Format;</li>
+                            <li class="spaced-below-1x"><strong>PNG</strong> - Portable Network Graphics;</li>
+                            <li class="spaced-below-1x"><strong>PNG8</strong> - 8 Bits PNG;</li>
+                            <li class="spaced-below-1x"><strong>PNG24</strong> - 24 Bits PNG;</li>
+                            <li class="spaced-below-1x"><strong>PNG32</strong> - 32 Bits PNG;</li>
+                            <li class="spaced-below-1x"><strong>PNM</strong> - Portable Anymap;</li>
+                            <li class="spaced-below-1x"><strong>PPM</strong> - Portable Pixmap;</li>
+                            <li class="spaced-below-1x"><strong>PTIF</strong> - Pyramid Encoded TIFF;</li>
+                            <li class="spaced-below-1x"><strong>SGI</strong> - Irix RGB Image;</li>
+                            <li class="spaced-below-1x"><strong>SUN</strong> - SUN Rasterfile;</li>
+                            <li class="spaced-below-1x"><strong>TGA</strong> - Truevision Targa Image;</li>
+                            <li class="spaced-below-1x"><strong>TIFF</strong> - Tagged Image File Format;</li>
+                            <li class="spaced-below-1x"><strong>UYVY</strong> - Interleaved YUV Raw Image;</li>
+                            <li class="spaced-below-1x"><strong>VICAR</strong> - VICAR Rasterfile ;</li>
+                            <li class="spaced-below-1x"><strong>VIFF</strong> - Khoros Visualization Image;</li>
+                            <li class="spaced-below-1x"><strong>WBMP</strong> - Wireless Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>XBM</strong> - X Windows Bitmap;</li>
+                            <li class="spaced-below-1x"><strong>XPM</strong> - X Windows Pixmap;</li>
+                            <li class="spaced-below-1x"><strong>XWD</strong> - X Windows Dump.</li>
+                        </ul>
+                    </div>
+                    <!-- END: [[*InitialText*]] -->
+
+                    <!-- BEGIN: [[*Tips*]] -->
+                    <div class="spaced-v-3x justified">
+                        <h3 class="font-3x">Important Tips :</h3>
+                    
+                        <div class="spaced-below-1x"></div>
+                    
+                        <ul>
+                            <li class="spaced-below-1x">
+                                The maximum input file size to upload is 1MB. If you send a bigger file, your image will
+                                not be converted.
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                This tool doesn't save images in server hard-disk. After an image convertion, you will
+                                receive the new file to download from a HTTP stream. After saving your response image,
+                                reloading this page is the fastest way to get ready to convert another file (usually,
+                                pressing F5 key works for most browsers). For this tool in particular, pressing the
+                                browser "back" button usually takes you to other page, since downloading the result
+                                image doesn't get you out of this page.
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                You MUST set the correct input file extension according to the list above, because the
+                                input format is deducted from the file extension.
+                            </li>
+
+                            <li class="spaced-below-1x">
+                                If you turn an image file into a poorer format (or a format that lacks certain
+                                metadata), you can lose pixel colors, transparency information and/or other data.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END: [[*Tips*]] -->
+
+                    <!-- BEGIN: [[*EffectConfiguration*]] -->
+                    <div class="bg-color-bright-grey rounded-1x shaded padded-2x spaced-below-3x">
+                        <form id="idFormMain" name="FormMain" enctype="multipart/form-data" method="POST" action="/result.html">
+<!--#include VIRTUAL="/inc/configuration_title_bar.inc.html" -->
+
+                    <div class="spaced-v-3x">
+                        <label for="idOutputFormat">Output Format :</label><br />
+                    
+                        <div class="spaced-below-1x"></div>
+                    
+                        <select id="idOutputFormat" name="OutputFormat">
+                            <option value="AVS">AVS - AVS X Image</option>
+							<option value="BMP">BMP - Windows Bitmap</option>
+							<option value="CIN">CIN - Kodak Cineon Image</option>
+							<option value="DCX">DCX - ZSoft Paintbrush Image</option>
+							<option value="DIB">DIB - Device Independent Bitmap</option>
+							<option value="EPDF">EPDF - Encapsulated Portable Document</option>
+							<option value="FITS">FITS - Flexible Image Transport System</option>
+							<option value="GIF">GIF - Graphics Interchange Format</option>
+							<option value="HRZ">HRZ - Slow Scane TeleVision</option>
+							<option value="JNG">JNG - Multiple-image Network Graphics</option>
+							<option value="JP2">JP2 - JPEG-2000 JP2</option>
+							<option value="JPC">JPC - JPEG-2000 Code Stream</option>
+							<option value="JPG" selected>JPG - JPEG Format (JFIF)</option>
+							<option value="MNG">MNG - Multiple-image Network Graphics</option>
+							<option value="MTV">MTV - MTV Raytracing Image</option>
+							<option value="OTB">OTB - On The Air Bitmap</option>
+							<option value="PALM">PALM - Palm Pixmap</option>
+							<option value="PBM">PBM - Portable Bitmap</option>
+							<option value="PCX">PCX - ZSoft Paintbrush Image</option>
+							<option value="PDB">PDB - Palm Database ImageViewer</option>
+							<option value="PFM">PFM - Portable Floatmap</option>
+							<option value="PGM">PGM - Portable Graymap</option>
+							<option value="PICON">PICON - Personal Icon</option>
+							<option value="PICT">PICT - Mac QuickDraw Format</option>
+							<option value="PNG">PNG - Portable Network Graphics</option>
+							<option value="PNG8">PNG8 - 8 Bits PNG</option>
+							<option value="PNG24">PNG24 - 24 Bits PNG</option>
+							<option value="PNG32">PNG32 - 32 Bits PNG</option>
+							<option value="PNM">PNM - Portable Anymap</option>
+							<option value="PPM">PPM - Portable Pixmap</option>
+							<option value="PTIF">PTIF - Pyramid Encoded TIFF</option>
+							<option value="SGI">SGI - Irix RGB Image</option>
+							<option value="SUN">SUN - SUN Rasterfile</option>
+							<option value="TGA">TGA - Truevision Targa Image</option>
+							<option value="TIFF">TIFF - Tagged Image File Format</option>
+							<option value="UYVY">UYVY - Interleaved YUV Raw Image</option>
+							<option value="VICAR">VICAR - VICAR Rasterfile </option>
+							<option value="VIFF">VIFF - Khoros Visualization Image</option>
+							<option value="WBMP">WBMP - Wireless Bitmap</option>
+							<option value="XBM">XBM - X Window Bitmap</option>
+							<option value="XPM">XPM - X Window Pixmap</option>
+							<option value="XWD">XWD - X Window Dump</option>
+                        </select>
+                    </div>
+                    
+<!-- BEGIN: [[*ImageInput*]] -->
+<!--#include VIRTUAL="/inc/image_input.inc.html" -->
+<!-- END: [[*ImageInput*]] -->
+
+<!-- BEGIN: [[*GenerateButton*]] -->
+<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
+<!-- END: [[*GenerateButton*]] -->
+                        </form>
+                    </div>
+                    <!-- END: [[*EffectConfiguration*]] -->
+                </div>
+                <!-- END: [[*MainColumn*]] -->
+
+                <!-- BEGIN: [[*SecondColumn*]] -->
+                <div class="column-2nd padded-h-1x spaced-below-3x">
+                    <!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+                    <div class="centered spaced-below-3x">
+                        <h3 class="font-3x bold spaced-below-1x">Popular Graphic Design Apps</h3>
+<!--#include VIRTUAL="/inc/popular_graphic_design_apps.inc.html" -->
+                    </div>
+                    <!-- END: [[*PopularGraphicDesignApps*]] -->
+
+<!-- BEGIN: [[*RecommendedEffects*]] -->
+<!--#include VIRTUAL="/inc/recommended_effects.inc.html" -->
+<!-- END: [[*RecommendedEffects*]] -->
+                </div>
+                <!-- END: [[*SecondColumn*]] -->
+            </div>
+        </main>
+
+<!-- BEGIN: [[*Footer*]] -->
+<!--#include VIRTUAL="/inc/footer.inc.html" -->
+<!-- END: [[*Footer*]] -->
+
+<!-- BEGIN: [[*SCRIPT::External*]] -->
+<script src="/ui/js/lazysizes.min.js"></script>
+<!-- END: [[*SCRIPT::External*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Internal*]] -->
+<script src="/ui/js/main.js"></script>
+
+        <script>
+            try {
+                // Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+                // Default para f3 (writing) = 'Brushed'.
+                // Default para f4 (graffiti) = 'Jungle LIFE'.
+                // Default para f5 (horror) = 'Creepsville'.
+                var initialFontName = "Arial";
+
+                // Para as telas que usam simbolos.
+                var initialSymbol1 = "kids_003",
+                    initialSymbol2 = "kids_004",
+                    initialSymbol3 = "kids_007",
+                    initialSymbol4 = "kids_005";
+
+                // Para as telas que usam lista de efeito de texto com nome.
+                var initialNamedTextEffect1 = "abstract083", // Valor para a lista de efeitos 3d.
+                    initialNamedTextEffect2 = "3d_blue"; // Valor para a lista de efeitos classicos.
+            } catch (e) {
+                showModalMsg("idOverlayModalMsg", "idModalMsgText", e.message ? e.message : e, "idModalMsgTitle", "Error");
+            }
+        </script>
+
+<script src="/ui/js/exec-def.js"></script>
+        <!-- END: [[*SCRIPT::Internal*]] -->
+
+        <!-- BEGIN: [[*SCRIPT::Ads*]] -->
+        <!-- END: [[*SCRIPT::Ads*]] -->
+    </body>
+</html>
