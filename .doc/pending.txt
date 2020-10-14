@@ -45,3 +45,7 @@ essa página foi gerada estaticamente.
 15) Implementar as funcionalidades responsáveis por gerar dinamicamente os itens da região "Popular Graphic Design Apps" em "/inc/popular_graphic_design_apps.inc.html".
 
 16) Finalizar o desenvolvimento das páginas de teste listadas em "/doc/test-pages.txt" à fim de testar a robustez do Template.
+
+17) Alterar o conteúdo textual da região InitialText da página "/easy-online-photo-editor.html" para uma versão mais atualizada (Sem a menção ao "/full-online-photo-editor.html").
+
+18) Implementar o javascript dos botões "Show all" "Hide all" em "/inc/btn_show_all_hide_all.inc.html".

@@ -11,10 +11,13 @@ body {
     color: #202020;
 }
 
-p,
 ul,
 h3 {
     line-height: 150%;
+}
+
+p {
+    line-height: 170%;
 }
 
 /* Recuo para os bullet points */
