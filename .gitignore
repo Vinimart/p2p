@@ -1,3 +1,6 @@
 inc
 test-pages
 ui/comp
+!ui/comp/img/*.jpg
+!ui/comp/img/*.png
+!ui/comp/img/*.gif
