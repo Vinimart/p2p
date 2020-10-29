@@ -3529,11 +3529,244 @@
 
                             <!-- /sticker-creator/ -->
                             <!-- BEGIN: [[*COMPONENT::StickerShapeList*]] -->
-                            <!--#include VIRTUAL="/ui/comp/list_comp_sticker_shape.inc.html" -->
+                            <div class="spaced-v-3x">
+                                <input type="hidden" name="SelectedStickerShape" id="idSelectedStickerShape" value="" />
+                            
+                                <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                <input type="hidden" name="HasSmallImageListSticker" id="idHasSmallImageListSticker" value="yes" />
+                            
+                                <p class="spaced-below-1x">Choose a shape here :</p>
+                            
+                                <div class="list-comp">
+                                    <img id="sSticker.sticker_001" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_001.gif" />
+                                    <img id="sSticker.sticker_002" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_002.gif" />
+                                    <img id="sSticker.sticker_003" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_003.gif" />
+                                    <img id="sSticker.sticker_004" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_004.gif" />
+                                    <img id="sSticker.sticker_005" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_005.gif" />
+                                    <img id="sSticker.sticker_006" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_006.gif" />
+                                    <img id="sSticker.sticker_007" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_007.gif" />
+                                    <img id="sSticker.sticker_008" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_008.gif" />
+                                    <img id="sSticker.sticker_009" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_009.gif" />
+                                    <img id="sSticker.sticker_010" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_010.gif" />
+                                    <img id="sSticker.sticker_011" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_011.gif" />
+                                    <img id="sSticker.sticker_012" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_012.gif" />
+                                    <img id="sSticker.sticker_013" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_013.gif" />
+                                    <img id="sSticker.sticker_014" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_014.gif" />
+                                    <img id="sSticker.sticker_015" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_015.gif" />
+                                    <img id="sSticker.sticker_016" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_016.gif" />
+                                    <img id="sSticker.sticker_017" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_017.gif" />
+                                    <img id="sSticker.sticker_018" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_018.gif" />
+                                    <img id="sSticker.sticker_019" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_019.gif" />
+                                    <img id="sSticker.sticker_020" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_020.gif" />
+                                    <img id="sSticker.sticker_021" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_021.gif" />
+                                    <img id="sSticker.sticker_022" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_022.gif" />
+                                    <img id="sSticker.sticker_023" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_023.gif" />
+                                    <img id="sSticker.sticker_024" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_024.gif" />
+                                    <img id="sSticker.sticker_025" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_025.gif" />
+                                    <img id="sSticker.sticker_026" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_026.gif" />
+                                    <img id="sSticker.sticker_027" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_027.gif" />
+                                    <img id="sSticker.sticker_028" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_028.gif" />
+                                    <img id="sSticker.sticker_029" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_029.gif" />
+                                    <img id="sSticker.sticker_030" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_030.gif" />
+                                    <img id="sSticker.sticker_031" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_031.gif" />
+                                    <img id="sSticker.sticker_032" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_032.gif" />
+                                    <img id="sSticker.sticker_033" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_033.gif" />
+                                    <img id="sSticker.sticker_034" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_034.gif" />
+                                    <img id="sSticker.sticker_035" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_035.gif" />
+                                    <img id="sSticker.sticker_036" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_036.gif" />
+                                    <img id="sSticker.sticker_037" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_037.gif" />
+                                    <img id="sSticker.sticker_038" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_038.gif" />
+                                    <img id="sSticker.sticker_039" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_039.gif" />
+                                    <img id="sSticker.sticker_040" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_040.gif" />
+                                    <img id="sSticker.sticker_041" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_041.gif" />
+                                    <img id="sSticker.sticker_042" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_042.gif" />
+                                    <img id="sSticker.sticker_043" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_043.gif" />
+                                    <img id="sSticker.sticker_044" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_044.gif" />
+                                    <img id="sSticker.sticker_045" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_045.gif" />
+                                    <img id="sSticker.sticker_046" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_046.gif" />
+                                    <img id="sSticker.sticker_047" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_047.gif" />
+                                    <img id="sSticker.sticker_048" onclick="SelLists.change(this.id);" class="lazyload" alt="sticker shape symbol" src="/ui/img/loader-100x100.svg" data-src="/ui/comp/img/sticker_048.gif" />
+                                </div>
+                            </div>
                             <!-- END: [[*COMPONENT::StickerShapeList*]] -->
 
                             <!-- BEGIN: [[*COMPONENT::SocialMediaList*]] -->
-                            <!--#include VIRTUAL="/ui/comp/symbol_list_comp_social_media.inc.html" -->
+                            <div class="spaced-v-3x">
+                                <input type="hidden" name="SelectedIcon" id="idSelectedIcon" value="" />
+                            
+                                <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                <input type="hidden" name="HasSmallImageListSocialLogo" id="idHasSmallImageListSocialLogo" value="yes" />
+                            
+                                <p class="spaced-below-1x">Choose an icon here :</p>
+                            
+                                <div class="list-comp">
+                                    <img id="sSocial.aim_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_aim_1.symbol.gif" />
+                                    <img id="sSocial.aim_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_aim_2.symbol.gif" />
+                                    <img id="sSocial.amazon_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_amazon_1.symbol.gif" />
+                                    <img id="sSocial.android_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_android_1.symbol.gif" />
+                                    <img id="sSocial.apple_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_apple_1.symbol.gif" />
+                                    <img id="sSocial.app_store_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_app_store_1.symbol.gif" />
+                                    <img id="sSocial.aws_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_aws_1.symbol.gif" />
+                                    <img id="sSocial.baidu_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_baidu_1.symbol.gif" />
+                                    <img id="sSocial.baidu_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_baidu_2.symbol.gif" />
+                                    <img id="sSocial.basecamp_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_basecamp_1.symbol.gif" />
+                                    <img id="sSocial.bebo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_bebo_1.symbol.gif" />
+                                    <img id="sSocial.behance_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_behance_1.symbol.gif" />
+                                    <img id="sSocial.bing_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_bing_1.symbol.gif" />
+                                    <img id="sSocial.blip_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_blip_1.symbol.gif" />
+                                    <img id="sSocial.blogger_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_blogger_1.symbol.gif" />
+                                    <img id="sSocial.bnter_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_bnter_1.symbol.gif" />
+                                    <img id="sSocial.bright_kite_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_bright_kite_1.symbol.gif" />
+                                    <img id="sSocial.cc_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_cc_1.symbol.gif" />
+                                    <img id="sSocial.chrome_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_chrome_1.symbol.gif" />
+                                    <img id="sSocial.cinch_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_cinch_1.symbol.gif" />
+                                    <img id="sSocial.cloudapp_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_cloudapp_1.symbol.gif" />
+                                    <img id="sSocial.coroflot_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_coroflot_1.symbol.gif" />
+                                    <img id="sSocial.delicious_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_delicious_1.symbol.gif" />
+                                    <img id="sSocial.delicious_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_delicious_2.symbol.gif" />
+                                    <img id="sSocial.designbump_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_designbump_1.symbol.gif" />
+                                    <img id="sSocial.designfloat_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_designfloat_1.symbol.gif" />
+                                    <img id="sSocial.designmoo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_designmoo_1.symbol.gif" />
+                                    <img id="sSocial.deviant_art_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_deviant_art_1.symbol.gif" />
+                                    <img id="sSocial.dibbble_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_dibbble_1.symbol.gif" />
+                                    <img id="sSocial.digg_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_digg_1.symbol.gif" />
+                                    <img id="sSocial.digg_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_digg_2.symbol.gif" />
+                                    <img id="sSocial.digg_3" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_digg_3.symbol.gif" />
+                                    <img id="sSocial.diigo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_diigo_1.symbol.gif" />
+                                    <img id="sSocial.dropbox_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_dropbox_1.symbol.gif" />
+                                    <img id="sSocial.drupal_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_drupal_1.symbol.gif" />
+                                    <img id="sSocial.dvd_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_dvd_1.symbol.gif" />
+                                    <img id="sSocial.ebay_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_ebay_1.symbol.gif" />
+                                    <img id="sSocial.ember_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_ember_1.symbol.gif" />
+                                    <img id="sSocial.etsy_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_etsy_1.symbol.gif" />
+                                    <img id="sSocial.evernote_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_evernote_1.symbol.gif" />
+                                    <img id="sSocial.facebook_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_facebook_1.symbol.gif" />
+                                    <img id="sSocial.facebook_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_facebook_2.symbol.gif" />
+                                    <img id="sSocial.facebook_place_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_facebook_place_1.symbol.gif" />
+                                    <img id="sSocial.feedburner_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_feedburner_1.symbol.gif" />
+                                    <img id="sSocial.firefox_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_firefox_1.symbol.gif" />
+                                    <img id="sSocial.fivehundredpx_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_fivehundredpx_1.symbol.gif" />
+                                    <img id="sSocial.flickr_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_flickr_1.symbol.gif" />
+                                    <img id="sSocial.folkd_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_folkd_1.symbol.gif" />
+                                    <img id="sSocial.formspring_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_formspring_1.symbol.gif" />
+                                    <img id="sSocial.forrst_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_forrst_1.symbol.gif" />
+                                    <img id="sSocial.foursquare_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_foursquare_1.symbol.gif" />
+                                    <img id="sSocial.friendster_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_friend_feed_1.symbol.gif" />
+                                    <img id="sSocial.friend_feed_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_friendster_1.symbol.gif" />
+                                    <img id="sSocial.gdgt_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_gdgt_1.symbol.gif" />
+                                    <img id="sSocial.github_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_github_1.symbol.gif" />
+                                    <img id="sSocial.github_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_github_2.symbol.gif" />
+                                    <img id="sSocial.gmail_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_gmail_1.symbol.gif" />
+                                    <img id="sSocial.google_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_google_1.symbol.gif" />
+                                    <img id="sSocial.google_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_google_2.symbol.gif" />
+                                    <img id="sSocial.google_buzz_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_google_buzz_1.symbol.gif" />
+                                    <img id="sSocial.google_plus_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_google_plus_1.symbol.gif" />
+                                    <img id="sSocial.google_talk_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_google_talk_1.symbol.gif" />
+                                    <img id="sSocial.gowalla_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_gowalla_1.symbol.gif" />
+                                    <img id="sSocial.gowalla_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_gowalla_2.symbol.gif" />
+                                    <img id="sSocial.groove_shark_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_groove_shark_1.symbol.gif" />
+                                    <img id="sSocial.hacker_news_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_hacker_news_1.symbol.gif" />
+                                    <img id="sSocial.hd_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_hd_1.symbol.gif" />
+                                    <img id="sSocial.hp_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_hp_1.symbol.gif" />
+                                    <img id="sSocial.html5_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_html5_1.symbol.gif" />
+                                    <img id="sSocial.hyves_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_hyves_1.symbol.gif" />
+                                    <img id="sSocial.icq_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_icq_1.symbol.gif" />
+                                    <img id="sSocial.identi_ca_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_identi_ca_1.symbol.gif" />
+                                    <img id="sSocial.instagram_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_instagram_1.symbol.gif" />
+                                    <img id="sSocial.instagram_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_instagram_2.symbol.gif" />
+                                    <img id="sSocial.intel_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_intel_1.symbol.gif" />
+                                    <img id="sSocial.internet_explorer_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_internet_explorer_1.symbol.gif" />
+                                    <img id="sSocial.itunes_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_itunes_1.symbol.gif" />
+                                    <img id="sSocial.joomla_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_joomla_1.symbol.gif" />
+                                    <img id="sSocial.kik_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_kik_1.symbol.gif" />
+                                    <img id="sSocial.last_fm_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_last_fm_1.symbol.gif" />
+                                    <img id="sSocial.linkedin_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_linkedin_1.symbol.gif" />
+                                    <img id="sSocial.live_journal_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_live_journal_1.symbol.gif" />
+                                    <img id="sSocial.lovedsgn_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_lovedsgn_1.symbol.gif" />
+                                    <img id="sSocial.meetup_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_meetup_1.symbol.gif" />
+                                    <img id="sSocial.metacafe_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_metacafe_1.symbol.gif" />
+                                    <img id="sSocial.mixx_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_mixx_1.symbol.gif" />
+                                    <img id="sSocial.mixx_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_mixx_2.symbol.gif" />
+                                    <img id="sSocial.mobile_me_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_mobile_me_1.symbol.gif" />
+                                    <img id="sSocial.mp3_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_mp3_1.symbol.gif" />
+                                    <img id="sSocial.mp3_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_mp3_2.symbol.gif" />
+                                    <img id="sSocial.msn_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_msn_1.symbol.gif" />
+                                    <img id="sSocial.msn_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_msn_2.symbol.gif" />
+                                    <img id="sSocial.myspace_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_myspace_1.symbol.gif" />
+                                    <img id="sSocial.newsvine_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_newsvine_1.symbol.gif" />
+                                    <img id="sSocial.ning_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_ning_1.symbol.gif" />
+                                    <img id="sSocial.official_fm_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_official_fm_1.symbol.gif" />
+                                    <img id="sSocial.openid_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_openid_1.symbol.gif" />
+                                    <img id="sSocial.opera_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_opera_1.symbol.gif" />
+                                    <img id="sSocial.orkut_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_orkut_1.symbol.gif" />
+                                    <img id="sSocial.path_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_path_1.symbol.gif" />
+                                    <img id="sSocial.paypal_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_paypal_1.symbol.gif" />
+                                    <img id="sSocial.photobucket_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_photobucket_1.symbol.gif" />
+                                    <img id="sSocial.picasa_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_picasa_1.symbol.gif" />
+                                    <img id="sSocial.pinboard_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_pinboard_1.symbol.gif" />
+                                    <img id="sSocial.ping_chat" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_ping_chat.symbol.gif" />
+                                    <img id="sSocial.pinterest_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_pinterest_1.symbol.gif" />
+                                    <img id="sSocial.plixi_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_plixi_1.symbol.gif" />
+                                    <img id="sSocial.plurk_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_plurk_1.symbol.gif" />
+                                    <img id="sSocial.podcast_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_podcast_1.symbol.gif" />
+                                    <img id="sSocial.posterous_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_posterous_1.symbol.gif" />
+                                    <img id="sSocial.python_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_python_1.symbol.gif" />
+                                    <img id="sSocial.qik_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_qik_1.symbol.gif" />
+                                    <img id="sSocial.quora_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_quora_1.symbol.gif" />
+                                    <img id="sSocial.rdio_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_rdio_1.symbol.gif" />
+                                    <img id="sSocial.readernaut_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_readernaut_1.symbol.gif" />
+                                    <img id="sSocial.reddit_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_reddit_1.symbol.gif" />
+                                    <img id="sSocial.reddit_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_reddit_2.symbol.gif" />
+                                    <img id="sSocial.retweet_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_retweet_1.symbol.gif" />
+                                    <img id="sSocial.robo_to_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_robo_to_1.symbol.gif" />
+                                    <img id="sSocial.rss_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_rss_1.symbol.gif" />
+                                    <img id="sSocial.scribd_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_scribd_1.symbol.gif" />
+                                    <img id="sSocial.sharethis_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_sharethis_1.symbol.gif" />
+                                    <img id="sSocial.skype_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_skype_1.symbol.gif" />
+                                    <img id="sSocial.slashdot_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_slashdot_1.symbol.gif" />
+                                    <img id="sSocial.slide_share_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_slide_share_1.symbol.gif" />
+                                    <img id="sSocial.slide_share_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_slide_share_2.symbol.gif" />
+                                    <img id="sSocial.smugmug_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_smugmug_1.symbol.gif" />
+                                    <img id="sSocial.sound_cloud_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_sound_cloud_1.symbol.gif" />
+                                    <img id="sSocial.spotify_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_spotify_1.symbol.gif" />
+                                    <img id="sSocial.square_space_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_square_space_1.symbol.gif" />
+                                    <img id="sSocial.squidoo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_squidoo_1.symbol.gif" />
+                                    <img id="sSocial.steam_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_steam_1.symbol.gif" />
+                                    <img id="sSocial.stumbleupon_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_stumbleupon_1.symbol.gif" />
+                                    <img id="sSocial.stumbleupon_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_stumbleupon_2.symbol.gif" />
+                                    <img id="sSocial.stumbleupon_3" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_stumbleupon_3.symbol.gif" />
+                                    <img id="sSocial.technorati_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_technorati_1.symbol.gif" />
+                                    <img id="sSocial.technorati_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_technorati_2.symbol.gif" />
+                                    <img id="sSocial.tribe_net_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_tribe_net_1.symbol.gif" />
+                                    <img id="sSocial.tumblr_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_tumblr_1.symbol.gif" />
+                                    <img id="sSocial.twitter_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_twitter_1.symbol.gif" />
+                                    <img id="sSocial.twitter_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_twitter_2.symbol.gif" />
+                                    <img id="sSocial.twitter_3" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_twitter_3.symbol.gif" />
+                                    <img id="sSocial.ubuntu_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_ubuntu_1.symbol.gif" />
+                                    <img id="sSocial.vcard_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_vcard_1.symbol.gif" />
+                                    <img id="sSocial.viddler_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_viddler_1.symbol.gif" />
+                                    <img id="sSocial.vimeo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_vimeo_1.symbol.gif" />
+                                    <img id="sSocial.virb_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_virb_1.symbol.gif" />
+                                    <img id="sSocial.w3c_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_w3c_1.symbol.gif" />
+                                    <img id="sSocial.w3_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_w3_1.symbol.gif" />
+                                    <img id="sSocial.wifi_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_wifi_1.symbol.gif" />
+                                    <img id="sSocial.wikipedia_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_wikipedia_1.symbol.gif" />
+                                    <img id="sSocial.windows_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_windows_1.symbol.gif" />
+                                    <img id="sSocial.windows_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_windows_2.symbol.gif" />
+                                    <img id="sSocial.wordpress_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_wordpress_1.symbol.gif" />
+                                    <img id="sSocial.wordpress_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_wordpress_2.symbol.gif" />
+                                    <img id="sSocial.xing_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_xing_1.symbol.gif" />
+                                    <img id="sSocial.yahoo_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_yahoo_1.symbol.gif" />
+                                    <img id="sSocial.yahoo_buzz_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_yahoo_buzz_1.symbol.gif" />
+                                    <img id="sSocial.yahoo_messenger_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_yahoo_messenger_1.symbol.gif" />
+                                    <img id="sSocial.yelp_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_yelp_1.symbol.gif" />
+                                    <img id="sSocial.you_tube_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_you_tube_1.symbol.gif" />
+                                    <img id="sSocial.you_tube_2" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_you_tube_2.symbol.gif" />
+                                    <img id="sSocial.tezerply_1ch_160" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_zerply_1.symbol.gif" />
+                                    <img id="sSocial.zinga_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_zinga_1.symbol.gif" />
+                                    <img id="sSocial.zootool_1" onclick="SelLists.change(this.id);" class="lazyload" alt="social media symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/social_icon_zootool_1.symbol.gif" />
+                                </div>
+                            </div>                            
                             <!-- END: [[*COMPONENT::SocialList*]] -->
 
 							<!-- /sticker-creator/art-sticker-maker -->
@@ -3543,7 +3776,68 @@
 									<div class="spaced-below-1x">&nbsp;</div>
 									<h4 class="font-3x">Corner Ornament :</h4>
 								</div>
-<!--#include VIRTUAL="/ui/comp/symbol_list_comp_art_4.inc.html" -->
+                                <div class="spaced-v-3x">
+                                    <input type="hidden" name="SelectedSymbol4" id="idSelectedSymbol4" value="" />
+                                
+                                    <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                    <input type="hidden" name="HasSmallImageListSymbol4" id="idHasSmallImageListSymbol4" value="yes" />
+                                
+                                    <p class="spaced-below-1x">Choose a style here :</p>
+                                
+                                    <div class="list-comp">
+                                        <img id="sSymbol4.art_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_001.symbol.gif" />
+                                        <img id="sSymbol4.art_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_002.symbol.gif" />
+                                        <img id="sSymbol4.art_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_003.symbol.gif" />
+                                        <img id="sSymbol4.art_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_004.symbol.gif" />
+                                        <img id="sSymbol4.art_005" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_005.symbol.gif" />
+                                        <img id="sSymbol4.art_006" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_006.symbol.gif" />
+                                        <img id="sSymbol4.art_007" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_007.symbol.gif" />
+                                        <img id="sSymbol4.art_008" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_008.symbol.gif" />
+                                        <img id="sSymbol4.art_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_009.symbol.gif" />
+                                        <img id="sSymbol4.art_010" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_010.symbol.gif" />
+                                        <img id="sSymbol4.art_011" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_011.symbol.gif" />
+                                        <img id="sSymbol4.art_012" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_012.symbol.gif" />
+                                        <img id="sSymbol4.art_013" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_013.symbol.gif" />
+                                        <img id="sSymbol4.art_014" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_014.symbol.gif" />
+                                        <img id="sSymbol4.art_015" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_015.symbol.gif" />
+                                        <img id="sSymbol4.art_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_016.symbol.gif" />
+                                        <img id="sSymbol4.art_017" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_017.symbol.gif" />
+                                        <img id="sSymbol4.art_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_018.symbol.gif" />
+                                        <img id="sSymbol4.art_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_019.symbol.gif" />
+                                        <img id="sSymbol4.art_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_020.symbol.gif" />
+                                        <img id="sSymbol4.art_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_021.symbol.gif" />
+                                        <img id="sSymbol4.art_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_022.symbol.gif" />
+                                        <img id="sSymbol4.art_023" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_023.symbol.gif" />
+                                        <img id="sSymbol4.art_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_024.symbol.gif" />
+                                        <img id="sSymbol4.art_025" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_025.symbol.gif" />
+                                        <img id="sSymbol4.art_026" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_026.symbol.gif" />
+                                
+                                        <img id="sSymbol4.office_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_019.symbol.gif" />
+                                        <img id="sSymbol4.office_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_020.symbol.gif" />
+                                        <img id="sSymbol4.office_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_021.symbol.gif" />
+                                        <img id="sSymbol4.office_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_022.symbol.gif" />
+                                        <img id="sSymbol4.office_028" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_028.symbol.gif" />
+                                        <img id="sSymbol4.office_030" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_030.symbol.gif" />
+                                        <img id="sSymbol4.office_032" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_032.symbol.gif" />
+                                
+                                        <img id="sSymbol4.hand_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_009.symbol.gif" />
+                                        <img id="sSymbol4.hand_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_018.symbol.gif" />
+                                
+                                        <img id="sSymbol4.love_049" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/love_049.symbol.gif" />
+                                
+                                        <img id="sSymbol4.movie_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_001.symbol.gif" />
+                                        <img id="sSymbol4.movie_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_002.symbol.gif" />
+                                        <img id="sSymbol4.movie_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_003.symbol.gif" />
+                                        <img id="sSymbol4.movie_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_004.symbol.gif" />
+                                
+                                        <img id="sSymbol4.speech_bubbles_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/speech_bubbles_001.symbol.gif" />
+                                
+                                        <img id="sSymbol4.splash_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_001.symbol.gif" />
+                                        <img id="sSymbol4.splash_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_002.symbol.gif" />
+                                        <img id="sSymbol4.splash_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_016.symbol.gif" />
+                                        <img id="sSymbol4.splash_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_024.symbol.gif" />
+                                    </div>
+                                </div>                                
 								<div class="spaced-v-3x">
 									<label for="idCornerRotation">Corner Rotation :</label><br />
 
@@ -3583,8 +3877,68 @@
 									<div class="spaced-below-1x">&nbsp;</div>
 									<h4 class="font-3x">Ornament 1 :</h4>
 								</div>
-<!--#include VIRTUAL="/ui/comp/symbol_list_comp_art_1.inc.html" -->
-
+                                <div class="spaced-v-3x">
+                                    <input type="hidden" name="SelectedSymbol1" id="idSelectedSymbol1" value="" />
+                                
+                                    <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                    <input type="hidden" name="HasSmallImageListSymbol1" id="idHasSmallImageListSymbol1" value="yes" />
+                                
+                                    <p class="spaced-below-1x">Choose a style here :</p>
+                                
+                                    <div class="list-comp">
+                                        <img id="sSymbol1.art_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_001.symbol.gif" />
+                                        <img id="sSymbol1.art_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_002.symbol.gif" />
+                                        <img id="sSymbol1.art_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_003.symbol.gif" />
+                                        <img id="sSymbol1.art_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_004.symbol.gif" />
+                                        <img id="sSymbol1.art_005" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_005.symbol.gif" />
+                                        <img id="sSymbol1.art_006" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_006.symbol.gif" />
+                                        <img id="sSymbol1.art_007" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_007.symbol.gif" />
+                                        <img id="sSymbol1.art_008" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_008.symbol.gif" />
+                                        <img id="sSymbol1.art_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_009.symbol.gif" />
+                                        <img id="sSymbol1.art_010" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_010.symbol.gif" />
+                                        <img id="sSymbol1.art_011" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_011.symbol.gif" />
+                                        <img id="sSymbol1.art_012" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_012.symbol.gif" />
+                                        <img id="sSymbol1.art_013" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_013.symbol.gif" />
+                                        <img id="sSymbol1.art_014" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_014.symbol.gif" />
+                                        <img id="sSymbol1.art_015" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_015.symbol.gif" />
+                                        <img id="sSymbol1.art_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_016.symbol.gif" />
+                                        <img id="sSymbol1.art_017" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_017.symbol.gif" />
+                                        <img id="sSymbol1.art_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_018.symbol.gif" />
+                                        <img id="sSymbol1.art_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_019.symbol.gif" />
+                                        <img id="sSymbol1.art_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_020.symbol.gif" />
+                                        <img id="sSymbol1.art_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_021.symbol.gif" />
+                                        <img id="sSymbol1.art_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_022.symbol.gif" />
+                                        <img id="sSymbol1.art_023" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_023.symbol.gif" />
+                                        <img id="sSymbol1.art_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_024.symbol.gif" />
+                                        <img id="sSymbol1.art_025" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_025.symbol.gif" />
+                                        <img id="sSymbol1.art_026" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_026.symbol.gif" />
+                                
+                                        <img id="sSymbol1.office_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_019.symbol.gif" />
+                                        <img id="sSymbol1.office_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_020.symbol.gif" />
+                                        <img id="sSymbol1.office_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_021.symbol.gif" />
+                                        <img id="sSymbol1.office_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_022.symbol.gif" />
+                                        <img id="sSymbol1.office_028" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_028.symbol.gif" />
+                                        <img id="sSymbol1.office_030" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_030.symbol.gif" />
+                                        <img id="sSymbol1.office_032" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_032.symbol.gif" />
+                                
+                                        <img id="sSymbol1.hand_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_009.symbol.gif" />
+                                        <img id="sSymbol1.hand_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_018.symbol.gif" />
+                                
+                                        <img id="sSymbol1.love_049" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/love_049.symbol.gif" />
+                                
+                                        <img id="sSymbol1.movie_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_001.symbol.gif" />
+                                        <img id="sSymbol1.movie_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_002.symbol.gif" />
+                                        <img id="sSymbol1.movie_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_003.symbol.gif" />
+                                        <img id="sSymbol1.movie_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_004.symbol.gif" />
+                                
+                                        <img id="sSymbol1.speech_bubbles_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/speech_bubbles_001.symbol.gif" />
+                                
+                                        <img id="sSymbol1.splash_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_001.symbol.gif" />
+                                        <img id="sSymbol1.splash_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_002.symbol.gif" />
+                                        <img id="sSymbol1.splash_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_016.symbol.gif" />
+                                        <img id="sSymbol1.splash_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_024.symbol.gif" />
+                                    </div>
+                                </div>                                
 								<div class="spaced-v-3x">
 									<label for="idOrnamentRotation1">Ornament 1 Rotation :</label><br />
 
@@ -3624,8 +3978,68 @@
 									<div class="spaced-below-1x">&nbsp;</div>
 									<h4 class="font-3x">Ornament 2 :</h4>
 								</div>
-<!--#include VIRTUAL="/ui/comp/symbol_list_comp_art_2.inc.html" -->
-
+                                <div class="spaced-v-3x">
+                                    <input type="hidden" name="SelectedSymbol2" id="idSelectedSymbol2" value="" />
+                                
+                                    <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                    <input type="hidden" name="HasSmallImageListSymbol2" id="idHasSmallImageListSymbol2" value="yes" />
+                                
+                                    <p class="spaced-below-1x">Choose a style here :</p>
+                                
+                                    <div class="list-comp">
+                                        <img id="sSymbol2.art_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_001.symbol.gif" />
+                                        <img id="sSymbol2.art_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_002.symbol.gif" />
+                                        <img id="sSymbol2.art_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_003.symbol.gif" />
+                                        <img id="sSymbol2.art_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_004.symbol.gif" />
+                                        <img id="sSymbol2.art_005" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_005.symbol.gif" />
+                                        <img id="sSymbol2.art_006" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_006.symbol.gif" />
+                                        <img id="sSymbol2.art_007" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_007.symbol.gif" />
+                                        <img id="sSymbol2.art_008" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_008.symbol.gif" />
+                                        <img id="sSymbol2.art_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_009.symbol.gif" />
+                                        <img id="sSymbol2.art_010" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_010.symbol.gif" />
+                                        <img id="sSymbol2.art_011" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_011.symbol.gif" />
+                                        <img id="sSymbol2.art_012" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_012.symbol.gif" />
+                                        <img id="sSymbol2.art_013" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_013.symbol.gif" />
+                                        <img id="sSymbol2.art_014" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_014.symbol.gif" />
+                                        <img id="sSymbol2.art_015" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_015.symbol.gif" />
+                                        <img id="sSymbol2.art_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_016.symbol.gif" />
+                                        <img id="sSymbol2.art_017" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_017.symbol.gif" />
+                                        <img id="sSymbol2.art_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_018.symbol.gif" />
+                                        <img id="sSymbol2.art_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_019.symbol.gif" />
+                                        <img id="sSymbol2.art_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_020.symbol.gif" />
+                                        <img id="sSymbol2.art_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_021.symbol.gif" />
+                                        <img id="sSymbol2.art_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_022.symbol.gif" />
+                                        <img id="sSymbol2.art_023" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_023.symbol.gif" />
+                                        <img id="sSymbol2.art_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_024.symbol.gif" />
+                                        <img id="sSymbol2.art_025" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_025.symbol.gif" />
+                                        <img id="sSymbol2.art_026" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/art_026.symbol.gif" />
+                                
+                                        <img id="sSymbol2.office_019" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_019.symbol.gif" />
+                                        <img id="sSymbol2.office_020" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_020.symbol.gif" />
+                                        <img id="sSymbol2.office_021" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_021.symbol.gif" />
+                                        <img id="sSymbol2.office_022" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_022.symbol.gif" />
+                                        <img id="sSymbol2.office_028" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_028.symbol.gif" />
+                                        <img id="sSymbol2.office_030" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_030.symbol.gif" />
+                                        <img id="sSymbol2.office_032" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/office_032.symbol.gif" />
+                                
+                                        <img id="sSymbol2.hand_009" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_009.symbol.gif" />
+                                        <img id="sSymbol2.hand_018" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/hand_018.symbol.gif" />
+                                
+                                        <img id="sSymbol2.love_049" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/love_049.symbol.gif" />
+                                
+                                        <img id="sSymbol2.movie_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_001.symbol.gif" />
+                                        <img id="sSymbol2.movie_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_002.symbol.gif" />
+                                        <img id="sSymbol2.movie_003" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_003.symbol.gif" />
+                                        <img id="sSymbol2.movie_004" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/movie_004.symbol.gif" />
+                                
+                                        <img id="sSymbol2.speech_bubbles_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/speech_bubbles_001.symbol.gif" />
+                                
+                                        <img id="sSymbol2.splash_001" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_001.symbol.gif" />
+                                        <img id="sSymbol2.splash_002" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_002.symbol.gif" />
+                                        <img id="sSymbol2.splash_016" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_016.symbol.gif" />
+                                        <img id="sSymbol2.splash_024" onclick="SelLists.change(this.id);" class="lazyload" alt="art symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/splash_024.symbol.gif" />
+                                    </div>
+                                </div>                                
 								<div class="spaced-v-3x">
 									<label for="idOrnamentRotation2">Ornament 2 Rotation :</label><br />
 
@@ -3665,8 +4079,101 @@
 									<div class="spaced-below-1x">&nbsp;</div>
 									<h4 class="font-3x">Ornament 3 :</h4>
 								</div>
-<!--#include VIRTUAL="/ui/comp/symbol_list_comp_art_3.inc.html" -->
-
+                                <div class="spaced-v-3x">
+                                    <input type="hidden" name="SelectedSymbol3" id="idSelectedSymbol3" value="" />
+                                
+                                    <!-- Eu uso o elemento abaixo como flag para identificar a existencia desta lista. -->
+                                    <input type="hidden" name="HasSmallImageListSymbol3" id="idHasSmallImageListSymbol3" value="yes" />
+                                
+                                    <p class="spaced-below-1x">Choose a style here :</p>
+                                
+                                    <div class="list-comp">
+                                        <img id="sSymbol3.animal_001" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_001.symbol.gif" />
+                                        <img id="sSymbol3.animal_002" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_002.symbol.gif" />
+                                        <img id="sSymbol3.animal_003" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_003.symbol.gif" />
+                                        <img id="sSymbol3.animal_004" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_004.symbol.gif" />
+                                        <img id="sSymbol3.animal_005" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_005.symbol.gif" />
+                                        <img id="sSymbol3.animal_006" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_006.symbol.gif" />
+                                        <img id="sSymbol3.animal_007" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_007.symbol.gif" />
+                                        <img id="sSymbol3.animal_008" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_008.symbol.gif" />
+                                        <img id="sSymbol3.animal_009" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_009.symbol.gif" />
+                                        <img id="sSymbol3.animal_010" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_010.symbol.gif" />
+                                        <img id="sSymbol3.animal_011" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_011.symbol.gif" />
+                                        <img id="sSymbol3.animal_012" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_012.symbol.gif" />
+                                        <img id="sSymbol3.animal_013" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_013.symbol.gif" />
+                                        <img id="sSymbol3.animal_014" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_014.symbol.gif" />
+                                        <img id="sSymbol3.animal_015" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_015.symbol.gif" />
+                                        <img id="sSymbol3.animal_016" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_016.symbol.gif" />
+                                        <img id="sSymbol3.animal_017" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_017.symbol.gif" />
+                                        <img id="sSymbol3.animal_019" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_019.symbol.gif" />
+                                        <img id="sSymbol3.animal_020" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_020.symbol.gif" />
+                                        <img id="sSymbol3.animal_021" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_021.symbol.gif" />
+                                        <img id="sSymbol3.animal_022" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_022.symbol.gif" />
+                                        <img id="sSymbol3.animal_024" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_024.symbol.gif" />
+                                        <img id="sSymbol3.animal_025" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_025.symbol.gif" />
+                                        <img id="sSymbol3.animal_026" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_026.symbol.gif" />
+                                        <img id="sSymbol3.animal_027" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_027.symbol.gif" />
+                                        <img id="sSymbol3.animal_029" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_029.symbol.gif" />
+                                        <img id="sSymbol3.animal_030" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_030.symbol.gif" />
+                                        <img id="sSymbol3.animal_031" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_031.symbol.gif" />
+                                        <img id="sSymbol3.animal_032" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_032.symbol.gif" />
+                                        <img id="sSymbol3.animal_034" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_034.symbol.gif" />
+                                        <img id="sSymbol3.animal_035" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_035.symbol.gif" />
+                                        <img id="sSymbol3.animal_036" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_036.symbol.gif" />
+                                        <img id="sSymbol3.animal_037" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_037.symbol.gif" />
+                                        <img id="sSymbol3.animal_038" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_038.symbol.gif" />
+                                        <img id="sSymbol3.animal_039" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_039.symbol.gif" />
+                                        <img id="sSymbol3.animal_040" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_040.symbol.gif" />
+                                        <img id="sSymbol3.animal_041" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_041.symbol.gif" />
+                                        <img id="sSymbol3.animal_042" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_042.symbol.gif" />
+                                        <img id="sSymbol3.animal_043" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_043.symbol.gif" />
+                                        <img id="sSymbol3.animal_044" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_044.symbol.gif" />
+                                        <img id="sSymbol3.animal_045" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_045.symbol.gif" />
+                                        <img id="sSymbol3.animal_046" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_046.symbol.gif" />
+                                        <img id="sSymbol3.animal_047" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_047.symbol.gif" />
+                                        <img id="sSymbol3.animal_048" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_048.symbol.gif" />
+                                        <img id="sSymbol3.animal_049" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_049.symbol.gif" />
+                                        <img id="sSymbol3.animal_050" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_050.symbol.gif" />
+                                        <img id="sSymbol3.animal_051" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_051.symbol.gif" />
+                                        <img id="sSymbol3.animal_052" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_052.symbol.gif" />
+                                        <img id="sSymbol3.animal_053" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_053.symbol.gif" />
+                                        <img id="sSymbol3.animal_054" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_054.symbol.gif" />
+                                        <img id="sSymbol3.animal_055" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_055.symbol.gif" />
+                                        <img id="sSymbol3.animal_056" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_056.symbol.gif" />
+                                        <img id="sSymbol3.animal_057" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_057.symbol.gif" />
+                                        <img id="sSymbol3.animal_058" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_058.symbol.gif" />
+                                        <img id="sSymbol3.animal_059" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_059.symbol.gif" />
+                                        <img id="sSymbol3.animal_060" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_060.symbol.gif" />
+                                        <img id="sSymbol3.animal_061" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_061.symbol.gif" />
+                                        <img id="sSymbol3.animal_062" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_062.symbol.gif" />
+                                        <img id="sSymbol3.animal_063" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_063.symbol.gif" />
+                                        <img id="sSymbol3.animal_064" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_064.symbol.gif" />
+                                        <img id="sSymbol3.animal_065" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_065.symbol.gif" />
+                                        <img id="sSymbol3.animal_066" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_066.symbol.gif" />
+                                        <img id="sSymbol3.animal_067" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_067.symbol.gif" />
+                                        <img id="sSymbol3.animal_068" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_068.symbol.gif" />
+                                        <img id="sSymbol3.animal_069" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_069.symbol.gif" />
+                                        <img id="sSymbol3.animal_070" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_070.symbol.gif" />
+                                        <img id="sSymbol3.animal_071" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_071.symbol.gif" />
+                                        <img id="sSymbol3.animal_072" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_072.symbol.gif" />
+                                        <img id="sSymbol3.animal_073" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_073.symbol.gif" />
+                                        <img id="sSymbol3.animal_074" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_074.symbol.gif" />
+                                        <img id="sSymbol3.animal_075" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_075.symbol.gif" />
+                                        <img id="sSymbol3.animal_076" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_076.symbol.gif" />
+                                        <img id="sSymbol3.animal_077" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_077.symbol.gif" />
+                                        <img id="sSymbol3.animal_078" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_078.symbol.gif" />
+                                        <img id="sSymbol3.animal_079" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_079.symbol.gif" />
+                                        <img id="sSymbol3.animal_080" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_080.symbol.gif" />
+                                        <img id="sSymbol3.animal_081" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_081.symbol.gif" />
+                                        <img id="sSymbol3.animal_082" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_082.symbol.gif" />
+                                        <img id="sSymbol3.animal_083" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_083.symbol.gif" />
+                                        <img id="sSymbol3.animal_084" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_084.symbol.gif" />
+                                        <img id="sSymbol3.animal_085" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_085.symbol.gif" />
+                                        <img id="sSymbol3.animal_086" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_086.symbol.gif" />
+                                        <img id="sSymbol3.animal_087" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_087.symbol.gif" />
+                                        <img id="sSymbol3.animal_088" onclick="SelLists.change(this.id);" class="lazyload" alt="animal symbol" src="/ui/img/loader-100x100.svg" data-src="/symbol/animal_088.symbol.gif" />
+                                    </div>
+                                </div>                                
 								<div class="spaced-v-3x">
 									<label for="idOrnamentRotation3">Ornament 3 Rotation :</label><br />
 
@@ -3702,13 +4209,21 @@
 							</div>
 							<!-- END: [[*COMPONENT::ArtStickerList*]] -->
 
-<!-- BEGIN: [[*ImageInput*]] -->
-<!--#include VIRTUAL="/inc/image_input.inc.html" -->
-<!-- END: [[*ImageInput*]] -->
+                            <!-- BEGIN: [[*ImageInput*]] -->
+                            <div class="spaced-v-3x">
+                                <p class="spaced-below-1x">Input Image (jpg, png or gif) :</p>
+                                <input type="file" name="ImageInput" id="idImageInput" />
+                            </div>
+                            <!-- END: [[*ImageInput*]] -->
 
-<!-- BEGIN: [[*GenerateButton*]] -->
-<!--#include VIRTUAL="/inc/btn_generate.inc.html" -->
-<!-- END: [[*GenerateButton*]] -->
+                            <!-- BEGIN: [[*GenerateButton*]] -->
+                            <div class="spaced-v-3x centered">
+                                <div class="btn-2x" onclick="if (DataChecker.checkAllWithMsg('Warning')) defSubmit();">
+                                    <i class="fas fa-magic">&nbsp;</i>
+                                    <span>Generate</span>
+                                </div>
+                            </div>
+                            <!-- END: [[*GenerateButton*]] -->
 						</form>
 					</div>
 					<!-- END: [[*EffectConfiguration*]] -->
