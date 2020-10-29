@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- BEGIN: [[*HeadNoIndex*]] -->
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="noindex, nofollow" name="robots" />
+
+		<link rel="icon" type="image/vnd.microsoft.icon" href="/ui/img/favicon.ico" />
+		<link rel="shortcut icon" href="/ui/img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee:400,400i&display=swap" />
+		<!-- END: [[*HeadNoIndex*]] -->
+
+		<link rel="stylesheet" href="ui/css/normalize.css" />
+		<link rel="stylesheet" href="ui/css/fontawesome/css/all.min.css" />
+		<link rel="stylesheet" href="ui/css/main.css" />
+
+        <title>Picture to People - Not Found</title>
+	</head>
+
+	<body onload="defInit();" onunload="hide(['idOverlayPreloader']);">
+		<!-- BEGIN: [[*Preloader*]] -->
+        <div id="idOverlayPreloader" class="modal-overlay flex-center hide-elem">
+            <span><img src="ui/img/loader-200x200-ff8000.svg" alt="Preloader Spinner" /></span>
+        </div>
+        <!-- END: [[*Preloader*]] -->
+
+        <!-- BEGIN: [[*Modal*]] -->
+        <div id="idOverlayModalMsg" class="modal-overlay flex-center hide-elem" onclick="hide(['idOverlayModalMsg']);">
+            <div id="idModalMsgWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+                <div class="flex-between bg-color-bright-grey padded-2x">
+                    <span id="idModalMsgTitle" class="font-3x bold">Warning</span>
+                    <span onclick="hide(['idOverlayModalMsg']);"><i class="fas fa-times fa-2x hover-color-2nd pointer"></i></span>
+                </div>
+        
+                <p id="idModalMsgText" class="padded-2x spaced-v-2x">Modal Msg</p>
+        
+                <div class="centered spaced-below-1x">
+                    <button class="btn-2x padded-h-2x" onclick="hide(['idOverlayModalMsg']);">
+                        <i class="fas fa-check">&nbsp;</i>
+                        <span>OK</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- END: [[*Modal*]] -->
+
+        <!-- BEGIN: [[*SearchModal*]] -->
+        <div id="idOverlayModalSearch" class="modal-overlay flex-center hide-elem" onclick="hide(['idOverlayModalSearch']);">
+            <div id="idModalSearchWindow" class="modal-content rounded-1x" onclick="stopProp(event);">
+                <div class="flex-between bg-color-bright-grey padded-2x">
+                    <span id="idModalMsgTitle" class="font-3x bold">Search</span>
+                    <span onclick="hide(['idOverlayModalSearch']);"><i class="fas fa-times fa-2x hover-color-2nd pointer"></i></span>
+                </div>
+        
+                <!-- Google CSE Search Box -->
+                <form id="searchForm" action="/search-results.html">
+                    <div class="spaced-around-2x">
+                        <input type="search" name="q" required />
+                    </div>
+        
+                    <div class="centered spaced-below-1x">
+                        <button type="submit" name="sa" value="Search" class="btn-1x spaced-h-1x">
+                            <i class="fas fa-check">&nbsp;</i>
+                            <span>OK</span>
+                        </button>
+        
+                        <div class="btn-1x" onclick="hide(['idOverlayModalSearch']);">
+                            <i class="fas fa-times">&nbsp;</i>
+                            <span>Cancel</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END: [[*SearchModal*]] -->
+
+        <!-- BEGIN: [[*ColorPicker*]] -->
+        <div id="idColorTableContainer" class="modal-overlay flex-center hide-elem" onclick="hide(['idColorTableContainer']);">
+            <div class="modal-content rounded-1x" onclick="stopProp(event);">
+                <div class="flex-between bg-color-bright-grey padded-2x spaced-below-1x">
+                    <span id="idModalMsgTitle" class="font-3x bold">Pick a Color</span>
+                    <span onclick="hide(['idColorTableContainer']);"><i class="fas fa-times fa-2x hover-color-2nd pointer"></i></span>
+                </div>
+        
+                <div>
+                    <!-- input necessario para mostrar a selecao da celula de cor para o usuario -->
+                    <input type="hidden" name="Color" id="idColor" value="001" />
+        
+                    <!-- Este componente utiliza dois metodos de classes diferentes:
+                         O metodo SelList.change responsavel pela selecao visual dos itens do componente (o value nao vai no request);
+                         O metodo ColorTable.setColor responsavel por enviar o valor de title para o campo input
+                         que instanciou o color picker (o valor do title vai no request). -->
+                    <table id="idColorTable" class="color-table">
+                        <tr>
+                            <td id="cp1.001" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #000000" title="000000"></td>
+                            <td id="cp1.002" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #202020" title="202020"></td>
+                            <td id="cp1.003" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #404040" title="404040"></td>
+                            <td id="cp1.004" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #606060" title="606060"></td>
+                            <td id="cp1.005" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #808080" title="808080"></td>
+                            <td id="cp1.006" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a0a0a0" title="A0A0A0"></td>
+                            <td id="cp1.007" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c0c0c0" title="C0C0C0"></td>
+                            <td id="cp1.008" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #d0d0d0" title="D0D0D0"></td>
+                            <td id="cp1.009" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #f0f0f0" title="F0F0F0"></td>
+                            <td id="cp1.010" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffffff" title="FFFFFF"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.011" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #400020" title="400020"></td>
+                            <td id="cp1.012" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #600030" title="600030"></td>
+                            <td id="cp1.013" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #800040" title="800040"></td>
+                            <td id="cp1.014" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a00050" title="A00050"></td>
+                            <td id="cp1.015" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c00060" title="C00060"></td>
+                            <td id="cp1.016" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e00070" title="E00070"></td>
+                            <td id="cp1.017" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff0080" title="FF0080"></td>
+                            <td id="cp1.018" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff4080" title="FF4080"></td>
+                            <td id="cp1.019" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff70a0" title="FF70A0"></td>
+                            <td id="cp1.020" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffa0d0" title="FFA0D0"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.021" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #400000" title="400000"></td>
+                            <td id="cp1.022" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #600000" title="600000"></td>
+                            <td id="cp1.023" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #800000" title="800000"></td>
+                            <td id="cp1.024" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a00000" title="A00000"></td>
+                            <td id="cp1.025" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c00000" title="C00000"></td>
+                            <td id="cp1.026" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e00000" title="E00000"></td>
+                            <td id="cp1.027" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff0000" title="FF0000"></td>
+                            <td id="cp1.028" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff4040" title="FF4040"></td>
+                            <td id="cp1.029" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff9090" title="FF9090"></td>
+                            <td id="cp1.030" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffc0c0" title="FFC0C0"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.031" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #402000" title="402000"></td>
+                            <td id="cp1.032" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #603000" title="603000"></td>
+                            <td id="cp1.033" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #804000" title="804000"></td>
+                            <td id="cp1.034" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a05000" title="A05000"></td>
+                            <td id="cp1.035" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c06000" title="C06000"></td>
+                            <td id="cp1.036" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e07000" title="E07000"></td>
+                            <td id="cp1.037" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff8000" title="FF8000"></td>
+                            <td id="cp1.038" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffa060" title="FFA060"></td>
+                            <td id="cp1.039" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffc090" title="FFC090"></td>
+                            <td id="cp1.040" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffe0b0" title="FFE0B0"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.041" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #404000" title="404000"></td>
+                            <td id="cp1.042" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #606000" title="606000"></td>
+                            <td id="cp1.043" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #808000" title="808000"></td>
+                            <td id="cp1.044" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a0a000" title="A0A000"></td>
+                            <td id="cp1.045" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c0c000" title="C0C000"></td>
+                            <td id="cp1.046" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e0e000" title="E0E000"></td>
+                            <td id="cp1.047" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffff00" title="FFFF00"></td>
+                            <td id="cp1.048" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffff80" title="FFFF80"></td>
+                            <td id="cp1.049" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffffa0" title="FFFFA0"></td>
+                            <td id="cp1.050" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffffc0" title="FFFFC0"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.051" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #004000" title="004000"></td>
+                            <td id="cp1.052" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #006000" title="006000"></td>
+                            <td id="cp1.053" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #008000" title="008000"></td>
+                            <td id="cp1.054" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00a000" title="00A000"></td>
+                            <td id="cp1.055" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00c000" title="00C000"></td>
+                            <td id="cp1.056" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00e000" title="00E000"></td>
+                            <td id="cp1.057" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00ff00" title="00FF00"></td>
+                            <td id="cp1.058" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #80ff80" title="80FF80"></td>
+                            <td id="cp1.059" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #b0ffb0" title="B0FFB0"></td>
+                            <td id="cp1.060" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #d0ffd0" title="D0FFD0"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.061" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #004040" title="004040"></td>
+                            <td id="cp1.062" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #006060" title="006060"></td>
+                            <td id="cp1.063" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #008080" title="008080"></td>
+                            <td id="cp1.064" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00a0a0" title="00A0A0"></td>
+                            <td id="cp1.065" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00c0c0" title="00C0C0"></td>
+                            <td id="cp1.066" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00e0e0" title="00E0E0"></td>
+                            <td id="cp1.067" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #00ffff" title="00FFFF"></td>
+                            <td id="cp1.068" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #80ffff" title="80FFFF"></td>
+                            <td id="cp1.069" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #b0ffff" title="B0FFFF"></td>
+                            <td id="cp1.070" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #d0ffff" title="D0FFFF"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.071" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #002040" title="002040"></td>
+                            <td id="cp1.072" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #003060" title="003060"></td>
+                            <td id="cp1.073" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #004080" title="004080"></td>
+                            <td id="cp1.074" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0050a0" title="0050A0"></td>
+                            <td id="cp1.075" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0060c0" title="0060C0"></td>
+                            <td id="cp1.076" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0070e0" title="0070E0"></td>
+                            <td id="cp1.077" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0080ff" title="0080FF"></td>
+                            <td id="cp1.078" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #60a0ff" title="60A0FF"></td>
+                            <td id="cp1.079" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #90d0ff" title="90D0FF"></td>
+                            <td id="cp1.080" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c0e0ff" title="C0E0FF"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.081" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #000040" title="000040"></td>
+                            <td id="cp1.082" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #000060" title="000060"></td>
+                            <td id="cp1.083" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #000080" title="000080"></td>
+                            <td id="cp1.084" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0000a0" title="0000A0"></td>
+                            <td id="cp1.085" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0000c0" title="0000C0"></td>
+                            <td id="cp1.086" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0000e0" title="0000E0"></td>
+                            <td id="cp1.087" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #0000ff" title="0000FF"></td>
+                            <td id="cp1.088" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #4040ff" title="4040FF"></td>
+                            <td id="cp1.089" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #9090ff" title="9090FF"></td>
+                            <td id="cp1.090" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c0c0ff" title="C0C0FF"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.091" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #200040" title="200040"></td>
+                            <td id="cp1.092" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #300060" title="300060"></td>
+                            <td id="cp1.093" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #400080" title="400080"></td>
+                            <td id="cp1.094" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #5000a0" title="5000A0"></td>
+                            <td id="cp1.095" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #6000c0" title="6000C0"></td>
+                            <td id="cp1.096" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #7000e0" title="7000E0"></td>
+                            <td id="cp1.097" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #8000ff" title="8000FF"></td>
+                            <td id="cp1.098" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a040ff" title="A040FF"></td>
+                            <td id="cp1.099" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #d090ff" title="D090FF"></td>
+                            <td id="cp1.100" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e0c0ff" title="E0C0FF"></td>
+                        </tr>
+                        <tr>
+                            <td id="cp1.101" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #400040" title="400040"></td>
+                            <td id="cp1.102" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #600060" title="600060"></td>
+                            <td id="cp1.103" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #800080" title="800080"></td>
+                            <td id="cp1.104" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #a000a0" title="A000A0"></td>
+                            <td id="cp1.105" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #c000c0" title="C000C0"></td>
+                            <td id="cp1.106" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #e000e0" title="E000E0"></td>
+                            <td id="cp1.107" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff00ff" title="FF00FF"></td>
+                            <td id="cp1.108" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff60ff" title="FF60FF"></td>
+                            <td id="cp1.109" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ff90ff" title="FF90FF"></td>
+                            <td id="cp1.110" class="hover-shaded-1x" onclick="ColorTable.setColor(this.title); SelLists.change(this.id);" style="background-color: #ffc0ff" title="FFC0FF"></td>
+                        </tr>
+                    </table>
+        
+                    <!-- Componente responsavel por exibir o valor da cor selecionada no color picker -->
+                    <div class="spaced-below-1x" title="Hexadecimal Color Value">
+                        <p id="idHexDisplay" class="color-value-display padded-2x bg-color-bright-grey rounded-1x">000000</p>
+                    </div>
+                </div>
+        
+                <div class="centered spaced-v-1x">
+                    <button id="idColorTableOkBtn" class="btn-1x spaced-h-1x spaced-below-1x" onclick="ColorTable.applyColor()">
+                        <i class="fas fa-check">&nbsp;</i>
+                        <span>OK</span>
+                    </button>
+        
+                    <button class="btn-1x spaced-h-1x" onclick="hide(['idColorTableContainer']);">
+                        <i class="fas fa-times">&nbsp;</i>
+                        <span>Cancel</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- END: [[*ColorPicker*]] -->
+
+        <!-- BEGIN: [[*SideNav*]] -->
+        <div id="idOverlayMainSideMenuFlow" class="sidenav-overlay hide-elem" onclick="hide(['idOverlayMainSideMenuFlow']);">
+            <div id="idMainSideMenuFlow" class="sidenav-content" onclick="stopProp(event);">
+                <div class="flex-between sidenav-header bg-right-bottom shaded" style="background-image: url(ui/img/footer-bg.png)">
+                    <span class="font-3x color-bright">Design Tools</span>
+                    <span onclick="hide(['idOverlayMainSideMenuFlow']);"><i class="fas fa-times fa-2x hover-color-2nd pointer color-bright"></i></span>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/online-photo-effects-and-filters.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Photo Effects</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/online-text-logo-design-generators.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Text Logos</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/photo-frame-maker.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Photo Frames</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/online-image-logo-creators.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Image Logos</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/easy-online-photo-editor.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Photo Editor</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/social-media-image-generators.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Social Images</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/online-sticker-makers.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Sticker Makers</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/text_generator/others/typography/typography_effects.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Typography</p>
+                    </a>
+                </div>
+        
+                <div>
+                    <a class="color-dark" href="/extra-useful-online-graphic-editor-softwares.html">
+                        <p class="padded-h-2x padded-v-1x hover-bg-color-4th">Image Utilities</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END: [[*SideNav*]] -->
+
+        <!-- BEGIN: [[*Menu*]] -->
+        <nav>
+            <div class="menu-main flex-between padded-h-1x bg-right-bottom shaded" style="background-image: url(ui/img/footer-bg.png), linear-gradient(to left, #ff8000, #a62900)">
+                <a class="flex-between hover-shaded-text" href="/" title="Picture to People Homepage">
+                    <img class="img-1x rounded-1x" src="ui/img/p2p-logo.png" alt="P2P Logo" />
+                    <h2 class="font-3x italic color-bright">&nbsp;&nbsp;Picture to People</h2>
+                </a>
+        
+                <h3 class="color-bright italic">World's biggest source of free online graphic design software</h3>
+        
+                <button class="flex-between menu-button pointer" onclick="show(['idOverlayMainSideMenuFlow']);" title="Design Tools Menu">
+                    <i class="fas fa-bars fa-2x"></i>
+                    <span>&nbsp;&nbsp;Design Tools</span>
+                </button>
+            </div>
+        
+            <div class="flex-between padded-2x">
+                <div>
+                    <a href="https://www.facebook.com/Picture-to-People-105265599561619/" title="Facebook">
+                        <i class="fab fa-facebook color-2nd font-3x animate-1">&nbsp;</i>
+                    </a>
+        
+                    <a href="https://twitter.com/PictureToPeople" title="Twitter">
+                        <i class="fab fa-twitter color-2nd font-3x animate-1"></i>
+                    </a>
+                </div>
+        
+                <div>
+                    <span onclick="show(['idOverlayModalSearch']); document.getElementsByName('q')[0].focus();" title="Search">
+                        <i class="fas fa-search color-1st font-3x animate-1 pointer">&nbsp;</i>
+                    </span>
+        
+                    <a href="/how_to_use.html" title="Help">
+                        <i class="fas fa-question-circle color-1st font-3x animate-1"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- END: [[*Menu*]] -->
+
+		<!-- BEGIN: [[*Header*]] -->
+		<header class="padded-h-2x">
+			<div class="centered spaced-below-3x">
+				<h1 class="font-5x bold spaced-below-1x">Not Found</h1>
+				<p class="font-3x">You requested an invalid or expired resource</p>
+			</div>
+
+			<hr class="ruler limiter-3x" />
+
+			<div class="spaced-below-3x"></div>
+		</header>
+		<!-- END: [[*Header*]] -->
+
+		<main>
+			<!-- BEGIN: [[*MainContent-FullWidth*]] -->
+			<div class="limiter-3x centered padded-h-2x">
+                <div class="limiter-3x centered padded-h-2x spaced-below-3x">
+                    <div class="spaced-below-2x">
+                        <img class="lazyload" src="ui/img/loader-100x100.svg" data-src="ui/img/404-error.png" alt="404 Page Not Found Error Illustration" />
+                    </div>
+    
+                    <a href="/">
+                        <div class="btn-2x spaced-below-1x spaced-h-1x">
+                            <i class="fas fa-home">&nbsp;</i>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                </div>
+			</div>
+			<!-- END: [[*MainContent-FullWidth*]] -->
+
+			<!-- BEGIN: [[*PopularGraphicDesignApps*]] -->
+			<div class="centered padded-2x bg-color-bright-grey">
+				<div class="limiter-3x spaced-below-3x">
+					<h2 class="font-5x padded-v-3x">Popular Graphic Design Apps</h2>
+					<div>
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/image_effects/photo_paint/oil_painting_photo_effect.html">
+							<img class="lazyload" alt="oil painting photo effect" src="/ui/img/loader-150x150.svg" data-src="/img/working/oil-painting-photo-effect.png" />
+							<h3 class="color-dark">Oil Painting</h3>
+						</a>
+					
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/text_generator/others/graffiti/graffiti_text.html">
+							<img class="lazyload" alt="3d graffiti text effect" src="/ui/img/loader-150x150.svg" data-src="/img/working/3d-graffiti-text-effect.png" />
+							<h3 class="color-dark">3D Graffiti Text</h3>
+						</a>
+					
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/photo_sketch/realistic_pencil_sketch_photo_effect.html">
+							<img class="lazyload" alt="pencil sketch photo effect" src="/ui/img/loader-150x150.svg" data-src="/img/working/pencil-sketch-photo-effect.png" />
+							<h3 class="color-dark">Sketch Effect</h3>
+						</a>
+					
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/text_generator/others/3d/realistic/professional_text_effects.html">
+							<img class="lazyload" alt="3d textured text effect" src="/ui/img/loader-150x150.svg" data-src="/img/working/3d-textured-text-effect.png" />
+							<h3 class="color-dark">Textured 3D Text</h3>
+						</a>
+					
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/text_generator/others/carved/online_carved_text_effects.html">
+							<img class="lazyload" alt="engraved text logo" src="/ui/img/loader-150x150.svg" data-src="/img/working/engraved-text-logo.png" />
+							<h3 class="color-dark">Engraved Text</h3>
+						</a>
+					
+						<a class="in-block-display bg-color-bright-grey rounded-1x padded-1x spaced-around-1x shaded hover-shaded-2x" href="/image_effects/photo_cartoon/online-photo-cartoonizer.html">
+							<img class="lazyload" alt="cartoon photo effect" src="/ui/img/loader-150x150.svg" data-src="/img/working/cartoon-photo-effect.png" />
+							<h3 class="color-dark">Cartoon Effect</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- END: [[*PopularGraphicDesignApps*]] -->
+		</main>
+
+		<!-- BEGIN: [[*Footer*]] -->
+		<footer class="centered padded-3x bg-right-bottom" style="background-image: url(/ui/img/footer-bg.png), linear-gradient(to left, #ff8000, #a62900)">
+			<div class="footer-nav flex-around">
+				<div class="spaced-below-2x">
+					<h3 class="color-bright font-3x spaced-below-1x">PROJECT</h3>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/about.html">About P2P</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/terms-of-service.html">Terms of Service</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/advertise.html">Advertise</a></p>
+					<p><a class="color-3rd hover-color-bright" href="https://groups.google.com/g/picturetopeople/">Contact Us</a></p>
+				</div>
+		
+				<div class="spaced-below-2x">
+					<h3 class="color-bright font-3x spaced-below-1x">SUPPORT</h3>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/how_to_use.html">How to Use</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/how_to_use.html">Get Help</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="http://graphictexts.blogspot.com/">Tips & Tricks</a></p>
+					<p><a class="color-3rd hover-color-bright" href="/extra-useful-online-graphic-editor-softwares.html">Extra Services</a></p>
+				</div>
+		
+				<div class="spaced-below-2x">
+					<h3 class="color-bright font-3x spaced-below-1x">DEVELOPMENT</h3>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/dev/guidelines.html">Guidelines</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/dev/maccala_features.html">Maccala Library</a></p>
+					<p class="spaced-below-1x"><a class="color-3rd hover-color-bright" href="/dev/pixsycho_features.html">Pixsycho Library</a></p>
+					<p><a class="color-3rd hover-color-bright" href="/researches.html">Researches</a></p>
+				</div>
+			</div>
+		
+			<div class="spaced-below-2x">
+				<p class="color-bright padded-h-2x">
+					The images created or modified by using Picture to People site can be used for any purpose (free, personal or
+					commercial) under a license similar to Creative Commons. It means you must provide the proper credits to Picture to
+					People Project (www.picturetopeople.org). Exceptions apply if you are a subscriber. For further information, read our
+					<a class="color-3rd hover-color-bright" href="/terms-of-service.html">Terms of Service</a>.
+				</p>
+			</div>
+		
+			<div>
+				<a href="https://www.facebook.com/Picture-to-People-105265599561619/"><i class="fab fa-facebook fa-2x color-bright animate-1" title="Facebook">&nbsp;</i></a>
+				<a href="https://twitter.com/PictureToPeople"><i class="fab fa-twitter fa-2x color-bright animate-1" title="Twitter"></i></a>
+			</div>
+		</footer>
+		<!-- END: [[*Footer*]] -->
+
+		<!-- BEGIN: [[*SCRIPT::External*]] -->
+		<script src="ui/js/lazysizes.min.js"></script>
+		<!-- END: [[*SCRIPT::External*]] -->
+
+		<!-- BEGIN: [[*SCRIPT::Internal*]] -->
+		<script src="ui/js/main.js"></script>
+
+		<script>
+			try {
+				// Default para f1 (geral) e f2 (photo typography) = 'Arial'.
+				// Default para f3 (writing) = 'Brushed'.
+				// Default para f4 (graffiti) = 'Jungle LIFE'.
+				// Default para f5 (horror) = 'Creepsville'.
+				var initialFontName = "Arial";
+
+				// Para as telas que usam simbolos.
+				var initialSymbol1 = "kids_003",
+					initialSymbol2 = "kids_004",
+					initialSymbol3 = "kids_007",
+					initialSymbol4 = "kids_005";
+
+				// Para as telas que usam lista de efeito de texto com nome.
+				var initialNamedTextEffect1 = "abstract083", // Valor para a lista de efeitos 3d.
+					initialNamedTextEffect2 = "3d_blue"; // Valor para a lista de efeitos classicos.
+			} catch (e) {
+				showModalMsg("idOverlayModalMsg", "idModalMsgText", e.message ? e.message : e, "idModalMsgTitle", "Error");
+			}
+		</script>
+
+		<script src="ui/js/exec-def.js"></script>
+		<!-- END: [[*SCRIPT::Internal*]] -->
+
+		<!-- BEGIN: [[*SCRIPT::Ads*]] -->
+		<!-- END: [[*SCRIPT::Ads*]] -->
+	</body>
+</html>
