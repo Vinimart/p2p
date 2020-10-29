@@ -10,4 +10,4 @@ For the complete project see master branch in https://github.com/Vinimart/p2p/tr
 
 The "dist" branch was created for a preview version avaiable in https://vinimart.github.io/p2p/.
 
-The reason this branch exists is because github pages do not support Server Side Includes, so this version does not include all features, pages and resources from the main project.
+The reason this branch exists is because GitHub Pages do not support Server Side Includes, so this version does not include all features, pages and resources from the main project.
